@@ -12,6 +12,7 @@ import com.botmaker.sdk.api.flow.Run;
 
 import java.util.Map;
 import java.util.Set;
+import java.util.List;
 
 /**
  * The BotMaker SDK's values for this bot.
@@ -38,14 +39,17 @@ public final class Sdk {
 
     /** Whether {@link #run()}'s setup runs first. Tick it on a new computer, or after changing a game setting. */
     @SdkValue(SdkValue.Id.DO_SETUP)
-    @Param(category = "Run", visibility = Param.PUBLIC,
-            description = "Set the game up first: tick it on a new computer or after changing a game setting")
+    @Param(category = "Run", visibility = Param.PUBLIC, description = "Set the game up first: tick it on a new computer or after changing a game setting")
     public static boolean doSetup = true;
 
     /** The activities this run skips: only one the flow's card lets the runner switch off. */
     @SdkValue(SdkValue.Id.SKIP)
     @Param(category = "Run", visibility = Param.PUBLIC, description = "Activities this run skips")
     public static Set<Class<? extends Outcome>> skip = Set.of();
+
+    @SdkValue(SdkValue.Id.LAUNCH_TARGETS)
+    @Param(category = "Game", description = "The launchers this bot can start its game from, preferred first")
+    public static List<String> launchTargets = List.of();
 
     /**
      * The game's home and setup, which no flow owns.
