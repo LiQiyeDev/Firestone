@@ -88,7 +88,7 @@ public final class Sdk {
      */
     @SdkValue(SdkValue.Id.CAPTURE)
     public static CaptureSource captureSource() {
-        return CaptureSource.desktop();
+        return CaptureSource.window("Firestone");
     }
 
     /**
