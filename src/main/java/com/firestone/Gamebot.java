@@ -1,5 +1,6 @@
 package com.firestone;
 
+import com.firestone.params.Parameters;
 import com.firestone.plugins.sdk.Pictures;
 import com.firestone.plugins.sdk.Sdk;
 import com.botmaker.sdk.api.bot.Bot;

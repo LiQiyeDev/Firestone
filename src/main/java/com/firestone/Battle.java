@@ -30,8 +30,12 @@ public final class Battle {
         }
 
         for (int attempt = 0; Gamebot.keepTrying(attempt); attempt++) {
-            if (ImageFinder.find(Pictures.VICTORY)) return Activities.Battle.WON;
-            if (ImageFinder.find(Pictures.DEFEAT)) return Activities.Battle.LOST;
+            if (ImageFinder.find(Pictures.VICTORY)) {
+                return Activities.Battle.WON;
+            }
+            if (ImageFinder.find(Pictures.DEFEAT)) {
+                return Activities.Battle.LOST;
+            }
             Wait.seconds(1);
         }
         // Neither picture ever appeared. Something is on screen that this bot does not know about, so

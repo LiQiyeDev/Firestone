@@ -1,5 +1,6 @@
 package com.firestone;
 
+import com.firestone.params.Parameters;
 import com.firestone.plugins.sdk.Activities;
 import com.botmaker.sdk.api.time.Wait;
 
