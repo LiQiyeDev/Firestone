@@ -71,7 +71,7 @@ public final class Gamebot {
      */
     public static void goHome() {
         for (int attempt = 0; attempt < 5; attempt++) {
-            if (!ImageClicker.click(Pictures.HOME)) {
+            if (!ImageClicker.click(Pictures.CLOSE_X)) {
                 return;
             }
             Wait.milliseconds(400);
