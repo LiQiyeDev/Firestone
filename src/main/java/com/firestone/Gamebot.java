@@ -10,6 +10,7 @@ import com.botmaker.sdk.api.vision.ImageTemplateGroup;
 import com.botmaker.sdk.api.input.Keyboard;
 import com.botmaker.sdk.api.vision.ImageWaiter;
 import com.botmaker.sdk.api.input.Key;
+import java.time.Duration;
 
 /**
  * A game bot to start from: it finds a picture on the screen, clicks it, waits, and does it again —
@@ -80,7 +81,7 @@ public final class Gamebot {
                     Keyboard.tap(Key.ESCAPE);
                     ImageWaiter.waitFor(
                             Pictures.UPGRADES,
-                            java.time.Duration.ofMillis(800L));
+                            Duration.ofMillis(2500L));
                 });
         ImageFinder.whileFindAny(ImageTemplateGroup.of(Pictures.CLAIM_OFFLINE, Pictures.CLOSE_X, Pictures.CLOSE_TOWN),
                 it -> {
