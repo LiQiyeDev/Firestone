@@ -33,5 +33,7 @@ public final class Pictures {
     public static final ImageTemplate CLOSE_X = new ImageTemplate("src/main/resources/images/close_x.png").at(new Rect(1808, 28, 64, 64));
     public static final ImageTemplate CLAIM_BUTTON = new ImageTemplate("src/main/resources/images/claim_button.png")
             .at(new Rect(880, 900, 170, 75));
+    public static final ImageTemplate HOME = new ImageTemplate("src/main/resources/images/home.png")
+            .at(new Rect(1820, 165, 80, 100));
     private Pictures() {}
 }
