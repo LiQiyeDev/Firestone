@@ -34,6 +34,5 @@ public final class Pictures {
     public static final ImageTemplate CLAIM_BUTTON = new ImageTemplate("src/main/resources/images/claim_button.png")
             .at(new Rect(880, 900, 170, 75));
     public static final ImageTemplate HOME = new ImageTemplate("src/main/resources/images/home.png").at(new Rect(1846, 196, 30, 34));
-    public static final ImageTemplate SETTINGS_BUTTON = new ImageTemplate("src/main/resources/images/settings_button.png").at(new Rect(1836, 80, 24, 11));
     private Pictures() {}
 }
