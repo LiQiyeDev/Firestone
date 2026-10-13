@@ -44,8 +44,7 @@ public final class Pictures {
     public static final ImageTemplate GUILD = new ImageTemplate("src/main/resources/images/guild.png").at(new Rect(1830, 432, 58, 60));
     public static final ImageTemplate MARKET = new ImageTemplate("src/main/resources/images/market.png").at(new Rect(1815, 582, 64, 46));
     public static final ImageTemplate UPGRADES = new ImageTemplate("src/main/resources/images/upgrades.png").at(new Rect(1395, 965, 55, 45));
-    public static final ImageTemplate BAG = new ImageTemplate("src/main/resources/images/bag.png")
-            .at(new Rect(1534, 1012, 62, 38));
+    public static final ImageTemplate BAG = new ImageTemplate("src/main/resources/images/bag.png").at(new Rect(1537, 952, 56, 56));
     public static final ImageTemplate FELLOWSHIP = new ImageTemplate("src/main/resources/images/fellowship.png")
             .at(new Rect(1630, 1012, 150, 38));
     public static final ImageTemplate PARTY = new ImageTemplate("src/main/resources/images/party.png")
