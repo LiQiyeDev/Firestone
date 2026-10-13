@@ -80,17 +80,6 @@ public final class Sdk {
     }
 
     /**
-     * Where pixels are read from.
-     *
-     * <p>Chosen with <i>🎯 Capture Source</i> on the toolbar. {@code CaptureSource.desktop()} is the whole screen;
-     * {@code CaptureSource.window("Game")} follows one window, wherever it moves.
-     */
-    @SdkValue(SdkValue.Id.CAPTURE)
-    public static CaptureSource captureSource() {
-        return CaptureSource.window("Firestone");
-    }
-
-    /**
      * How the bot clicks and looks: the pauses around a match, how sure a match has to be, whether it drives the
      * real mouse and keyboard, and whether it runs on a private display of its own.
      *
