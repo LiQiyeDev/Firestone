@@ -38,5 +38,7 @@ public final class Pictures {
             .at(new Rect(535, 963, 105, 36));
     public static final ImageTemplate CLAIM_OFFLINE = new ImageTemplate("src/main/resources/images/claim_offline.png")
             .at(new Rect(895, 905, 130, 50));
+    public static final ImageTemplate EXIT_HOME = new ImageTemplate("src/main/resources/images/exit_home.png")
+            .at(new Rect(1035, 290, 310, 50));
     private Pictures() {}
 }

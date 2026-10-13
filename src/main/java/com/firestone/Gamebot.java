@@ -4,8 +4,11 @@ import com.firestone.params.Parameters;
 import com.firestone.plugins.sdk.Pictures;
 import com.firestone.plugins.sdk.Sdk;
 import com.botmaker.sdk.api.bot.Bot;
-import com.botmaker.sdk.api.time.Wait;
+import com.botmaker.sdk.api.vision.ImageWaiter;
+import java.time.Duration;
 import com.botmaker.sdk.api.vision.ImageClicker;
+import com.botmaker.sdk.api.input.Keyboard;
+import com.botmaker.sdk.api.input.Key;
 
 /**
  * A game bot to start from: it finds a picture on the screen, clicks it, waits, and does it again —
@@ -54,7 +57,8 @@ import com.botmaker.sdk.api.vision.ImageClicker;
  */
 public final class Gamebot {
 
-    private Gamebot() {}
+    private Gamebot() {
+    }
 
     public static void main(String[] args) {
         // Walks the flow the person running the bot picked, skipping what they switched off, with the home, setup
@@ -71,10 +75,12 @@ public final class Gamebot {
      */
     public static void goHome() {
         for (int attempt = 0; attempt < 5; attempt++) {
-            if (!ImageClicker.click(Pictures.CLOSE_X)) {
+            ImageClicker.click(Pictures.CLAIM_OFFLINE);
+            Keyboard.tap(Key.ESCAPE);
+            if (ImageWaiter.waitFor(Pictures.EXIT_HOME, Duration.ofMillis(800L))) {
+                ImageClicker.click(Pictures.CLOSE_X);
                 return;
             }
-            Wait.milliseconds(400);
         }
     }
 
