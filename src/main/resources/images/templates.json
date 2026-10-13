@@ -119,6 +119,9 @@
     },
     "upgrades" : {
       "tags" : [ "Home" ]
+    },
+    "weekly_tab_off" : {
+      "tags" : [ "Quests" ]
     }
   },
   "customTags" : [ "Guardians", "Home", "Popups", "Town" ]
