@@ -29,6 +29,10 @@ public final class Activities {
         NEXT
     }
 
+    public enum Quests implements Outcome {
+        NEXT
+    }
+
     private Activities() {
     }
 }
