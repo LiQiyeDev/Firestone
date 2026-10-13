@@ -2,6 +2,7 @@ package com.firestone.plugins.sdk;
 
 import com.botmaker.sdk.api.bot.SdkValue;
 import com.botmaker.sdk.api.vision.ImageTemplate;
+import com.botmaker.sdk.api.geometry.Rect;
 
 /**
  * The pictures this bot looks for, one constant each.
@@ -30,6 +31,8 @@ public final class Pictures {
     public static final ImageTemplate VICTORY = new ImageTemplate("src/main/resources/images/victory.png");
     public static final ImageTemplate DEFEAT = new ImageTemplate("src/main/resources/images/defeat.png");
     public static final ImageTemplate HOME = new ImageTemplate("src/main/resources/images/home.png");
+    public static final ImageTemplate CLAIM_BUTTON = new ImageTemplate("src/main/resources/images/claim_button.png")
+            .at(new Rect(880, 900, 170, 75));
 
     private Pictures() {}
 }

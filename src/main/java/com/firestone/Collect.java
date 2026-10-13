@@ -28,7 +28,7 @@ public final class Collect {
     private Collect() {}
 
     public static Activities.Collect body() {
-        if (!ImageClicker.click(Pictures.COLLECT)) {
+        if (!ImageClicker.click(Pictures.CLAIM_BUTTON)) {
             // Nothing to collect. Not a failure — the flow sends this on to Battle.
             return Activities.Collect.NOTHING_LEFT;
         }
