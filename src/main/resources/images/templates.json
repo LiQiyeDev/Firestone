@@ -87,6 +87,9 @@
     "pirate_ship_town" : {
       "tags" : [ "Town" ]
     },
+    "projectiles_node_library" : {
+      "tags" : [ "Research" ]
+    },
     "research_start_library" : {
       "tags" : [ "Research" ]
     },
