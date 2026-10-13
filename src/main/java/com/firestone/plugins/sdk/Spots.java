@@ -13,6 +13,7 @@ import com.botmaker.sdk.api.geometry.Anchor;
 public final class Spots {
     public static final Spot SETTINGS = new Spot(1850, 58).anchored(Anchor.TOP_RIGHT);
     public static final Spot GRAPHICS_TAB = new Spot(1092, 50);
+    public static final Spot GAMEPLAY_TAB = new Spot(825, 50);
 
     private Spots() {
     }
