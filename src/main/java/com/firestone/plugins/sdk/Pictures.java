@@ -51,5 +51,7 @@ public final class Pictures {
             .at(new Rect(1534, 1012, 62, 38));
     public static final ImageTemplate FELLOWSHIP = new ImageTemplate("src/main/resources/images/fellowship.png")
             .at(new Rect(1630, 1012, 150, 38));
+    public static final ImageTemplate PARTY = new ImageTemplate("src/main/resources/images/party.png")
+            .at(new Rect(1800, 1012, 86, 38));
     private Pictures() {}
 }
