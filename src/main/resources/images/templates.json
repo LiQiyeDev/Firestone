@@ -3,6 +3,9 @@
     "alchemist_town" : {
       "tags" : [ "Town" ]
     },
+    "armor_node_library" : {
+      "tags" : [ "Research" ]
+    },
     "back_town" : {
       "tags" : [ "Town" ]
     },
