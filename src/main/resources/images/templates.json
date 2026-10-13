@@ -48,6 +48,9 @@
     "hall_of_heroes_town" : {
       "tags" : [ "Town" ]
     },
+    "health_node_library" : {
+      "tags" : [ "Research" ]
+    },
     "home" : {
       "tags" : [ "Home" ]
     },

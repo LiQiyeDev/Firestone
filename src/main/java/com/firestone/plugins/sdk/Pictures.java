@@ -72,5 +72,7 @@ public final class Pictures {
             "src/main/resources/images/firestone_tab_library.png").at(new Rect(1768, 610, 68, 62));
     public static final ImageTemplate RESEARCH_START_LIBRARY = new ImageTemplate(
             "src/main/resources/images/research_start_library.png").at(new Rect(640, 674, 300, 92));
+    public static final ImageTemplate HEALTH_NODE_LIBRARY = new ImageTemplate(
+            "src/main/resources/images/health_node_library.png").at(new Rect(672, 350, 90, 90));
     private Pictures() {}
 }
