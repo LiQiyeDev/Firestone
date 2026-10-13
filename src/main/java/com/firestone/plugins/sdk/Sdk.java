@@ -47,10 +47,6 @@ public final class Sdk {
     @Param(category = "Run", visibility = Param.PUBLIC, description = "Activities this run skips")
     public static Set<Class<? extends Outcome>> skip = Set.of();
 
-    @SdkValue(SdkValue.Id.LAUNCH_TARGETS)
-    @Param(category = "Game", description = "The launchers this bot can start its game from, preferred first")
-    public static List<String> launchTargets = List.of("heroic:43d4ef20fcb94eb39a864d13164fe3ca");
-
     @SdkValue(SdkValue.Id.CAPTURE)
     @Param(category = "Game", visibility = Param.PUBLIC, description = "The game's window: where the bot reads pixels from")
     public static CaptureSource capture = CaptureSource.desktop();
