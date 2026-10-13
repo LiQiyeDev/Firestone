@@ -24,6 +24,9 @@
     "home" : {
       "tags" : [ "Home" ]
     },
+    "leaderboards_town" : {
+      "tags" : [ "Town" ]
+    },
     "map" : {
       "tags" : [ "Home" ]
     },

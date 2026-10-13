@@ -64,5 +64,7 @@ public final class Pictures {
     public static final ImageTemplate PIRATE_SHIP_TOWN = new ImageTemplate("src/main/resources/images/pirate_ship_town.png").at(new Rect(1645, 667, 250, 225));
     public static final ImageTemplate MARKET_TOWN = new ImageTemplate("src/main/resources/images/market_town.png")
             .at(new Rect(1225, 275, 175, 175));
+    public static final ImageTemplate LEADERBOARDS_TOWN = new ImageTemplate(
+            "src/main/resources/images/leaderboards_town.png").at(new Rect(1675, 117, 175, 250));
     private Pictures() {}
 }
