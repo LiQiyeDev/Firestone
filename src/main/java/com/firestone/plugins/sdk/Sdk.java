@@ -80,8 +80,10 @@ public final class Sdk {
     @SdkValue(SdkValue.Id.FLOW_LAYOUT)
     public static FlowLayout flowLayout() {
         return FlowLayout.of(Map.ofEntries(Map.entry("MAIN",
-                FlowLayout.cards(Map.ofEntries(Map.entry("Collect", FlowLayout.at(1364, 977)),
-                        Map.entry("Battle", FlowLayout.at(1746, 977)), Map.entry("Rest", FlowLayout.at(990, 974)))))),
+                FlowLayout.cards(Map.ofEntries(Map.entry("Collect", FlowLayout.at(990, 907)),
+                        Map.entry("Battle", FlowLayout.at(1372, 910)), Map.entry("Rest", FlowLayout.at(1746, 916)),
+                        Map.entry("Research", FlowLayout.at(990, 1040)),
+                        Map.entry("Quests", FlowLayout.at(1364, 1040)))))),
                 true);
     }
 
