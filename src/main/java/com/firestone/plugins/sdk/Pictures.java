@@ -69,5 +69,7 @@ public final class Pictures {
             .at(new Rect(1455, 234, 90, 40));
     public static final ImageTemplate MAGIC_QUARTER_TOWN = new ImageTemplate(
             "src/main/resources/images/magic_quarter_town.png").at(new Rect(515, 343, 205, 40));
+    public static final ImageTemplate TEMPLE_TOWN = new ImageTemplate("src/main/resources/images/temple_town.png")
+            .at(new Rect(820, 296, 260, 40));
     private Pictures() {}
 }
