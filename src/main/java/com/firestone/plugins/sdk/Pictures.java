@@ -27,7 +27,7 @@ import com.botmaker.sdk.api.geometry.Rect;
 public final class Pictures {
 
     public static final ImageTemplate COLLECT = new ImageTemplate("src/main/resources/images/collect.png");
-    public static final ImageTemplate BATTLE = new ImageTemplate("src/main/resources/images/battle.png");
+    public static final ImageTemplate BATTLE = new ImageTemplate("src/main/resources/images/battle.png").at(new Rect(1640, 530, 140, 55));
     public static final ImageTemplate VICTORY = new ImageTemplate("src/main/resources/images/victory.png");
     public static final ImageTemplate DEFEAT = new ImageTemplate("src/main/resources/images/defeat.png");
     public static final ImageTemplate HOME = new ImageTemplate("src/main/resources/images/home.png").at(new Rect(1820, 165, 80, 100));
