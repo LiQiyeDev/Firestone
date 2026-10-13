@@ -25,5 +25,10 @@ public final class Activities {
 
     public enum Rest implements Outcome { NEXT }
 
-    private Activities() {}
+    public enum Research implements Outcome {
+        NEXT
+    }
+
+    private Activities() {
+    }
 }
