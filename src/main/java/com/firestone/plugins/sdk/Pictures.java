@@ -76,5 +76,7 @@ public final class Pictures {
             "src/main/resources/images/health_node_library.png").at(new Rect(672, 350, 90, 90));
     public static final ImageTemplate ARMOR_NODE_LIBRARY = new ImageTemplate(
             "src/main/resources/images/armor_node_library.png").at(new Rect(672, 608, 90, 90));
+    public static final ImageTemplate GUARDIAN_NODE_LIBRARY = new ImageTemplate(
+            "src/main/resources/images/guardian_node_library.png").at(new Rect(1164, 478, 84, 84));
     private Pictures() {}
 }
