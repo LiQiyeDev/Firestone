@@ -43,8 +43,7 @@ public final class Pictures {
     public static final ImageTemplate MAP = new ImageTemplate("src/main/resources/images/map.png").at(new Rect(1820, 325, 40, 35));
     public static final ImageTemplate GUILD = new ImageTemplate("src/main/resources/images/guild.png").at(new Rect(1830, 432, 58, 60));
     public static final ImageTemplate MARKET = new ImageTemplate("src/main/resources/images/market.png").at(new Rect(1815, 582, 64, 46));
-    public static final ImageTemplate UPGRADES = new ImageTemplate("src/main/resources/images/upgrades.png")
-            .at(new Rect(1356, 1012, 140, 38));
+    public static final ImageTemplate UPGRADES = new ImageTemplate("src/main/resources/images/upgrades.png").at(new Rect(1395, 965, 55, 45));
     public static final ImageTemplate BAG = new ImageTemplate("src/main/resources/images/bag.png")
             .at(new Rect(1534, 1012, 62, 38));
     public static final ImageTemplate FELLOWSHIP = new ImageTemplate("src/main/resources/images/fellowship.png")
