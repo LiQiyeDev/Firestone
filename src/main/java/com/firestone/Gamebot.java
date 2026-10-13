@@ -4,10 +4,11 @@ import com.firestone.params.Parameters;
 import com.firestone.plugins.sdk.Pictures;
 import com.firestone.plugins.sdk.Sdk;
 import com.botmaker.sdk.api.bot.Bot;
-import com.botmaker.sdk.api.vision.ImageWaiter;
-import java.time.Duration;
+import com.botmaker.sdk.api.vision.ImageFinder;
 import com.botmaker.sdk.api.vision.ImageClicker;
+import com.botmaker.sdk.api.vision.ImageTemplateGroup;
 import com.botmaker.sdk.api.input.Keyboard;
+import com.botmaker.sdk.api.vision.ImageWaiter;
 import com.botmaker.sdk.api.input.Key;
 
 /**
@@ -74,14 +75,17 @@ public final class Gamebot {
      * is no close button left is the usual shape, and it is what this does.
      */
     public static void goHome() {
-        for (int attempt = 0; attempt < 5; attempt++) {
-            ImageClicker.click(Pictures.CLAIM_OFFLINE);
-            Keyboard.tap(Key.ESCAPE);
-            if (ImageWaiter.waitFor(Pictures.EXIT_HOME, Duration.ofMillis(800L))) {
-                ImageClicker.click(Pictures.CLOSE_X);
-                return;
-            }
-        }
+        ImageFinder.untilFind(
+                Pictures.UPGRADES, () -> {
+                    Keyboard.tap(Key.ESCAPE);
+                    ImageWaiter.waitFor(
+                            Pictures.UPGRADES,
+                            java.time.Duration.ofMillis(800L));
+                });
+        ImageFinder.whileFindAny(ImageTemplateGroup.of(Pictures.CLAIM_OFFLINE, Pictures.CLOSE_X, Pictures.CLOSE_TOWN),
+                it -> {
+                    ImageClicker.click(com.botmaker.sdk.api.vision.Vision.lastMatch());
+                });
     }
 
     /**

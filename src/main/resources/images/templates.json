@@ -1,5 +1,8 @@
 {
   "templates" : {
+    "alchemist_town" : {
+      "tags" : [ "Town" ]
+    },
     "back_town" : {
       "tags" : [ "Town" ]
     },
@@ -9,14 +12,26 @@
     "battle" : {
       "tags" : [ "Home" ]
     },
+    "battles_town" : {
+      "tags" : [ "Town" ]
+    },
     "claim_offline" : {
       "tags" : [ "Popups" ]
+    },
+    "close_town" : {
+      "tags" : [ "Town" ]
     },
     "close_x" : {
       "tags" : [ "Popups" ]
     },
+    "engineer_town" : {
+      "tags" : [ "Town" ]
+    },
     "exit_home" : {
       "tags" : [ "Home", "Popups" ]
+    },
+    "exotic_merchant_town" : {
+      "tags" : [ "Town" ]
     },
     "fellowship" : {
       "tags" : [ "Home" ]
@@ -24,10 +39,22 @@
     "guild" : {
       "tags" : [ "Home" ]
     },
+    "guild_town" : {
+      "tags" : [ "Town" ]
+    },
+    "hall_of_heroes_town" : {
+      "tags" : [ "Town" ]
+    },
     "home" : {
       "tags" : [ "Home" ]
     },
     "leaderboards_town" : {
+      "tags" : [ "Town" ]
+    },
+    "library_town" : {
+      "tags" : [ "Town" ]
+    },
+    "magic_quarter_town" : {
       "tags" : [ "Town" ]
     },
     "map" : {
@@ -41,6 +68,15 @@
     },
     "party" : {
       "tags" : [ "Home" ]
+    },
+    "pirate_ship_town" : {
+      "tags" : [ "Town" ]
+    },
+    "tavern_town" : {
+      "tags" : [ "Town" ]
+    },
+    "temple_town" : {
+      "tags" : [ "Town" ]
     },
     "upgrades" : {
       "tags" : [ "Home" ]
