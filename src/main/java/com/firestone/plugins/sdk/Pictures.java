@@ -55,8 +55,7 @@ public final class Pictures {
     public static final ImageTemplate ALCHEMIST_TOWN = new ImageTemplate("src/main/resources/images/alchemist_town.png").at(new Rect(400, 750, 100, 130));
     public static final ImageTemplate TAVERN_TOWN = new ImageTemplate("src/main/resources/images/tavern_town.png").at(new Rect(642, 875, 115, 115));
     public static final ImageTemplate ENGINEER_TOWN = new ImageTemplate("src/main/resources/images/engineer_town.png").at(new Rect(1200, 735, 180, 160));
-    public static final ImageTemplate GUILD_TOWN = new ImageTemplate("src/main/resources/images/guild_town.png")
-            .at(new Rect(1455, 234, 90, 40));
+    public static final ImageTemplate GUILD_TOWN = new ImageTemplate("src/main/resources/images/guild_town.png").at(new Rect(1433, 50, 142, 158));
     public static final ImageTemplate MAGIC_QUARTER_TOWN = new ImageTemplate(
             "src/main/resources/images/magic_quarter_town.png").at(new Rect(515, 343, 205, 40));
     public static final ImageTemplate TEMPLE_TOWN = new ImageTemplate("src/main/resources/images/temple_town.png")
