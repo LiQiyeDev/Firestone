@@ -5,12 +5,12 @@ import com.firestone.plugins.sdk.Pictures;
 import com.firestone.plugins.sdk.Sdk;
 import com.botmaker.sdk.api.bot.Bot;
 import com.botmaker.sdk.api.vision.ImageFinder;
-import com.botmaker.sdk.api.vision.ImageClicker;
 import com.botmaker.sdk.api.vision.ImageTemplateGroup;
 import com.botmaker.sdk.api.input.Keyboard;
 import com.botmaker.sdk.api.vision.ImageWaiter;
 import com.botmaker.sdk.api.input.Key;
 import java.time.Duration;
+import com.botmaker.sdk.api.vision.ImageClicker;
 
 /**
  * A game bot to start from: it finds a picture on the screen, clicks it, waits, and does it again —
@@ -85,7 +85,7 @@ public final class Gamebot {
                 });
         ImageFinder.whileFindAny(ImageTemplateGroup.of(Pictures.CLAIM_OFFLINE, Pictures.CLOSE_X, Pictures.CLOSE_TOWN),
                 it -> {
-                    ImageClicker.click(com.botmaker.sdk.api.vision.Vision.lastMatch());
+                    ImageClicker.clickLast();
                 });
     }
 
