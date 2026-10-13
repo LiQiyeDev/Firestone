@@ -14,6 +14,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.List;
 import com.botmaker.sdk.api.bot.Launcher;
+import com.botmaker.sdk.api.geometry.Size;
 
 /**
  * The BotMaker SDK's values for this bot.
@@ -96,6 +97,11 @@ public final class Sdk {
     @SdkValue(SdkValue.Id.SETTINGS)
     public static BotSettings settings() {
         return BotSettings.defaults().where(BotSettings.Where.MY_DESKTOP);
+    }
+
+    @SdkValue(SdkValue.Id.SCREEN)
+    public static Size screen() {
+        return new Size(0, 0);
     }
 
     private Sdk() {}
