@@ -65,5 +65,7 @@ public final class Pictures {
             .at(new Rect(655, 1008, 108, 40));
     public static final ImageTemplate ENGINEER_TOWN = new ImageTemplate("src/main/resources/images/engineer_town.png")
             .at(new Rect(1220, 923, 135, 40));
+    public static final ImageTemplate GUILD_TOWN = new ImageTemplate("src/main/resources/images/guild_town.png")
+            .at(new Rect(1455, 234, 90, 40));
     private Pictures() {}
 }
