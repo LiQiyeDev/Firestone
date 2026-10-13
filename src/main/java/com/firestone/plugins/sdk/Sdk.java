@@ -13,6 +13,7 @@ import com.botmaker.sdk.api.flow.Run;
 import java.util.Map;
 import java.util.Set;
 import java.util.List;
+import com.botmaker.sdk.api.bot.Launcher;
 
 /**
  * The BotMaker SDK's values for this bot.
@@ -50,6 +51,10 @@ public final class Sdk {
     @SdkValue(SdkValue.Id.CAPTURE)
     @Param(category = "Game", visibility = Param.PUBLIC, description = "The game's window: where the bot reads pixels from")
     public static CaptureSource capture = CaptureSource.desktop();
+
+    @SdkValue(SdkValue.Id.LAUNCH_TARGETS)
+    @Param(category = "Game", visibility = Param.PUBLIC, description = "The launchers this bot can start its game from, preferred first")
+    public static List<Launcher> launchTargets = List.of();
 
     /**
      * The game's home and setup, which no flow owns.
