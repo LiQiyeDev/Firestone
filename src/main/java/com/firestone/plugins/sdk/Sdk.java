@@ -95,7 +95,7 @@ public final class Sdk {
      */
     @SdkValue(SdkValue.Id.SETTINGS)
     public static BotSettings settings() {
-        return BotSettings.defaults();
+        return BotSettings.defaults().where(BotSettings.Where.MY_DESKTOP);
     }
 
     private Sdk() {}
