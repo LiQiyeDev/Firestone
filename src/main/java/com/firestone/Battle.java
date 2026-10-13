@@ -2,9 +2,9 @@ package com.firestone;
 
 import com.firestone.plugins.sdk.Activities;
 import com.firestone.plugins.sdk.Pictures;
-import com.botmaker.sdk.api.time.Wait;
 import com.botmaker.sdk.api.vision.ImageClicker;
 import com.botmaker.sdk.api.vision.ImageFinder;
+import com.botmaker.sdk.api.time.Wait;
 
 /**
  * Starts a fight and waits for it to end, reporting which way it went.
@@ -20,7 +20,8 @@ import com.botmaker.sdk.api.vision.ImageFinder;
  */
 public final class Battle {
 
-    private Battle() {}
+    private Battle() {
+    }
 
     public static Activities.Battle body() {
         if (!ImageClicker.click(Pictures.BATTLE)) {
@@ -30,13 +31,10 @@ public final class Battle {
         }
 
         for (int attempt = 0; Gamebot.keepTrying(attempt); attempt++) {
-            if (ImageFinder.find(Pictures.VICTORY)) {
-                return Activities.Battle.WON;
-            }
-            if (ImageFinder.find(Pictures.DEFEAT)) {
+            Wait.seconds(3);
+            if (ImageFinder.find(Pictures.BATTLE)) {
                 return Activities.Battle.LOST;
             }
-            Wait.seconds(1);
         }
         // Neither picture ever appeared. Something is on screen that this bot does not know about, so
         // report the outcome that leads somewhere safe and let goHome sort it out.
