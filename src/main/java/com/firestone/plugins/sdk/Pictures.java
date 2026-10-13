@@ -73,5 +73,7 @@ public final class Pictures {
             .at(new Rect(820, 296, 260, 40));
     public static final ImageTemplate BATTLES_TOWN = new ImageTemplate("src/main/resources/images/battles_town.png")
             .at(new Rect(250, 284, 120, 40));
+    public static final ImageTemplate HALL_OF_HEROES_TOWN = new ImageTemplate(
+            "src/main/resources/images/hall_of_heroes_town.png").at(new Rect(828, 538, 200, 40));
     private Pictures() {}
 }
