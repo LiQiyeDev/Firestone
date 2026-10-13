@@ -105,6 +105,9 @@
     "temple_town" : {
       "tags" : [ "Town" ]
     },
+    "train_guardian" : {
+      "tags" : [ "Guardians" ]
+    },
     "upgrades" : {
       "tags" : [ "Home" ]
     }
