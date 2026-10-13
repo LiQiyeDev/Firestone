@@ -30,7 +30,7 @@ public final class Pictures {
     public static final ImageTemplate BATTLE = new ImageTemplate("src/main/resources/images/battle.png").at(new Rect(1640, 530, 140, 55));
     public static final ImageTemplate VICTORY = new ImageTemplate("src/main/resources/images/victory.png");
     public static final ImageTemplate DEFEAT = new ImageTemplate("src/main/resources/images/defeat.png");
-    public static final ImageTemplate CLOSE_X = new ImageTemplate("src/main/resources/images/home.png").at(new Rect(1808, 28, 64, 64));
+    public static final ImageTemplate CLOSE_X = new ImageTemplate("src/main/resources/images/close_x.png").at(new Rect(1808, 28, 64, 64));
     public static final ImageTemplate CLAIM_BUTTON = new ImageTemplate("src/main/resources/images/claim_button.png")
             .at(new Rect(880, 900, 170, 75));
     private Pictures() {}
