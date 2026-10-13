@@ -93,6 +93,9 @@
     "projectiles_node_library" : {
       "tags" : [ "Research" ]
     },
+    "quest_claim" : {
+      "tags" : [ "Quests" ]
+    },
     "research_claim" : {
       "tags" : [ "Research" ]
     },

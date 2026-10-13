@@ -84,5 +84,7 @@ public final class Pictures {
             "src/main/resources/images/free_slot_library.png").at(new Rect(780, 950, 520, 70));
     public static final ImageTemplate TRAIN_GUARDIAN = new ImageTemplate("src/main/resources/images/train_guardian.png")
             .at(new Rect(1022, 750, 256, 92));
+    public static final ImageTemplate QUEST_CLAIM = new ImageTemplate("src/main/resources/images/quest_claim.png")
+            .at(new Rect(1352, 268, 240, 50));
     private Pictures() {}
 }
