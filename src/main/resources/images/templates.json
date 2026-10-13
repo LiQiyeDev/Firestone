@@ -30,6 +30,9 @@
     "market" : {
       "tags" : [ "Home" ]
     },
+    "market_town" : {
+      "tags" : [ "Town" ]
+    },
     "party" : {
       "tags" : [ "Home" ]
     },
