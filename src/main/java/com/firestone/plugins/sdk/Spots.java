@@ -11,7 +11,7 @@ import com.botmaker.sdk.api.geometry.Anchor;
  */
 @SdkValue(SdkValue.Id.SPOTS)
 public final class Spots {
-    public static final Spot SETTINGS = new Spot(1847, 72).anchored(Anchor.TOP_RIGHT);
+    public static final Spot SETTINGS = new Spot(1850, 58).anchored(Anchor.TOP_RIGHT);
 
     private Spots() {
     }
