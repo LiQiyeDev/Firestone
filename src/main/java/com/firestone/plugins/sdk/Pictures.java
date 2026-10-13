@@ -42,5 +42,7 @@ public final class Pictures {
             .at(new Rect(1035, 290, 310, 50));
     public static final ImageTemplate MAP = new ImageTemplate("src/main/resources/images/map.png")
             .at(new Rect(1810, 368, 80, 44));
+    public static final ImageTemplate GUILD = new ImageTemplate("src/main/resources/images/guild.png")
+            .at(new Rect(1806, 530, 88, 44));
     private Pictures() {}
 }
