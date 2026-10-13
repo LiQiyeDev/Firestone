@@ -58,8 +58,7 @@ public final class Pictures {
     public static final ImageTemplate GUILD_TOWN = new ImageTemplate("src/main/resources/images/guild_town.png").at(new Rect(1433, 50, 142, 158));
     public static final ImageTemplate MAGIC_QUARTER_TOWN = new ImageTemplate("src/main/resources/images/magic_quarter_town.png").at(new Rect(525, 108, 175, 200));
     public static final ImageTemplate TEMPLE_TOWN = new ImageTemplate("src/main/resources/images/temple_town.png").at(new Rect(850, 110, 190, 185));
-    public static final ImageTemplate BATTLES_TOWN = new ImageTemplate("src/main/resources/images/battles_town.png")
-            .at(new Rect(250, 284, 120, 40));
+    public static final ImageTemplate BATTLES_TOWN = new ImageTemplate("src/main/resources/images/battles_town.png").at(new Rect(167, 92, 275, 185));
     public static final ImageTemplate HALL_OF_HEROES_TOWN = new ImageTemplate(
             "src/main/resources/images/hall_of_heroes_town.png").at(new Rect(828, 538, 200, 40));
     public static final ImageTemplate EXOTIC_MERCHANT_TOWN = new ImageTemplate(
