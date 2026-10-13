@@ -96,7 +96,7 @@ public final class Sdk {
      */
     @SdkValue(SdkValue.Id.SETTINGS)
     public static BotSettings settings() {
-        return BotSettings.defaults().where(BotSettings.Where.MY_DESKTOP).takesOver();
+        return BotSettings.defaults().takesOver();
     }
 
     @SdkValue(SdkValue.Id.SCREEN)
