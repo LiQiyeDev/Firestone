@@ -60,8 +60,7 @@ public final class Pictures {
     public static final ImageTemplate TEMPLE_TOWN = new ImageTemplate("src/main/resources/images/temple_town.png").at(new Rect(850, 110, 190, 185));
     public static final ImageTemplate BATTLES_TOWN = new ImageTemplate("src/main/resources/images/battles_town.png").at(new Rect(167, 92, 275, 185));
     public static final ImageTemplate HALL_OF_HEROES_TOWN = new ImageTemplate("src/main/resources/images/hall_of_heroes_town.png").at(new Rect(842, 350, 183, 180));
-    public static final ImageTemplate EXOTIC_MERCHANT_TOWN = new ImageTemplate(
-            "src/main/resources/images/exotic_merchant_town.png").at(new Rect(1393, 719, 230, 40));
+    public static final ImageTemplate EXOTIC_MERCHANT_TOWN = new ImageTemplate("src/main/resources/images/exotic_merchant_town.png").at(new Rect(1417, 558, 167, 150));
     public static final ImageTemplate PIRATE_SHIP_TOWN = new ImageTemplate(
             "src/main/resources/images/pirate_ship_town.png").at(new Rect(1685, 893, 160, 40));
     private Pictures() {}
