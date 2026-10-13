@@ -122,6 +122,9 @@
     },
     "weekly_tab_off" : {
       "tags" : [ "Quests" ]
+    },
+    "weekly_tab_on" : {
+      "tags" : [ "Quests" ]
     }
   },
   "customTags" : [ "Guardians", "Home", "Popups", "Town" ]
