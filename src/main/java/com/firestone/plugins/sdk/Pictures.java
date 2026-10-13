@@ -86,5 +86,7 @@ public final class Pictures {
             .at(new Rect(1022, 750, 256, 92));
     public static final ImageTemplate QUEST_CLAIM = new ImageTemplate("src/main/resources/images/quest_claim.png")
             .at(new Rect(1352, 268, 240, 50));
+    public static final ImageTemplate QUEST_CLAIM_OFF = new ImageTemplate(
+            "src/main/resources/images/quest_claim_off.png").at(new Rect(1352, 268, 240, 50));
     private Pictures() {}
 }

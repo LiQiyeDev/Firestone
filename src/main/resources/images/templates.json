@@ -96,6 +96,9 @@
     "quest_claim" : {
       "tags" : [ "Quests" ]
     },
+    "quest_claim_off" : {
+      "tags" : [ "Quests" ]
+    },
     "research_claim" : {
       "tags" : [ "Research" ]
     },
