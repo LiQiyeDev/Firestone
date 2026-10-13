@@ -51,6 +51,10 @@ public final class Sdk {
     @Param(category = "Game", description = "The launchers this bot can start its game from, preferred first")
     public static List<String> launchTargets = List.of("heroic:43d4ef20fcb94eb39a864d13164fe3ca");
 
+    @SdkValue(SdkValue.Id.CAPTURE)
+    @Param(category = "Game", visibility = Param.PUBLIC, description = "The game's window: where the bot reads pixels from")
+    public static CaptureSource capture = CaptureSource.desktop();
+
     /**
      * The game's home and setup, which no flow owns.
      *
@@ -77,17 +81,6 @@ public final class Sdk {
                 FlowLayout.cards(Map.ofEntries(Map.entry("Collect", FlowLayout.at(1364, 977)),
                         Map.entry("Battle", FlowLayout.at(1746, 977)), Map.entry("Rest", FlowLayout.at(990, 974)))))),
                 true);
-    }
-
-    /**
-     * Where pixels are read from.
-     *
-     * <p>Chosen with <i>🎯 Capture Source</i> on the toolbar. {@code CaptureSource.desktop()} is the whole screen;
-     * {@code CaptureSource.window("Game")} follows one window, wherever it moves.
-     */
-    @SdkValue(SdkValue.Id.CAPTURE)
-    public static CaptureSource captureSource() {
-        return CaptureSource.window("Firestone");
     }
 
     /**
