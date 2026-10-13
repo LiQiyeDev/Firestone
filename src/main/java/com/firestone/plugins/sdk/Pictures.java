@@ -68,5 +68,7 @@ public final class Pictures {
             .at(new Rect(100, 400, 97, 97));
     public static final ImageTemplate METEORITE_TAB_LIBRARY = new ImageTemplate(
             "src/main/resources/images/meteorite_tab_library.png").at(new Rect(1775, 410, 75, 75));
+    public static final ImageTemplate FIRESTONE_TAB_LIBRARY = new ImageTemplate(
+            "src/main/resources/images/firestone_tab_library.png").at(new Rect(1768, 610, 68, 62));
     private Pictures() {}
 }
