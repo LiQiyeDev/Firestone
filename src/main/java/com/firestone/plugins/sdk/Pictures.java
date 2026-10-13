@@ -77,5 +77,7 @@ public final class Pictures {
             "src/main/resources/images/hall_of_heroes_town.png").at(new Rect(828, 538, 200, 40));
     public static final ImageTemplate EXOTIC_MERCHANT_TOWN = new ImageTemplate(
             "src/main/resources/images/exotic_merchant_town.png").at(new Rect(1393, 719, 230, 40));
+    public static final ImageTemplate PIRATE_SHIP_TOWN = new ImageTemplate(
+            "src/main/resources/images/pirate_ship_town.png").at(new Rect(1685, 893, 160, 40));
     private Pictures() {}
 }
