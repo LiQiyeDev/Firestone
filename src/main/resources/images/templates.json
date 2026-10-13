@@ -1,5 +1,8 @@
 {
   "templates" : {
+    "back_town" : {
+      "tags" : [ "Town" ]
+    },
     "bag" : {
       "tags" : [ "Home" ]
     },

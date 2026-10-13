@@ -66,5 +66,7 @@ public final class Pictures {
             .at(new Rect(1225, 275, 175, 175));
     public static final ImageTemplate LEADERBOARDS_TOWN = new ImageTemplate(
             "src/main/resources/images/leaderboards_town.png").at(new Rect(1675, 117, 175, 250));
+    public static final ImageTemplate BACK_TOWN = new ImageTemplate("src/main/resources/images/back_town.png")
+            .at(new Rect(100, 400, 97, 97));
     private Pictures() {}
 }
