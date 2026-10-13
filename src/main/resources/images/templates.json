@@ -66,6 +66,9 @@
     "market_town" : {
       "tags" : [ "Town" ]
     },
+    "meteorite_tab_library" : {
+      "tags" : [ "Research" ]
+    },
     "party" : {
       "tags" : [ "Home" ]
     },

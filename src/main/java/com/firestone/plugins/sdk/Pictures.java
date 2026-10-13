@@ -66,5 +66,7 @@ public final class Pictures {
             "src/main/resources/images/leaderboards_town.png").at(new Rect(1675, 117, 175, 250));
     public static final ImageTemplate BACK_TOWN = new ImageTemplate("src/main/resources/images/back_town.png")
             .at(new Rect(100, 400, 97, 97));
+    public static final ImageTemplate METEORITE_TAB_LIBRARY = new ImageTemplate(
+            "src/main/resources/images/meteorite_tab_library.png").at(new Rect(1775, 410, 75, 75));
     private Pictures() {}
 }
