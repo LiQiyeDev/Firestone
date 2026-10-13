@@ -78,6 +78,9 @@
     "pirate_ship_town" : {
       "tags" : [ "Town" ]
     },
+    "research_start_library" : {
+      "tags" : [ "Research" ]
+    },
     "tavern_town" : {
       "tags" : [ "Town" ]
     },

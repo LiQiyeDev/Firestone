@@ -70,5 +70,7 @@ public final class Pictures {
             "src/main/resources/images/meteorite_tab_library.png").at(new Rect(1775, 410, 75, 75));
     public static final ImageTemplate FIRESTONE_TAB_LIBRARY = new ImageTemplate(
             "src/main/resources/images/firestone_tab_library.png").at(new Rect(1768, 610, 68, 62));
+    public static final ImageTemplate RESEARCH_START_LIBRARY = new ImageTemplate(
+            "src/main/resources/images/research_start_library.png").at(new Rect(640, 674, 300, 92));
     private Pictures() {}
 }
