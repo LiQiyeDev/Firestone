@@ -46,8 +46,7 @@ public final class Pictures {
     public static final ImageTemplate UPGRADES = new ImageTemplate("src/main/resources/images/upgrades.png").at(new Rect(1395, 965, 55, 45));
     public static final ImageTemplate BAG = new ImageTemplate("src/main/resources/images/bag.png").at(new Rect(1537, 952, 56, 56));
     public static final ImageTemplate FELLOWSHIP = new ImageTemplate("src/main/resources/images/fellowship.png").at(new Rect(1680, 962, 45, 46));
-    public static final ImageTemplate PARTY = new ImageTemplate("src/main/resources/images/party.png")
-            .at(new Rect(1800, 1012, 86, 38));
+    public static final ImageTemplate PARTY = new ImageTemplate("src/main/resources/images/party.png").at(new Rect(1815, 948, 48, 60));
     public static final ImageTemplate TOWN_TITLE = new ImageTemplate("src/main/resources/images/town_title.png")
             .at(new Rect(783, 3, 350, 46));
     public static final ImageTemplate CLOSE_TOWN = new ImageTemplate("src/main/resources/images/close_town.png")

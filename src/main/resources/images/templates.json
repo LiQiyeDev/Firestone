@@ -1,4 +1,41 @@
 {
-  "templates" : { },
+  "templates" : {
+    "bag" : {
+      "tags" : [ "Home" ]
+    },
+    "battle" : {
+      "tags" : [ "Home" ]
+    },
+    "claim_offline" : {
+      "tags" : [ "Popups" ]
+    },
+    "close_x" : {
+      "tags" : [ "Popups" ]
+    },
+    "exit_home" : {
+      "tags" : [ "Home", "Popups" ]
+    },
+    "fellowship" : {
+      "tags" : [ "Home" ]
+    },
+    "guild" : {
+      "tags" : [ "Home" ]
+    },
+    "home" : {
+      "tags" : [ "Home" ]
+    },
+    "map" : {
+      "tags" : [ "Home" ]
+    },
+    "market" : {
+      "tags" : [ "Home" ]
+    },
+    "party" : {
+      "tags" : [ "Home" ]
+    },
+    "upgrades" : {
+      "tags" : [ "Home" ]
+    }
+  },
   "customTags" : [ "Home", "Popups", "Town" ]
 }
