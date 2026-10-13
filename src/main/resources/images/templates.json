@@ -30,6 +30,9 @@
     "daily_tab_off" : {
       "tags" : [ "Quests" ]
     },
+    "daily_tab_on" : {
+      "tags" : [ "Quests" ]
+    },
     "engineer_town" : {
       "tags" : [ "Town" ]
     },
