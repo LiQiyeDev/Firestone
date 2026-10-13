@@ -15,6 +15,7 @@ public final class Spots {
     public static final Spot GRAPHICS_TAB = new Spot(1092, 50);
     public static final Spot GAMEPLAY_TAB = new Spot(825, 50);
     public static final Spot QUESTS_DAILY_TAB = new Spot(750, 130);
+    public static final Spot QUESTS_WEEKLY_TAB = new Spot(1170, 130);
 
     private Spots() {
     }
