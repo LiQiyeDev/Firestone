@@ -94,5 +94,7 @@ public final class Pictures {
             .at(new Rect(980, 100, 240, 58));
     public static final ImageTemplate WEEKLY_TAB_ON = new ImageTemplate("src/main/resources/images/weekly_tab_on.png")
             .at(new Rect(980, 100, 240, 58));
+    public static final ImageTemplate DAILY_TAB_OFF = new ImageTemplate("src/main/resources/images/daily_tab_off.png")
+            .at(new Rect(560, 100, 220, 58));
     private Pictures() {}
 }
