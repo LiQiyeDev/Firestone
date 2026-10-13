@@ -57,5 +57,7 @@ public final class Pictures {
             .at(new Rect(783, 3, 350, 46));
     public static final ImageTemplate CLOSE_TOWN = new ImageTemplate("src/main/resources/images/close_town.png")
             .at(new Rect(1805, 25, 70, 70));
+    public static final ImageTemplate LIBRARY_TOWN = new ImageTemplate("src/main/resources/images/library_town.png")
+            .at(new Rect(215, 719, 115, 40));
     private Pictures() {}
 }
