@@ -59,5 +59,7 @@ public final class Pictures {
             .at(new Rect(1805, 25, 70, 70));
     public static final ImageTemplate LIBRARY_TOWN = new ImageTemplate("src/main/resources/images/library_town.png")
             .at(new Rect(215, 719, 115, 40));
+    public static final ImageTemplate ALCHEMIST_TOWN = new ImageTemplate("src/main/resources/images/alchemist_town.png")
+            .at(new Rect(383, 899, 145, 40));
     private Pictures() {}
 }
