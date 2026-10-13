@@ -5,6 +5,8 @@ import com.firestone.plugins.sdk.Pictures;
 import com.botmaker.sdk.api.vision.ImageClicker;
 import com.botmaker.sdk.api.vision.ImageFinder;
 import com.botmaker.sdk.api.time.Wait;
+import com.botmaker.sdk.api.vision.ImageWaiter;
+import java.time.Duration;
 
 /**
  * Starts a fight and waits for it to end, reporting which way it went.
@@ -29,6 +31,7 @@ public final class Battle {
             // needing a third outcome for "could not even start".
             return Activities.Battle.LOST;
         }
+        ImageWaiter.waitUntilGone(Pictures.BATTLE, Duration.ofMillis(15000L));
 
         for (int attempt = 0; Gamebot.keepTrying(attempt); attempt++) {
             Wait.seconds(3);
