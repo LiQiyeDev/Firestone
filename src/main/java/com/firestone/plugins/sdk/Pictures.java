@@ -180,5 +180,7 @@ public final class Pictures {
             "src/main/resources/images/chests_tab_market.png").at(new Rect(765, 55, 122, 78));
     public static final ImageTemplate BAG_TAB_MARKET = new ImageTemplate("src/main/resources/images/bag_tab_market.png")
             .at(new Rect(918, 52, 108, 84));
+    public static final ImageTemplate HERO_TAB_MARKET = new ImageTemplate(
+            "src/main/resources/images/hero_tab_market.png").at(new Rect(1212, 48, 112, 90));
     private Pictures() {}
 }
