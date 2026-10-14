@@ -279,7 +279,7 @@ public final class Pictures {
             .at(new Rect(94, 32, 156, 40));
     public static final ImageTemplate GARAGE_TITLE = new ImageTemplate("src/main/resources/images/garage_title.png")
             .at(new Rect(890, 4, 140, 46));
-    public static final ImageTemplate CAMPAIGN_TITLE = new ImageTemplate("src/main/resources/images/campaign_title.png").at(new Rect(128, 30, 255, 42));
+    public static final ImageTemplate CAMPAIGN_TITLE = new ImageTemplate("src/main/resources/images/campaign_title.png").at(new Rect(128, 48, 255, 40));
     public static final ImageTemplate CAMPAIGN_LEADERBOARDS = new ImageTemplate(
             "src/main/resources/images/campaign_leaderboards.png").at(new Rect(790, 985, 340, 62));
     public static final ImageTemplate CAMPAIGN_CLAIM = new ImageTemplate("src/main/resources/images/campaign_claim.png")
