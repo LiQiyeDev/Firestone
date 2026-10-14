@@ -196,5 +196,7 @@ public final class Pictures {
             .at(new Rect(510, 82, 210, 170));
     public static final ImageTemplate EXPEDITIONS_GUILD = new ImageTemplate(
             "src/main/resources/images/expeditions_guild.png").at(new Rect(165, 240, 190, 150));
+    public static final ImageTemplate HALL_GUILD = new ImageTemplate("src/main/resources/images/hall_guild.png")
+            .at(new Rect(890, 315, 300, 190));
     private Pictures() {}
 }
