@@ -202,5 +202,7 @@ public final class Pictures {
             .at(new Rect(165, 565, 230, 230));
     public static final ImageTemplate TREE_OF_LIFE_GUILD = new ImageTemplate(
             "src/main/resources/images/tree_of_life_guild.png").at(new Rect(1480, 180, 260, 150));
+    public static final ImageTemplate CHAOS_RIFT_GUILD = new ImageTemplate(
+            "src/main/resources/images/chaos_rift_guild.png").at(new Rect(1300, 420, 230, 280));
     private Pictures() {}
 }

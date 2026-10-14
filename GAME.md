@@ -126,4 +126,4 @@ A full screen, seven tabs along the top; it opens on the first (Extreme Value Bu
 
 Entrance: home › click guild
 Marker: title_guild
-Untried: market_guild, expeditions_guild, hall_guild, bank_guild, tree_of_life_guild
+Untried: market_guild, expeditions_guild, hall_guild, bank_guild, tree_of_life_guild, chaos_rift_guild
