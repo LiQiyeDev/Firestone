@@ -156,5 +156,7 @@ public final class Pictures {
             "src/main/resources/images/battle_pass_home.png").at(new Rect(370, 940, 75, 70));
     public static final ImageTemplate EVENTS_HOME = new ImageTemplate("src/main/resources/images/events_home.png")
             .at(new Rect(518, 955, 60, 55));
+    public static final ImageTemplate HEROES_DAMAGE_UPGRADES = new ImageTemplate(
+            "src/main/resources/images/heroes_damage_upgrades.png").at(new Rect(1345, 155, 85, 75));
     private Pictures() {}
 }
