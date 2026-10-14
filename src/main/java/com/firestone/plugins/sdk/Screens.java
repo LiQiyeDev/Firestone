@@ -6,6 +6,7 @@ import com.botmaker.sdk.api.vision.ImageTemplate;
 import com.botmaker.sdk.api.geometry.Rect;
 import com.botmaker.sdk.api.screens.Input;
 import java.util.List;
+import com.botmaker.sdk.api.screens.Did;
 
 /**
  * Values com.botmaker.sdk keeps in step with its own windows.
@@ -27,9 +28,9 @@ public final class Screens {
             Input.click(Pictures.FELLOWSHIP), Input.click(Pictures.PARTY), Input.click(Pictures.CARD_HOME).sometimes(),
             Input.click(Pictures.PARCHMENT_HOME).sometimes(), Input.click(Pictures.POTION_HOME).sometimes(),
             Input.click(Pictures.SCROLL_BOOT_HOME).sometimes(), Input.click(Pictures.LIBRARY_HOME).sometimes(),
-            Input.click(Pictures.GUARDIANS_HOME).sometimes(), Input.click(Pictures.AUTO_ABILITIES_HOME),
-            Input.click(Pictures.AVATAR_HOME), Input.click(Pictures.PREV_STAGE_HOME),
-            Input.click(Pictures.SETTINGS_HOME)));
+            Input.click(Pictures.GUARDIANS_HOME).sometimes(),
+            Input.click(Pictures.AUTO_ABILITIES_HOME).did(Did.IN_PLACE), Input.click(Pictures.AVATAR_HOME),
+            Input.click(Pictures.PREV_STAGE_HOME), Input.click(Pictures.SETTINGS_HOME)));
 
     private Screens() {
     }
