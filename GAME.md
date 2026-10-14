@@ -81,7 +81,7 @@ Not screens: the chest top right is a paid offer (Sale): never. The pink dragon 
 - Market: Market button (market). A free mystery box every day.
 - Boss: the Boss button (battle).
 - Upgrades: home › click upgrades. bottom bar (upgrades).
-- Bag: bottom bar (bag).
+- Bag: home › click bag. bottom bar (bag).
 - Fellowship: bottom bar (fellowship); the click opened nothing.
 - Party: bottom bar (party).
 - Battle pass: bottom left (battle_pass_home).
@@ -93,4 +93,14 @@ Not screens: the chest top right is a paid offer (Sale): never. The pink dragon 
 
 Entrance: home › click upgrades
 Marker: heroes_damage_upgrades
-Cut: upgrade_upgrades
+Cut: upgrade_upgrades, upgrade_x1_upgrades
+A right-hand panel over the fight; Escape closes it. Gold buys each row: Heroes' damage +50%, then one row per hero.
+- Upgrade: x1 (upgrade_upgrades, price ignored): chore, one per row.
+- Upgrade x1 (upgrade_x1_upgrades): shortcut, the amount per click; its other states (x10, max?) still to see.
+- Detailed view: info.
+Owed: the Upgrade x1 toggle's other states, by clicking it
+
+## Bag
+
+Entrance: home › click bag
+Owed: marker
