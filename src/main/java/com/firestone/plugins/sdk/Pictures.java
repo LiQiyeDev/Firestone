@@ -389,5 +389,7 @@ public final class Pictures {
             "src/main/resources/images/artifacts_title.png").at(new Rect(250, 95, 490, 60));
     public static final ImageTemplate UPGRADE_ARTIFACTS = new ImageTemplate(
             "src/main/resources/images/upgrade_artifacts.png").at(new Rect(1015, 965, 300, 95));
+    public static final ImageTemplate RARITY_ARTIFACTS = new ImageTemplate(
+            "src/main/resources/images/rarity_artifacts.png").at(new Rect(1360, 965, 300, 95));
     private Pictures() {}
 }
