@@ -363,5 +363,7 @@ public final class Pictures {
             "src/main/resources/images/info_luck_tavern.png").at(new Rect(358, 8, 52, 52));
     public static final ImageTemplate ARTIFACTS_TAVERN = new ImageTemplate(
             "src/main/resources/images/artifacts_tavern.png").at(new Rect(1752, 272, 116, 116));
+    public static final ImageTemplate SACRED_CARDS_TAVERN = new ImageTemplate(
+            "src/main/resources/images/sacred_cards_tavern.png").at(new Rect(1752, 460, 116, 108));
     private Pictures() {}
 }
