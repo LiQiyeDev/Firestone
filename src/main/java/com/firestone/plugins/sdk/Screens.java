@@ -37,7 +37,7 @@ public final class Screens {
                     .activities(List.of(Activities.Tavern.class)))
             .from(Way.of(Screens.HOME, Input.click(Pictures.TAVERN_HOME))).back(Input.click(Pictures.CLOSE_TOWN))
             .inputs(List.of(Input.click(Pictures.INFO_LUCK_TAVERN), Input.click(Pictures.ARTIFACTS_TAVERN),
-                    Input.click(Pictures.SACRED_CARDS_TAVERN), Input.click(Pictures.SPEED_TAVERN),
+                    Input.click(Pictures.SACRED_CARDS_TAVERN), Input.click(Pictures.SPEED_TAVERN).did(Did.IN_PLACE),
                     Input.click(Pictures.BAG_TAVERN), Input.click(Pictures.CHAT_TAVERN),
                     Input.click(Pictures.WHEEL_TAVERN), Input.click(Pictures.DECK_TAVERN),
                     Input.click(new ImageTemplate("src/main/resources/images/play_tavern.png")
