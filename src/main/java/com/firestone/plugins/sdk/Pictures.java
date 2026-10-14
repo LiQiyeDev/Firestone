@@ -283,5 +283,7 @@ public final class Pictures {
             .at(new Rect(128, 30, 280, 42));
     public static final ImageTemplate CAMPAIGN_LEADERBOARDS = new ImageTemplate(
             "src/main/resources/images/campaign_leaderboards.png").at(new Rect(790, 985, 340, 62));
+    public static final ImageTemplate CAMPAIGN_CLAIM = new ImageTemplate("src/main/resources/images/campaign_claim.png")
+            .at(new Rect(98, 985, 110, 45));
     private Pictures() {}
 }

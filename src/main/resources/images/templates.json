@@ -54,6 +54,9 @@
     "calendar_tab_market" : {
       "tags" : [ "Market" ]
     },
+    "campaign_claim" : {
+      "tags" : [ "Campaign" ]
+    },
     "campaign_home" : {
       "tags" : [ "Home" ]
     },
