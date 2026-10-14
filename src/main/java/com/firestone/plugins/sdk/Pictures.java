@@ -224,5 +224,7 @@ public final class Pictures {
             .at(new Rect(1476, 16, 40, 40));
     public static final ImageTemplate GEMS_PLUS_MAP = new ImageTemplate("src/main/resources/images/gems_plus_map.png")
             .at(new Rect(1700, 16, 40, 40));
+    public static final ImageTemplate ZOOM_IN_MAP = new ImageTemplate("src/main/resources/images/zoom_in_map.png")
+            .at(new Rect(1594, 1022, 32, 32));
     private Pictures() {}
 }
