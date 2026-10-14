@@ -57,6 +57,9 @@
     "campaign_claim" : {
       "tags" : [ "Campaign" ]
     },
+    "campaign_daily_missions" : {
+      "tags" : [ "Campaign" ]
+    },
     "campaign_home" : {
       "tags" : [ "Home" ]
     },
@@ -415,5 +418,5 @@
       "tags" : [ "Map missions" ]
     }
   },
-  "customTags" : [ "Bag", "Battle pass", "Boss", "Campaign", "Engineer", "Events", "Fellowship", "Garage", "Guardians", "Guild", "Home", "Map missions", "Market", "Party", "Popups", "Town", "Upgrades" ]
+  "customTags" : [ "Bag", "Battle pass", "Boss", "Campaign", "Engineer", "Events", "Fellowship", "Garage", "Guardians", "Guild", "Home", "Mail", "Map missions", "Market", "Party", "Popups", "Town", "Upgrades" ]
 }

@@ -284,5 +284,7 @@ public final class Pictures {
             "src/main/resources/images/campaign_leaderboards.png").at(new Rect(790, 985, 340, 62));
     public static final ImageTemplate CAMPAIGN_CLAIM = new ImageTemplate("src/main/resources/images/campaign_claim.png")
             .at(new Rect(98, 985, 110, 45));
+    public static final ImageTemplate CAMPAIGN_DAILY_MISSIONS = new ImageTemplate(
+            "src/main/resources/images/campaign_daily_missions.png").at(new Rect(1665, 995, 230, 45));
     private Pictures() {}
 }
