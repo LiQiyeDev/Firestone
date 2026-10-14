@@ -32,8 +32,6 @@ public final class Screens {
             Input.click(Pictures.GUARDIANS_HOME).sometimes(),
             Input.click(Pictures.AUTO_ABILITIES_HOME).did(Did.IN_PLACE), Input.click(Pictures.AVATAR_HOME),
             Input.click(Pictures.PREV_STAGE_HOME), Input.click(Pictures.SETTINGS_HOME)));
-    public static final GameScreen PREV_STAGE = GameScreen.named("Prev stage");
-
     private Screens() {
     }
 }
