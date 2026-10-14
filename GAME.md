@@ -68,12 +68,13 @@ Marker: tavern_luck_title
 
 Home is the fight screen. Each line: a screen, then how to get there from home. (picture) = the entrance's picture; none yet = still to cut.
 
-Not screens: the chest top right is a paid offer (Sale): never. The pink dragon carrying a mug walks the fight screen: click it for beer (Tavern). The left column scrolls (wheel over it) and its icons come and go with their badges: find them by picture, never by place; scroll it up first. Escape on Home opens an exit dialog: never.
+Not screens: the chest top right is a paid offer (Sale): never. The pink dragon carrying a mug walks the fight screen: click it for beer (Tavern). The left column scrolls (wheel over it; scroll it to its end to see every icon) and its icons come and go with their badges: find them by picture, never by place. Escape on Home opens an exit dialog: never.
 
 - Quests: Q (hotkey).
-- Map missions: M (hotkey) or the Map button (map).
+- Map missions: M (hotkey), the Map button (map), or the left column's boot and scroll (scroll_boot_home).
 - Town: home › click home. T (hotkey) or the Town button (home); its buildings are entrances below.
-- Research: Home › click parchment_home (left column, parchment with a green meteorite), which opens the Meteorite tab; or Town › Library (library_town).
+- Research: Home › click parchment_home (Meteorite tab) or card_home (Firestone tab), both in the left column; or Town › Library (library_town).
+- Alchemist: Home › click potion_home (left column, green potion). Experiments: Claim, then start one.
 - Tavern: Home › click tavern_home (left column, beer mug, while it has a badge); or Town › Tavern (tavern_town) › Tavern card (tavern_choice_town).
 - Engineer: Home › click engineer_home. left column, miner helmet (engineer_home). Tools production Claim.
 - Garage: Home › click war_machines_home. left column, gear and hammer (war_machines_home). War machines: tabs, Show all, Engineer arrow.
@@ -92,8 +93,6 @@ Not screens: the chest top right is a paid offer (Sale): never. The pink dragon 
 - Events: home › click events_home. bottom left (events_home).
 - Hero profile: avatar top left (none yet).
 - Settings: Home › key S. gear top right.
-- Card: Home › click card_home
-- Potion: Home › click potion_home
 
 ## Upgrades
 
@@ -115,7 +114,7 @@ Owed: each chest's picture, to try how one opens
 
 The fight screen; the Map lists where each input leads. Hotkeys: Q quests, M map, T town, S settings. Escape on Home asks "Do you want to exit the game?" (Save and Exit): never press Escape on Home.
 Marker: home
-The left column changes: its icons come and go with their badges and it scrolls (wheel over it); find them by picture, never by place.
+The left column changes: its icons come and go with their badges and it scrolls (wheel over it, -10 reaches its end); find them by picture, never by place. Top to bottom on 2026-10-14: tavern (badge), arena, engineer, campaign, war machines, guardians, card (Research Firestone), potion (Alchemist), parchment or boot (Research Meteorite / Map missions), mail fixed below.
 - tried upgrades: opens Upgrades
 - tried bag: opens Bag
 - tried market: opens Market
@@ -136,9 +135,10 @@ The left column changes: its icons come and go with their badges and it scrolls 
 - tried key S: opens Settings
 - tried guardians_home: opens Guardians
 - tried parchment_home: opens Research, on the Meteorite tab. library_home is the same icon cut with its glow: it scored 0.36 while a research was ready and 0.80+ after; parchment_home is the inner part and matches both.
-Untried: scroll_boot_home
-- tried card_home: opens Card
-- tried potion_home: opens Potion
+- tried card_home: opens Research, on the Firestone tab (the card shimmers: only its left edge is cut)
+- tried potion_home: opens Alchemist
+- tried scroll_boot_home: opens Map missions
+Shape: menu
 
 ## Market
 
@@ -252,4 +252,4 @@ Entrance: Home › click potion_home (left column, green potion; scroll the colu
 Marker: alchemist_title
 Experiments tab: three experiments (a Firestone research boost, Strange dust, Exotic coin), each 2:30:10. A finished one shows Completed + Claim. Starting one costs: Strange dust 40, or 1250 exotic coins. Second tab (cauldron): not yet seen.
 Gems "+" top right: never.
-Untried: alchemist_claim, alchemist_dust_start
+Untried: alchemist_claim, alchemist_dust_start, alchemist_cauldron_tab

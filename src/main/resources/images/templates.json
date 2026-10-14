@@ -3,6 +3,9 @@
     "ability_party" : {
       "tags" : [ "Party" ]
     },
+    "alchemist_cauldron_tab" : {
+      "tags" : [ "Alchemist" ]
+    },
     "alchemist_claim" : {
       "tags" : [ "Alchemist" ]
     },
@@ -481,5 +484,5 @@
       "tags" : [ "Map missions" ]
     }
   },
-  "customTags" : [ "Alchemist", "Arena of Kings", "Bag", "Battle pass", "Boss", "Campaign", "Card", "Engineer", "Events", "Fellowship", "Garage", "Guardians", "Guild", "Home", "Mail", "Map missions", "Market", "Parchment", "Party", "Popups", "Potion", "Settings", "Town", "Upgrades" ]
+  "customTags" : [ "Alchemist", "Arena of Kings", "Bag", "Battle pass", "Boss", "Campaign", "Card", "Engineer", "Events", "Fellowship", "Garage", "Guardians", "Guild", "Home", "Mail", "Map missions", "Market", "Parchment", "Party", "Popups", "Potion", "Scroll boot", "Settings", "Town", "Upgrades" ]
 }
