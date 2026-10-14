@@ -377,5 +377,7 @@ public final class Pictures {
             .at(new Rect(800, 300, 284, 404));
     public static final ImageTemplate TOTAL_BONUSES_INFO_LUCK = new ImageTemplate(
             "src/main/resources/images/total_bonuses_info_luck.png").at(new Rect(825, 220, 275, 42));
+    public static final ImageTemplate CLOSE_INFO_LUCK = new ImageTemplate(
+            "src/main/resources/images/close_info_luck.png").at(new Rect(1205, 112, 58, 58));
     private Pictures() {}
 }
