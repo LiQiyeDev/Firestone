@@ -18,8 +18,7 @@ public final class Screens {
             .back(Input.click(new ImageTemplate("src/main/resources/images/claim_offline.png")
                     .at(new Rect(895, 905, 130, 50)).tags(List.of(Tags.POPUPS))))
             .popup();
-    public static final GameScreen HOME = GameScreen.named("Home")
-            .marker(new ImageTemplate("src/main/resources/images/home.png").at(new Rect(1846, 196, 30, 34)));
+    public static final GameScreen HOME = GameScreen.named("Home").marker(Pictures.HOME).inputs(List.of(Input.click(Pictures.TAVERN_HOME)));
 
     private Screens() {
     }
