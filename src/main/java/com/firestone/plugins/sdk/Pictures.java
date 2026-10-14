@@ -176,5 +176,7 @@ public final class Pictures {
             "src/main/resources/images/bundles_tab_market.png").at(new Rect(458, 70, 112, 68));
     public static final ImageTemplate GEMS_TAB_MARKET = new ImageTemplate(
             "src/main/resources/images/gems_tab_market.png").at(new Rect(612, 58, 132, 72));
+    public static final ImageTemplate CHESTS_TAB_MARKET = new ImageTemplate(
+            "src/main/resources/images/chests_tab_market.png").at(new Rect(765, 55, 122, 78));
     private Pictures() {}
 }
