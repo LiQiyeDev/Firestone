@@ -173,4 +173,4 @@ Untried: info_map, heroes_tab_party, guardians_tab_party, hero_card_party, order
 ## Battle pass
 
 Entrance: home › click battle_pass_home
-Owed: marker
+Marker: milestone_battle_pass
