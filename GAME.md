@@ -164,3 +164,4 @@ Untried: recommended_fellowship, search_fellowship, create_fellowship, close_x
 
 Entrance: home › click party
 Marker: deployed_party
+Untried: close_party

@@ -246,5 +246,7 @@ public final class Pictures {
             "src/main/resources/images/create_fellowship.png").at(new Rect(1380, 865, 210, 90));
     public static final ImageTemplate DEPLOYED_PARTY = new ImageTemplate("src/main/resources/images/deployed_party.png")
             .at(new Rect(843, 42, 165, 48));
+    public static final ImageTemplate CLOSE_PARTY = new ImageTemplate("src/main/resources/images/close_party.png")
+            .at(new Rect(1812, 17, 56, 54));
     private Pictures() {}
 }
