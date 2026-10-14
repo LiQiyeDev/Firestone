@@ -77,7 +77,7 @@ Not screens: the chest top right is a paid offer (Sale): never. The pink dragon 
 - Campaign: left column, banner (campaign_home). Loot Claim.
 - Arena of Kings: left column, crossed swords with a count badge, only while it has fights (none yet); also Town › Battles (battles_town), to check.
 - Mail: left column, envelope (mail_home). Chat under it: never.
-- Guild: Guild button (guild). Its buildings are entrances; most are locked on this account.
+- Guild: home › click guild. Guild button (guild). Its buildings are entrances; most are locked on this account.
 - Market: home › click market. Market button (market). A free mystery box every day.
 - Boss: the Boss button (battle).
 - Upgrades: home › click upgrades. bottom bar (upgrades).
@@ -109,13 +109,20 @@ Owed: each chest's picture, to try how one opens
 
 The fight screen; the Map lists where each input leads. Hotkeys: Q quests, M map, T town, S settings.
 Marker: home
-Untried: home, guild, map, battle, fellowship, party, battle_pass_home, events_home, engineer_home, war_machines_home, guardians_home, campaign_home, library_home, mail_home
+Untried: home, map, battle, fellowship, party, battle_pass_home, events_home, engineer_home, war_machines_home, guardians_home, campaign_home, library_home, mail_home
 - tried upgrades: opens Upgrades
 - tried bag: opens Bag
 - tried market: opens Market
+- tried guild: opens Guild
 
 ## Market
 
 Entrance: home › click market
 Marker: heart_tab_market
-Untried: bundles_tab_market, gems_tab_market, chests_tab_market, bag_tab_market, hero_tab_market, calendar_tab_market, free_market
+Untried: bundles_tab_market, gems_tab_market, chests_tab_market, bag_tab_market, heart_tab_market, hero_tab_market, calendar_tab_market, free_market, price_market
+A full screen, seven tabs along the top; it opens on the first (Extreme Value Bundle). A free mystery box every day (Free); bundles cost real money (price_market: never). Red bells mark tabs with something new. Close: the X top right, or Escape.
+
+## Guild
+
+Entrance: home › click guild
+Owed: marker

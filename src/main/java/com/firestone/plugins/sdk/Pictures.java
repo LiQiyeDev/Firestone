@@ -186,5 +186,7 @@ public final class Pictures {
             "src/main/resources/images/calendar_tab_market.png").at(new Rect(1355, 68, 100, 70));
     public static final ImageTemplate FREE_MARKET = new ImageTemplate("src/main/resources/images/free_market.png")
             .at(new Rect(520, 875, 270, 60));
+    public static final ImageTemplate PRICE_MARKET = new ImageTemplate("src/main/resources/images/price_market.png")
+            .at(new Rect(1245, 872, 270, 62));
     private Pictures() {}
 }
