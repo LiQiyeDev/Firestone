@@ -103,4 +103,4 @@ Owed: the Upgrade x1 toggle's other states, by clicking it
 ## Bag
 
 Entrance: home › click bag
-Owed: marker
+Marker: gear_tab_bag
