@@ -194,5 +194,7 @@ public final class Pictures {
             .at(new Rect(568, 264, 72, 76));
     public static final ImageTemplate MARKET_GUILD = new ImageTemplate("src/main/resources/images/market_guild.png")
             .at(new Rect(510, 82, 210, 170));
+    public static final ImageTemplate EXPEDITIONS_GUILD = new ImageTemplate(
+            "src/main/resources/images/expeditions_guild.png").at(new Rect(165, 240, 190, 150));
     private Pictures() {}
 }
