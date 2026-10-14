@@ -41,3 +41,13 @@ reads this at connect.
 - A pin opens a dialog: Start mission (start_mission_map), or "You do not have enough squads." (no_squads_map) when all squads are out. The dialog covers the pins.
 - Squads counter top centre (4/4 = all idle). New missions every few hours ("New missions in").
 - Escape closes the pin dialog.
+
+## Tavern
+
+- Town › Tavern opens a chooser: Tavern or Scarab's game (tavern_choice_town = the Tavern card).
+- Town's buildings carry a red bell badge (badge_town) when something is ready; badges nest (Tavern → Market). The fight screen shows the same badge on its side buttons.
+- Tavern screen: Play 1 (play_tavern) costs 1 game token; a play deals 6 face-down cards (card_tavern), clicking one reveals all six; Play comes back after ~1 s. Tokens counter top right.
+- Market (market_tavern, right column) opens "Tavern's market" (market_title_tavern): 5 tokens for 1500 beer (green button, beer_buy_tavern), the other two cost gems — never click them. Out of beer the button greys (beer_buy_off_tavern).
+- Escape closes the market; Escape from the Tavern goes straight back to Town.
+- Gamer daily quest = 10 tavern plays.
+- Tavern::body: untilFind per screen, whileFindCompare(beer buy, its grey twin) click, whileFind(market title) Escape, whileFindCompare(Play, grey Play) { click, waitFor card, whileFindAny(card) click, waitFor Play }.
