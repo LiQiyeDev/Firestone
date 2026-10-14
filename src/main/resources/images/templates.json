@@ -51,6 +51,9 @@
     "engineer_town" : {
       "tags" : [ "Town" ]
     },
+    "events_home" : {
+      "tags" : [ "Home" ]
+    },
     "exit_home" : {
       "tags" : [ "Home", "Popups" ]
     },

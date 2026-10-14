@@ -64,6 +64,8 @@ reads this at connect.
 
 Home is the fight screen. Each line: a screen, then how to get there from home. (picture) = the entrance's picture; none yet = still to cut.
 
+Not screens: the chest top right is a paid offer (Sale): never. The pink dragon carrying a mug walks the fight screen: click it for beer (Tavern). The left column scrolls (wheel over it) and its icons come and go with their badges: find them by picture, never by place; scroll it up first.
+
 - Quests: Q (hotkey).
 - Map missions: M (hotkey) or the Map button (map).
 - Town: T (hotkey) or the Town button (home); its buildings are entrances below.
@@ -78,7 +80,16 @@ Home is the fight screen. Each line: a screen, then how to get there from home. 
 - Guild: Guild button (guild). Its buildings are entrances; most are locked on this account.
 - Market: Market button (market). A free mystery box every day.
 - Boss: the Boss button (battle).
-- Upgrades, Bag, Fellowship, Party: bottom bar (upgrades, bag, fellowship, party). Battle pass, Events: bottom left (none yet).
-- Hero profile: avatar top left (none yet). Settings: gear top right, S (hotkey).
-- Not a screen: the chest top right is a paid offer (Sale): never. The pink dragon carrying a mug walks the fight screen: click it for beer (Tavern).
-- The left column scrolls (wheel over it) and its icons come and go with their badges: find them by picture, never by place; scroll it up first.
+- Upgrades: home › click upgrades. bottom bar (upgrades).
+- Bag: bottom bar (bag).
+- Fellowship: bottom bar (fellowship); the click opened nothing.
+- Party: bottom bar (party).
+- Battle pass: bottom left (battle_pass_home).
+- Events: bottom left (events_home).
+- Hero profile: avatar top left (none yet).
+- Settings: gear top right, S (hotkey).
+
+## Upgrades
+
+Entrance: home › click upgrades
+Owed: marker

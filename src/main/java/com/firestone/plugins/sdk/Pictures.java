@@ -154,5 +154,7 @@ public final class Pictures {
             .at(new Rect(160, 430, 95, 85));
     public static final ImageTemplate BATTLE_PASS_HOME = new ImageTemplate(
             "src/main/resources/images/battle_pass_home.png").at(new Rect(370, 940, 75, 70));
+    public static final ImageTemplate EVENTS_HOME = new ImageTemplate("src/main/resources/images/events_home.png")
+            .at(new Rect(518, 955, 60, 55));
     private Pictures() {}
 }
