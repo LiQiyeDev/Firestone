@@ -37,6 +37,10 @@ public final class Activities {
         NEXT
     }
 
+    public enum Tavern implements Outcome {
+        NEXT
+    }
+
     private Activities() {
     }
 }
