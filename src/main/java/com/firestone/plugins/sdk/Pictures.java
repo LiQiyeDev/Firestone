@@ -371,5 +371,7 @@ public final class Pictures {
             .at(new Rect(628, 950, 104, 106));
     public static final ImageTemplate CHAT_TAVERN = new ImageTemplate("src/main/resources/images/chat_tavern.png")
             .at(new Rect(462, 988, 76, 64));
+    public static final ImageTemplate WHEEL_TAVERN = new ImageTemplate("src/main/resources/images/wheel_tavern.png")
+            .at(new Rect(190, 610, 100, 90));
     private Pictures() {}
 }
