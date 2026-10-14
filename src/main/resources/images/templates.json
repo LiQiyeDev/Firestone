@@ -57,6 +57,9 @@
     "campaign_home" : {
       "tags" : [ "Home" ]
     },
+    "campaign_leaderboards" : {
+      "tags" : [ "Campaign" ]
+    },
     "campaign_map" : {
       "tags" : [ "Map missions" ]
     },
