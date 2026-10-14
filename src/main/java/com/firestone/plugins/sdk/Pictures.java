@@ -210,5 +210,7 @@ public final class Pictures {
             "src/main/resources/images/awakening_guild.png").at(new Rect(1085, 690, 230, 230));
     public static final ImageTemplate LEVEL_50_GUILD = new ImageTemplate("src/main/resources/images/level_50_guild.png")
             .at(new Rect(1585, 725, 170, 170));
+    public static final ImageTemplate FIND_GUILD = new ImageTemplate("src/main/resources/images/find_guild.png")
+            .at(new Rect(836, 990, 254, 72));
     private Pictures() {}
 }

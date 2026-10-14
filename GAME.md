@@ -109,11 +109,12 @@ Owed: each chest's picture, to try how one opens
 
 The fight screen; the Map lists where each input leads. Hotkeys: Q quests, M map, T town, S settings.
 Marker: home
-Untried: home, map, battle, fellowship, party, battle_pass_home, events_home, engineer_home, war_machines_home, guardians_home, campaign_home, library_home, mail_home
+Untried: home, battle, fellowship, party, battle_pass_home, events_home, engineer_home, war_machines_home, guardians_home, campaign_home, library_home, mail_home
 - tried upgrades: opens Upgrades
 - tried bag: opens Bag
 - tried market: opens Market
 - tried guild: opens Guild
+- tried map: opens Map missions
 
 ## Market
 
@@ -126,4 +127,5 @@ A full screen, seven tabs along the top; it opens on the first (Extreme Value Bu
 
 Entrance: home › click guild
 Marker: title_guild
-Untried: market_guild, expeditions_guild, hall_guild, bank_guild, tree_of_life_guild, chaos_rift_guild, forbidden_knowledge_guild, awakening_guild, level_50_guild
+Untried: market_guild, expeditions_guild, hall_guild, bank_guild, tree_of_life_guild, chaos_rift_guild, forbidden_knowledge_guild, awakening_guild, level_50_guild, find_guild
+A full-screen island of buildings. No guild joined yet: Find guild at the bottom. Locked on this account, a padlock on each (lock_guild): Guild market, Expeditions, Guild hall, Bank, Level 50. Open: Tree of life, Chaos rift (a red bell), Forbidden knowledge, Awakening. Close: the X top right, or Escape.
