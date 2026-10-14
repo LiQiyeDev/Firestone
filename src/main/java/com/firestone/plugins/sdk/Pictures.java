@@ -252,5 +252,7 @@ public final class Pictures {
             "src/main/resources/images/choose_leader_party.png").at(new Rect(1618, 372, 232, 62));
     public static final ImageTemplate AUTO_ABILITIES_PARTY = new ImageTemplate(
             "src/main/resources/images/auto_abilities_party.png").at(new Rect(1788, 895, 104, 42));
+    public static final ImageTemplate ABILITY_PARTY = new ImageTemplate("src/main/resources/images/ability_party.png")
+            .at(new Rect(1572, 780, 84, 82));
     private Pictures() {}
 }
