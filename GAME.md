@@ -252,4 +252,4 @@ Entrance: Home › click potion_home (left column, green potion; scroll the colu
 Marker: alchemist_title
 Experiments tab: three experiments (a Firestone research boost, Strange dust, Exotic coin), each 2:30:10. A finished one shows Completed + Claim. Starting one costs: Strange dust 40, or 1250 exotic coins. Second tab (cauldron): not yet seen.
 Gems "+" top right: never.
-Untried: alchemist_claim
+Untried: alchemist_claim, alchemist_dust_start
