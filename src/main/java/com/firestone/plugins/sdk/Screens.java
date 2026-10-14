@@ -71,7 +71,7 @@ public final class Screens {
     public static final GameScreen BAG = GameScreen.named("Bag").marker(Pictures.REWARDS_TITLE_TAVERN)
             .from(Way.of(Screens.TAVERN, Input.click(Pictures.BAG_TAVERN)))
             .back(Input.click(Pictures.CLOSE_REWARDS_TAVERN));
-    public static final GameScreen CHAT = GameScreen.named("Chat")
+    public static final GameScreen CHAT = GameScreen.named("Chat").marker(Pictures.TYPE_MESSAGE_CHAT)
             .from(Way.of(Screens.TAVERN, Input.click(Pictures.CHAT_TAVERN)));
     private Screens() {
     }
