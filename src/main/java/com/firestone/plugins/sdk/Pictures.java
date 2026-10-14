@@ -395,5 +395,7 @@ public final class Pictures {
             .at(new Rect(195, 190, 130, 130));
     public static final ImageTemplate ARTIFACTS_GRID = new ImageTemplate("src/main/resources/images/artifacts_grid.png")
             .at(new Rect(165, 600, 120, 120));
+    public static final ImageTemplate ARTIFACT_UPGRADE_TITLE = new ImageTemplate(
+            "src/main/resources/images/artifact_upgrade_title.png").at(new Rect(715, 155, 490, 48));
     private Pictures() {}
 }
