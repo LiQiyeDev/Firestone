@@ -3,6 +3,9 @@
     "ability_party" : {
       "tags" : [ "Party" ]
     },
+    "alchemist_title" : {
+      "tags" : [ "Alchemist" ]
+    },
     "alchemist_town" : {
       "tags" : [ "Town" ]
     },
