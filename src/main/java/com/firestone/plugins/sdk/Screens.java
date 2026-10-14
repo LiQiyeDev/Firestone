@@ -35,7 +35,8 @@ public final class Screens {
     public static final GameScreen TAVERN = GameScreen.named("Tavern").from(Way.of(Screens.HOME, Input.click(Pictures.TAVERN_HOME)))
             .inputs(List.of(Input.click(Pictures.INFO_LUCK_TAVERN), Input.click(Pictures.ARTIFACTS_TAVERN),
                     Input.click(Pictures.SACRED_CARDS_TAVERN), Input.click(Pictures.SPEED_TAVERN),
-                    Input.click(Pictures.BAG_TAVERN), Input.click(Pictures.CHAT_TAVERN)));
+                    Input.click(Pictures.BAG_TAVERN), Input.click(Pictures.CHAT_TAVERN),
+                    Input.click(Pictures.WHEEL_TAVERN)));
     private Screens() {
     }
 }
