@@ -264,6 +264,9 @@
     "magic_quarter_town" : {
       "tags" : [ "Town" ]
     },
+    "mail_claim" : {
+      "tags" : [ "Mail" ]
+    },
     "mail_home" : {
       "tags" : [ "Home" ]
     },

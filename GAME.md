@@ -211,3 +211,4 @@ Untried: campaign_leaderboards, campaign_claim, campaign_daily_missions
 
 Entrance: Home › click mail_home
 Marker: mailbox_title
+Untried: mail_claim

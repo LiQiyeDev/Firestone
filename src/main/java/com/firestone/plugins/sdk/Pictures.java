@@ -288,5 +288,7 @@ public final class Pictures {
             "src/main/resources/images/campaign_daily_missions.png").at(new Rect(1665, 995, 230, 45));
     public static final ImageTemplate MAILBOX_TITLE = new ImageTemplate("src/main/resources/images/mailbox_title.png")
             .at(new Rect(885, 30, 165, 42));
+    public static final ImageTemplate MAIL_CLAIM = new ImageTemplate("src/main/resources/images/mail_claim.png")
+            .at(new Rect(1165, 818, 120, 45));
     private Pictures() {}
 }
