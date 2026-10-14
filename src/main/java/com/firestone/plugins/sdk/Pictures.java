@@ -120,5 +120,7 @@ public final class Pictures {
             "src/main/resources/images/telescope_pin_map.png").at(new Rect(1457, 547, 48, 72));
     public static final ImageTemplate BADGE_TOWN = new ImageTemplate("src/main/resources/images/badge_town.png")
             .at(new Rect(361, 685, 26, 26));
+    public static final ImageTemplate BEER_BUY_TAVERN = new ImageTemplate(
+            "src/main/resources/images/beer_buy_tavern.png").at(new Rect(428, 610, 60, 68));
     private Pictures() {}
 }
