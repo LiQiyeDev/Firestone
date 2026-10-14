@@ -383,5 +383,7 @@ public final class Pictures {
             "src/main/resources/images/how_to_play_tavern.png").at(new Rect(565, 120, 260, 55));
     public static final ImageTemplate CLOSE_HELP_TAVERN = new ImageTemplate(
             "src/main/resources/images/close_help_tavern.png").at(new Rect(1400, 60, 76, 76));
+    public static final ImageTemplate HELP_TEXT_TAVERN = new ImageTemplate(
+            "src/main/resources/images/help_text_tavern.png").at(new Rect(560, 180, 200, 80));
     private Pictures() {}
 }
