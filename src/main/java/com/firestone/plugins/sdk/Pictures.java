@@ -421,5 +421,7 @@ public final class Pictures {
             .at(new Rect(596, 24, 72, 72));
     public static final ImageTemplate ROOMS_CHAT = new ImageTemplate("src/main/resources/images/rooms_chat.png")
             .at(new Rect(276, 72, 144, 36));
+    public static final ImageTemplate WORLD_CHAT = new ImageTemplate("src/main/resources/images/world_chat.png")
+            .at(new Rect(676, 276, 68, 68));
     private Pictures() {}
 }
