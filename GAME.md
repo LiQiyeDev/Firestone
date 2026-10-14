@@ -92,6 +92,8 @@ Not screens: the chest top right is a paid offer (Sale): never. The pink dragon 
 - Events: home › click events_home. bottom left (events_home).
 - Hero profile: avatar top left (none yet).
 - Settings: Home › key S. gear top right.
+- Card: Home › click card_home
+- Potion: Home › click potion_home
 
 ## Upgrades
 
@@ -134,7 +136,9 @@ The left column changes: its icons come and go with their badges and it scrolls 
 - tried key S: opens Settings
 - tried guardians_home: opens Guardians
 - tried parchment_home: opens Research, on the Meteorite tab. library_home is the same icon cut with its glow: it scored 0.36 while a research was ready and 0.80+ after; parchment_home is the inner part and matches both.
-Untried: potion_home, scroll_boot_home
+Untried: scroll_boot_home
+- tried card_home: opens Card
+- tried potion_home: opens Potion
 
 ## Market
 
@@ -241,3 +245,9 @@ Version 9.1.2a shown at the bottom.
 Entrance: Home › click guardians_home
 Marker: guardians_strengthen
 Untried: guardian_enlightenment, guardian_multiplier
+
+## Alchemist
+
+Entrance: Home › click potion_home (left column, green potion; scroll the column down to see it)
+Experiments tab: three experiments (a Firestone research boost, Strange dust, Exotic coin), each 2:30:10. A finished one shows Completed + Claim. Starting one costs: Strange dust 40, or 1250 exotic coins. Second tab (cauldron): not yet seen.
+Gems "+" top right: never.

@@ -90,6 +90,9 @@
     "campaign_title" : {
       "tags" : [ "Campaign" ]
     },
+    "card_home" : {
+      "tags" : [ "Home" ]
+    },
     "card_tavern" : {
       "tags" : [ "Tavern" ]
     },
@@ -469,5 +472,5 @@
       "tags" : [ "Map missions" ]
     }
   },
-  "customTags" : [ "Arena of Kings", "Bag", "Battle pass", "Boss", "Campaign", "Engineer", "Events", "Fellowship", "Garage", "Guardians", "Guild", "Home", "Mail", "Map missions", "Market", "Parchment", "Party", "Popups", "Settings", "Town", "Upgrades" ]
+  "customTags" : [ "Alchemist", "Arena of Kings", "Bag", "Battle pass", "Boss", "Campaign", "Card", "Engineer", "Events", "Fellowship", "Garage", "Guardians", "Guild", "Home", "Mail", "Map missions", "Market", "Parchment", "Party", "Popups", "Potion", "Settings", "Town", "Upgrades" ]
 }
