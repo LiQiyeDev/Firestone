@@ -254,5 +254,7 @@ public final class Pictures {
             "src/main/resources/images/auto_abilities_party.png").at(new Rect(1788, 895, 104, 42));
     public static final ImageTemplate ABILITY_PARTY = new ImageTemplate("src/main/resources/images/ability_party.png")
             .at(new Rect(1572, 780, 84, 82));
+    public static final ImageTemplate HEROES_TAB_PARTY = new ImageTemplate(
+            "src/main/resources/images/heroes_tab_party.png").at(new Rect(33, 105, 125, 65));
     private Pictures() {}
 }
