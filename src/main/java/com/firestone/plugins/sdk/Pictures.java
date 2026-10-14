@@ -312,5 +312,7 @@ public final class Pictures {
             "src/main/resources/images/guardians_strengthen.png").at(new Rect(1137, 645, 470, 36));
     public static final ImageTemplate GUARDIAN_ENLIGHTENMENT = new ImageTemplate(
             "src/main/resources/images/guardian_enlightenment.png").at(new Rect(1452, 748, 185, 34));
+    public static final ImageTemplate GUARDIAN_MULTIPLIER = new ImageTemplate(
+            "src/main/resources/images/guardian_multiplier.png").at(new Rect(1762, 208, 100, 44));
     private Pictures() {}
 }

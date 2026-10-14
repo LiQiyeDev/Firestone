@@ -210,6 +210,9 @@
     "guardian_enlightenment" : {
       "tags" : [ "Guardians" ]
     },
+    "guardian_multiplier" : {
+      "tags" : [ "Guardians" ]
+    },
     "guardian_node_library" : {
       "tags" : [ "Research" ]
     },

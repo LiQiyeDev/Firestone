@@ -238,4 +238,4 @@ Version 9.1.2a shown at the bottom.
 
 Entrance: Home › click guardians_home
 Marker: guardians_strengthen
-Untried: guardian_enlightenment
+Untried: guardian_enlightenment, guardian_multiplier
