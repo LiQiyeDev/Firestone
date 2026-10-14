@@ -32,8 +32,8 @@ public final class Screens {
             Input.click(Pictures.GUARDIANS_HOME).sometimes(),
             Input.click(Pictures.AUTO_ABILITIES_HOME).did(Did.IN_PLACE), Input.click(Pictures.AVATAR_HOME),
             Input.click(Pictures.PREV_STAGE_HOME).did(Did.IN_PLACE), Input.click(Pictures.SETTINGS_HOME)));
-    public static final GameScreen TAVERN = GameScreen.named("Tavern")
-            .from(Way.of(Screens.HOME, Input.click(Pictures.TAVERN_HOME)));
+    public static final GameScreen TAVERN = GameScreen.named("Tavern").from(Way.of(Screens.HOME, Input.click(Pictures.TAVERN_HOME)))
+            .inputs(List.of(Input.click(Pictures.INFO_LUCK_TAVERN)));
     private Screens() {
     }
 }
