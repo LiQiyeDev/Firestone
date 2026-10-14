@@ -258,5 +258,7 @@ public final class Pictures {
             "src/main/resources/images/heroes_tab_party.png").at(new Rect(33, 105, 125, 65));
     public static final ImageTemplate GUARDIANS_TAB_PARTY = new ImageTemplate(
             "src/main/resources/images/guardians_tab_party.png").at(new Rect(200, 113, 163, 65));
+    public static final ImageTemplate ORDER_BY_PARTY = new ImageTemplate("src/main/resources/images/order_by_party.png")
+            .at(new Rect(72, 982, 233, 66));
     private Pictures() {}
 }
