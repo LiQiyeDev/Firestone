@@ -393,5 +393,7 @@ public final class Pictures {
             "src/main/resources/images/rarity_artifacts.png").at(new Rect(1360, 965, 300, 95));
     public static final ImageTemplate ARTIFACT_CELL = new ImageTemplate("src/main/resources/images/artifact_cell.png")
             .at(new Rect(195, 190, 130, 130));
+    public static final ImageTemplate ARTIFACTS_GRID = new ImageTemplate("src/main/resources/images/artifacts_grid.png")
+            .at(new Rect(165, 600, 120, 120));
     private Pictures() {}
 }
