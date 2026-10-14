@@ -361,5 +361,7 @@ public final class Pictures {
             .at(new Rect(1832, 30, 76, 66));
     public static final ImageTemplate INFO_LUCK_TAVERN = new ImageTemplate(
             "src/main/resources/images/info_luck_tavern.png").at(new Rect(358, 8, 52, 52));
+    public static final ImageTemplate ARTIFACTS_TAVERN = new ImageTemplate(
+            "src/main/resources/images/artifacts_tavern.png").at(new Rect(1752, 272, 116, 116));
     private Pictures() {}
 }
