@@ -276,5 +276,7 @@ public final class Pictures {
             "src/main/resources/images/ethereal_miners_events.png").at(new Rect(730, 318, 530, 70));
     public static final ImageTemplate LOCK_EVENTS = new ImageTemplate("src/main/resources/images/lock_events.png")
             .at(new Rect(934, 636, 44, 44));
+    public static final ImageTemplate ENGINEER_TITLE = new ImageTemplate("src/main/resources/images/engineer_title.png")
+            .at(new Rect(94, 32, 156, 40));
     private Pictures() {}
 }

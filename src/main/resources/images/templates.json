@@ -114,6 +114,9 @@
     "engineer_home" : {
       "tags" : [ "Home" ]
     },
+    "engineer_title" : {
+      "tags" : [ "Engineer" ]
+    },
     "engineer_town" : {
       "tags" : [ "Town" ]
     },
