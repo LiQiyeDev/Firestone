@@ -210,4 +210,4 @@ Untried: campaign_leaderboards, campaign_claim, campaign_daily_missions
 ## Mail
 
 Entrance: Home › click mail_home
-Owed: marker
+Marker: mailbox_title

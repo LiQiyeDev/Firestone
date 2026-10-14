@@ -267,6 +267,9 @@
     "mail_home" : {
       "tags" : [ "Home" ]
     },
+    "mailbox_title" : {
+      "tags" : [ "Mail" ]
+    },
     "manual_tavern" : {
       "tags" : [ "Tavern" ]
     },

@@ -286,5 +286,7 @@ public final class Pictures {
             .at(new Rect(98, 985, 110, 45));
     public static final ImageTemplate CAMPAIGN_DAILY_MISSIONS = new ImageTemplate(
             "src/main/resources/images/campaign_daily_missions.png").at(new Rect(1665, 995, 230, 45));
+    public static final ImageTemplate MAILBOX_TITLE = new ImageTemplate("src/main/resources/images/mailbox_title.png")
+            .at(new Rect(885, 30, 165, 42));
     private Pictures() {}
 }
