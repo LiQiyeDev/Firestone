@@ -128,5 +128,7 @@ public final class Pictures {
             .at(new Rect(880, 953, 160, 48));
     public static final ImageTemplate CARD_TAVERN = new ImageTemplate("src/main/resources/images/card_tavern.png")
             .at(new Rect(548, 278, 236, 90));
+    public static final ImageTemplate MARKET_TAVERN = new ImageTemplate("src/main/resources/images/market_tavern.png")
+            .at(new Rect(1750, 700, 112, 92));
     private Pictures() {}
 }
