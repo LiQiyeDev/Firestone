@@ -96,6 +96,9 @@
     "magic_quarter_town" : {
       "tags" : [ "Town" ]
     },
+    "mail_home" : {
+      "tags" : [ "Home" ]
+    },
     "map" : {
       "tags" : [ "Home" ]
     },

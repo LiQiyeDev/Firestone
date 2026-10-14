@@ -146,5 +146,7 @@ public final class Pictures {
             .at(new Rect(30, 502, 62, 64));
     public static final ImageTemplate LIBRARY_HOME = new ImageTemplate("src/main/resources/images/library_home.png")
             .at(new Rect(28, 602, 66, 72));
+    public static final ImageTemplate MAIL_HOME = new ImageTemplate("src/main/resources/images/mail_home.png")
+            .at(new Rect(22, 790, 66, 52));
     private Pictures() {}
 }
