@@ -164,5 +164,7 @@ public final class Pictures {
             "src/main/resources/images/upgrade_x1_upgrades.png").at(new Rect(1448, 982, 262, 74));
     public static final ImageTemplate GEAR_TAB_BAG = new ImageTemplate("src/main/resources/images/gear_tab_bag.png")
             .at(new Rect(1432, 335, 55, 70));
+    public static final ImageTemplate ITEMS_TAB_BAG = new ImageTemplate("src/main/resources/images/items_tab_bag.png")
+            .at(new Rect(1432, 240, 55, 75));
     private Pictures() {}
 }
