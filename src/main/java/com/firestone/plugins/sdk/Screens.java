@@ -61,7 +61,7 @@ public final class Screens {
     public static final GameScreen UPGRADE = GameScreen.named("Upgrade").marker(Pictures.ARTIFACT_UPGRADE_TITLE)
             .from(Way.of(Screens.ARTIFACTS, Input.click(Pictures.UPGRADE_ARTIFACTS)))
             .back(Input.click(Pictures.CLOSE_ARTIFACT_UPGRADE))
-            .inputs(List.of(Input.click(Pictures.UPGRADE_ARTIFACT_CONFIRM)));
+            .inputs(List.of(Input.click(Pictures.UPGRADE_ARTIFACT_CONFIRM).did(Did.IN_PLACE).kind(Kind.CHORE)));
     private Screens() {
     }
 }
