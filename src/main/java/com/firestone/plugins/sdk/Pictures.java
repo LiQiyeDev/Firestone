@@ -226,5 +226,7 @@ public final class Pictures {
             .at(new Rect(1700, 16, 40, 40));
     public static final ImageTemplate ZOOM_IN_MAP = new ImageTemplate("src/main/resources/images/zoom_in_map.png")
             .at(new Rect(1594, 1022, 32, 32));
+    public static final ImageTemplate AVATAR_MAP = new ImageTemplate("src/main/resources/images/avatar_map.png")
+            .at(new Rect(30, 20, 120, 120));
     private Pictures() {}
 }

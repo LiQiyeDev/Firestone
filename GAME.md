@@ -34,6 +34,8 @@ reads this at connect.
 
 ## Map missions
 
+Entrance: Home › click map
+Marker: rank_list_map
 - M opens the map from the fight screen (~1–2 s); its marker is the Rank List button (rank_list_map).
 - Finished missions show a green Claim in the left column (claim_map); each opens a reward popup closed by Okay (okay_map). The list reflows after each claim.
 - A pin with a white timer bubble is open to start; the timer is the mission's length. A running pin has a red banner and no timer, and no pin picture matches it.
@@ -41,7 +43,7 @@ reads this at connect.
 - A pin opens a dialog: Start mission (start_mission_map), or "You do not have enough squads." (no_squads_map) when all squads are out. The dialog covers the pins.
 - Squads counter top centre (4/4 = all idle). New missions every few hours ("New missions in").
 - Escape closes the pin dialog.
-Untried: campaign_map, war_machine_map, info_map, chat_map, gold_plus_map, gems_plus_map, zoom_in_map
+Untried: claim_map, sword_pin_map, rank_list_map, campaign_map, war_machine_map, info_map, chat_map, gold_plus_map, gems_plus_map, zoom_in_map, avatar_map, close_x
 
 ## Tavern
 
@@ -69,7 +71,7 @@ Not screens: the chest top right is a paid offer (Sale): never. The pink dragon 
 
 - Quests: Q (hotkey).
 - Map missions: M (hotkey) or the Map button (map).
-- Town: T (hotkey) or the Town button (home); its buildings are entrances below.
+- Town: home › click home. T (hotkey) or the Town button (home); its buildings are entrances below.
 - Research: Town › Library (library_town); or the left column's book icon (library_home), which opens the Meteorite tab.
 - Tavern: Town › Tavern (tavern_town) › Tavern card (tavern_choice_town).
 - Engineer: left column, miner helmet (engineer_home). Tools production Claim.
@@ -110,12 +112,13 @@ Owed: each chest's picture, to try how one opens
 
 The fight screen; the Map lists where each input leads. Hotkeys: Q quests, M map, T town, S settings.
 Marker: home
-Untried: home, battle, fellowship, party, battle_pass_home, events_home, engineer_home, war_machines_home, guardians_home, campaign_home, library_home, mail_home
+Untried: battle, fellowship, party, battle_pass_home, events_home, engineer_home, war_machines_home, guardians_home, campaign_home, library_home, mail_home
 - tried upgrades: opens Upgrades
 - tried bag: opens Bag
 - tried market: opens Market
 - tried guild: opens Guild
 - tried map: opens Map missions
+- tried home: opens Town
 
 ## Market
 
@@ -130,3 +133,8 @@ Entrance: home › click guild
 Marker: title_guild
 Untried: market_guild, expeditions_guild, hall_guild, bank_guild, tree_of_life_guild, chaos_rift_guild, forbidden_knowledge_guild, awakening_guild, level_50_guild, find_guild
 A full-screen island of buildings. No guild joined yet: Find guild at the bottom. Locked on this account, a padlock on each (lock_guild): Guild market, Expeditions, Guild hall, Bank, Level 50. Open: Tree of life, Chaos rift (a red bell), Forbidden knowledge, Awakening. Close: the X top right, or Escape.
+
+## Town
+
+Entrance: home › click home
+Owed: marker
