@@ -126,5 +126,7 @@ public final class Pictures {
             "src/main/resources/images/beer_buy_off_tavern.png").at(new Rect(428, 610, 60, 68));
     public static final ImageTemplate PLAY_TAVERN = new ImageTemplate("src/main/resources/images/play_tavern.png")
             .at(new Rect(880, 953, 160, 48));
+    public static final ImageTemplate CARD_TAVERN = new ImageTemplate("src/main/resources/images/card_tavern.png")
+            .at(new Rect(548, 278, 236, 90));
     private Pictures() {}
 }
