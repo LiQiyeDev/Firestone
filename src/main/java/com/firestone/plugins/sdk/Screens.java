@@ -21,7 +21,7 @@ public final class Screens {
     public static final GameScreen HOME = GameScreen.named("Home").marker(Pictures.HOME)
             .inputs(List.of(Input.click(Pictures.TAVERN_HOME), Input.click(Pictures.ARENA_HOME),
                     Input.click(Pictures.ENGINEER_HOME), Input.click(Pictures.CAMPAIGN_HOME),
-                    Input.click(Pictures.WAR_MACHINES_HOME)));
+                    Input.click(Pictures.WAR_MACHINES_HOME), Input.click(Pictures.MAIL_HOME)));
 
     private Screens() {
     }
