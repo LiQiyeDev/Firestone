@@ -300,5 +300,7 @@ public final class Pictures {
             .at(new Rect(822, 74, 275, 44));
     public static final ImageTemplate ARENA_FIGHT = new ImageTemplate("src/main/resources/images/arena_fight.png")
             .at(new Rect(640, 640, 85, 34));
+    public static final ImageTemplate ARENA_REFRESH = new ImageTemplate("src/main/resources/images/arena_refresh.png")
+            .at(new Rect(835, 158, 50, 50));
     private Pictures() {}
 }

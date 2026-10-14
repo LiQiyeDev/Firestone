@@ -12,6 +12,9 @@
     "arena_home" : {
       "tags" : [ "Home" ]
     },
+    "arena_refresh" : {
+      "tags" : [ "Arena of Kings" ]
+    },
     "arena_title" : {
       "tags" : [ "Arena of Kings" ]
     },
