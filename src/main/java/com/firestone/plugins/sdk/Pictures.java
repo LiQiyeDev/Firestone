@@ -310,5 +310,7 @@ public final class Pictures {
             "src/main/resources/images/settings_logged_in.png").at(new Rect(655, 228, 312, 38));
     public static final ImageTemplate GUARDIANS_STRENGTHEN = new ImageTemplate(
             "src/main/resources/images/guardians_strengthen.png").at(new Rect(1137, 645, 470, 36));
+    public static final ImageTemplate GUARDIAN_ENLIGHTENMENT = new ImageTemplate(
+            "src/main/resources/images/guardian_enlightenment.png").at(new Rect(1452, 748, 185, 34));
     private Pictures() {}
 }
