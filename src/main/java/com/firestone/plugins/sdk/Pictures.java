@@ -104,5 +104,7 @@ public final class Pictures {
             .at(new Rect(1660, 995, 240, 70));
     public static final ImageTemplate CLAIM_MAP = new ImageTemplate("src/main/resources/images/claim_map.png")
             .at(new Rect(95, 300, 165, 45));
+    public static final ImageTemplate OKAY_MAP = new ImageTemplate("src/main/resources/images/okay_map.png")
+            .at(new Rect(800, 612, 320, 70));
     private Pictures() {}
 }
