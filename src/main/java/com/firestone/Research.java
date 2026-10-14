@@ -14,23 +14,14 @@ public class Research {
         ImageFinder.untilFind(
                 Pictures.LIBRARY_TOWN, () -> {
                     ImageClicker.click(Pictures.HOME);
-                    ImageWaiter.waitFor(
-                            Pictures.LIBRARY_TOWN,
-                            Duration.ofMillis(3000L));
                 });
         ImageFinder.untilFind(
                 Pictures.METEORITE_TAB_LIBRARY, () -> {
                     ImageClicker.click(Pictures.LIBRARY_TOWN);
-                    ImageWaiter.waitFor(
-                            Pictures.METEORITE_TAB_LIBRARY,
-                            Duration.ofMillis(3000L));
                 });
         ImageFinder.untilFind(
                 Pictures.GEMS_LIBRARY, () -> {
                     ImageClicker.click(Pictures.FIRESTONE_TAB_LIBRARY);
-                    ImageWaiter.waitFor(
-                            Pictures.GEMS_LIBRARY,
-                            Duration.ofMillis(3000L));
                 });
         ImageFinder.whileFindAny(ImageTemplateGroup.of(Pictures.RESEARCH_CLAIM),
                 claim -> {

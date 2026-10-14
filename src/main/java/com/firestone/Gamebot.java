@@ -5,9 +5,7 @@ import com.firestone.plugins.sdk.Pictures;
 import com.botmaker.sdk.api.vision.ImageFinder;
 import com.botmaker.sdk.api.vision.ImageTemplateGroup;
 import com.botmaker.sdk.api.input.Keyboard;
-import com.botmaker.sdk.api.vision.ImageWaiter;
 import com.botmaker.sdk.api.input.Key;
-import java.time.Duration;
 import com.botmaker.sdk.api.vision.ImageClicker;
 import com.botmaker.sdk.api.bot.Bot;
 import com.firestone.plugins.sdk.Sdk;
@@ -77,9 +75,6 @@ public final class Gamebot {
         ImageFinder.untilFind(
                 Pictures.UPGRADES, () -> {
                     Keyboard.tap(Key.ESCAPE);
-                    ImageWaiter.waitFor(
-                            Pictures.UPGRADES,
-                            Duration.ofMillis(2500L));
                 });
         ImageFinder.whileFindAny(ImageTemplateGroup.of(Pictures.CLAIM_OFFLINE, Pictures.CLOSE_X, Pictures.CLOSE_TOWN),
                 it -> {
@@ -114,5 +109,12 @@ public final class Gamebot {
      */
     static boolean keepTrying(int attempt) {
         return attempt < Parameters.maxAttempts;
+    }
+
+    public static void clearPopups() {
+        ImageFinder.whileFindAny(ImageTemplateGroup.of(Pictures.CLAIM_OFFLINE),
+                it -> {
+                    ImageClicker.clickLast();
+                });
     }
 }
