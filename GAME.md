@@ -118,4 +118,4 @@ Untried: home, guild, map, battle, fellowship, party, battle_pass_home, events_h
 
 Entrance: home › click market
 Marker: heart_tab_market
-Untried: bundles_tab_market
+Untried: bundles_tab_market, gems_tab_market
