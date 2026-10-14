@@ -46,7 +46,7 @@ public final class Screens {
                             .at(new Rect(1688, 1006, 160, 54)).activities(List.of(Activities.Tavern.class))),
                     Input.click(new ImageTemplate("src/main/resources/images/market_tavern.png")
                             .at(new Rect(1750, 700, 112, 92)).activities(List.of(Activities.Tavern.class))),
-                    Input.click(Pictures.INFO_MAP), Input.click(Pictures.GEMS_PLUS_MAP)));
+                    Input.click(Pictures.INFO_MAP), Input.click(Pictures.GEMS_PLUS_MAP).never("spends gems")));
     private Screens() {
     }
 }
