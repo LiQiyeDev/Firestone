@@ -137,4 +137,4 @@ A full-screen island of buildings. No guild joined yet: Find guild at the bottom
 ## Town
 
 Entrance: home › click home
-Owed: marker
+Marker: title_town
