@@ -144,5 +144,7 @@ public final class Pictures {
             "src/main/resources/images/war_machines_home.png").at(new Rect(28, 400, 66, 62));
     public static final ImageTemplate GUARDIANS_HOME = new ImageTemplate("src/main/resources/images/guardians_home.png")
             .at(new Rect(30, 502, 62, 64));
+    public static final ImageTemplate LIBRARY_HOME = new ImageTemplate("src/main/resources/images/library_home.png")
+            .at(new Rect(28, 602, 66, 72));
     private Pictures() {}
 }

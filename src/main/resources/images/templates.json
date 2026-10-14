@@ -87,6 +87,9 @@
     "leaderboards_town" : {
       "tags" : [ "Town" ]
     },
+    "library_home" : {
+      "tags" : [ "Home" ]
+    },
     "library_town" : {
       "tags" : [ "Town" ]
     },
