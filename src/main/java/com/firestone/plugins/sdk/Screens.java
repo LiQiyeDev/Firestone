@@ -75,7 +75,7 @@ public final class Screens {
             .from(Way.of(Screens.TAVERN, Input.click(Pictures.CHAT_TAVERN))).back(Input.click(Pictures.CLOSE_CHAT))
             .inputs(List.of(Input.click(Pictures.ROOMS_CHAT), Input.click(Pictures.WORLD_CHAT).did(Did.IN_PLACE),
                     Input.click(Pictures.SEND_CHAT).never("posts to other players")));
-    public static final GameScreen ROOMS = GameScreen.named("Rooms")
+    public static final GameScreen ROOMS = GameScreen.named("Rooms").marker(Pictures.SELECT_ROOM_TITLE_CHAT)
             .from(Way.of(Screens.CHAT, Input.click(Pictures.ROOMS_CHAT)));
     private Screens() {
     }
