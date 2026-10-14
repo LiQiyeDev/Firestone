@@ -290,5 +290,7 @@ public final class Pictures {
             .at(new Rect(885, 30, 165, 42));
     public static final ImageTemplate MAIL_CLAIM = new ImageTemplate("src/main/resources/images/mail_claim.png")
             .at(new Rect(1165, 818, 120, 45));
+    public static final ImageTemplate TAVERN_HOME = new ImageTemplate("src/main/resources/images/tavern_home.png")
+            .at(new Rect(35, 288, 55, 58));
     private Pictures() {}
 }

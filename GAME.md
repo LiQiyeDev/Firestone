@@ -112,7 +112,7 @@ Owed: each chest's picture, to try how one opens
 
 The fight screen; the Map lists where each input leads. Hotkeys: Q quests, M map, T town, S settings. Escape on Home asks "Do you want to exit the game?" (Save and Exit): never press Escape on Home.
 Marker: home
-Untried: guardians_home, library_home
+Untried: guardians_home, library_home, tavern_home
 - tried upgrades: opens Upgrades
 - tried bag: opens Bag
 - tried market: opens Market
