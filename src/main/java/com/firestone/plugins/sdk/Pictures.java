@@ -367,5 +367,7 @@ public final class Pictures {
             "src/main/resources/images/sacred_cards_tavern.png").at(new Rect(1752, 460, 116, 108));
     public static final ImageTemplate SPEED_TAVERN = new ImageTemplate("src/main/resources/images/speed_tavern.png")
             .at(new Rect(1632, 910, 276, 62));
+    public static final ImageTemplate BAG_TAVERN = new ImageTemplate("src/main/resources/images/bag_tavern.png")
+            .at(new Rect(628, 950, 104, 106));
     private Pictures() {}
 }
