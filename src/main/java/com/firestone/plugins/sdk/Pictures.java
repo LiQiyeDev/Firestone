@@ -381,5 +381,7 @@ public final class Pictures {
             "src/main/resources/images/close_info_luck.png").at(new Rect(1205, 112, 58, 58));
     public static final ImageTemplate HOW_TO_PLAY_TAVERN = new ImageTemplate(
             "src/main/resources/images/how_to_play_tavern.png").at(new Rect(565, 120, 260, 55));
+    public static final ImageTemplate CLOSE_HELP_TAVERN = new ImageTemplate(
+            "src/main/resources/images/close_help_tavern.png").at(new Rect(1400, 60, 76, 76));
     private Pictures() {}
 }
