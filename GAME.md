@@ -41,7 +41,7 @@ reads this at connect.
 - A pin opens a dialog: Start mission (start_mission_map), or "You do not have enough squads." (no_squads_map) when all squads are out. The dialog covers the pins.
 - Squads counter top centre (4/4 = all idle). New missions every few hours ("New missions in").
 - Escape closes the pin dialog.
-Untried: campaign_map, war_machine_map
+Untried: campaign_map, war_machine_map, info_map
 
 ## Tavern
 
