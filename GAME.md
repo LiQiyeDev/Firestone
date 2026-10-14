@@ -155,3 +155,4 @@ Untried: leave_boss, prev_stage_boss, sale_chest_boss
 
 Entrance: home › click fellowship
 Marker: title_fellowship
+Untried: recommended_fellowship

@@ -238,5 +238,7 @@ public final class Pictures {
             "src/main/resources/images/sale_chest_boss.png").at(new Rect(1600, 160, 130, 90));
     public static final ImageTemplate TITLE_FELLOWSHIP = new ImageTemplate(
             "src/main/resources/images/title_fellowship.png").at(new Rect(815, 28, 290, 46));
+    public static final ImageTemplate RECOMMENDED_FELLOWSHIP = new ImageTemplate(
+            "src/main/resources/images/recommended_fellowship.png").at(new Rect(1345, 165, 285, 85));
     private Pictures() {}
 }
