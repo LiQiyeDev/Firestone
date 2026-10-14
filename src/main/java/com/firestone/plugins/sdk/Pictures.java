@@ -419,5 +419,7 @@ public final class Pictures {
             "src/main/resources/images/type_message_chat.png").at(new Rect(44, 948, 286, 52));
     public static final ImageTemplate CLOSE_CHAT = new ImageTemplate("src/main/resources/images/close_chat.png")
             .at(new Rect(596, 24, 72, 72));
+    public static final ImageTemplate ROOMS_CHAT = new ImageTemplate("src/main/resources/images/rooms_chat.png")
+            .at(new Rect(276, 72, 144, 36));
     private Pictures() {}
 }
