@@ -152,5 +152,7 @@ public final class Pictures {
             .at(new Rect(32, 290, 60, 50));
     public static final ImageTemplate LEAVE_BOSS = new ImageTemplate("src/main/resources/images/leave_boss.png")
             .at(new Rect(160, 430, 95, 85));
+    public static final ImageTemplate BATTLE_PASS_HOME = new ImageTemplate(
+            "src/main/resources/images/battle_pass_home.png").at(new Rect(370, 940, 75, 70));
     private Pictures() {}
 }

@@ -15,6 +15,9 @@
     "battle" : {
       "tags" : [ "Home" ]
     },
+    "battle_pass_home" : {
+      "tags" : [ "Home" ]
+    },
     "battles_town" : {
       "tags" : [ "Town" ]
     },
