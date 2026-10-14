@@ -2,8 +2,6 @@ package com.firestone;
 
 import com.firestone.params.Parameters;
 import com.firestone.plugins.sdk.Pictures;
-import com.firestone.plugins.sdk.Sdk;
-import com.botmaker.sdk.api.bot.Bot;
 import com.botmaker.sdk.api.vision.ImageFinder;
 import com.botmaker.sdk.api.vision.ImageTemplateGroup;
 import com.botmaker.sdk.api.input.Keyboard;
@@ -11,6 +9,8 @@ import com.botmaker.sdk.api.vision.ImageWaiter;
 import com.botmaker.sdk.api.input.Key;
 import java.time.Duration;
 import com.botmaker.sdk.api.vision.ImageClicker;
+import com.botmaker.sdk.api.bot.Bot;
+import com.firestone.plugins.sdk.Sdk;
 
 /**
  * A game bot to start from: it finds a picture on the screen, clicks it, waits, and does it again —
@@ -63,9 +63,7 @@ public final class Gamebot {
     }
 
     public static void main(String[] args) {
-        // Walks the flow the person running the bot picked, skipping what they switched off, with the home, setup
-        // and capture source written in plugins/sdk/Sdk.java, until the flow ends or the bot is stopped.
-        Bot.runFlow(Sdk.flow, Sdk.doSetup, Sdk.skip, Sdk.class);
+        Bot.runFlow(Sdk.class);
     }
 
     /**

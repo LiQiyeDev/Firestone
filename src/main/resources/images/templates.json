@@ -51,6 +51,9 @@
     "free_slot_library" : {
       "tags" : [ "Research" ]
     },
+    "gems_library" : {
+      "tags" : [ "Research" ]
+    },
     "guardian_node_library" : {
       "tags" : [ "Research" ]
     },

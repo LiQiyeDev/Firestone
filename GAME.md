@@ -13,17 +13,21 @@ reads this at connect.
 
 ## Quests
 
-- Q from home. Tabs: Daily (Spots.QUESTS_DAILY_TAB) and Weekly (Spots.QUESTS_WEEKLY_TAB).
+- Q from home. Marker: quests_tab (the lit Quests tab at the top, only on this window). Q reopens the tab last used (Daily or Weekly).
+- Tabs Daily / Weekly: lit (cream) and unlit (blue) look the same to matching. Pictures daily_tab_on/off, weekly_tab_on/off; pick one with whileFindCompare(off, on, found -> clickLast()).
 - Each row: a Claim button, grey until the quest is done, and an orange arrow that jumps to the task.
-- A claim shows no popup; the rows reorder at once (done ones first), so find again after each claim.
-- Trap: the grey Claim scores 0.81 against the green one (matching ignores colour). Quests::body uses whileFindCompare(QUEST_CLAIM, QUEST_CLAIM_OFF).
+- A claim shows no popup; the rows reorder at once (done ones first), so the loop finds again after each claim.
+- Trap: the grey Claim scores 0.81 against the green one (matching ignores colour): whileFindCompare(QUEST_CLAIM, QUEST_CLAIM_OFF).
 - Dailies: Conqueror (6 map missions), Collector (open 4 chests), Trainer (train guardians 2×), Gamer (10 tavern card plays), Expeditioner (5 guild expeditions), Merchant…
 - Trainer's arrow opens the guardian screen: a green Train button (train_guardian) when free, then a cooldown.
 - Weeklies count the dailies: e.g. Trainer weekly = finish Trainer 5 times. Loyalty weekly = claim 5 daily rewards.
 - Daily quests renew at the same time each day (the screen says in how long).
-- Quests::body claims Daily then Weekly; tried live 2026-10-13 (8 s).
+- Quests::body: untilFind(quests_tab, Q), Daily tab, claims, Weekly tab, claims; no Spot clicks, no waitStable. Tried live 2026-10-14 (9 s).
 
 ## Research
 
-- Town › Library › Firestone tab. Claim each finished research, then a free slot starts one (pick a node, Start).
-- Research::body does this and goes home first; tried live 2026-10-13.
+- Town (home picture) › Library › Firestone tab. Each screen's marker: library_town (Town), meteorite_tab_library (Library, either tab), gems_library (the gem counter top right: Firestone tab only; Meteorite shows a meteorite counter there).
+- The Library reopens the tab last used.
+- Claim each finished research (research_claim, no popup); a free slot (free_slot_library) starts one: click a node, its popup's Start (research_start_library).
+- Research::body: untilFind per screen, whileFindAny claims, whileFindAny(free slot) { ifFindAny(nodes) click + waitFor Start; whileFindAny(Start) click }. Tried live 2026-10-14 (16 s).
+- Gap: a node that cannot start (maxed) would loop the free-slot loop; the watchdog covers it.
