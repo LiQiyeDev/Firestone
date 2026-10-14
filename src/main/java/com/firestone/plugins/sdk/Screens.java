@@ -27,7 +27,7 @@ public final class Screens {
             Input.click(Pictures.FELLOWSHIP), Input.click(Pictures.PARTY), Input.click(Pictures.CARD_HOME).sometimes(),
             Input.click(Pictures.PARCHMENT_HOME).sometimes(), Input.click(Pictures.POTION_HOME).sometimes(),
             Input.click(Pictures.SCROLL_BOOT_HOME).sometimes(), Input.click(Pictures.LIBRARY_HOME).sometimes(),
-            Input.click(Pictures.GUARDIANS_HOME).sometimes()));
+            Input.click(Pictures.GUARDIANS_HOME).sometimes(), Input.click(Pictures.AUTO_ABILITIES_HOME)));
 
     private Screens() {
     }
