@@ -168,5 +168,7 @@ public final class Pictures {
             .at(new Rect(1432, 240, 55, 75));
     public static final ImageTemplate CHESTS_TAB_BAG = new ImageTemplate("src/main/resources/images/chests_tab_bag.png")
             .at(new Rect(1432, 435, 55, 75));
+    public static final ImageTemplate GEMS_TAB_BAG = new ImageTemplate("src/main/resources/images/gems_tab_bag.png")
+            .at(new Rect(1432, 535, 55, 70));
     private Pictures() {}
 }

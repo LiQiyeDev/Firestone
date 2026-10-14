@@ -78,7 +78,7 @@ Not screens: the chest top right is a paid offer (Sale): never. The pink dragon 
 - Arena of Kings: left column, crossed swords with a count badge, only while it has fights (none yet); also Town › Battles (battles_town), to check.
 - Mail: left column, envelope (mail_home). Chat under it: never.
 - Guild: Guild button (guild). Its buildings are entrances; most are locked on this account.
-- Market: Market button (market). A free mystery box every day.
+- Market: home › click market. Market button (market). A free mystery box every day.
 - Boss: the Boss button (battle).
 - Upgrades: home › click upgrades. bottom bar (upgrades).
 - Bag: home › click bag. bottom bar (bag).
@@ -93,15 +93,28 @@ Not screens: the chest top right is a paid offer (Sale): never. The pink dragon 
 
 Entrance: home › click upgrades
 Marker: heroes_damage_upgrades
-Cut: upgrade_upgrades, upgrade_x1_upgrades
-A right-hand panel over the fight; Escape closes it. Gold buys each row: Heroes' damage +50%, then one row per hero.
-- Upgrade: x1 (upgrade_upgrades, price ignored): chore, one per row.
-- Upgrade x1 (upgrade_x1_upgrades): shortcut, the amount per click; its other states (x10, max?) still to see.
-- Detailed view: info.
-Owed: the Upgrade x1 toggle's other states, by clicking it
+Untried: upgrade_upgrades, upgrade_x1_upgrades
+A right-hand panel over the fight; Escape closes it. Gold buys each row: Heroes' damage +50%, then one row per hero; each row's green button reads Upgrade: x1 and its price.
+Owed: Detailed view button picture
 
 ## Bag
 
 Entrance: home › click bag
 Marker: gear_tab_bag
-Cut: items_tab_bag, chests_tab_bag
+Untried: items_tab_bag, gear_tab_bag, chests_tab_bag, gems_tab_bag
+A right-hand panel, four tabs down its left edge: items (bag), gear (sword scroll), chests, gems. It reopens on the last tab used. Chests come from world map missions; each shows its count.
+Owed: each chest's picture, to try how one opens
+
+## Home
+
+The fight screen; the Map lists where each input leads. Hotkeys: Q quests, M map, T town, S settings.
+Marker: home
+Untried: home, guild, map, battle, fellowship, party, battle_pass_home, events_home, engineer_home, war_machines_home, guardians_home, campaign_home, library_home, mail_home
+- tried upgrades: opens Upgrades
+- tried bag: opens Bag
+- tried market: opens Market
+
+## Market
+
+Entrance: home › click market
+Owed: marker
