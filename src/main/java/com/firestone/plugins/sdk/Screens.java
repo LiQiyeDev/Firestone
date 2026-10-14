@@ -31,7 +31,7 @@ public final class Screens {
             Input.click(Pictures.SCROLL_BOOT_HOME).sometimes(), Input.click(Pictures.LIBRARY_HOME).sometimes(),
             Input.click(Pictures.GUARDIANS_HOME).sometimes(),
             Input.click(Pictures.AUTO_ABILITIES_HOME).did(Did.IN_PLACE), Input.click(Pictures.AVATAR_HOME),
-            Input.click(Pictures.PREV_STAGE_HOME), Input.click(Pictures.SETTINGS_HOME)));
+            Input.click(Pictures.PREV_STAGE_HOME).did(Did.IN_PLACE), Input.click(Pictures.SETTINGS_HOME)));
     private Screens() {
     }
 }
