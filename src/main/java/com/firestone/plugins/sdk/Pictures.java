@@ -324,5 +324,7 @@ public final class Pictures {
             .at(new Rect(40, 462, 40, 26));
     public static final ImageTemplate ALCHEMIST_TITLE = new ImageTemplate(
             "src/main/resources/images/alchemist_title.png").at(new Rect(1165, 188, 290, 42));
+    public static final ImageTemplate ALCHEMIST_CLAIM = new ImageTemplate(
+            "src/main/resources/images/alchemist_claim.png").at(new Rect(885, 765, 95, 38));
     private Pictures() {}
 }

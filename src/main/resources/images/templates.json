@@ -3,6 +3,9 @@
     "ability_party" : {
       "tags" : [ "Party" ]
     },
+    "alchemist_claim" : {
+      "tags" : [ "Alchemist" ]
+    },
     "alchemist_title" : {
       "tags" : [ "Alchemist" ]
     },
