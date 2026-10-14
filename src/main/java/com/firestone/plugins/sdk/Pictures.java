@@ -415,5 +415,7 @@ public final class Pictures {
             "src/main/resources/images/rewards_title_tavern.png").at(new Rect(700, 52, 210, 58));
     public static final ImageTemplate CLOSE_REWARDS_TAVERN = new ImageTemplate(
             "src/main/resources/images/close_rewards_tavern.png").at(new Rect(1578, 38, 70, 70));
+    public static final ImageTemplate TYPE_MESSAGE_CHAT = new ImageTemplate(
+            "src/main/resources/images/type_message_chat.png").at(new Rect(44, 948, 286, 52));
     private Pictures() {}
 }
