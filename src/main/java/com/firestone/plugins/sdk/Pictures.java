@@ -114,5 +114,7 @@ public final class Pictures {
             .at(new Rect(618, 396, 40, 64));
     public static final ImageTemplate SCOUT_PIN_MAP = new ImageTemplate("src/main/resources/images/scout_pin_map.png")
             .at(new Rect(1336, 400, 40, 70));
+    public static final ImageTemplate DRAGON_PIN_MAP = new ImageTemplate("src/main/resources/images/dragon_pin_map.png")
+            .at(new Rect(564, 538, 40, 70));
     private Pictures() {}
 }

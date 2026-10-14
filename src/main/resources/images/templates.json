@@ -36,6 +36,9 @@
     "daily_tab_on" : {
       "tags" : [ "Quests" ]
     },
+    "dragon_pin_map" : {
+      "tags" : [ "Missions" ]
+    },
     "engineer_town" : {
       "tags" : [ "Town" ]
     },
