@@ -69,7 +69,8 @@ public final class Screens {
                     Input.click(Pictures.GEMS_1000_MARKET).never("spends gems"),
                     Input.click(Pictures.GEMS_300_MARKET).never("spends gems")));
     public static final GameScreen BAG = GameScreen.named("Bag").marker(Pictures.REWARDS_TITLE_TAVERN)
-            .from(Way.of(Screens.TAVERN, Input.click(Pictures.BAG_TAVERN)));
+            .from(Way.of(Screens.TAVERN, Input.click(Pictures.BAG_TAVERN)))
+            .back(Input.click(Pictures.CLOSE_REWARDS_TAVERN));
     private Screens() {
     }
 }
