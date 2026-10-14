@@ -292,5 +292,7 @@ public final class Pictures {
             .at(new Rect(1165, 818, 120, 45));
     public static final ImageTemplate TAVERN_HOME = new ImageTemplate("src/main/resources/images/tavern_home.png")
             .at(new Rect(35, 288, 55, 58));
+    public static final ImageTemplate ARENA_HOME = new ImageTemplate("src/main/resources/images/arena_home.png")
+            .at(new Rect(35, 385, 55, 50));
     private Pictures() {}
 }

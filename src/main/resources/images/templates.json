@@ -6,6 +6,9 @@
     "alchemist_town" : {
       "tags" : [ "Town" ]
     },
+    "arena_home" : {
+      "tags" : [ "Home" ]
+    },
     "armor_node_library" : {
       "tags" : [ "Research" ]
     },
