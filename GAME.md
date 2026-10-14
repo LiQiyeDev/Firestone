@@ -91,7 +91,7 @@ Not screens: the chest top right is a paid offer (Sale): never. The pink dragon 
 - Battle pass: home › click battle_pass_home. bottom left (battle_pass_home).
 - Events: home › click events_home. bottom left (events_home).
 - Hero profile: avatar top left (none yet).
-- Settings: gear top right, S (hotkey).
+- Settings: Home › key S. gear top right, S (hotkey).
 
 ## Upgrades
 
@@ -131,6 +131,7 @@ Untried: guardians_home, library_home
 - tried mail_home: opens Mail
 - tried tavern_home: opens Tavern
 - tried arena_home: opens Arena of Kings
+- tried key S: opens Settings
 
 ## Market
 
@@ -220,4 +221,9 @@ Untried: mail_claim
 
 Entrance: Home › click arena_home
 Marker: arena_title
-Untried: arena_fight, arena_refresh, arena_battle_log
+Untried: arena_fight, arena_refresh, arena_battle_log, arena_edit_squad
+
+## Settings
+
+Entrance: Home › key S
+Owed: marker

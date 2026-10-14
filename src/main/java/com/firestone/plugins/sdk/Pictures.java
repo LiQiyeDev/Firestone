@@ -304,5 +304,7 @@ public final class Pictures {
             .at(new Rect(835, 158, 50, 50));
     public static final ImageTemplate ARENA_BATTLE_LOG = new ImageTemplate(
             "src/main/resources/images/arena_battle_log.png").at(new Rect(1560, 895, 165, 40));
+    public static final ImageTemplate ARENA_EDIT_SQUAD = new ImageTemplate(
+            "src/main/resources/images/arena_edit_squad.png").at(new Rect(1250, 870, 100, 95));
     private Pictures() {}
 }
