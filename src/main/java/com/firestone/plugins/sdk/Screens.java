@@ -66,6 +66,8 @@ public final class Screens {
             .from(Way.of(Screens.ARTIFACTS, Input.click(Pictures.RARITY_ARTIFACTS)))
             .back(Input.click(Pictures.CLOSE_ARTIFACT_UPGRADE))
             .inputs(List.of(Input.click(Pictures.RARITY_ARTIFACT_CONFIRM).kind(Kind.CHORE)));
+    public static final GameScreen RARITY_ARTIFACT_CONFIRM = GameScreen.named("Rarity artifact confirm")
+            .from(Way.of(Screens.RARITY, Input.click(Pictures.RARITY_ARTIFACT_CONFIRM).kind(Kind.CHORE)));
     private Screens() {
     }
 }
