@@ -87,7 +87,7 @@ Not screens: the chest top right is a paid offer (Sale): never. The pink dragon 
 - Bag: home › click bag. bottom bar (bag).
 - Fellowship: home › click fellowship. bottom bar (fellowship); a click once opened nothing.
 - Party: home › click party. bottom bar (party).
-- Battle pass: bottom left (battle_pass_home).
+- Battle pass: home › click battle_pass_home. bottom left (battle_pass_home).
 - Events: bottom left (events_home).
 - Hero profile: avatar top left (none yet).
 - Settings: gear top right, S (hotkey).
@@ -112,7 +112,7 @@ Owed: each chest's picture, to try how one opens
 
 The fight screen; the Map lists where each input leads. Hotkeys: Q quests, M map, T town, S settings. Escape on Home asks "Do you want to exit the game?" (Save and Exit): never press Escape on Home.
 Marker: home
-Untried: battle_pass_home, events_home, engineer_home, war_machines_home, guardians_home, campaign_home, library_home, mail_home
+Untried: events_home, engineer_home, war_machines_home, guardians_home, campaign_home, library_home, mail_home
 - tried upgrades: opens Upgrades
 - tried bag: opens Bag
 - tried market: opens Market
@@ -122,6 +122,7 @@ Untried: battle_pass_home, events_home, engineer_home, war_machines_home, guardi
 - tried battle: opens Boss
 - tried fellowship: opens Fellowship
 - tried party: opens Party
+- tried battle_pass_home: opens Battle pass
 
 ## Market
 
@@ -162,6 +163,14 @@ Untried: recommended_fellowship, search_fellowship, create_fellowship, close_x
 
 ## Party
 
-Entrance: home › click party
+Entrance: Home › click party
 Marker: deployed_party
-Untried: close_party, choose_leader_party, auto_abilities_party, ability_party, heroes_tab_party, guardians_tab_party, order_by_party
+- The party: "Deployed: 5/5" top centre, heroes (checked = deployed) on the left under Heroes / Guardians tabs, the selected hero's leader card, stats, abilities and Auto abilities on the right.
+- Clicking a hero previews it; Order by sorts the list. Info (info_map) top centre.
+- guardians_tab_party has the map art behind its text: recut it on a plain spot if it stops matching.
+Untried: info_map, heroes_tab_party, guardians_tab_party, hero_card_party, order_by_party, choose_leader_party, ability_party, auto_abilities_party, close_party
+
+## Battle pass
+
+Entrance: home › click battle_pass_home
+Owed: marker
