@@ -182,5 +182,7 @@ public final class Pictures {
             .at(new Rect(918, 52, 108, 84));
     public static final ImageTemplate HERO_TAB_MARKET = new ImageTemplate(
             "src/main/resources/images/hero_tab_market.png").at(new Rect(1212, 48, 112, 90));
+    public static final ImageTemplate CALENDAR_TAB_MARKET = new ImageTemplate(
+            "src/main/resources/images/calendar_tab_market.png").at(new Rect(1355, 68, 100, 70));
     private Pictures() {}
 }
