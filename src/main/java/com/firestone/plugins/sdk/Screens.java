@@ -51,7 +51,8 @@ public final class Screens {
             .from(Way.of(Screens.TAVERN, Input.click(Pictures.INFO_LUCK_TAVERN)))
             .back(Input.click(Pictures.CLOSE_INFO_LUCK));
     public static final GameScreen INFO_MAP = GameScreen.named("Info map").marker(Pictures.HOW_TO_PLAY_TAVERN)
-            .from(Way.of(Screens.TAVERN, Input.click(Pictures.INFO_MAP)));
+            .from(Way.of(Screens.TAVERN, Input.click(Pictures.INFO_MAP))).back(Input.click(Pictures.CLOSE_HELP_TAVERN))
+            .inputs(List.of(Input.click(Pictures.HELP_TEXT_TAVERN)));
     private Screens() {
     }
 }
