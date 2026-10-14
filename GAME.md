@@ -46,8 +46,16 @@ reads this at connect.
 
 - Town › Tavern opens a chooser: Tavern or Scarab's game (tavern_choice_town = the Tavern card).
 - Town's buildings carry a red bell badge (badge_town) when something is ready; badges nest (Tavern → Market). The fight screen shows the same badge on its side buttons.
-- Tavern screen: Play 1 (play_tavern) costs 1 game token; a play deals 6 face-down cards (card_tavern), clicking one reveals all six; Play comes back after ~1 s. Tokens counter top right.
-- Market (market_tavern, right column) opens "Tavern's market" (market_title_tavern): 5 tokens for 1500 beer (green button, beer_buy_tavern), the other two cost gems — never click them. Out of beer the button greys (beer_buy_off_tavern).
+- Beer comes from a dragon that visits during battle (click it to collect at once, or it drops the beer itself); it keeps coming while offline.
+- Every input on the Tavern screen:
+  - Play 1 (play_tavern; grey twin play_off_tavern at 0 tokens): 1 game token deals 6 face-down cards (card_tavern); pick one, all six turn over.
+  - x1 / x10 / x50 (bottom right, cycles on each press): tokens spent per play.
+  - Manual / Auto (under it, shown only while tokens remain): Auto plays on by itself after the first pick until the tokens run out; during Auto, Play stays grey.
+  - Market (market_tavern) › "Tavern's market" (market_title_tavern): 5 tokens for 1500 beer (green, beer_buy_tavern; grey twin beer_buy_off_tavern); the other two cost gems, never click them. Its badge comes back whenever beer reaches 1500 again, which battle does while you play.
+  - Ancient artifacts: Upgrade / Rarity spend keys and other resources: a spending choice, not a chore.
+  - Sacred cards: progress of the cards won (heroes, guardians, war machines, attributes); nothing to press.
+  - Element wheel (bottom left): the 5 primordial elements won; all 5 craft an ancient artifact.
+  - ? bag: reward table per luck level. i buttons: help. Luck bar: luck level from plays.
+  - Tokens counter top right; its + offers more tokens.
 - Escape closes the market; Escape from the Tavern goes straight back to Town.
 - Gamer daily quest = 10 tavern plays.
-- Tavern::body: untilFind per screen, whileFindCompare(beer buy, its grey twin) click, whileFind(market title) Escape, whileFindCompare(Play, grey Play) { click, waitFor card, whileFindAny(card) click, waitFor Play }.

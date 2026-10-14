@@ -134,5 +134,7 @@ public final class Pictures {
             "src/main/resources/images/market_title_tavern.png").at(new Rect(696, 238, 530, 76));
     public static final ImageTemplate TAVERN_CHOICE_TOWN = new ImageTemplate(
             "src/main/resources/images/tavern_choice_town.png").at(new Rect(640, 440, 220, 200));
+    public static final ImageTemplate PLAY_OFF_TAVERN = new ImageTemplate(
+            "src/main/resources/images/play_off_tavern.png").at(new Rect(880, 953, 160, 48));
     private Pictures() {}
 }
