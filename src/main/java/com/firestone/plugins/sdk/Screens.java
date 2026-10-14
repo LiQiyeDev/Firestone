@@ -36,12 +36,12 @@ public final class Screens {
     public static final GameScreen TAVERN = GameScreen.named("Tavern").marker(Pictures.TAVERN_LUCK_TITLE)
             .from(Way.of(Screens.HOME, Input.click(Pictures.TAVERN_HOME))).back(Input.click(Pictures.CLOSE_TOWN))
             .inputs(List.of(Input.click(Pictures.INFO_LUCK_TAVERN), Input.click(Pictures.ARTIFACTS_TAVERN),
-                    Input.click(Pictures.SACRED_CARDS_TAVERN), Input.click(Pictures.SPEED_TAVERN).did(Did.IN_PLACE),
-                    Input.click(Pictures.BAG_TAVERN), Input.click(Pictures.CHAT_TAVERN),
-                    Input.click(Pictures.WHEEL_TAVERN), Input.click(Pictures.DECK_TAVERN),
-                    Input.click(Pictures.PLAY_TAVERN), Input.click(Pictures.MANUAL_TAVERN),
-                    Input.click(Pictures.MARKET_TAVERN), Input.click(Pictures.INFO_MAP),
-                    Input.click(Pictures.GEMS_PLUS_MAP).never("spends gems")));
+                    Input.click(Pictures.SACRED_CARDS_TAVERN).did(Did.IN_PLACE),
+                    Input.click(Pictures.SPEED_TAVERN).did(Did.IN_PLACE), Input.click(Pictures.BAG_TAVERN),
+                    Input.click(Pictures.CHAT_TAVERN), Input.click(Pictures.WHEEL_TAVERN),
+                    Input.click(Pictures.DECK_TAVERN), Input.click(Pictures.PLAY_TAVERN),
+                    Input.click(Pictures.MANUAL_TAVERN), Input.click(Pictures.MARKET_TAVERN),
+                    Input.click(Pictures.INFO_MAP), Input.click(Pictures.GEMS_PLUS_MAP).never("spends gems")));
     public static final GameScreen INFO_LUCK = GameScreen.named("Info luck").marker(Pictures.TOTAL_BONUSES_INFO_LUCK)
             .from(Way.of(Screens.TAVERN, Input.click(Pictures.INFO_LUCK_TAVERN)))
             .back(Input.click(Pictures.CLOSE_INFO_LUCK));
