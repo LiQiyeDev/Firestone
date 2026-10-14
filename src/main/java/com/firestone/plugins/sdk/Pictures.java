@@ -220,5 +220,7 @@ public final class Pictures {
             .at(new Rect(605, 15, 52, 52));
     public static final ImageTemplate CHAT_MAP = new ImageTemplate("src/main/resources/images/chat_map.png")
             .at(new Rect(1808, 862, 64, 64));
+    public static final ImageTemplate GOLD_PLUS_MAP = new ImageTemplate("src/main/resources/images/gold_plus_map.png")
+            .at(new Rect(1476, 16, 40, 40));
     private Pictures() {}
 }
