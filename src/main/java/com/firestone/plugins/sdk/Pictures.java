@@ -264,5 +264,7 @@ public final class Pictures {
             "src/main/resources/images/hero_card_party.png").at(new Rect(40, 230, 132, 132));
     public static final ImageTemplate MILESTONE_BATTLE_PASS = new ImageTemplate(
             "src/main/resources/images/milestone_battle_pass.png").at(new Rect(838, 98, 172, 46));
+    public static final ImageTemplate CHALLENGES_TAB_BATTLE_PASS = new ImageTemplate(
+            "src/main/resources/images/challenges_tab_battle_pass.png").at(new Rect(705, 22, 243, 56));
     private Pictures() {}
 }
