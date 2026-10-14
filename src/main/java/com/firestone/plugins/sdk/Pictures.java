@@ -242,5 +242,7 @@ public final class Pictures {
             "src/main/resources/images/recommended_fellowship.png").at(new Rect(1345, 165, 285, 85));
     public static final ImageTemplate SEARCH_FELLOWSHIP = new ImageTemplate(
             "src/main/resources/images/search_fellowship.png").at(new Rect(1360, 495, 255, 92));
+    public static final ImageTemplate CREATE_FELLOWSHIP = new ImageTemplate(
+            "src/main/resources/images/create_fellowship.png").at(new Rect(1380, 865, 210, 90));
     private Pictures() {}
 }

@@ -86,7 +86,7 @@ Not screens: the chest top right is a paid offer (Sale): never. The pink dragon 
 - Upgrades: home › click upgrades. bottom bar (upgrades).
 - Bag: home › click bag. bottom bar (bag).
 - Fellowship: home › click fellowship. bottom bar (fellowship); a click once opened nothing.
-- Party: bottom bar (party).
+- Party: home › click party. bottom bar (party).
 - Battle pass: bottom left (battle_pass_home).
 - Events: bottom left (events_home).
 - Hero profile: avatar top left (none yet).
@@ -112,7 +112,7 @@ Owed: each chest's picture, to try how one opens
 
 The fight screen; the Map lists where each input leads. Hotkeys: Q quests, M map, T town, S settings. Escape on Home asks "Do you want to exit the game?" (Save and Exit): never press Escape on Home.
 Marker: home
-Untried: party, battle_pass_home, events_home, engineer_home, war_machines_home, guardians_home, campaign_home, library_home, mail_home
+Untried: battle_pass_home, events_home, engineer_home, war_machines_home, guardians_home, campaign_home, library_home, mail_home
 - tried upgrades: opens Upgrades
 - tried bag: opens Bag
 - tried market: opens Market
@@ -121,6 +121,7 @@ Untried: party, battle_pass_home, events_home, engineer_home, war_machines_home,
 - tried home: opens Town
 - tried battle: opens Boss
 - tried fellowship: opens Fellowship
+- tried party: opens Party
 
 ## Market
 
@@ -153,6 +154,13 @@ Untried: leave_boss, prev_stage_boss, sale_chest_boss
 
 ## Fellowship
 
-Entrance: home › click fellowship
+Entrance: Home › click fellowship
 Marker: title_fellowship
-Untried: recommended_fellowship, search_fellowship
+- No fellowship joined: the bottom bar's Fellowship opens Find fellowship. Auto search (recommended_fellowship), a name field and Search (search_fellowship), Create (create_fellowship). Close (close_x) top right.
+- Joining or creating one is the player's choice, not the bot's.
+Untried: recommended_fellowship, search_fellowship, create_fellowship, close_x
+
+## Party
+
+Entrance: home › click party
+Owed: marker
