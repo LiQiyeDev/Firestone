@@ -381,6 +381,9 @@
     "search_fellowship" : {
       "tags" : [ "Fellowship" ]
     },
+    "settings_logged_in" : {
+      "tags" : [ "Settings" ]
+    },
     "start_mission_map" : {
       "tags" : [ "Missions" ]
     },

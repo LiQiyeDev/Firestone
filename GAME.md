@@ -77,7 +77,7 @@ Not screens: the chest top right is a paid offer (Sale): never. The pink dragon 
 - Tavern: Town › Tavern (tavern_town) › Tavern card (tavern_choice_town).
 - Engineer: Home › click engineer_home. left column, miner helmet (engineer_home). Tools production Claim.
 - Garage: Home › click war_machines_home. left column, gear and hammer (war_machines_home). War machines: tabs, Show all, Engineer arrow.
-- Guardians: left column, the guardian portrait (guardians_home). Train button (train_guardian).
+- Guardians: Home › click guardians_home. left column, the guardian portrait (guardians_home). Train button (train_guardian).
 - Campaign: Home › click campaign_home. left column, banner (campaign_home). Loot Claim.
 - Arena of Kings: Home › click arena_home. left column, crossed swords with a count badge, only while it has fights (none yet); also Town › Battles (battles_town), to check.
 - Mail: Home › click mail_home. left column, envelope (mail_home). Chat under it: never.
@@ -113,7 +113,7 @@ Owed: each chest's picture, to try how one opens
 
 The fight screen; the Map lists where each input leads. Hotkeys: Q quests, M map, T town, S settings. Escape on Home asks "Do you want to exit the game?" (Save and Exit): never press Escape on Home.
 Marker: home
-Untried: guardians_home, library_home
+Untried: library_home
 - tried upgrades: opens Upgrades
 - tried bag: opens Bag
 - tried market: opens Market
@@ -132,6 +132,7 @@ Untried: guardians_home, library_home
 - tried tavern_home: opens Tavern
 - tried arena_home: opens Arena of Kings
 - tried key S: opens Settings
+- tried guardians_home: opens Guardians
 
 ## Market
 
@@ -226,4 +227,14 @@ Untried: arena_fight, arena_refresh, arena_battle_log, arena_edit_squad
 ## Settings
 
 Entrance: Home › key S
+Marker: settings_logged_in
+Stage: surveyed
+No chore here. Tabs General, Gameplay, Graphics, More; sound toggle and sliders; Select language; Discord, Patch notes, Support, Chat rules (open outside the game or info).
+- Switch server: never (moves the account's play to another server).
+- Save and Exit: never (quits the game).
+Version 9.1.2a shown at the bottom.
+
+## Guardians
+
+Entrance: Home › click guardians_home
 Owed: marker
