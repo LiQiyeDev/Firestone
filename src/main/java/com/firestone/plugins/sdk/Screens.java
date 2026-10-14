@@ -68,8 +68,6 @@ public final class Screens {
             .inputs(List.of(Input.click(Pictures.BEER_BUY_TAVERN).did(Did.IN_PLACE).kind(Kind.CHORE),
                     Input.click(Pictures.GEMS_1000_MARKET).never("spends gems"),
                     Input.click(Pictures.GEMS_300_MARKET).never("spends gems")));
-    public static final GameScreen CARD = GameScreen.named("Card")
-            .from(Way.of(Screens.TAVERN, Input.click(Pictures.CARD_TAVERN).sometimes()));
     private Screens() {
     }
 }
