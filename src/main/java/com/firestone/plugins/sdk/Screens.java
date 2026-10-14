@@ -50,6 +50,8 @@ public final class Screens {
     public static final GameScreen INFO_LUCK = GameScreen.named("Info luck").marker(Pictures.TOTAL_BONUSES_INFO_LUCK)
             .from(Way.of(Screens.TAVERN, Input.click(Pictures.INFO_LUCK_TAVERN)))
             .back(Input.click(Pictures.CLOSE_INFO_LUCK));
+    public static final GameScreen INFO_MAP = GameScreen.named("Info map")
+            .from(Way.of(Screens.TAVERN, Input.click(Pictures.INFO_MAP)));
     private Screens() {
     }
 }
