@@ -154,4 +154,4 @@ Untried: leave_boss, prev_stage_boss, sale_chest_boss
 ## Fellowship
 
 Entrance: home › click fellowship
-Owed: marker
+Marker: title_fellowship

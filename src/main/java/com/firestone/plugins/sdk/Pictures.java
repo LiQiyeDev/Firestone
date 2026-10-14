@@ -236,5 +236,7 @@ public final class Pictures {
             "src/main/resources/images/prev_stage_boss.png").at(new Rect(682, 20, 28, 46));
     public static final ImageTemplate SALE_CHEST_BOSS = new ImageTemplate(
             "src/main/resources/images/sale_chest_boss.png").at(new Rect(1600, 160, 130, 90));
+    public static final ImageTemplate TITLE_FELLOWSHIP = new ImageTemplate(
+            "src/main/resources/images/title_fellowship.png").at(new Rect(815, 28, 290, 46));
     private Pictures() {}
 }
