@@ -427,5 +427,7 @@ public final class Pictures {
             .at(new Rect(556, 936, 104, 94));
     public static final ImageTemplate SELECT_ROOM_TITLE_CHAT = new ImageTemplate(
             "src/main/resources/images/select_room_title_chat.png").at(new Rect(787, 72, 350, 50));
+    public static final ImageTemplate CLOSE_ROOMS_CHAT = new ImageTemplate(
+            "src/main/resources/images/close_rooms_chat.png").at(new Rect(1560, 67, 75, 75));
     private Pictures() {}
 }
