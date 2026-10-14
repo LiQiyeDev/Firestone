@@ -48,7 +48,8 @@ public final class Screens {
                             .at(new Rect(1750, 700, 112, 92)).activities(List.of(Activities.Tavern.class))),
                     Input.click(Pictures.INFO_MAP), Input.click(Pictures.GEMS_PLUS_MAP).never("spends gems")));
     public static final GameScreen INFO_LUCK = GameScreen.named("Info luck").marker(Pictures.TOTAL_BONUSES_INFO_LUCK)
-            .from(Way.of(Screens.TAVERN, Input.click(Pictures.INFO_LUCK_TAVERN)));
+            .from(Way.of(Screens.TAVERN, Input.click(Pictures.INFO_LUCK_TAVERN)))
+            .inputs(List.of(Input.click(Pictures.CLOSE_INFO_LUCK)));
     private Screens() {
     }
 }
