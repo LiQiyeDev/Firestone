@@ -294,5 +294,7 @@ public final class Pictures {
             .at(new Rect(35, 288, 55, 58));
     public static final ImageTemplate ARENA_HOME = new ImageTemplate("src/main/resources/images/arena_home.png")
             .at(new Rect(35, 385, 55, 50));
+    public static final ImageTemplate TAVERN_LUCK_TITLE = new ImageTemplate(
+            "src/main/resources/images/tavern_luck_title.png").at(new Rect(125, 35, 150, 36));
     private Pictures() {}
 }

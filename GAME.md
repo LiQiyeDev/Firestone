@@ -47,6 +47,7 @@ Untried: claim_map, sword_pin_map, rank_list_map, campaign_map, war_machine_map,
 
 ## Tavern
 
+Marker: tavern_luck_title
 - Town › Tavern opens a chooser: Tavern or Scarab's game (tavern_choice_town = the Tavern card).
 - Town's buildings carry a red bell badge (badge_town) when something is ready; badges nest (Tavern → Market). The fight screen shows the same badge on its side buttons.
 - Beer comes from a dragon that visits during battle (click it to collect at once, or it drops the beer itself); it keeps coming while offline.
@@ -78,7 +79,7 @@ Not screens: the chest top right is a paid offer (Sale): never. The pink dragon 
 - Garage: Home › click war_machines_home. left column, gear and hammer (war_machines_home). War machines: tabs, Show all, Engineer arrow.
 - Guardians: left column, the guardian portrait (guardians_home). Train button (train_guardian).
 - Campaign: Home › click campaign_home. left column, banner (campaign_home). Loot Claim.
-- Arena of Kings: left column, crossed swords with a count badge, only while it has fights (none yet); also Town › Battles (battles_town), to check.
+- Arena of Kings: Home › click arena_home. left column, crossed swords with a count badge, only while it has fights (none yet); also Town › Battles (battles_town), to check.
 - Mail: Home › click mail_home. left column, envelope (mail_home). Chat under it: never.
 - Guild: home › click guild. Guild button (guild). Its buildings are entrances; most are locked on this account.
 - Market: home › click market. Market button (market). A free mystery box every day.
@@ -112,7 +113,7 @@ Owed: each chest's picture, to try how one opens
 
 The fight screen; the Map lists where each input leads. Hotkeys: Q quests, M map, T town, S settings. Escape on Home asks "Do you want to exit the game?" (Save and Exit): never press Escape on Home.
 Marker: home
-Untried: guardians_home, library_home, arena_home
+Untried: guardians_home, library_home
 - tried upgrades: opens Upgrades
 - tried bag: opens Bag
 - tried market: opens Market
@@ -129,6 +130,7 @@ Untried: guardians_home, library_home, arena_home
 - tried campaign_home: opens Campaign
 - tried mail_home: opens Mail
 - tried tavern_home: opens Tavern
+- tried arena_home: opens Arena of Kings
 
 ## Market
 
@@ -213,3 +215,8 @@ Untried: campaign_leaderboards, campaign_claim, campaign_daily_missions
 Entrance: Home › click mail_home
 Marker: mailbox_title
 Untried: mail_claim
+
+## Arena of Kings
+
+Entrance: Home › click arena_home
+Owed: marker
