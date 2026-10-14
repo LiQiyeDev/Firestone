@@ -126,6 +126,9 @@
     "research_start_library" : {
       "tags" : [ "Research" ]
     },
+    "start_mission_map" : {
+      "tags" : [ "Missions" ]
+    },
     "tavern_town" : {
       "tags" : [ "Town" ]
     },

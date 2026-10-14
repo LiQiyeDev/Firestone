@@ -106,5 +106,7 @@ public final class Pictures {
             .at(new Rect(95, 300, 165, 45));
     public static final ImageTemplate OKAY_MAP = new ImageTemplate("src/main/resources/images/okay_map.png")
             .at(new Rect(800, 612, 320, 70));
+    public static final ImageTemplate START_MISSION_MAP = new ImageTemplate(
+            "src/main/resources/images/start_mission_map.png").at(new Rect(960, 862, 270, 70));
     private Pictures() {}
 }
