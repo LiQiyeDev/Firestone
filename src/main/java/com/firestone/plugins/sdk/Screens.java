@@ -54,7 +54,7 @@ public final class Screens {
     public static final GameScreen INFO_MAP = GameScreen.named("Info map").marker(Pictures.HOW_TO_PLAY_TAVERN)
             .from(Way.of(Screens.TAVERN, Input.click(Pictures.INFO_MAP))).back(Input.click(Pictures.CLOSE_HELP_TAVERN))
             .inputs(List.of(Input.scroll(Pictures.HELP_TEXT_TAVERN, -10).did(Did.IN_PLACE).kind(Kind.INFO)));
-    public static final GameScreen ARTIFACTS = GameScreen.named("Artifacts")
+    public static final GameScreen ARTIFACTS = GameScreen.named("Artifacts").marker(Pictures.ARTIFACTS_TITLE)
             .from(Way.of(Screens.TAVERN, Input.click(Pictures.ARTIFACTS_TAVERN)));
     private Screens() {
     }
