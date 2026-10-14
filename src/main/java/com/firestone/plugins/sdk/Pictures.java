@@ -244,5 +244,7 @@ public final class Pictures {
             "src/main/resources/images/search_fellowship.png").at(new Rect(1360, 495, 255, 92));
     public static final ImageTemplate CREATE_FELLOWSHIP = new ImageTemplate(
             "src/main/resources/images/create_fellowship.png").at(new Rect(1380, 865, 210, 90));
+    public static final ImageTemplate DEPLOYED_PARTY = new ImageTemplate("src/main/resources/images/deployed_party.png")
+            .at(new Rect(843, 42, 165, 48));
     private Pictures() {}
 }
