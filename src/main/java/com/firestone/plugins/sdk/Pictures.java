@@ -230,5 +230,7 @@ public final class Pictures {
             .at(new Rect(30, 20, 120, 120));
     public static final ImageTemplate TITLE_TOWN = new ImageTemplate("src/main/resources/images/title_town.png")
             .at(new Rect(785, 8, 110, 45));
+    public static final ImageTemplate LOCK_TOWN = new ImageTemplate("src/main/resources/images/lock_town.png")
+            .at(new Rect(998, 978, 64, 64));
     private Pictures() {}
 }

@@ -82,7 +82,7 @@ Not screens: the chest top right is a paid offer (Sale): never. The pink dragon 
 - Mail: left column, envelope (mail_home). Chat under it: never.
 - Guild: home › click guild. Guild button (guild). Its buildings are entrances; most are locked on this account.
 - Market: home › click market. Market button (market). A free mystery box every day.
-- Boss: the Boss button (battle).
+- Boss: home › click battle. the Boss button (battle).
 - Upgrades: home › click upgrades. bottom bar (upgrades).
 - Bag: home › click bag. bottom bar (bag).
 - Fellowship: bottom bar (fellowship); the click opened nothing.
@@ -112,13 +112,14 @@ Owed: each chest's picture, to try how one opens
 
 The fight screen; the Map lists where each input leads. Hotkeys: Q quests, M map, T town, S settings.
 Marker: home
-Untried: battle, fellowship, party, battle_pass_home, events_home, engineer_home, war_machines_home, guardians_home, campaign_home, library_home, mail_home
+Untried: fellowship, party, battle_pass_home, events_home, engineer_home, war_machines_home, guardians_home, campaign_home, library_home, mail_home
 - tried upgrades: opens Upgrades
 - tried bag: opens Bag
 - tried market: opens Market
 - tried guild: opens Guild
 - tried map: opens Map missions
 - tried home: opens Town
+- tried battle: opens Boss
 
 ## Market
 
@@ -136,5 +137,12 @@ A full-screen island of buildings. No guild joined yet: Find guild at the bottom
 
 ## Town
 
-Entrance: home › click home
+Entrance: Home › click home
 Marker: title_town
+- Town - Irongard: buildings on an island, each a screen. A red badge marks one with work. Close (close_town) or the Map arrow (back_town) leave it. Level 200 building is locked (lock_town).
+Untried: lock_town, battles_town, magic_quarter_town, temple_town, guild_town, leaderboards_town, market_town, hall_of_heroes_town, exotic_merchant_town, library_town, alchemist_town, tavern_town, engineer_town, pirate_ship_town, back_town, close_town
+
+## Boss
+
+Entrance: home › click battle
+Owed: marker
