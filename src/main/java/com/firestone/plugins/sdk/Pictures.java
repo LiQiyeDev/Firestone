@@ -417,5 +417,7 @@ public final class Pictures {
             "src/main/resources/images/close_rewards_tavern.png").at(new Rect(1578, 38, 70, 70));
     public static final ImageTemplate TYPE_MESSAGE_CHAT = new ImageTemplate(
             "src/main/resources/images/type_message_chat.png").at(new Rect(44, 948, 286, 52));
+    public static final ImageTemplate CLOSE_CHAT = new ImageTemplate("src/main/resources/images/close_chat.png")
+            .at(new Rect(596, 24, 72, 72));
     private Pictures() {}
 }
