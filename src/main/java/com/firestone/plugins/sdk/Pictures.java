@@ -349,5 +349,7 @@ public final class Pictures {
             "src/main/resources/images/alchemist_dust_start.png").at(new Rect(1195, 755, 160, 55));
     public static final ImageTemplate ALCHEMIST_CAULDRON_TAB = new ImageTemplate(
             "src/main/resources/images/alchemist_cauldron_tab.png").at(new Rect(1340, 90, 120, 70));
+    public static final ImageTemplate OFFLINE_PROGRESS_TITLE = new ImageTemplate(
+            "src/main/resources/images/offline_progress_title.png").at(new Rect(770, 60, 380, 100));
     private Pictures() {}
 }
