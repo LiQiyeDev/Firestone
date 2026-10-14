@@ -18,6 +18,9 @@
     "battles_town" : {
       "tags" : [ "Town" ]
     },
+    "campaign_home" : {
+      "tags" : [ "Home" ]
+    },
     "claim_map" : {
       "tags" : [ "Missions" ]
     },

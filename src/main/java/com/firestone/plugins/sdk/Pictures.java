@@ -138,5 +138,7 @@ public final class Pictures {
             "src/main/resources/images/play_off_tavern.png").at(new Rect(880, 953, 160, 48));
     public static final ImageTemplate MANUAL_TAVERN = new ImageTemplate("src/main/resources/images/manual_tavern.png")
             .at(new Rect(1688, 1006, 160, 54));
+    public static final ImageTemplate CAMPAIGN_HOME = new ImageTemplate("src/main/resources/images/campaign_home.png")
+            .at(new Rect(30, 308, 62, 62));
     private Pictures() {}
 }
