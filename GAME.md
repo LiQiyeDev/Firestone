@@ -219,4 +219,4 @@ Untried: mail_claim
 ## Arena of Kings
 
 Entrance: Home › click arena_home
-Owed: marker
+Marker: arena_title
