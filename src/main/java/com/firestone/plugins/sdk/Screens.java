@@ -65,7 +65,7 @@ public final class Screens {
     public static final GameScreen RARITY = GameScreen.named("Rarity").marker(Pictures.ARTIFACT_RARITY_TITLE)
             .from(Way.of(Screens.ARTIFACTS, Input.click(Pictures.RARITY_ARTIFACTS)))
             .back(Input.click(Pictures.CLOSE_ARTIFACT_UPGRADE))
-            .inputs(List.of(Input.click(Pictures.RARITY_ARTIFACT_CONFIRM).kind(Kind.CHORE)));
+            .inputs(List.of(Input.click(Pictures.RARITY_ARTIFACT_CONFIRM).did(Did.IN_PLACE).kind(Kind.CHORE)));
     private Screens() {
     }
 }
