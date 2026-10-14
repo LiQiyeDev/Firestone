@@ -298,5 +298,7 @@ public final class Pictures {
             "src/main/resources/images/tavern_luck_title.png").at(new Rect(125, 35, 150, 36));
     public static final ImageTemplate ARENA_TITLE = new ImageTemplate("src/main/resources/images/arena_title.png")
             .at(new Rect(822, 74, 275, 44));
+    public static final ImageTemplate ARENA_FIGHT = new ImageTemplate("src/main/resources/images/arena_fight.png")
+            .at(new Rect(640, 640, 85, 34));
     private Pictures() {}
 }

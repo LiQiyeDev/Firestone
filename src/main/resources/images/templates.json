@@ -6,6 +6,9 @@
     "alchemist_town" : {
       "tags" : [ "Town" ]
     },
+    "arena_fight" : {
+      "tags" : [ "Arena of Kings" ]
+    },
     "arena_home" : {
       "tags" : [ "Home" ]
     },

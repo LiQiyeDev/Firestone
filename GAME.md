@@ -220,3 +220,4 @@ Untried: mail_claim
 
 Entrance: Home › click arena_home
 Marker: arena_title
+Untried: arena_fight
