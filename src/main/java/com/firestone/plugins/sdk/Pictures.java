@@ -387,5 +387,7 @@ public final class Pictures {
             "src/main/resources/images/help_text_tavern.png").at(new Rect(560, 180, 200, 80));
     public static final ImageTemplate ARTIFACTS_TITLE = new ImageTemplate(
             "src/main/resources/images/artifacts_title.png").at(new Rect(250, 95, 490, 60));
+    public static final ImageTemplate UPGRADE_ARTIFACTS = new ImageTemplate(
+            "src/main/resources/images/upgrade_artifacts.png").at(new Rect(1015, 965, 300, 95));
     private Pictures() {}
 }
