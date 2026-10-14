@@ -401,5 +401,7 @@ public final class Pictures {
             "src/main/resources/images/close_artifact_upgrade.png").at(new Rect(1640, 150, 75, 75));
     public static final ImageTemplate UPGRADE_ARTIFACT_CONFIRM = new ImageTemplate(
             "src/main/resources/images/upgrade_artifact_confirm.png").at(new Rect(835, 365, 260, 120));
+    public static final ImageTemplate ARTIFACT_RARITY_TITLE = new ImageTemplate(
+            "src/main/resources/images/artifact_rarity_title.png").at(new Rect(740, 155, 440, 48));
     private Pictures() {}
 }
