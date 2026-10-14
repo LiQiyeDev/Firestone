@@ -96,6 +96,9 @@
     "meteorite_tab_library" : {
       "tags" : [ "Research" ]
     },
+    "no_squads_map" : {
+      "tags" : [ "Missions" ]
+    },
     "okay_map" : {
       "tags" : [ "Missions" ]
     },

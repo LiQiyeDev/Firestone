@@ -108,5 +108,7 @@ public final class Pictures {
             .at(new Rect(800, 612, 320, 70));
     public static final ImageTemplate START_MISSION_MAP = new ImageTemplate(
             "src/main/resources/images/start_mission_map.png").at(new Rect(960, 862, 270, 70));
+    public static final ImageTemplate NO_SQUADS_MAP = new ImageTemplate("src/main/resources/images/no_squads_map.png")
+            .at(new Rect(1000, 872, 515, 42));
     private Pictures() {}
 }
