@@ -204,5 +204,7 @@ public final class Pictures {
             "src/main/resources/images/tree_of_life_guild.png").at(new Rect(1480, 180, 260, 150));
     public static final ImageTemplate CHAOS_RIFT_GUILD = new ImageTemplate(
             "src/main/resources/images/chaos_rift_guild.png").at(new Rect(1300, 420, 230, 280));
+    public static final ImageTemplate FORBIDDEN_KNOWLEDGE_GUILD = new ImageTemplate(
+            "src/main/resources/images/forbidden_knowledge_guild.png").at(new Rect(465, 695, 210, 160));
     private Pictures() {}
 }
