@@ -60,6 +60,9 @@
     "campaign_map" : {
       "tags" : [ "Map missions" ]
     },
+    "campaign_title" : {
+      "tags" : [ "Campaign" ]
+    },
     "card_tavern" : {
       "tags" : [ "Tavern" ]
     },

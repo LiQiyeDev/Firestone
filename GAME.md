@@ -203,4 +203,4 @@ Opens on the first war machine's info tab; tabs: info, upgrade (anvil), blueprin
 ## Campaign
 
 Entrance: Home › click campaign_home
-Owed: marker
+Marker: campaign_title
