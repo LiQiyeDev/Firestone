@@ -373,5 +373,7 @@ public final class Pictures {
             .at(new Rect(462, 988, 76, 64));
     public static final ImageTemplate WHEEL_TAVERN = new ImageTemplate("src/main/resources/images/wheel_tavern.png")
             .at(new Rect(190, 610, 100, 90));
+    public static final ImageTemplate DECK_TAVERN = new ImageTemplate("src/main/resources/images/deck_tavern.png")
+            .at(new Rect(800, 300, 284, 404));
     private Pictures() {}
 }
