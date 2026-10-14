@@ -308,5 +308,7 @@ public final class Pictures {
             "src/main/resources/images/arena_edit_squad.png").at(new Rect(1250, 870, 100, 95));
     public static final ImageTemplate SETTINGS_LOGGED_IN = new ImageTemplate(
             "src/main/resources/images/settings_logged_in.png").at(new Rect(655, 228, 312, 38));
+    public static final ImageTemplate GUARDIANS_STRENGTHEN = new ImageTemplate(
+            "src/main/resources/images/guardians_strengthen.png").at(new Rect(1137, 645, 470, 36));
     private Pictures() {}
 }

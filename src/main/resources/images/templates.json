@@ -213,6 +213,9 @@
     "guardians_home" : {
       "tags" : [ "Home" ]
     },
+    "guardians_strengthen" : {
+      "tags" : [ "Guardians" ]
+    },
     "guardians_tab_party" : {
       "tags" : [ "Party" ]
     },

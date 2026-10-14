@@ -237,4 +237,4 @@ Version 9.1.2a shown at the bottom.
 ## Guardians
 
 Entrance: Home › click guardians_home
-Owed: marker
+Marker: guardians_strengthen
