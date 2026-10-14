@@ -8,6 +8,7 @@ import com.botmaker.sdk.api.screens.Input;
 import java.util.List;
 import com.botmaker.sdk.api.screens.Did;
 import com.botmaker.sdk.api.screens.Way;
+import com.botmaker.sdk.api.screens.Kind;
 
 /**
  * Values com.botmaker.sdk keeps in step with its own windows.
@@ -52,7 +53,7 @@ public final class Screens {
             .back(Input.click(Pictures.CLOSE_INFO_LUCK));
     public static final GameScreen INFO_MAP = GameScreen.named("Info map").marker(Pictures.HOW_TO_PLAY_TAVERN)
             .from(Way.of(Screens.TAVERN, Input.click(Pictures.INFO_MAP))).back(Input.click(Pictures.CLOSE_HELP_TAVERN))
-            .inputs(List.of(Input.click(Pictures.HELP_TEXT_TAVERN)));
+            .inputs(List.of(Input.scroll(Pictures.HELP_TEXT_TAVERN, -10).did(Did.IN_PLACE).kind(Kind.INFO)));
     private Screens() {
     }
 }
