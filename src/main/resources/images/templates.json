@@ -111,6 +111,9 @@
     "quests_tab" : {
       "tags" : [ "Quests" ]
     },
+    "rank_list_map" : {
+      "tags" : [ "Missions" ]
+    },
     "research_claim" : {
       "tags" : [ "Research" ]
     },

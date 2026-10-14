@@ -100,5 +100,7 @@ public final class Pictures {
             .at(new Rect(560, 100, 220, 58));
     public static final ImageTemplate GEMS_LIBRARY = new ImageTemplate("src/main/resources/images/gems_library.png")
             .at(new Rect(1532, 12, 46, 44));
+    public static final ImageTemplate RANK_LIST_MAP = new ImageTemplate("src/main/resources/images/rank_list_map.png")
+            .at(new Rect(1660, 995, 240, 70));
     private Pictures() {}
 }
