@@ -248,5 +248,7 @@ public final class Pictures {
             .at(new Rect(843, 42, 165, 48));
     public static final ImageTemplate CLOSE_PARTY = new ImageTemplate("src/main/resources/images/close_party.png")
             .at(new Rect(1812, 17, 56, 54));
+    public static final ImageTemplate CHOOSE_LEADER_PARTY = new ImageTemplate(
+            "src/main/resources/images/choose_leader_party.png").at(new Rect(1618, 372, 232, 62));
     private Pictures() {}
 }
