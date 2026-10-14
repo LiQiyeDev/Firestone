@@ -218,5 +218,7 @@ public final class Pictures {
             "src/main/resources/images/war_machine_map.png").at(new Rect(1790, 555, 100, 100));
     public static final ImageTemplate INFO_MAP = new ImageTemplate("src/main/resources/images/info_map.png")
             .at(new Rect(605, 15, 52, 52));
+    public static final ImageTemplate CHAT_MAP = new ImageTemplate("src/main/resources/images/chat_map.png")
+            .at(new Rect(1808, 862, 64, 64));
     private Pictures() {}
 }
