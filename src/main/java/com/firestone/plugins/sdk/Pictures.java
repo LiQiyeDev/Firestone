@@ -192,5 +192,7 @@ public final class Pictures {
             .at(new Rect(850, 2, 230, 56));
     public static final ImageTemplate LOCK_GUILD = new ImageTemplate("src/main/resources/images/lock_guild.png")
             .at(new Rect(568, 264, 72, 76));
+    public static final ImageTemplate MARKET_GUILD = new ImageTemplate("src/main/resources/images/market_guild.png")
+            .at(new Rect(510, 82, 210, 170));
     private Pictures() {}
 }
