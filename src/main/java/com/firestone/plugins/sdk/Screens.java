@@ -78,7 +78,7 @@ public final class Screens {
     public static final GameScreen ROOMS = GameScreen.named("Rooms").marker(Pictures.SELECT_ROOM_TITLE_CHAT)
             .from(Way.of(Screens.CHAT, Input.click(Pictures.ROOMS_CHAT))).back(Input.click(Pictures.CLOSE_ROOMS_CHAT))
             .inputs(List.of(Input.click(Pictures.ENGLISH_ROOM_CHAT).did(Did.IN_PLACE).kind(Kind.CHOICE),
-                    Input.click(Pictures.CONFIRM_ROOM_CHAT)));
+                    Input.click(Pictures.CONFIRM_ROOM_CHAT).did(Did.LEAVES).kind(Kind.CHOICE)));
     private Screens() {
     }
 }
