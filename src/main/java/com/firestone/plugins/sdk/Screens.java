@@ -57,7 +57,8 @@ public final class Screens {
     public static final GameScreen ARTIFACTS = GameScreen.named("Artifacts").marker(Pictures.ARTIFACTS_TITLE)
             .from(Way.of(Screens.TAVERN, Input.click(Pictures.ARTIFACTS_TAVERN))).back(Input.click(Pictures.CLOSE_TOWN))
             .inputs(List.of(Input.click(Pictures.UPGRADE_ARTIFACTS), Input.click(Pictures.RARITY_ARTIFACTS),
-                    Input.click(Pictures.ARTIFACT_CELL).did(Did.IN_PLACE), Input.click(Pictures.ARTIFACTS_GRID)));
+                    Input.click(Pictures.ARTIFACT_CELL).did(Did.IN_PLACE),
+                    Input.scroll(Pictures.ARTIFACTS_GRID, -10).did(Did.IN_PLACE)));
     public static final GameScreen UPGRADE = GameScreen.named("Upgrade").marker(Pictures.ARTIFACT_UPGRADE_TITLE)
             .from(Way.of(Screens.ARTIFACTS, Input.click(Pictures.UPGRADE_ARTIFACTS)))
             .back(Input.click(Pictures.CLOSE_ARTIFACT_UPGRADE))
