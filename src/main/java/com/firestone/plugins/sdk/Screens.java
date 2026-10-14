@@ -36,7 +36,7 @@ public final class Screens {
             .inputs(List.of(Input.click(Pictures.INFO_LUCK_TAVERN), Input.click(Pictures.ARTIFACTS_TAVERN),
                     Input.click(Pictures.SACRED_CARDS_TAVERN), Input.click(Pictures.SPEED_TAVERN),
                     Input.click(Pictures.BAG_TAVERN), Input.click(Pictures.CHAT_TAVERN),
-                    Input.click(Pictures.WHEEL_TAVERN)));
+                    Input.click(Pictures.WHEEL_TAVERN), Input.click(Pictures.DECK_TAVERN)));
     private Screens() {
     }
 }
