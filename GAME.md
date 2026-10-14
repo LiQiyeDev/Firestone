@@ -93,3 +93,4 @@ Not screens: the chest top right is a paid offer (Sale): never. The pink dragon 
 
 Entrance: home › click upgrades
 Marker: heroes_damage_upgrades
+Cut: upgrade_upgrades

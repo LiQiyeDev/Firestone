@@ -158,5 +158,7 @@ public final class Pictures {
             .at(new Rect(518, 955, 60, 55));
     public static final ImageTemplate HEROES_DAMAGE_UPGRADES = new ImageTemplate(
             "src/main/resources/images/heroes_damage_upgrades.png").at(new Rect(1345, 155, 85, 75));
+    public static final ImageTemplate UPGRADE_UPGRADES = new ImageTemplate(
+            "src/main/resources/images/upgrade_upgrades.png").at(new Rect(1632, 152, 256, 92));
     private Pictures() {}
 }
