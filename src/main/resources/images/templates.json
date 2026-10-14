@@ -144,6 +144,9 @@
     "upgrades" : {
       "tags" : [ "Home" ]
     },
+    "war_pin_map" : {
+      "tags" : [ "Missions" ]
+    },
     "weekly_tab_off" : {
       "tags" : [ "Quests" ]
     },
