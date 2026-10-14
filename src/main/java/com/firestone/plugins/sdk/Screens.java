@@ -25,7 +25,8 @@ public final class Screens {
             Input.click(Pictures.MARKET), Input.click(Pictures.BATTLE), Input.click(Pictures.BATTLE_PASS_HOME),
             Input.click(Pictures.EVENTS_HOME), Input.click(Pictures.UPGRADES), Input.click(Pictures.BAG),
             Input.click(Pictures.FELLOWSHIP), Input.click(Pictures.PARTY), Input.click(Pictures.CARD_HOME).sometimes(),
-            Input.click(Pictures.PARCHMENT_HOME).sometimes(), Input.click(Pictures.POTION_HOME).sometimes()));
+            Input.click(Pictures.PARCHMENT_HOME).sometimes(), Input.click(Pictures.POTION_HOME).sometimes(),
+            Input.click(Pictures.SCROLL_BOOT_HOME).sometimes()));
 
     private Screens() {
     }
