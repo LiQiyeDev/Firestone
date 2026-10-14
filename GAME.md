@@ -146,3 +146,4 @@ Untried: lock_town, battles_town, magic_quarter_town, temple_town, guild_town, l
 
 Entrance: home › click battle
 Owed: marker
+Untried: prev_stage_boss
