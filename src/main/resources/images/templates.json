@@ -147,6 +147,9 @@
     "tavern_town" : {
       "tags" : [ "Town" ]
     },
+    "telescope_pin_map" : {
+      "tags" : [ "Missions" ]
+    },
     "temple_town" : {
       "tags" : [ "Town" ]
     },

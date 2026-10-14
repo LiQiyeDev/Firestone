@@ -120,5 +120,7 @@ public final class Pictures {
             .at(new Rect(1490, 212, 40, 62));
     public static final ImageTemplate SWORD_PIN_MAP = new ImageTemplate("src/main/resources/images/sword_pin_map.png")
             .at(new Rect(1129, 598, 44, 70));
+    public static final ImageTemplate TELESCOPE_PIN_MAP = new ImageTemplate(
+            "src/main/resources/images/telescope_pin_map.png").at(new Rect(1457, 547, 48, 72));
     private Pictures() {}
 }

@@ -22,7 +22,7 @@ public class Missions {
                     ImageClicker.clickLast();
                 });
         ImageFinder.whileFindAny(
-                ImageTemplateGroup.of(Pictures.WAR_PIN_MAP, Pictures.SCOUT_PIN_MAP, Pictures.DRAGON_PIN_MAP,
+                ImageTemplateGroup.of(Pictures.SWORD_PIN_MAP, Pictures.TELESCOPE_PIN_MAP, Pictures.DRAGON_PIN_MAP,
                         Pictures.SCROLL_PIN_MAP),
                 it -> {
                     ImageClicker.clickLast();
