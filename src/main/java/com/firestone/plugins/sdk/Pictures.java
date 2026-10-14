@@ -140,5 +140,7 @@ public final class Pictures {
             .at(new Rect(1688, 1006, 160, 54));
     public static final ImageTemplate CAMPAIGN_HOME = new ImageTemplate("src/main/resources/images/campaign_home.png")
             .at(new Rect(30, 308, 62, 62));
+    public static final ImageTemplate WAR_MACHINES_HOME = new ImageTemplate(
+            "src/main/resources/images/war_machines_home.png").at(new Rect(28, 400, 66, 62));
     private Pictures() {}
 }

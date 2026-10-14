@@ -159,6 +159,9 @@
     "upgrades" : {
       "tags" : [ "Home" ]
     },
+    "war_machines_home" : {
+      "tags" : [ "Home" ]
+    },
     "weekly_tab_off" : {
       "tags" : [ "Quests" ]
     },
