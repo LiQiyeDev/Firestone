@@ -39,7 +39,8 @@ public final class Screens {
                     Input.click(Pictures.SACRED_CARDS_TAVERN).did(Did.IN_PLACE),
                     Input.click(Pictures.SPEED_TAVERN).did(Did.IN_PLACE), Input.click(Pictures.BAG_TAVERN),
                     Input.click(Pictures.CHAT_TAVERN), Input.click(Pictures.WHEEL_TAVERN).did(Did.IN_PLACE),
-                    Input.click(Pictures.DECK_TAVERN).did(Did.IN_PLACE), Input.click(Pictures.PLAY_TAVERN),
+                    Input.click(Pictures.DECK_TAVERN).did(Did.IN_PLACE),
+                    Input.click(Pictures.PLAY_TAVERN).did(Did.IN_PLACE),
                     Input.click(Pictures.MANUAL_TAVERN).did(Did.IN_PLACE), Input.click(Pictures.MARKET_TAVERN),
                     Input.click(Pictures.INFO_MAP), Input.click(Pictures.GEMS_PLUS_MAP).never("spends gems")));
     public static final GameScreen INFO_LUCK = GameScreen.named("Info luck").marker(Pictures.TOTAL_BONUSES_INFO_LUCK)
