@@ -318,5 +318,7 @@ public final class Pictures {
             .at(new Rect(36, 612, 52, 52));
     public static final ImageTemplate POTION_HOME = new ImageTemplate("src/main/resources/images/potion_home.png")
             .at(new Rect(37, 542, 50, 50));
+    public static final ImageTemplate SCROLL_BOOT_HOME = new ImageTemplate(
+            "src/main/resources/images/scroll_boot_home.png").at(new Rect(37, 650, 50, 50));
     private Pictures() {}
 }

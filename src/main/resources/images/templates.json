@@ -390,6 +390,9 @@
     "sale_chest_boss" : {
       "tags" : [ "Boss" ]
     },
+    "scroll_boot_home" : {
+      "tags" : [ "Home" ]
+    },
     "scroll_pin_map" : {
       "tags" : [ "Missions" ]
     },
