@@ -18,11 +18,13 @@ public final class Screens {
             .back(Input.click(new ImageTemplate("src/main/resources/images/claim_offline.png")
                     .at(new Rect(895, 905, 130, 50)).tags(List.of(Tags.POPUPS))))
             .popup();
-    public static final GameScreen HOME = GameScreen.named("Home").marker(Pictures.HOME).inputs(List.of(Input.click(Pictures.TAVERN_HOME),
-            Input.click(Pictures.ARENA_HOME), Input.click(Pictures.ENGINEER_HOME), Input.click(Pictures.CAMPAIGN_HOME),
-            Input.click(Pictures.WAR_MACHINES_HOME), Input.click(Pictures.MAIL_HOME), Input.click(Pictures.CHAT_MAP),
-            Input.click(Pictures.HOME), Input.click(Pictures.MAP), Input.click(Pictures.GUILD),
-            Input.click(Pictures.MARKET), Input.click(Pictures.BATTLE), Input.click(Pictures.BATTLE_PASS_HOME)));
+    public static final GameScreen HOME = GameScreen.named("Home").marker(Pictures.HOME)
+            .inputs(List.of(Input.click(Pictures.TAVERN_HOME), Input.click(Pictures.ARENA_HOME),
+                    Input.click(Pictures.ENGINEER_HOME), Input.click(Pictures.CAMPAIGN_HOME),
+                    Input.click(Pictures.WAR_MACHINES_HOME), Input.click(Pictures.MAIL_HOME),
+                    Input.click(Pictures.CHAT_MAP), Input.click(Pictures.HOME), Input.click(Pictures.MAP),
+                    Input.click(Pictures.GUILD), Input.click(Pictures.MARKET), Input.click(Pictures.BATTLE),
+                    Input.click(Pictures.BATTLE_PASS_HOME), Input.click(Pictures.EVENTS_HOME)));
 
     private Screens() {
     }
