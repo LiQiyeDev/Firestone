@@ -73,13 +73,13 @@ Not screens: the chest top right is a paid offer (Sale): never. The pink dragon 
 - Quests: Q (hotkey).
 - Map missions: M (hotkey) or the Map button (map).
 - Town: home › click home. T (hotkey) or the Town button (home); its buildings are entrances below.
-- Research: Town › Library (library_town); or the left column's book icon (library_home), which opens the Meteorite tab.
-- Tavern: Town › Tavern (tavern_town) › Tavern card (tavern_choice_town).
+- Research: Home › click parchment_home (left column, parchment with a green meteorite), which opens the Meteorite tab; or Town › Library (library_town).
+- Tavern: Home › click tavern_home (left column, beer mug, while it has a badge); or Town › Tavern (tavern_town) › Tavern card (tavern_choice_town).
 - Engineer: Home › click engineer_home. left column, miner helmet (engineer_home). Tools production Claim.
 - Garage: Home › click war_machines_home. left column, gear and hammer (war_machines_home). War machines: tabs, Show all, Engineer arrow.
 - Guardians: Home › click guardians_home. left column, the guardian portrait (guardians_home). Train button (train_guardian).
 - Campaign: Home › click campaign_home. left column, banner (campaign_home). Loot Claim.
-- Arena of Kings: Home › click arena_home. left column, crossed swords with a count badge, only while it has fights (none yet); also Town › Battles (battles_town), to check.
+- Arena of Kings: Home › click arena_home. left column, crossed swords, while it has fights; also Town › Battles (battles_town), to check.
 - Mail: Home › click mail_home. left column, envelope (mail_home). Chat under it: never.
 - Guild: home › click guild. Guild button (guild). Its buildings are entrances; most are locked on this account.
 - Market: home › click market. Market button (market). A free mystery box every day.
@@ -91,7 +91,7 @@ Not screens: the chest top right is a paid offer (Sale): never. The pink dragon 
 - Battle pass: home › click battle_pass_home. bottom left (battle_pass_home).
 - Events: home › click events_home. bottom left (events_home).
 - Hero profile: avatar top left (none yet).
-- Settings: Home › key S. gear top right, S (hotkey).
+- Settings: Home › key S. gear top right.
 
 ## Upgrades
 
@@ -113,7 +113,7 @@ Owed: each chest's picture, to try how one opens
 
 The fight screen; the Map lists where each input leads. Hotkeys: Q quests, M map, T town, S settings. Escape on Home asks "Do you want to exit the game?" (Save and Exit): never press Escape on Home.
 Marker: home
-Untried: library_home
+The left column changes: its icons come and go with their badges and it scrolls (wheel over it); find them by picture, never by place.
 - tried upgrades: opens Upgrades
 - tried bag: opens Bag
 - tried market: opens Market
@@ -133,6 +133,7 @@ Untried: library_home
 - tried arena_home: opens Arena of Kings
 - tried key S: opens Settings
 - tried guardians_home: opens Guardians
+- tried parchment_home: opens Research, on the Meteorite tab. library_home is the same icon cut with its glow: it scored 0.36 while a research was ready and 0.80+ after; parchment_home is the inner part and matches both.
 
 ## Market
 

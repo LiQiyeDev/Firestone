@@ -314,5 +314,7 @@ public final class Pictures {
             "src/main/resources/images/guardian_enlightenment.png").at(new Rect(1452, 748, 185, 34));
     public static final ImageTemplate GUARDIAN_MULTIPLIER = new ImageTemplate(
             "src/main/resources/images/guardian_multiplier.png").at(new Rect(1762, 208, 100, 44));
+    public static final ImageTemplate PARCHMENT_HOME = new ImageTemplate("src/main/resources/images/parchment_home.png")
+            .at(new Rect(36, 612, 52, 52));
     private Pictures() {}
 }

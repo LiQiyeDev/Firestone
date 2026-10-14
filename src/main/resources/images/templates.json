@@ -336,6 +336,9 @@
     "order_by_party" : {
       "tags" : [ "Party" ]
     },
+    "parchment_home" : {
+      "tags" : [ "Home" ]
+    },
     "party" : {
       "tags" : [ "Home" ]
     },
@@ -460,5 +463,5 @@
       "tags" : [ "Map missions" ]
     }
   },
-  "customTags" : [ "Arena of Kings", "Bag", "Battle pass", "Boss", "Campaign", "Engineer", "Events", "Fellowship", "Garage", "Guardians", "Guild", "Home", "Mail", "Map missions", "Market", "Party", "Popups", "Settings", "Town", "Upgrades" ]
+  "customTags" : [ "Arena of Kings", "Bag", "Battle pass", "Boss", "Campaign", "Engineer", "Events", "Fellowship", "Garage", "Guardians", "Guild", "Home", "Mail", "Map missions", "Market", "Parchment", "Party", "Popups", "Settings", "Town", "Upgrades" ]
 }
