@@ -423,5 +423,7 @@ public final class Pictures {
             .at(new Rect(276, 72, 144, 36));
     public static final ImageTemplate WORLD_CHAT = new ImageTemplate("src/main/resources/images/world_chat.png")
             .at(new Rect(676, 276, 68, 68));
+    public static final ImageTemplate SEND_CHAT = new ImageTemplate("src/main/resources/images/send_chat.png")
+            .at(new Rect(556, 936, 104, 94));
     private Pictures() {}
 }
