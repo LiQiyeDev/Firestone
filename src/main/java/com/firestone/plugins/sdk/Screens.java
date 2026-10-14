@@ -4,6 +4,8 @@ import com.botmaker.sdk.api.bot.SdkValue;
 import com.botmaker.sdk.api.screens.GameScreen;
 import com.botmaker.sdk.api.vision.ImageTemplate;
 import com.botmaker.sdk.api.geometry.Rect;
+import com.botmaker.sdk.api.screens.Input;
+import java.util.List;
 
 /**
  * Values com.botmaker.sdk keeps in step with its own windows.
@@ -12,8 +14,9 @@ import com.botmaker.sdk.api.geometry.Rect;
  */
 @SdkValue(SdkValue.Id.SCREEN_MAP)
 public final class Screens {
-    public static final GameScreen OFFLINE_PROGRESS = GameScreen.named("Offline progress").marker(
-            new ImageTemplate("src/main/resources/images/offline_progress_title.png").at(new Rect(770, 60, 380, 100)))
+    public static final GameScreen OFFLINE_PROGRESS = GameScreen.named("Offline progress").marker(Pictures.OFFLINE_PROGRESS_TITLE)
+            .back(Input.click(new ImageTemplate("src/main/resources/images/claim_offline.png")
+                    .at(new Rect(895, 905, 130, 50)).tags(List.of(Tags.POPUPS))))
             .popup();
 
     private Screens() {
