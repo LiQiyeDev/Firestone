@@ -74,7 +74,7 @@ Not screens: the chest top right is a paid offer (Sale): never. The pink dragon 
 - Town: home › click home. T (hotkey) or the Town button (home); its buildings are entrances below.
 - Research: Town › Library (library_town); or the left column's book icon (library_home), which opens the Meteorite tab.
 - Tavern: Town › Tavern (tavern_town) › Tavern card (tavern_choice_town).
-- Engineer: left column, miner helmet (engineer_home). Tools production Claim.
+- Engineer: Home › click engineer_home. left column, miner helmet (engineer_home). Tools production Claim.
 - War machines: left column, gear and hammer (war_machines_home).
 - Guardians: left column, the guardian portrait (guardians_home). Train button (train_guardian).
 - Campaign: left column, banner (campaign_home). Loot Claim.
@@ -112,7 +112,7 @@ Owed: each chest's picture, to try how one opens
 
 The fight screen; the Map lists where each input leads. Hotkeys: Q quests, M map, T town, S settings. Escape on Home asks "Do you want to exit the game?" (Save and Exit): never press Escape on Home.
 Marker: home
-Untried: engineer_home, war_machines_home, guardians_home, campaign_home, library_home, mail_home
+Untried: war_machines_home, guardians_home, campaign_home, library_home, mail_home
 - tried upgrades: opens Upgrades
 - tried bag: opens Bag
 - tried market: opens Market
@@ -124,6 +124,7 @@ Untried: engineer_home, war_machines_home, guardians_home, campaign_home, librar
 - tried party: opens Party
 - tried battle_pass_home: opens Battle pass
 - tried events_home: opens Events
+- tried engineer_home: opens Engineer
 
 ## Market
 
@@ -184,4 +185,9 @@ Untried: challenges_tab_battle_pass, rewards_tab_battle_pass, golden_pass_battle
 
 Entrance: home › click events_home
 Marker: title_events
-Untried: ethereal_miners_events
+Untried: ethereal_miners_events, lock_events
+
+## Engineer
+
+Entrance: Home › click engineer_home
+Owed: marker

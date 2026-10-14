@@ -234,6 +234,9 @@
     "library_town" : {
       "tags" : [ "Town" ]
     },
+    "lock_events" : {
+      "tags" : [ "Events" ]
+    },
     "lock_guild" : {
       "tags" : [ "Guild" ]
     },
@@ -397,5 +400,5 @@
       "tags" : [ "Map missions" ]
     }
   },
-  "customTags" : [ "Bag", "Battle pass", "Boss", "Events", "Fellowship", "Guardians", "Guild", "Home", "Map missions", "Market", "Party", "Popups", "Town", "Upgrades" ]
+  "customTags" : [ "Bag", "Battle pass", "Boss", "Engineer", "Events", "Fellowship", "Guardians", "Guild", "Home", "Map missions", "Market", "Party", "Popups", "Town", "Upgrades" ]
 }
