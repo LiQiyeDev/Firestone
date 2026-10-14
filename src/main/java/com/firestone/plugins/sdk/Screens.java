@@ -62,7 +62,8 @@ public final class Screens {
             .back(Input.click(Pictures.CLOSE_ARTIFACT_UPGRADE))
             .inputs(List.of(Input.click(Pictures.RARITY_ARTIFACT_CONFIRM).did(Did.IN_PLACE).kind(Kind.CHORE)));
     public static final GameScreen MARKET = GameScreen.named("Market").marker(Pictures.MARKET_TITLE_TAVERN)
-            .from(Way.of(Screens.TAVERN, Input.click(Pictures.MARKET_TAVERN)));
+            .from(Way.of(Screens.TAVERN, Input.click(Pictures.MARKET_TAVERN)))
+            .inputs(List.of(Input.click(Pictures.BEER_BUY_TAVERN)));
     private Screens() {
     }
 }
