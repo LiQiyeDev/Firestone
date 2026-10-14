@@ -18,8 +18,10 @@ public final class Screens {
             .back(Input.click(new ImageTemplate("src/main/resources/images/claim_offline.png")
                     .at(new Rect(895, 905, 130, 50)).tags(List.of(Tags.POPUPS))))
             .popup();
-    public static final GameScreen HOME = GameScreen.named("Home").marker(Pictures.HOME).inputs(List.of(Input.click(Pictures.TAVERN_HOME),
-            Input.click(Pictures.ARENA_HOME), Input.click(Pictures.ENGINEER_HOME), Input.click(Pictures.CAMPAIGN_HOME)));
+    public static final GameScreen HOME = GameScreen.named("Home").marker(Pictures.HOME)
+            .inputs(List.of(Input.click(Pictures.TAVERN_HOME), Input.click(Pictures.ARENA_HOME),
+                    Input.click(Pictures.ENGINEER_HOME), Input.click(Pictures.CAMPAIGN_HOME),
+                    Input.click(Pictures.WAR_MACHINES_HOME)));
 
     private Screens() {
     }
