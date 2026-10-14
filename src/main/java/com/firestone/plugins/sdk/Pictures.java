@@ -170,5 +170,7 @@ public final class Pictures {
             .at(new Rect(1432, 435, 55, 75));
     public static final ImageTemplate GEMS_TAB_BAG = new ImageTemplate("src/main/resources/images/gems_tab_bag.png")
             .at(new Rect(1432, 535, 55, 70));
+    public static final ImageTemplate HEART_TAB_MARKET = new ImageTemplate(
+            "src/main/resources/images/heart_tab_market.png").at(new Rect(1062, 52, 115, 82));
     private Pictures() {}
 }

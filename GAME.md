@@ -117,4 +117,4 @@ Untried: home, guild, map, battle, fellowship, party, battle_pass_home, events_h
 ## Market
 
 Entrance: home › click market
-Owed: marker
+Marker: heart_tab_market
