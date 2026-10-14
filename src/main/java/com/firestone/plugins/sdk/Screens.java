@@ -22,7 +22,7 @@ public final class Screens {
             .inputs(List.of(Input.click(Pictures.TAVERN_HOME), Input.click(Pictures.ARENA_HOME),
                     Input.click(Pictures.ENGINEER_HOME), Input.click(Pictures.CAMPAIGN_HOME),
                     Input.click(Pictures.WAR_MACHINES_HOME), Input.click(Pictures.MAIL_HOME),
-                    Input.click(Pictures.CHAT_MAP), Input.click(Pictures.HOME)));
+                    Input.click(Pictures.CHAT_MAP), Input.click(Pictures.HOME), Input.click(Pictures.MAP)));
 
     private Screens() {
     }
