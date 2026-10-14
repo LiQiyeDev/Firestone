@@ -117,6 +117,9 @@
     "engineer_town" : {
       "tags" : [ "Town" ]
     },
+    "ethereal_miners_events" : {
+      "tags" : [ "Events" ]
+    },
     "events_home" : {
       "tags" : [ "Home" ]
     },

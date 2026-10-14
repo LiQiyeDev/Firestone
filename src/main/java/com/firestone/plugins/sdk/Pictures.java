@@ -272,5 +272,7 @@ public final class Pictures {
             "src/main/resources/images/golden_pass_battle_pass.png").at(new Rect(222, 98, 355, 92));
     public static final ImageTemplate TITLE_EVENTS = new ImageTemplate("src/main/resources/images/title_events.png")
             .at(new Rect(868, 98, 186, 54));
+    public static final ImageTemplate ETHEREAL_MINERS_EVENTS = new ImageTemplate(
+            "src/main/resources/images/ethereal_miners_events.png").at(new Rect(730, 318, 530, 70));
     private Pictures() {}
 }

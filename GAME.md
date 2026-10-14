@@ -184,3 +184,4 @@ Untried: challenges_tab_battle_pass, rewards_tab_battle_pass, golden_pass_battle
 
 Entrance: home › click events_home
 Marker: title_events
+Untried: ethereal_miners_events
