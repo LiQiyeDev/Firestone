@@ -88,7 +88,7 @@ Not screens: the chest top right is a paid offer (Sale): never. The pink dragon 
 - Fellowship: home › click fellowship. bottom bar (fellowship); a click once opened nothing.
 - Party: home › click party. bottom bar (party).
 - Battle pass: home › click battle_pass_home. bottom left (battle_pass_home).
-- Events: bottom left (events_home).
+- Events: home › click events_home. bottom left (events_home).
 - Hero profile: avatar top left (none yet).
 - Settings: gear top right, S (hotkey).
 
@@ -112,7 +112,7 @@ Owed: each chest's picture, to try how one opens
 
 The fight screen; the Map lists where each input leads. Hotkeys: Q quests, M map, T town, S settings. Escape on Home asks "Do you want to exit the game?" (Save and Exit): never press Escape on Home.
 Marker: home
-Untried: events_home, engineer_home, war_machines_home, guardians_home, campaign_home, library_home, mail_home
+Untried: engineer_home, war_machines_home, guardians_home, campaign_home, library_home, mail_home
 - tried upgrades: opens Upgrades
 - tried bag: opens Bag
 - tried market: opens Market
@@ -123,6 +123,7 @@ Untried: events_home, engineer_home, war_machines_home, guardians_home, campaign
 - tried fellowship: opens Fellowship
 - tried party: opens Party
 - tried battle_pass_home: opens Battle pass
+- tried events_home: opens Events
 
 ## Market
 
@@ -172,6 +173,14 @@ Untried: info_map, heroes_tab_party, guardians_tab_party, hero_card_party, order
 
 ## Battle pass
 
-Entrance: home › click battle_pass_home
+Entrance: Home › click battle_pass_home
 Marker: milestone_battle_pass
-Untried: challenges_tab_battle_pass, rewards_tab_battle_pass
+- Challenges tab: Daily and weekly challenge cards (Week 1, …; scrolls sideways), each a progress bar and star points; points raise the Milestone (25/100). Time left top right.
+- Daily challenges seen: donate 1500 guild coins, complete 8 map missions, complete 4 firestone researches.
+- Rewards tab: the milestone rewards. Activate the golden pass (golden_pass_battle_pass) is paid: never.
+Untried: challenges_tab_battle_pass, rewards_tab_battle_pass, golden_pass_battle_pass, info_map, close_x
+
+## Events
+
+Entrance: home › click events_home
+Owed: marker
