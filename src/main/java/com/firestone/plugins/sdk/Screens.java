@@ -35,11 +35,18 @@ public final class Screens {
     public static final GameScreen TAVERN = GameScreen.named("Tavern")
             .marker(new ImageTemplate("src/main/resources/images/tavern_luck_title.png").at(new Rect(125, 35, 150, 36))
                     .activities(List.of(Activities.Tavern.class)))
-            .from(Way.of(Screens.HOME, Input.click(Pictures.TAVERN_HOME)))
+            .from(Way.of(Screens.HOME, Input.click(Pictures.TAVERN_HOME))).back(Input.click(Pictures.CLOSE_TOWN))
             .inputs(List.of(Input.click(Pictures.INFO_LUCK_TAVERN), Input.click(Pictures.ARTIFACTS_TAVERN),
                     Input.click(Pictures.SACRED_CARDS_TAVERN), Input.click(Pictures.SPEED_TAVERN),
                     Input.click(Pictures.BAG_TAVERN), Input.click(Pictures.CHAT_TAVERN),
-                    Input.click(Pictures.WHEEL_TAVERN), Input.click(Pictures.DECK_TAVERN)));
+                    Input.click(Pictures.WHEEL_TAVERN), Input.click(Pictures.DECK_TAVERN),
+                    Input.click(new ImageTemplate("src/main/resources/images/play_tavern.png")
+                            .at(new Rect(880, 953, 160, 48)).activities(List.of(Activities.Tavern.class))),
+                    Input.click(new ImageTemplate("src/main/resources/images/manual_tavern.png")
+                            .at(new Rect(1688, 1006, 160, 54)).activities(List.of(Activities.Tavern.class))),
+                    Input.click(new ImageTemplate("src/main/resources/images/market_tavern.png")
+                            .at(new Rect(1750, 700, 112, 92)).activities(List.of(Activities.Tavern.class))),
+                    Input.click(Pictures.INFO_MAP), Input.click(Pictures.GEMS_PLUS_MAP)));
     private Screens() {
     }
 }
