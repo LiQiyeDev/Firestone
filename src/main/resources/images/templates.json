@@ -153,6 +153,9 @@
     "free_slot_library" : {
       "tags" : [ "Research" ]
     },
+    "garage_title" : {
+      "tags" : [ "Garage" ]
+    },
     "gear_tab_bag" : {
       "tags" : [ "Bag" ]
     },
@@ -403,5 +406,5 @@
       "tags" : [ "Map missions" ]
     }
   },
-  "customTags" : [ "Bag", "Battle pass", "Boss", "Engineer", "Events", "Fellowship", "Garage", "Guardians", "Guild", "Home", "Map missions", "Market", "Party", "Popups", "Town", "Upgrades" ]
+  "customTags" : [ "Bag", "Battle pass", "Boss", "Campaign", "Engineer", "Events", "Fellowship", "Garage", "Guardians", "Guild", "Home", "Map missions", "Market", "Party", "Popups", "Town", "Upgrades" ]
 }

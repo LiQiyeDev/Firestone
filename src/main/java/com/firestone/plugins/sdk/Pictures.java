@@ -277,5 +277,7 @@ public final class Pictures {
             .at(new Rect(934, 636, 44, 44));
     public static final ImageTemplate ENGINEER_TITLE = new ImageTemplate("src/main/resources/images/engineer_title.png")
             .at(new Rect(94, 32, 156, 40));
+    public static final ImageTemplate GARAGE_TITLE = new ImageTemplate("src/main/resources/images/garage_title.png")
+            .at(new Rect(890, 4, 140, 46));
     private Pictures() {}
 }

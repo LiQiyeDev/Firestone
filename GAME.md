@@ -77,7 +77,7 @@ Not screens: the chest top right is a paid offer (Sale): never. The pink dragon 
 - Engineer: Home › click engineer_home. left column, miner helmet (engineer_home). Tools production Claim.
 - Garage: Home › click war_machines_home. left column, gear and hammer (war_machines_home). War machines: tabs, Show all, Engineer arrow.
 - Guardians: left column, the guardian portrait (guardians_home). Train button (train_guardian).
-- Campaign: left column, banner (campaign_home). Loot Claim.
+- Campaign: Home › click campaign_home. left column, banner (campaign_home). Loot Claim.
 - Arena of Kings: left column, crossed swords with a count badge, only while it has fights (none yet); also Town › Battles (battles_town), to check.
 - Mail: left column, envelope (mail_home). Chat under it: never.
 - Guild: home › click guild. Guild button (guild). Its buildings are entrances; most are locked on this account.
@@ -112,7 +112,7 @@ Owed: each chest's picture, to try how one opens
 
 The fight screen; the Map lists where each input leads. Hotkeys: Q quests, M map, T town, S settings. Escape on Home asks "Do you want to exit the game?" (Save and Exit): never press Escape on Home.
 Marker: home
-Untried: guardians_home, campaign_home, library_home, mail_home
+Untried: guardians_home, library_home, mail_home
 - tried upgrades: opens Upgrades
 - tried bag: opens Bag
 - tried market: opens Market
@@ -126,6 +126,7 @@ Untried: guardians_home, campaign_home, library_home, mail_home
 - tried events_home: opens Events
 - tried engineer_home: opens Engineer
 - tried war_machines_home: opens Garage (it draws over a second after the click)
+- tried campaign_home: opens Campaign
 
 ## Market
 
@@ -196,4 +197,10 @@ Marker: engineer_title
 ## Garage
 
 Entrance: Home › click war_machines_home
+Marker: garage_title
 Opens on the first war machine's info tab; tabs: info, upgrade (anvil), blueprints, rank. Bottom row: each war machine, a red bell when one can be upgraded; Show all. Arrow left of the machine: Engineer.
+
+## Campaign
+
+Entrance: Home › click campaign_home
+Owed: marker
