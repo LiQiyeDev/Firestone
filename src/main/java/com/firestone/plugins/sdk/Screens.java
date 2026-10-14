@@ -73,7 +73,7 @@ public final class Screens {
             .back(Input.click(Pictures.CLOSE_REWARDS_TAVERN));
     public static final GameScreen CHAT = GameScreen.named("Chat").marker(Pictures.TYPE_MESSAGE_CHAT)
             .from(Way.of(Screens.TAVERN, Input.click(Pictures.CHAT_TAVERN))).back(Input.click(Pictures.CLOSE_CHAT))
-            .inputs(List.of(Input.click(Pictures.ROOMS_CHAT), Input.click(Pictures.WORLD_CHAT),
+            .inputs(List.of(Input.click(Pictures.ROOMS_CHAT), Input.click(Pictures.WORLD_CHAT).did(Did.IN_PLACE),
                     Input.click(Pictures.SEND_CHAT).never("posts to other players")));
     private Screens() {
     }
