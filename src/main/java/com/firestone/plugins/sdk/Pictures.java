@@ -212,5 +212,7 @@ public final class Pictures {
             .at(new Rect(1585, 725, 170, 170));
     public static final ImageTemplate FIND_GUILD = new ImageTemplate("src/main/resources/images/find_guild.png")
             .at(new Rect(836, 990, 254, 72));
+    public static final ImageTemplate CAMPAIGN_MAP = new ImageTemplate("src/main/resources/images/campaign_map.png")
+            .at(new Rect(1790, 415, 100, 100));
     private Pictures() {}
 }
