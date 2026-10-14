@@ -96,7 +96,7 @@ public final class Sdk {
      */
     @SdkValue(SdkValue.Id.SETTINGS)
     public static BotSettings settings() {
-        return BotSettings.defaults().takesOver();
+        return BotSettings.defaults().foundDelay(150).takesOver();
     }
 
     @SdkValue(SdkValue.Id.SCREEN)
