@@ -66,9 +66,7 @@ public final class Sdk {
      */
     @SdkValue(SdkValue.Id.RUN)
     public static Run run() {
-        return Run.of()
-                .home(Gamebot::goHome)
-                .setup(Gamebot::setup);
+        return Run.of().home(Gamebot::goHome).setup(Gamebot::setup).popups(Gamebot::clearPopups);
     }
 
     /**
