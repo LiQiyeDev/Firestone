@@ -33,6 +33,10 @@ public final class Activities {
         NEXT
     }
 
+    public enum Missions implements Outcome {
+        NEXT
+    }
+
     private Activities() {
     }
 }
