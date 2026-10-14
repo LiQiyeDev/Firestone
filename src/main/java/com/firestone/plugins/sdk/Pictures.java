@@ -431,5 +431,7 @@ public final class Pictures {
             "src/main/resources/images/close_rooms_chat.png").at(new Rect(1560, 67, 75, 75));
     public static final ImageTemplate ENGLISH_ROOM_CHAT = new ImageTemplate(
             "src/main/resources/images/english_room_chat.png").at(new Rect(335, 195, 290, 75));
+    public static final ImageTemplate CONFIRM_ROOM_CHAT = new ImageTemplate(
+            "src/main/resources/images/confirm_room_chat.png").at(new Rect(815, 915, 292, 72));
     private Pictures() {}
 }
