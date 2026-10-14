@@ -59,3 +59,26 @@ reads this at connect.
   - Tokens counter top right; its + offers more tokens.
 - Escape closes the market; Escape from the Tavern goes straight back to Town.
 - Gamer daily quest = 10 tavern plays.
+
+## Map
+
+Home is the fight screen. Each line: a screen, then how to get there from home. (picture) = the entrance's picture; none yet = still to cut.
+
+- Quests: Q (hotkey).
+- Map missions: M (hotkey) or the Map button (map).
+- Town: T (hotkey) or the Town button (home); its buildings are entrances below.
+- Research: Town › Library (library_town); also the left column's scroll icon (none yet), which opens the Meteorite tab.
+- Tavern: Town › Tavern (tavern_town) › Tavern card (tavern_choice_town).
+- Engineer: left column, miner-helmet icon (none yet). Tools production Claim.
+- War machines: left column, gear-and-hammer icon (none yet).
+- Guardians: left column, the guardian portrait (none yet). Train button (train_guardian).
+- Campaign: left column, banner icon (none yet). Loot Claim.
+- Arena of Kings: left column, crossed swords, top (none yet).
+- Guild: Guild button (guild). Its buildings are entrances; most are locked on this account.
+- Market: Market button (market).
+- Boss: the Boss button (battle).
+- Upgrades, Bag, Fellowship, Party, Battle pass, Events: bottom bar (upgrades, bag, fellowship, party; none yet for the two left ones).
+- Mail, chat: left column, bottom (none yet).
+- Hero profile: avatar top left (none yet). Settings: gear top right, S (hotkey).
+- Not a screen: the chest top right is a paid offer (Sale): never. The pink dragon carrying a mug walks the fight screen: click it for beer (Tavern).
+- The left column scrolls (wheel over it) and shifts as badges come and go: find its icons by picture, never by place.
