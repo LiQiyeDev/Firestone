@@ -130,5 +130,7 @@ public final class Pictures {
             .at(new Rect(548, 278, 236, 90));
     public static final ImageTemplate MARKET_TAVERN = new ImageTemplate("src/main/resources/images/market_tavern.png")
             .at(new Rect(1750, 700, 112, 92));
+    public static final ImageTemplate MARKET_TITLE_TAVERN = new ImageTemplate(
+            "src/main/resources/images/market_title_tavern.png").at(new Rect(696, 238, 530, 76));
     private Pictures() {}
 }
