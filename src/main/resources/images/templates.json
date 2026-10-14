@@ -66,6 +66,9 @@
     "guardian_node_library" : {
       "tags" : [ "Research" ]
     },
+    "guardians_home" : {
+      "tags" : [ "Home" ]
+    },
     "guild" : {
       "tags" : [ "Home" ]
     },
