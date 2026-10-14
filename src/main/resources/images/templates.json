@@ -18,6 +18,9 @@
     "battles_town" : {
       "tags" : [ "Town" ]
     },
+    "claim_map" : {
+      "tags" : [ "Missions" ]
+    },
     "claim_offline" : {
       "tags" : [ "Popups" ]
     },
