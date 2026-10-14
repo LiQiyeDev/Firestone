@@ -399,5 +399,7 @@ public final class Pictures {
             "src/main/resources/images/artifact_upgrade_title.png").at(new Rect(715, 155, 490, 48));
     public static final ImageTemplate CLOSE_ARTIFACT_UPGRADE = new ImageTemplate(
             "src/main/resources/images/close_artifact_upgrade.png").at(new Rect(1640, 150, 75, 75));
+    public static final ImageTemplate UPGRADE_ARTIFACT_CONFIRM = new ImageTemplate(
+            "src/main/resources/images/upgrade_artifact_confirm.png").at(new Rect(835, 365, 260, 120));
     private Pictures() {}
 }
