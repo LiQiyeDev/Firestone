@@ -256,5 +256,7 @@ public final class Pictures {
             .at(new Rect(1572, 780, 84, 82));
     public static final ImageTemplate HEROES_TAB_PARTY = new ImageTemplate(
             "src/main/resources/images/heroes_tab_party.png").at(new Rect(33, 105, 125, 65));
+    public static final ImageTemplate GUARDIANS_TAB_PARTY = new ImageTemplate(
+            "src/main/resources/images/guardians_tab_party.png").at(new Rect(200, 113, 163, 65));
     private Pictures() {}
 }
