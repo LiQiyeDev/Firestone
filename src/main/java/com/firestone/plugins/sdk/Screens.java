@@ -59,7 +59,9 @@ public final class Screens {
             .inputs(List.of(Input.click(Pictures.UPGRADE_ARTIFACTS), Input.click(Pictures.RARITY_ARTIFACTS),
                     Input.click(Pictures.ARTIFACT_CELL).did(Did.IN_PLACE), Input.click(Pictures.ARTIFACTS_GRID)));
     public static final GameScreen UPGRADE = GameScreen.named("Upgrade").marker(Pictures.ARTIFACT_UPGRADE_TITLE)
-            .from(Way.of(Screens.ARTIFACTS, Input.click(Pictures.UPGRADE_ARTIFACTS)));
+            .from(Way.of(Screens.ARTIFACTS, Input.click(Pictures.UPGRADE_ARTIFACTS)))
+            .back(Input.click(Pictures.CLOSE_ARTIFACT_UPGRADE))
+            .inputs(List.of(Input.click(Pictures.UPGRADE_ARTIFACT_CONFIRM)));
     private Screens() {
     }
 }
