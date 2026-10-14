@@ -351,6 +351,9 @@
     "temple_town" : {
       "tags" : [ "Town" ]
     },
+    "title_events" : {
+      "tags" : [ "Events" ]
+    },
     "title_fellowship" : {
       "tags" : [ "Fellowship" ]
     },

@@ -183,4 +183,4 @@ Untried: challenges_tab_battle_pass, rewards_tab_battle_pass, golden_pass_battle
 ## Events
 
 Entrance: home › click events_home
-Owed: marker
+Marker: title_events

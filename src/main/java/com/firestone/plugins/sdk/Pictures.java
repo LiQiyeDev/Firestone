@@ -270,5 +270,7 @@ public final class Pictures {
             "src/main/resources/images/rewards_tab_battle_pass.png").at(new Rect(972, 22, 243, 56));
     public static final ImageTemplate GOLDEN_PASS_BATTLE_PASS = new ImageTemplate(
             "src/main/resources/images/golden_pass_battle_pass.png").at(new Rect(222, 98, 355, 92));
+    public static final ImageTemplate TITLE_EVENTS = new ImageTemplate("src/main/resources/images/title_events.png")
+            .at(new Rect(868, 98, 186, 54));
     private Pictures() {}
 }
