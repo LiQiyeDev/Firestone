@@ -355,5 +355,7 @@ public final class Pictures {
             "src/main/resources/images/auto_abilities_home.png").at(new Rect(768, 982, 70, 70));
     public static final ImageTemplate AVATAR_HOME = new ImageTemplate("src/main/resources/images/avatar_home.png")
             .at(new Rect(25, 18, 115, 90));
+    public static final ImageTemplate PREV_STAGE_HOME = new ImageTemplate(
+            "src/main/resources/images/prev_stage_home.png").at(new Rect(690, 18, 32, 46));
     private Pictures() {}
 }
