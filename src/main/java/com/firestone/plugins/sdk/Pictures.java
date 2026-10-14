@@ -222,5 +222,7 @@ public final class Pictures {
             .at(new Rect(1808, 862, 64, 64));
     public static final ImageTemplate GOLD_PLUS_MAP = new ImageTemplate("src/main/resources/images/gold_plus_map.png")
             .at(new Rect(1476, 16, 40, 40));
+    public static final ImageTemplate GEMS_PLUS_MAP = new ImageTemplate("src/main/resources/images/gems_plus_map.png")
+            .at(new Rect(1700, 16, 40, 40));
     private Pictures() {}
 }
