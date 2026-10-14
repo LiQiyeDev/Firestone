@@ -134,6 +134,7 @@ The left column changes: its icons come and go with their badges and it scrolls 
 - tried key S: opens Settings
 - tried guardians_home: opens Guardians
 - tried parchment_home: opens Research, on the Meteorite tab. library_home is the same icon cut with its glow: it scored 0.36 while a research was ready and 0.80+ after; parchment_home is the inner part and matches both.
+Untried: potion_home
 
 ## Market
 

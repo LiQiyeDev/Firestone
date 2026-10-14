@@ -316,5 +316,7 @@ public final class Pictures {
             "src/main/resources/images/guardian_multiplier.png").at(new Rect(1762, 208, 100, 44));
     public static final ImageTemplate PARCHMENT_HOME = new ImageTemplate("src/main/resources/images/parchment_home.png")
             .at(new Rect(36, 612, 52, 52));
+    public static final ImageTemplate POTION_HOME = new ImageTemplate("src/main/resources/images/potion_home.png")
+            .at(new Rect(37, 542, 50, 50));
     private Pictures() {}
 }
