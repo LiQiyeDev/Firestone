@@ -129,9 +129,6 @@
     "research_start_library" : {
       "tags" : [ "Research" ]
     },
-    "scout_pin_map" : {
-      "tags" : [ "Missions" ]
-    },
     "start_mission_map" : {
       "tags" : [ "Missions" ]
     },
