@@ -141,6 +141,9 @@
     "start_mission_map" : {
       "tags" : [ "Missions" ]
     },
+    "sword_pin_map" : {
+      "tags" : [ "Missions" ]
+    },
     "tavern_town" : {
       "tags" : [ "Town" ]
     },

@@ -118,5 +118,7 @@ public final class Pictures {
             .at(new Rect(564, 538, 40, 70));
     public static final ImageTemplate SCROLL_PIN_MAP = new ImageTemplate("src/main/resources/images/scroll_pin_map.png")
             .at(new Rect(1490, 212, 40, 62));
+    public static final ImageTemplate SWORD_PIN_MAP = new ImageTemplate("src/main/resources/images/sword_pin_map.png")
+            .at(new Rect(1129, 598, 44, 70));
     private Pictures() {}
 }
