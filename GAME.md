@@ -125,4 +125,4 @@ A full screen, seven tabs along the top; it opens on the first (Extreme Value Bu
 ## Guild
 
 Entrance: home › click guild
-Owed: marker
+Marker: title_guild
