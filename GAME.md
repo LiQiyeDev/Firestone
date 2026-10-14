@@ -67,7 +67,7 @@ Untried: claim_map, sword_pin_map, rank_list_map, campaign_map, war_machine_map,
 
 Home is the fight screen. Each line: a screen, then how to get there from home. (picture) = the entrance's picture; none yet = still to cut.
 
-Not screens: the chest top right is a paid offer (Sale): never. The pink dragon carrying a mug walks the fight screen: click it for beer (Tavern). The left column scrolls (wheel over it) and its icons come and go with their badges: find them by picture, never by place; scroll it up first.
+Not screens: the chest top right is a paid offer (Sale): never. The pink dragon carrying a mug walks the fight screen: click it for beer (Tavern). The left column scrolls (wheel over it) and its icons come and go with their badges: find them by picture, never by place; scroll it up first. Escape on Home opens an exit dialog: never.
 
 - Quests: Q (hotkey).
 - Map missions: M (hotkey) or the Map button (map).
@@ -82,10 +82,10 @@ Not screens: the chest top right is a paid offer (Sale): never. The pink dragon 
 - Mail: left column, envelope (mail_home). Chat under it: never.
 - Guild: home › click guild. Guild button (guild). Its buildings are entrances; most are locked on this account.
 - Market: home › click market. Market button (market). A free mystery box every day.
-- Boss: home › click battle. the Boss button (battle).
+- Boss: home › click battle. the Boss button (battle), shown while a stage boss waits.
 - Upgrades: home › click upgrades. bottom bar (upgrades).
 - Bag: home › click bag. bottom bar (bag).
-- Fellowship: bottom bar (fellowship); the click opened nothing.
+- Fellowship: home › click fellowship. bottom bar (fellowship); a click once opened nothing.
 - Party: bottom bar (party).
 - Battle pass: bottom left (battle_pass_home).
 - Events: bottom left (events_home).
@@ -110,9 +110,9 @@ Owed: each chest's picture, to try how one opens
 
 ## Home
 
-The fight screen; the Map lists where each input leads. Hotkeys: Q quests, M map, T town, S settings.
+The fight screen; the Map lists where each input leads. Hotkeys: Q quests, M map, T town, S settings. Escape on Home asks "Do you want to exit the game?" (Save and Exit): never press Escape on Home.
 Marker: home
-Untried: fellowship, party, battle_pass_home, events_home, engineer_home, war_machines_home, guardians_home, campaign_home, library_home, mail_home
+Untried: party, battle_pass_home, events_home, engineer_home, war_machines_home, guardians_home, campaign_home, library_home, mail_home
 - tried upgrades: opens Upgrades
 - tried bag: opens Bag
 - tried market: opens Market
@@ -120,6 +120,7 @@ Untried: fellowship, party, battle_pass_home, events_home, engineer_home, war_ma
 - tried map: opens Map missions
 - tried home: opens Town
 - tried battle: opens Boss
+- tried fellowship: opens Fellowship
 
 ## Market
 
@@ -144,6 +145,13 @@ Untried: lock_town, battles_town, magic_quarter_town, temple_town, guild_town, l
 
 ## Boss
 
-Entrance: home › click battle
+Entrance: Home › click battle
+Marker: leave_boss
+- The fight screen fighting a stage boss: boss HP bar and a countdown top centre, stage numbers either side. Home's side buttons stay. Leave (leave_boss) goes back to waves; the arrow left of the stage number goes back a stage.
+- The chest top right (sale_chest_boss) is a timed sale offer.
+Untried: leave_boss, prev_stage_boss, sale_chest_boss
+
+## Fellowship
+
+Entrance: home › click fellowship
 Owed: marker
-Untried: prev_stage_boss

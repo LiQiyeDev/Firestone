@@ -234,5 +234,7 @@ public final class Pictures {
             .at(new Rect(998, 978, 64, 64));
     public static final ImageTemplate PREV_STAGE_BOSS = new ImageTemplate(
             "src/main/resources/images/prev_stage_boss.png").at(new Rect(682, 20, 28, 46));
+    public static final ImageTemplate SALE_CHEST_BOSS = new ImageTemplate(
+            "src/main/resources/images/sale_chest_boss.png").at(new Rect(1600, 160, 130, 90));
     private Pictures() {}
 }
