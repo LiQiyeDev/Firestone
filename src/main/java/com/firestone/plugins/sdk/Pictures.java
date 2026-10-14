@@ -136,5 +136,7 @@ public final class Pictures {
             "src/main/resources/images/tavern_choice_town.png").at(new Rect(640, 440, 220, 200));
     public static final ImageTemplate PLAY_OFF_TAVERN = new ImageTemplate(
             "src/main/resources/images/play_off_tavern.png").at(new Rect(880, 953, 160, 48));
+    public static final ImageTemplate MANUAL_TAVERN = new ImageTemplate("src/main/resources/images/manual_tavern.png")
+            .at(new Rect(1688, 1006, 160, 54));
     private Pictures() {}
 }
