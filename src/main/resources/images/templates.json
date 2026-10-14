@@ -135,6 +135,9 @@
     "scout_pin_map" : {
       "tags" : [ "Missions" ]
     },
+    "scroll_pin_map" : {
+      "tags" : [ "Missions" ]
+    },
     "start_mission_map" : {
       "tags" : [ "Missions" ]
     },
