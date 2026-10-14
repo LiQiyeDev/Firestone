@@ -58,6 +58,8 @@ public final class Screens {
             .from(Way.of(Screens.TAVERN, Input.click(Pictures.ARTIFACTS_TAVERN))).back(Input.click(Pictures.CLOSE_TOWN))
             .inputs(List.of(Input.click(Pictures.UPGRADE_ARTIFACTS), Input.click(Pictures.RARITY_ARTIFACTS),
                     Input.click(Pictures.ARTIFACT_CELL).did(Did.IN_PLACE), Input.click(Pictures.ARTIFACTS_GRID)));
+    public static final GameScreen UPGRADE = GameScreen.named("Upgrade")
+            .from(Way.of(Screens.ARTIFACTS, Input.click(Pictures.UPGRADE_ARTIFACTS)));
     private Screens() {
     }
 }
