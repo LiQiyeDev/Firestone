@@ -23,7 +23,7 @@ public final class Screens {
                     Input.click(Pictures.ENGINEER_HOME), Input.click(Pictures.CAMPAIGN_HOME),
                     Input.click(Pictures.WAR_MACHINES_HOME), Input.click(Pictures.MAIL_HOME),
                     Input.click(Pictures.CHAT_MAP), Input.click(Pictures.HOME), Input.click(Pictures.MAP),
-                    Input.click(Pictures.GUILD), Input.click(Pictures.MARKET)));
+                    Input.click(Pictures.GUILD), Input.click(Pictures.MARKET), Input.click(Pictures.BATTLE)));
 
     private Screens() {
     }
