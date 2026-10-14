@@ -357,5 +357,7 @@ public final class Pictures {
             .at(new Rect(25, 18, 115, 90));
     public static final ImageTemplate PREV_STAGE_HOME = new ImageTemplate(
             "src/main/resources/images/prev_stage_home.png").at(new Rect(690, 18, 32, 46));
+    public static final ImageTemplate SETTINGS_HOME = new ImageTemplate("src/main/resources/images/settings_home.png")
+            .at(new Rect(1832, 30, 76, 66));
     private Pictures() {}
 }
