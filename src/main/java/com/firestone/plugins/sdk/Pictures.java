@@ -407,5 +407,7 @@ public final class Pictures {
             "src/main/resources/images/rarity_artifact_confirm.png").at(new Rect(835, 360, 260, 125));
     public static final ImageTemplate GEMS_1000_MARKET = new ImageTemplate(
             "src/main/resources/images/gems_1000_market.png").at(new Rect(962, 617, 205, 58));
+    public static final ImageTemplate GEMS_300_MARKET = new ImageTemplate(
+            "src/main/resources/images/gems_300_market.png").at(new Rect(1287, 617, 268, 58));
     private Pictures() {}
 }
