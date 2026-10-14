@@ -31,3 +31,13 @@ reads this at connect.
 - Claim each finished research (research_claim, no popup); a free slot (free_slot_library) starts one: click a node, its popup's Start (research_start_library).
 - Research::body: untilFind per screen, whileFindAny claims, whileFindAny(free slot) { ifFindAny(nodes) click + waitFor Start; whileFindAny(Start) click }. Tried live 2026-10-14 (16 s).
 - Gap: a node that cannot start (maxed) would loop the free-slot loop; the watchdog covers it.
+
+## Map missions
+
+- M opens the map from the fight screen (~1–2 s); its marker is the Rank List button (rank_list_map).
+- Finished missions show a green Claim in the left column (claim_map); each opens a reward popup closed by Okay (okay_map). The list reflows after each claim.
+- A pin with a white timer bubble is open to start; the timer is the mission's length. A running pin has a red banner and no timer, and no pin picture matches it.
+- Pin types: sword (war), telescope (scout), dragon, scroll. One picture each, timer digits left out of matching.
+- A pin opens a dialog: Start mission (start_mission_map), or "You do not have enough squads." (no_squads_map) when all squads are out. The dialog covers the pins.
+- Squads counter top centre (4/4 = all idle). New missions every few hours ("New missions in").
+- Escape closes the pin dialog.
