@@ -49,7 +49,7 @@ public final class Screens {
                     Input.click(Pictures.INFO_MAP), Input.click(Pictures.GEMS_PLUS_MAP).never("spends gems")));
     public static final GameScreen INFO_LUCK = GameScreen.named("Info luck").marker(Pictures.TOTAL_BONUSES_INFO_LUCK)
             .from(Way.of(Screens.TAVERN, Input.click(Pictures.INFO_LUCK_TAVERN)))
-            .inputs(List.of(Input.click(Pictures.CLOSE_INFO_LUCK)));
+            .back(Input.click(Pictures.CLOSE_INFO_LUCK));
     private Screens() {
     }
 }
