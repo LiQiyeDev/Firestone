@@ -4,6 +4,8 @@ import com.botmaker.sdk.api.bot.SdkValue;
 import com.botmaker.sdk.api.vision.ImageTemplate;
 import com.botmaker.sdk.api.geometry.Rect;
 
+import java.util.List;
+
 /**
  * The pictures this bot looks for, one constant each.
  *
@@ -30,16 +32,17 @@ public final class Pictures {
     public static final ImageTemplate BATTLE = new ImageTemplate("src/main/resources/images/battle.png").at(new Rect(1650, 536, 95, 36));
     public static final ImageTemplate VICTORY = new ImageTemplate("src/main/resources/images/victory.png");
     public static final ImageTemplate DEFEAT = new ImageTemplate("src/main/resources/images/defeat.png");
-    public static final ImageTemplate CLOSE_X = new ImageTemplate("src/main/resources/images/close_x.png").at(new Rect(1808, 28, 64, 64));
+    public static final ImageTemplate CLOSE_X = new ImageTemplate("src/main/resources/images/close_x.png").at(new Rect(1808, 28, 64, 64))
+            .tags(List.of(Tags.POPUPS));
     public static final ImageTemplate CLAIM_BUTTON = new ImageTemplate("src/main/resources/images/claim_button.png")
             .at(new Rect(880, 900, 170, 75));
     public static final ImageTemplate HOME = new ImageTemplate("src/main/resources/images/home.png").at(new Rect(1846, 196, 30, 34));
     public static final ImageTemplate RESEARCH_CLAIM = new ImageTemplate("src/main/resources/images/research_claim.png")
-            .at(new Rect(535, 963, 105, 36));
+            .at(new Rect(535, 963, 105, 36)).activities(List.of(Activities.Research.class));
     public static final ImageTemplate CLAIM_OFFLINE = new ImageTemplate("src/main/resources/images/claim_offline.png")
-            .at(new Rect(895, 905, 130, 50));
+            .at(new Rect(895, 905, 130, 50)).tags(List.of(Tags.POPUPS));
     public static final ImageTemplate EXIT_HOME = new ImageTemplate("src/main/resources/images/exit_home.png")
-            .at(new Rect(1035, 290, 310, 50));
+            .at(new Rect(1035, 290, 310, 50)).tags(List.of(Tags.POPUPS));
     public static final ImageTemplate MAP = new ImageTemplate("src/main/resources/images/map.png").at(new Rect(1820, 325, 40, 35));
     public static final ImageTemplate GUILD = new ImageTemplate("src/main/resources/images/guild.png").at(new Rect(1830, 432, 58, 60));
     public static final ImageTemplate MARKET = new ImageTemplate("src/main/resources/images/market.png").at(new Rect(1815, 582, 64, 46));
@@ -67,77 +70,92 @@ public final class Pictures {
     public static final ImageTemplate BACK_TOWN = new ImageTemplate("src/main/resources/images/back_town.png")
             .at(new Rect(100, 400, 97, 97));
     public static final ImageTemplate METEORITE_TAB_LIBRARY = new ImageTemplate(
-            "src/main/resources/images/meteorite_tab_library.png").at(new Rect(1775, 410, 75, 75));
+            "src/main/resources/images/meteorite_tab_library.png").at(new Rect(1775, 410, 75, 75))
+            .activities(List.of(Activities.Research.class));
     public static final ImageTemplate FIRESTONE_TAB_LIBRARY = new ImageTemplate(
-            "src/main/resources/images/firestone_tab_library.png").at(new Rect(1768, 610, 68, 62));
+            "src/main/resources/images/firestone_tab_library.png").at(new Rect(1768, 610, 68, 62))
+            .activities(List.of(Activities.Research.class));
     public static final ImageTemplate RESEARCH_START_LIBRARY = new ImageTemplate(
-            "src/main/resources/images/research_start_library.png").at(new Rect(640, 674, 300, 92));
+            "src/main/resources/images/research_start_library.png").at(new Rect(640, 674, 300, 92))
+            .activities(List.of(Activities.Research.class));
     public static final ImageTemplate HEALTH_NODE_LIBRARY = new ImageTemplate(
-            "src/main/resources/images/health_node_library.png").at(new Rect(672, 350, 90, 90));
+            "src/main/resources/images/health_node_library.png").at(new Rect(672, 350, 90, 90))
+            .activities(List.of(Activities.Research.class));
     public static final ImageTemplate ARMOR_NODE_LIBRARY = new ImageTemplate(
-            "src/main/resources/images/armor_node_library.png").at(new Rect(672, 608, 90, 90));
+            "src/main/resources/images/armor_node_library.png").at(new Rect(672, 608, 90, 90))
+            .activities(List.of(Activities.Research.class));
     public static final ImageTemplate GUARDIAN_NODE_LIBRARY = new ImageTemplate(
-            "src/main/resources/images/guardian_node_library.png").at(new Rect(1164, 478, 84, 84));
+            "src/main/resources/images/guardian_node_library.png").at(new Rect(1164, 478, 84, 84))
+            .activities(List.of(Activities.Research.class));
     public static final ImageTemplate PROJECTILES_NODE_LIBRARY = new ImageTemplate(
-            "src/main/resources/images/projectiles_node_library.png").at(new Rect(1164, 744, 84, 84));
+            "src/main/resources/images/projectiles_node_library.png").at(new Rect(1164, 744, 84, 84))
+            .activities(List.of(Activities.Research.class));
     public static final ImageTemplate FREE_SLOT_LIBRARY = new ImageTemplate(
-            "src/main/resources/images/free_slot_library.png").at(new Rect(780, 950, 520, 70));
+            "src/main/resources/images/free_slot_library.png").at(new Rect(780, 950, 520, 70))
+            .activities(List.of(Activities.Research.class));
     public static final ImageTemplate TRAIN_GUARDIAN = new ImageTemplate("src/main/resources/images/train_guardian.png")
             .at(new Rect(1022, 750, 256, 92));
     public static final ImageTemplate QUEST_CLAIM = new ImageTemplate("src/main/resources/images/quest_claim.png")
-            .at(new Rect(1352, 268, 240, 50));
+            .at(new Rect(1352, 268, 240, 50)).activities(List.of(Activities.Quests.class));
     public static final ImageTemplate QUEST_CLAIM_OFF = new ImageTemplate(
-            "src/main/resources/images/quest_claim_off.png").at(new Rect(1352, 268, 240, 50));
+            "src/main/resources/images/quest_claim_off.png").at(new Rect(1352, 268, 240, 50))
+            .activities(List.of(Activities.Quests.class));
     public static final ImageTemplate QUESTS_TAB = new ImageTemplate("src/main/resources/images/quests_tab.png")
-            .at(new Rect(1420, 14, 170, 54));
+            .at(new Rect(1420, 14, 170, 54)).activities(List.of(Activities.Quests.class));
     public static final ImageTemplate WEEKLY_TAB_OFF = new ImageTemplate("src/main/resources/images/weekly_tab_off.png")
-            .at(new Rect(980, 100, 240, 58));
+            .at(new Rect(980, 100, 240, 58)).activities(List.of(Activities.Quests.class));
     public static final ImageTemplate WEEKLY_TAB_ON = new ImageTemplate("src/main/resources/images/weekly_tab_on.png")
-            .at(new Rect(980, 100, 240, 58));
+            .at(new Rect(980, 100, 240, 58)).activities(List.of(Activities.Quests.class));
     public static final ImageTemplate DAILY_TAB_OFF = new ImageTemplate("src/main/resources/images/daily_tab_off.png")
-            .at(new Rect(560, 100, 220, 58));
+            .at(new Rect(560, 100, 220, 58)).activities(List.of(Activities.Quests.class));
     public static final ImageTemplate DAILY_TAB_ON = new ImageTemplate("src/main/resources/images/daily_tab_on.png")
-            .at(new Rect(560, 100, 220, 58));
+            .at(new Rect(560, 100, 220, 58)).activities(List.of(Activities.Quests.class));
     public static final ImageTemplate GEMS_LIBRARY = new ImageTemplate("src/main/resources/images/gems_library.png")
-            .at(new Rect(1532, 12, 46, 44));
+            .at(new Rect(1532, 12, 46, 44)).activities(List.of(Activities.Research.class));
     public static final ImageTemplate RANK_LIST_MAP = new ImageTemplate("src/main/resources/images/rank_list_map.png")
-            .at(new Rect(1660, 995, 240, 70));
+            .at(new Rect(1660, 995, 240, 70)).activities(List.of(Activities.Missions.class));
     public static final ImageTemplate CLAIM_MAP = new ImageTemplate("src/main/resources/images/claim_map.png")
-            .at(new Rect(95, 300, 165, 45));
+            .at(new Rect(95, 300, 165, 45)).activities(List.of(Activities.Missions.class));
     public static final ImageTemplate OKAY_MAP = new ImageTemplate("src/main/resources/images/okay_map.png")
-            .at(new Rect(800, 612, 320, 70));
+            .at(new Rect(800, 612, 320, 70)).activities(List.of(Activities.Missions.class));
     public static final ImageTemplate START_MISSION_MAP = new ImageTemplate(
-            "src/main/resources/images/start_mission_map.png").at(new Rect(960, 862, 270, 70));
+            "src/main/resources/images/start_mission_map.png").at(new Rect(960, 862, 270, 70))
+            .activities(List.of(Activities.Missions.class));
     public static final ImageTemplate NO_SQUADS_MAP = new ImageTemplate("src/main/resources/images/no_squads_map.png")
-            .at(new Rect(1000, 872, 515, 42));
+            .at(new Rect(1000, 872, 515, 42)).activities(List.of(Activities.Missions.class));
     public static final ImageTemplate DRAGON_PIN_MAP = new ImageTemplate("src/main/resources/images/dragon_pin_map.png")
-            .at(new Rect(564, 538, 40, 70));
+            .at(new Rect(564, 538, 40, 70)).activities(List.of(Activities.Missions.class));
     public static final ImageTemplate SCROLL_PIN_MAP = new ImageTemplate("src/main/resources/images/scroll_pin_map.png")
-            .at(new Rect(1490, 212, 40, 62));
+            .at(new Rect(1490, 212, 40, 62)).activities(List.of(Activities.Missions.class));
     public static final ImageTemplate SWORD_PIN_MAP = new ImageTemplate("src/main/resources/images/sword_pin_map.png")
-            .at(new Rect(1129, 598, 44, 70));
+            .at(new Rect(1129, 598, 44, 70)).activities(List.of(Activities.Missions.class));
     public static final ImageTemplate TELESCOPE_PIN_MAP = new ImageTemplate(
-            "src/main/resources/images/telescope_pin_map.png").at(new Rect(1457, 547, 48, 72));
+            "src/main/resources/images/telescope_pin_map.png").at(new Rect(1457, 547, 48, 72))
+            .activities(List.of(Activities.Missions.class));
     public static final ImageTemplate BADGE_TOWN = new ImageTemplate("src/main/resources/images/badge_town.png")
             .at(new Rect(361, 685, 26, 26));
     public static final ImageTemplate BEER_BUY_TAVERN = new ImageTemplate(
-            "src/main/resources/images/beer_buy_tavern.png").at(new Rect(428, 610, 60, 68));
+            "src/main/resources/images/beer_buy_tavern.png").at(new Rect(428, 610, 60, 68))
+            .activities(List.of(Activities.Tavern.class));
     public static final ImageTemplate BEER_BUY_OFF_TAVERN = new ImageTemplate(
-            "src/main/resources/images/beer_buy_off_tavern.png").at(new Rect(428, 610, 60, 68));
+            "src/main/resources/images/beer_buy_off_tavern.png").at(new Rect(428, 610, 60, 68))
+            .activities(List.of(Activities.Tavern.class));
     public static final ImageTemplate PLAY_TAVERN = new ImageTemplate("src/main/resources/images/play_tavern.png")
-            .at(new Rect(880, 953, 160, 48));
+            .at(new Rect(880, 953, 160, 48)).activities(List.of(Activities.Tavern.class));
     public static final ImageTemplate CARD_TAVERN = new ImageTemplate("src/main/resources/images/card_tavern.png")
-            .at(new Rect(548, 278, 236, 90));
+            .at(new Rect(548, 278, 236, 90)).activities(List.of(Activities.Tavern.class));
     public static final ImageTemplate MARKET_TAVERN = new ImageTemplate("src/main/resources/images/market_tavern.png")
-            .at(new Rect(1750, 700, 112, 92));
+            .at(new Rect(1750, 700, 112, 92)).activities(List.of(Activities.Tavern.class));
     public static final ImageTemplate MARKET_TITLE_TAVERN = new ImageTemplate(
-            "src/main/resources/images/market_title_tavern.png").at(new Rect(696, 238, 530, 76));
+            "src/main/resources/images/market_title_tavern.png").at(new Rect(696, 238, 530, 76))
+            .activities(List.of(Activities.Tavern.class));
     public static final ImageTemplate TAVERN_CHOICE_TOWN = new ImageTemplate(
             "src/main/resources/images/tavern_choice_town.png").at(new Rect(640, 440, 220, 200));
     public static final ImageTemplate PLAY_OFF_TAVERN = new ImageTemplate(
-            "src/main/resources/images/play_off_tavern.png").at(new Rect(880, 953, 160, 48));
+            "src/main/resources/images/play_off_tavern.png").at(new Rect(880, 953, 160, 48))
+            .activities(List.of(Activities.Tavern.class));
     public static final ImageTemplate MANUAL_TAVERN = new ImageTemplate("src/main/resources/images/manual_tavern.png")
-            .at(new Rect(1688, 1006, 160, 54));
+            .at(new Rect(1688, 1006, 160, 54)).activities(List.of(Activities.Tavern.class));
     public static final ImageTemplate CAMPAIGN_HOME = new ImageTemplate("src/main/resources/images/campaign_home.png")
             .at(new Rect(30, 308, 62, 62));
     public static final ImageTemplate WAR_MACHINES_HOME = new ImageTemplate("src/main/resources/images/war_machines_home.png").at(new Rect(30, 670, 64, 50));
@@ -295,7 +313,8 @@ public final class Pictures {
     public static final ImageTemplate ARENA_HOME = new ImageTemplate("src/main/resources/images/arena_home.png")
             .at(new Rect(35, 385, 55, 50));
     public static final ImageTemplate TAVERN_LUCK_TITLE = new ImageTemplate(
-            "src/main/resources/images/tavern_luck_title.png").at(new Rect(125, 35, 150, 36));
+            "src/main/resources/images/tavern_luck_title.png").at(new Rect(125, 35, 150, 36))
+            .activities(List.of(Activities.Tavern.class));
     public static final ImageTemplate ARENA_TITLE = new ImageTemplate("src/main/resources/images/arena_title.png")
             .at(new Rect(822, 74, 275, 44));
     public static final ImageTemplate ARENA_FIGHT = new ImageTemplate("src/main/resources/images/arena_fight.png")
