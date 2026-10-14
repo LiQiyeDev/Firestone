@@ -206,5 +206,7 @@ public final class Pictures {
             "src/main/resources/images/chaos_rift_guild.png").at(new Rect(1300, 420, 230, 280));
     public static final ImageTemplate FORBIDDEN_KNOWLEDGE_GUILD = new ImageTemplate(
             "src/main/resources/images/forbidden_knowledge_guild.png").at(new Rect(465, 695, 210, 160));
+    public static final ImageTemplate AWAKENING_GUILD = new ImageTemplate(
+            "src/main/resources/images/awakening_guild.png").at(new Rect(1085, 690, 230, 230));
     private Pictures() {}
 }
