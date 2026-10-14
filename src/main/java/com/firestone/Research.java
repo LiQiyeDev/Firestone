@@ -13,7 +13,7 @@ public class Research {
     public static Activities.Research body() {
         ImageFinder.untilFind(
                 Pictures.LIBRARY_TOWN, () -> {
-                    ImageClicker.click(Pictures.HOME);
+                    ImageClicker.click(Pictures.TOWN_HOME);
                 });
         ImageFinder.untilFind(
                 Pictures.METEORITE_TAB_LIBRARY, () -> {

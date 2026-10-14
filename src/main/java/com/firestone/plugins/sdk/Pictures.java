@@ -36,7 +36,7 @@ public final class Pictures {
             .tags(List.of(Tags.POPUPS));
     public static final ImageTemplate CLAIM_BUTTON = new ImageTemplate("src/main/resources/images/claim_button.png")
             .at(new Rect(880, 900, 170, 75));
-    public static final ImageTemplate HOME = new ImageTemplate("src/main/resources/images/home.png").at(new Rect(1846, 196, 30, 34));
+    public static final ImageTemplate TOWN_HOME = new ImageTemplate("src/main/resources/images/home.png").at(new Rect(1846, 196, 30, 34));
     public static final ImageTemplate RESEARCH_CLAIM = new ImageTemplate("src/main/resources/images/research_claim.png")
             .at(new Rect(535, 963, 105, 36)).activities(List.of(Activities.Research.class));
     public static final ImageTemplate CLAIM_OFFLINE = new ImageTemplate("src/main/resources/images/claim_offline.png")

@@ -14,7 +14,7 @@ public class Tavern {
 
     public static Activities.Tavern body() {
         ImageFinder.untilFind(Pictures.TAVERN_TOWN, () -> {
-            ImageClicker.click(Pictures.HOME);
+            ImageClicker.click(Pictures.TOWN_HOME);
         });
         ImageFinder.untilFind(Pictures.TAVERN_CHOICE_TOWN, () -> {
             ImageClicker.click(Pictures.TAVERN_TOWN);
