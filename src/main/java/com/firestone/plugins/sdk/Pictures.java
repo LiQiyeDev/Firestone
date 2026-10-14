@@ -148,5 +148,7 @@ public final class Pictures {
             .at(new Rect(28, 602, 66, 72));
     public static final ImageTemplate MAIL_HOME = new ImageTemplate("src/main/resources/images/mail_home.png")
             .at(new Rect(22, 790, 66, 52));
+    public static final ImageTemplate ENGINEER_HOME = new ImageTemplate("src/main/resources/images/engineer_home.png")
+            .at(new Rect(32, 290, 60, 50));
     private Pictures() {}
 }

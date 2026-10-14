@@ -42,6 +42,9 @@
     "dragon_pin_map" : {
       "tags" : [ "Missions" ]
     },
+    "engineer_home" : {
+      "tags" : [ "Home" ]
+    },
     "engineer_town" : {
       "tags" : [ "Town" ]
     },
