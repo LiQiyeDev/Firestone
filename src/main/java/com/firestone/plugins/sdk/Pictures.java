@@ -110,8 +110,6 @@ public final class Pictures {
             "src/main/resources/images/start_mission_map.png").at(new Rect(960, 862, 270, 70));
     public static final ImageTemplate NO_SQUADS_MAP = new ImageTemplate("src/main/resources/images/no_squads_map.png")
             .at(new Rect(1000, 872, 515, 42));
-    public static final ImageTemplate WAR_PIN_MAP = new ImageTemplate("src/main/resources/images/war_pin_map.png")
-            .at(new Rect(618, 396, 40, 64));
     public static final ImageTemplate SCOUT_PIN_MAP = new ImageTemplate("src/main/resources/images/scout_pin_map.png")
             .at(new Rect(1336, 400, 40, 70));
     public static final ImageTemplate DRAGON_PIN_MAP = new ImageTemplate("src/main/resources/images/dragon_pin_map.png")
