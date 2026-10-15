@@ -197,7 +197,7 @@ public final class Screens {
             .from(Way.of(Screens.GARAGE, Input.click(Pictures.BLUEPRINT_TAB_GARAGE)))
             .back(Input.click(Pictures.STATS_TAB_GARAGE))
             .inputs(List.of(Input.click(Pictures.X1_WORKSHOP).did(Did.IN_PLACE).kind(Kind.SHORTCUT),
-                    Input.click(Pictures.UPGRADE_BLUEPRINTS)));
+                    Input.click(Pictures.UPGRADE_BLUEPRINTS).did(Did.IN_PLACE).kind(Kind.CHORE)));
     private Screens() {
     }
 }
