@@ -481,5 +481,7 @@ public final class Pictures {
             "src/main/resources/images/crew_order_health.png").at(new Rect(1637, 375, 90, 90));
     public static final ImageTemplate CREW_ORDER_ARMOR = new ImageTemplate(
             "src/main/resources/images/crew_order_armor.png").at(new Rect(1762, 375, 90, 90));
+    public static final ImageTemplate CREW_INFO = new ImageTemplate("src/main/resources/images/crew_info.png")
+            .at(new Rect(345, 82, 72, 72));
     private Pictures() {}
 }
