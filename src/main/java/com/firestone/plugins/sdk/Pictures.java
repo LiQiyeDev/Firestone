@@ -543,5 +543,7 @@ public final class Pictures {
             "src/main/resources/images/upgrade_tab_garage.png").at(new Rect(1238, 118, 105, 68));
     public static final ImageTemplate BLUEPRINT_TAB_GARAGE = new ImageTemplate(
             "src/main/resources/images/blueprint_tab_garage.png").at(new Rect(1408, 118, 100, 68));
+    public static final ImageTemplate EMBLEM_TAB_GARAGE = new ImageTemplate(
+            "src/main/resources/images/emblem_tab_garage.png").at(new Rect(1572, 116, 108, 70));
     private Pictures() {}
 }
