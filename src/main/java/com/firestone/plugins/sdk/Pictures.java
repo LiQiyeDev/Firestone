@@ -531,5 +531,7 @@ public final class Pictures {
             .at(new Rect(660, 78, 600, 40));
     public static final ImageTemplate CLOSE_FAVORED = new ImageTemplate("src/main/resources/images/close_favored.png")
             .at(new Rect(1510, 62, 64, 64));
+    public static final ImageTemplate SAVE_CHANGES_OFF_FAVORED = new ImageTemplate(
+            "src/main/resources/images/save_changes_off_favored.png").at(new Rect(1232, 266, 206, 62));
     private Pictures() {}
 }
