@@ -123,6 +123,8 @@ public final class Screens {
                     Input.click(Pictures.CREW_ORDER_HEALTH).did(Did.IN_PLACE),
                     Input.click(Pictures.CREW_ORDER_ARMOR).did(Did.IN_PLACE),
                     Input.click(Pictures.CREW_INFO).kind(Kind.INFO)));
+    public static final GameScreen CREW_INFO = GameScreen.named("Crew info")
+            .from(Way.of(Screens.SQUAD_HEROES, Input.click(Pictures.CREW_INFO).kind(Kind.INFO)));
     private Screens() {
     }
 }
