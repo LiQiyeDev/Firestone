@@ -487,5 +487,7 @@ public final class Pictures {
             "src/main/resources/images/crew_battle_attributes.png").at(new Rect(65, 655, 300, 95));
     public static final ImageTemplate HERO_BONUSES_TITLE = new ImageTemplate(
             "src/main/resources/images/hero_bonuses_title.png").at(new Rect(470, 305, 290, 45));
+    public static final ImageTemplate CREW_INFO_CLOSE = new ImageTemplate(
+            "src/main/resources/images/crew_info_close.png").at(new Rect(1435, 263, 72, 72));
     private Pictures() {}
 }
