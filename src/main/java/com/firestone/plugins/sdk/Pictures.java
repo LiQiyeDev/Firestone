@@ -471,5 +471,7 @@ public final class Pictures {
             "src/main/resources/images/squad_save_changes.png").at(new Rect(1025, 50, 255, 70));
     public static final ImageTemplate SQUAD_EDIT_HEROES = new ImageTemplate(
             "src/main/resources/images/squad_edit_heroes.png").at(new Rect(1218, 550, 70, 70));
+    public static final ImageTemplate SELECT_CREW_TITLE = new ImageTemplate(
+            "src/main/resources/images/select_crew_title.png").at(new Rect(830, 25, 260, 45));
     private Pictures() {}
 }
