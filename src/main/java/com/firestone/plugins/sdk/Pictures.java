@@ -571,5 +571,7 @@ public final class Pictures {
             .at(new Rect(1772, 205, 105, 52));
     public static final ImageTemplate BLUEPRINTS_TITLE = new ImageTemplate(
             "src/main/resources/images/blueprints_title.png").at(new Rect(855, 10, 210, 42));
+    public static final ImageTemplate UPGRADE_BLUEPRINTS = new ImageTemplate(
+            "src/main/resources/images/upgrade_blueprints.png").at(new Rect(910, 562, 284, 100));
     private Pictures() {}
 }
