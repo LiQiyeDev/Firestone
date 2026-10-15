@@ -190,7 +190,7 @@ public final class Screens {
             .inputs(List.of(
                     Input.click(Pictures.X1_WORKSHOP).did(Did.IN_PLACE).kind(Kind.SHORTCUT)
                             .variants(List.of(Variant.of(Pictures.X5_WORKSHOP, State.SELECTED))),
-                    Input.click(Pictures.UPGRADE_WORKSHOP)));
+                    Input.click(Pictures.UPGRADE_WORKSHOP).did(Did.IN_PLACE).kind(Kind.CHORE)));
     private Screens() {
     }
 }
