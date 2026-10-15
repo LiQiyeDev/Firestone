@@ -104,6 +104,8 @@ public final class Screens {
             .inputs(List.of(Input.click(Pictures.BATTLE_DETAILS_DEALT).did(Did.IN_PLACE),
                     Input.click(Pictures.BATTLE_DETAILS_TAKEN).did(Did.IN_PLACE),
                     Input.click(Pictures.BATTLE_DETAILS_HEALING).did(Did.IN_PLACE)));
+    public static final GameScreen ARENA_REPLAY = GameScreen.named("Arena replay")
+            .from(Way.of(Screens.ARENA_BATTLE_LOG, Input.click(Pictures.BATTLE_LOG_REPLAY).kind(Kind.INFO)));
     private Screens() {
     }
 }
