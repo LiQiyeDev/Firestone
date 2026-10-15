@@ -159,7 +159,8 @@ public final class Screens {
             .from(Way.of(Screens.ENGINEER, Input.click(Pictures.CHANGE_SQUAD_ENGINEER)))
             .back(Input.click(Pictures.CLOSE_SQUADS))
             .inputs(List.of(Input.click(Pictures.EDIT_SQUADS),
-                    Input.click(Pictures.SET_ACTIVE_SQUADS)
+                    Input.click(Pictures.SET_ACTIVE_SQUADS).kind(Kind.CHOICE)
+                            .never("switches the player's active squad")
                             .variants(List.of(Variant.of(Pictures.SET_ACTIVE_OFF_SQUADS, State.DISABLED))),
                     Input.click(Pictures.EMPTY_SPOT_SQUADS)));
     private Screens() {
