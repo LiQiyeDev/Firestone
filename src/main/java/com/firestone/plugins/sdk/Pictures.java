@@ -443,5 +443,7 @@ public final class Pictures {
             "src/main/resources/images/arena_leaderboards_header.png").at(new Rect(612, 112, 700, 45));
     public static final ImageTemplate ARENA_LEADERBOARDS_CLOSE = new ImageTemplate(
             "src/main/resources/images/arena_leaderboards_close.png").at(new Rect(1243, 13, 64, 64));
+    public static final ImageTemplate BATTLE_LOG_TITLE = new ImageTemplate(
+            "src/main/resources/images/battle_log_title.png").at(new Rect(860, 28, 200, 45));
     private Pictures() {}
 }
