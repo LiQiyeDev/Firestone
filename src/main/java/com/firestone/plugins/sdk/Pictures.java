@@ -591,5 +591,7 @@ public final class Pictures {
             "src/main/resources/images/all_machines_frame.png").at(new Rect(70, 15, 130, 60));
     public static final ImageTemplate CLOSE_MAILBOX = new ImageTemplate("src/main/resources/images/close_mailbox.png")
             .at(new Rect(1622, 15, 62, 62));
+    public static final ImageTemplate DELETE_MAILBOX = new ImageTemplate("src/main/resources/images/delete_mailbox.png")
+            .at(new Rect(1572, 940, 76, 76));
     private Pictures() {}
 }
