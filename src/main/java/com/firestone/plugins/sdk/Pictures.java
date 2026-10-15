@@ -573,5 +573,7 @@ public final class Pictures {
             "src/main/resources/images/blueprints_title.png").at(new Rect(855, 10, 210, 42));
     public static final ImageTemplate UPGRADE_BLUEPRINTS = new ImageTemplate(
             "src/main/resources/images/upgrade_blueprints.png").at(new Rect(910, 562, 284, 100));
+    public static final ImageTemplate MACHINE_RARITY_TITLE = new ImageTemplate(
+            "src/main/resources/images/machine_rarity_title.png").at(new Rect(880, 10, 160, 42));
     private Pictures() {}
 }
