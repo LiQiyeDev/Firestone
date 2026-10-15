@@ -95,8 +95,8 @@ public final class Screens {
             .back(Input.click(Pictures.ARENA_LEADERBOARDS_CLOSE));
     public static final GameScreen ARENA_BATTLE_LOG = GameScreen.named("Arena battle log").marker(Pictures.BATTLE_LOG_TITLE)
             .from(Way.of(Screens.ARENA, Input.click(Pictures.ARENA_BATTLE_LOG)))
-            .back(Input.click(Pictures.BATTLE_LOG_CLOSE))
-            .inputs(List.of(Input.click(Pictures.BATTLE_LOG_INSPECT), Input.click(Pictures.BATTLE_LOG_REPLAY)));
+            .back(Input.click(Pictures.BATTLE_LOG_CLOSE)).inputs(List.of(
+                    Input.click(Pictures.BATTLE_LOG_INSPECT).kind(Kind.INFO), Input.click(Pictures.BATTLE_LOG_REPLAY)));
     private Screens() {
     }
 }
