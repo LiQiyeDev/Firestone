@@ -196,7 +196,8 @@ public final class Screens {
     public static final GameScreen BLUEPRINTS = GameScreen.named("Blueprints").marker(Pictures.BLUEPRINTS_TITLE)
             .from(Way.of(Screens.GARAGE, Input.click(Pictures.BLUEPRINT_TAB_GARAGE)))
             .back(Input.click(Pictures.STATS_TAB_GARAGE))
-            .inputs(List.of(Input.click(Pictures.X1_WORKSHOP), Input.click(Pictures.UPGRADE_BLUEPRINTS)));
+            .inputs(List.of(Input.click(Pictures.X1_WORKSHOP).did(Did.IN_PLACE).kind(Kind.SHORTCUT),
+                    Input.click(Pictures.UPGRADE_BLUEPRINTS)));
     private Screens() {
     }
 }
