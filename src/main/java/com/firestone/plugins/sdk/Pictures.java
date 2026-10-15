@@ -575,5 +575,7 @@ public final class Pictures {
             "src/main/resources/images/upgrade_blueprints.png").at(new Rect(910, 562, 284, 100));
     public static final ImageTemplate MACHINE_RARITY_TITLE = new ImageTemplate(
             "src/main/resources/images/machine_rarity_title.png").at(new Rect(880, 10, 160, 42));
+    public static final ImageTemplate INCREASE_RARITY_OFF_GARAGE = new ImageTemplate(
+            "src/main/resources/images/increase_rarity_off_garage.png").at(new Rect(1240, 535, 272, 100));
     private Pictures() {}
 }
