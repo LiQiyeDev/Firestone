@@ -156,22 +156,13 @@ public final class Screens {
                     Input.click(Pictures.SHOW_ALL_GARAGE).kind(Kind.INFO),
                     Input.click(Pictures.CHEST_GARAGE).did(Did.IN_PLACE).kind(Kind.CHORE),
                     Input.click(Pictures.PREV_MACHINE_GARAGE).did(Did.NONE).kind(Kind.INFO).sometimes()));
-    public static final GameScreen ENGINEER = GameScreen.named("Engineer").marker(Pictures.ENGINEER_NAME)
-            .from(Way.of(Screens.HOME, Input.click(Pictures.ENGINEER_HOME)))
-            .alsoFrom(List.of(Way.of(Screens.GARAGE, Input.click(Pictures.ENGINEER_GARAGE))))
-            .back(Input.click(Pictures.CLOSE_TOWN))
-            .inputs(List.of(Input.click(Pictures.INFO_ENGINEER).kind(Kind.INFO),
-                    Input.click(Pictures.ENGINEER_TAB_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),
-                    Input.click(Pictures.BATTLES_TAB_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),
-                    Input.click(Pictures.STAR_TAB_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),
-                    Input.click(Pictures.SWIRL_TAB_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),
-                    Input.click(Pictures.CLAIM_ENGINEER).did(Did.IN_PLACE).kind(Kind.CHORE).sometimes(),
-                    Input.click(Pictures.GARAGE_ENGINEER).did(Did.LEAVES),
-                    Input.click(Pictures.CHANGE_SQUAD_ENGINEER).kind(Kind.CHOICE),
-                    Input.click(Pictures.EDIT_SQUAD_ENGINEER).kind(Kind.CHOICE),
-                    Input.click(Pictures.MACHINE_CARD_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),
-                    Input.click(Pictures.GEMS_PLUS_MAP).kind(Kind.CHOICE).never("buys tools with gems")))
-            .at(new Point(340, 2124));
+    public static final GameScreen ENGINEER = GameScreen.named("Engineer").marker(Pictures.ENGINEER_NAME).from(Way.of(Screens.HOME,Input.click(Pictures.ENGINEER_HOME))).alsoFrom(List.of(Way.of(Screens.GARAGE,Input.click(Pictures.ENGINEER_GARAGE)))).back(Input.click(Pictures.CLOSE_TOWN)).inputs(List.of(Input.click(Pictures.INFO_ENGINEER).kind(Kind.INFO),Input.click(Pictures.ENGINEER_TAB_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),Input.click(Pictures.BATTLES_TAB_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),Input.click(Pictures.STAR_TAB_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),Input.click(Pictures.SWIRL_TAB_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),Input.click(Pictures.CLAIM_ENGINEER).did(Did.IN_PLACE).kind(Kind.CHORE).sometimes(),Input.click(Pictures.GARAGE_ENGINEER).did(Did.LEAVES),Input.click(Pictures.CHANGE_SQUAD_ENGINEER).kind(Kind.CHOICE),Input.click(Pictures.EDIT_SQUAD_ENGINEER).kind(Kind.CHOICE),Input.click(Pictures.MACHINE_CARD_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),Input.click(Pictures.GEMS_PLUS_MAP).kind(Kind.CHOICE).never("buys tools with gems"))).notes("""
+                    Engineer produces tools every 6 hours; Claim (claim_engineer) collects them, then disappears until the next batch.
+                    Home shows engineer_home (blue helmet, left column) only while tools wait to be claimed; Garage's Engineer button reaches it always.
+                    Engineer level comes from war machine levels (100 XP per machine level); it raises all war machines' attributes and tool production.
+                    Tabs: Engineer (bonus + Claim), Active squad (Change squad, Edit), Favored war machines (80% of jewel-chest components go to the 5 favored), Arcane conduits (collect Chaos turbine / Energy core / Mana reactor from jewel chests to unlock a new war machine).
+                    Tools (top right, 7 166) buy war machine rarity in Garage; the + buys tools with gems: never.\
+                    """).reached(Reached.SURVEYED).at(new Point(340,2124));
     public static final GameScreen ENGINEER_INFO = GameScreen.named("Engineer info").marker(Pictures.ENGINEER_INFO_TITLE)
             .from(Way.of(Screens.ENGINEER, Input.click(Pictures.INFO_ENGINEER)))
             .back(Input.click(Pictures.CLOSE_ENGINEER_INFO)).at(new Point(1352, 2286));
