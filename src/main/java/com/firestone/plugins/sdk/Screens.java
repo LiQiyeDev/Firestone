@@ -206,7 +206,8 @@ public final class Screens {
             .from(Way.of(Screens.HOME, Input.click(Pictures.MAIL_HOME))).back(Input.click(Pictures.CLOSE_MAILBOX))
             .inputs(List.of(Input.click(Pictures.DELETE_MAILBOX),
                     Input.click(Pictures.MAIL_ITEM_MAILBOX).did(Did.IN_PLACE).kind(Kind.INFO),
-                    Input.click(Pictures.MAIL_CLAIM).kind(Kind.CHORE).sometimes()));
+                    Input.click(Pictures.MAIL_CLAIM).kind(Kind.CHORE).sometimes(),
+                    Input.scroll(Pictures.MAIL_ITEM_MAILBOX, -10).did(Did.IN_PLACE)));
     public static final GameScreen MAIL_CLAIM = GameScreen.named("Reward").marker(Pictures.REWARD_GODDESS_TITLE)
             .from(Way.of(Screens.MAILBOX, Input.click(Pictures.MAIL_CLAIM))).back(Input.click(Pictures.OK_REWARD))
             .popup();
