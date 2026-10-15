@@ -208,6 +208,8 @@ public final class Screens {
             .back(Input.click(Pictures.STATS_TAB_GARAGE))
             .inputs(List.of(Input.click(Pictures.GEMS_PLUS_MAP).kind(Kind.CHOICE).never("buys tools with gems"),
                     Input.click(Pictures.INCREASE_RARITY_OFF_GARAGE).did(Did.IN_PLACE).kind(Kind.CHORE)));
+    public static final GameScreen LOCKED_MACHINE = GameScreen.named("Locked machine")
+            .from(Way.of(Screens.GARAGE, Input.click(Pictures.UNKNOWN_CARD_GARAGE)));
     private Screens() {
     }
 }
