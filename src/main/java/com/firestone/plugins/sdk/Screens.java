@@ -194,7 +194,9 @@ public final class Screens {
                             .variants(List.of(Variant.of(Pictures.X5_WORKSHOP, State.SELECTED))),
                     Input.click(Pictures.UPGRADE_WORKSHOP).did(Did.IN_PLACE).kind(Kind.CHORE)));
     public static final GameScreen BLUEPRINTS = GameScreen.named("Blueprints").marker(Pictures.BLUEPRINTS_TITLE)
-            .from(Way.of(Screens.GARAGE, Input.click(Pictures.BLUEPRINT_TAB_GARAGE)));
+            .from(Way.of(Screens.GARAGE, Input.click(Pictures.BLUEPRINT_TAB_GARAGE)))
+            .back(Input.click(Pictures.STATS_TAB_GARAGE))
+            .inputs(List.of(Input.click(Pictures.X1_WORKSHOP), Input.click(Pictures.UPGRADE_BLUEPRINTS)));
     private Screens() {
     }
 }
