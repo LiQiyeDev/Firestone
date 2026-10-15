@@ -114,7 +114,8 @@ public final class Screens {
     public static final GameScreen SQUAD_HEROES = GameScreen.named("Squad heroes").marker(Pictures.SELECT_CREW_TITLE)
             .from(Way.of(Screens.ARENA_SQUAD, Input.click(Pictures.SQUAD_EDIT_HEROES)))
             .back(Input.click(Pictures.CLOSE_X))
-            .inputs(List.of(Input.click(Pictures.CREW_ARENA_ATTRIBUTES), Input.click(Pictures.CREW_ORDER_DAMAGE),
+            .inputs(List.of(Input.click(Pictures.CREW_ARENA_ATTRIBUTES),
+                    Input.click(Pictures.CREW_ORDER_DAMAGE).did(Did.IN_PLACE),
                     Input.click(Pictures.CREW_ORDER_HEALTH).did(Did.IN_PLACE),
                     Input.click(Pictures.CREW_ORDER_ARMOR).did(Did.IN_PLACE), Input.click(Pictures.CREW_INFO)));
     private Screens() {
