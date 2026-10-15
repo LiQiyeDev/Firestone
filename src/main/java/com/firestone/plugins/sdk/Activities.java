@@ -23,7 +23,7 @@ public final class Activities {
 
     public enum Battle implements Outcome { WON, LOST }
 
-    public enum Pause implements Outcome { NEXT }
+    public enum Rest implements Outcome { NEXT }
 
     public enum Research implements Outcome {
         NEXT
