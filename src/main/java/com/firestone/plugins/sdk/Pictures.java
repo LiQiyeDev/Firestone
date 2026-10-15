@@ -475,5 +475,7 @@ public final class Pictures {
             "src/main/resources/images/select_crew_title.png").at(new Rect(830, 25, 260, 45));
     public static final ImageTemplate CREW_ARENA_ATTRIBUTES = new ImageTemplate(
             "src/main/resources/images/crew_arena_attributes.png").at(new Rect(65, 655, 300, 95));
+    public static final ImageTemplate CREW_ORDER_DAMAGE = new ImageTemplate(
+            "src/main/resources/images/crew_order_damage.png").at(new Rect(1512, 375, 90, 90));
     private Pictures() {}
 }
