@@ -80,7 +80,7 @@ public final class Sdk {
         return FlowLayout.of(Map.ofEntries(Map.entry("MAIN",
                 FlowLayout.cards(Map.ofEntries(Map.entry("Collect", FlowLayout.at(1925, 910)),
                         Map.entry("Battle", FlowLayout.at(2307, 910)), Map.entry("Rest", FlowLayout.at(1551, 916)),
-                        Map.entry("Research", FlowLayout.at(951, 1292)), Map.entry("Quests", FlowLayout.at(577, 1284)),
+                        Map.entry("Research", FlowLayout.at(803, 916)), Map.entry("Quests", FlowLayout.at(429, 907)),
                         Map.entry("Missions", FlowLayout.at(1177, 916)),
                         Map.entry("Tavern", FlowLayout.at(429, 1040)))))),
                 true);
