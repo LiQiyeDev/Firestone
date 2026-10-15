@@ -34,19 +34,19 @@ public final class Screens {
             Input.click(Pictures.GUARDIANS_HOME).sometimes(),
             Input.click(Pictures.AUTO_ABILITIES_HOME).did(Did.IN_PLACE), Input.click(Pictures.AVATAR_HOME),
             Input.click(Pictures.PREV_STAGE_HOME).did(Did.IN_PLACE), Input.click(Pictures.SETTINGS_HOME)));
-    public static final GameScreen TAVERN = GameScreen.named("Tavern").marker(Pictures.TAVERN_LUCK_TITLE)
-            .from(Way.of(Screens.HOME, Input.click(Pictures.TAVERN_HOME))).back(Input.click(Pictures.CLOSE_TOWN))
-            .inputs(List.of(Input.click(Pictures.INFO_LUCK_TAVERN), Input.click(Pictures.ARTIFACTS_TAVERN),
-                    Input.click(Pictures.SACRED_CARDS_TAVERN).did(Did.IN_PLACE),
-                    Input.click(Pictures.SPEED_TAVERN).did(Did.IN_PLACE), Input.click(Pictures.BAG_TAVERN),
-                    Input.click(Pictures.CHAT_TAVERN), Input.click(Pictures.WHEEL_TAVERN).did(Did.IN_PLACE),
-                    Input.click(Pictures.DECK_TAVERN).did(Did.IN_PLACE),
-                    Input.click(Pictures.PLAY_TAVERN).did(Did.IN_PLACE),
-                    Input.click(Pictures.MANUAL_TAVERN).did(Did.IN_PLACE), Input.click(Pictures.MARKET_TAVERN),
-                    Input.click(Pictures.INFO_MAP), Input.click(Pictures.GEMS_PLUS_MAP).never("spends gems"),
-                    Input.click(Pictures.CARD_TAVERN).did(Did.IN_PLACE).sometimes()))
-            .notes("Town › Tavern opens a chooser: Tavern or Scarab's game (tavern_choice_town = the Tavern card).\nTown's buildings carry a red bell badge (badge_town) when something is ready; badges nest (Tavern → Market).\nBeer comes from a dragon that visits during battle (click it to collect at once); it keeps coming while offline.\nPlay 1 (play_tavern; grey twin play_off_tavern at 0 tokens): 1 game token deals 6 face-down cards (card_tavern); pick one, all six turn over.\nx1 / x10 / x50 (bottom right, cycles on each press): tokens spent per play.\nManual / Auto (under it, only while tokens remain): Auto plays on by itself after the first pick until the tokens run out.\nSacred cards tab: progress of the cards won; nothing to press.\nElement wheel (bottom left): the 5 primordial elements won; all 5 craft an ancient artifact.\nBag: reward table per luck level. i buttons: help. Luck bar: luck level from plays.\nEscape from the Tavern goes straight back to Town.\nGamer daily quest = 10 tavern plays.")
-            .reached(Reached.SURVEYED);
+    public static final GameScreen TAVERN = GameScreen.named("Tavern").marker(Pictures.TAVERN_LUCK_TITLE).from(Way.of(Screens.HOME,Input.click(Pictures.TAVERN_HOME))).back(Input.click(Pictures.CLOSE_TOWN)).inputs(List.of(Input.click(Pictures.INFO_LUCK_TAVERN),Input.click(Pictures.ARTIFACTS_TAVERN),Input.click(Pictures.SACRED_CARDS_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.SPEED_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.BAG_TAVERN),Input.click(Pictures.CHAT_TAVERN),Input.click(Pictures.WHEEL_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.DECK_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.PLAY_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.MANUAL_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.MARKET_TAVERN),Input.click(Pictures.INFO_MAP),Input.click(Pictures.GEMS_PLUS_MAP).never("spends gems"),Input.click(Pictures.CARD_TAVERN).did(Did.IN_PLACE).sometimes())).notes("""
+                    Town › Tavern opens a chooser: Tavern or Scarab's game (tavern_choice_town = the Tavern card).
+                    Town's buildings carry a red bell badge (badge_town) when something is ready; badges nest (Tavern → Market).
+                    Beer comes from a dragon that visits during battle (click it to collect at once); it keeps coming while offline.
+                    Play 1 (play_tavern; grey twin play_off_tavern at 0 tokens): 1 game token deals 6 face-down cards (card_tavern); pick one, all six turn over.
+                    x1 / x10 / x50 (speed_tavern, bottom right, cycles on each press): tokens spent per play.
+                    Manual / Auto (under it, only while tokens remain): Auto plays on by itself after the first pick until the tokens run out.
+                    Sacred cards tab: progress of the cards won; nothing to press.
+                    Element wheel (bottom left): the 5 primordial elements won; all 5 craft an ancient artifact.
+                    Bag: reward table per luck level. i buttons: help. Luck bar: luck level from plays.
+                    Escape from the Tavern goes straight back to Town.
+                    Gamer daily quest = 10 tavern plays.\
+                    """).reached(Reached.SURVEYED);
     public static final GameScreen INFO_LUCK = GameScreen.named("Info luck").marker(Pictures.TOTAL_BONUSES_INFO_LUCK)
             .from(Way.of(Screens.TAVERN, Input.click(Pictures.INFO_LUCK_TAVERN)))
             .back(Input.click(Pictures.CLOSE_INFO_LUCK));
