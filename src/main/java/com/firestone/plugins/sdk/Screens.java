@@ -133,7 +133,8 @@ public final class Screens {
             .from(Way.of(Screens.HOME, Input.click(Pictures.ENGINEER_HOME)))
             .inputs(List.of(Input.click(Pictures.INFO_ENGINEER), Input.click(Pictures.ENGINEER_TAB_ENGINEER),
                     Input.click(Pictures.BATTLES_TAB_ENGINEER), Input.click(Pictures.STAR_TAB_ENGINEER),
-                    Input.click(Pictures.SWIRL_TAB_ENGINEER), Input.click(Pictures.CLAIM_ENGINEER)));
+                    Input.click(Pictures.SWIRL_TAB_ENGINEER), Input.click(Pictures.CLAIM_ENGINEER),
+                    Input.click(Pictures.GARAGE_ENGINEER)));
     private Screens() {
     }
 }
