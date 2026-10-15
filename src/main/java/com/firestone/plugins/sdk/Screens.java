@@ -82,7 +82,10 @@ public final class Screens {
             .from(Way.of(Screens.CHAT, Input.click(Pictures.ROOMS_CHAT))).back(Input.click(Pictures.CLOSE_ROOMS_CHAT))
             .inputs(List.of(Input.click(Pictures.ENGLISH_ROOM_CHAT).did(Did.IN_PLACE).kind(Kind.CHOICE),
                     Input.click(Pictures.CONFIRM_ROOM_CHAT).did(Did.LEAVES).kind(Kind.CHOICE)));
-    public static final GameScreen ARENA = GameScreen.named("Arena").marker(Pictures.ARENA_TITLE).from(Way.of(Screens.HOME, Input.click(Pictures.ARENA_HOME)));
+    public static final GameScreen ARENA = GameScreen.named("Arena").marker(Pictures.ARENA_TITLE).from(Way.of(Screens.HOME, Input.click(Pictures.ARENA_HOME)))
+            .inputs(List.of(Input.click(Pictures.ARENA_REFRESH), Input.click(Pictures.ARENA_FIGHT),
+                    Input.click(Pictures.ARENA_BATTLE_LOG), Input.click(Pictures.ARENA_EDIT_SQUAD),
+                    Input.click(Pictures.INFO_MAP)));
     private Screens() {
     }
 }
