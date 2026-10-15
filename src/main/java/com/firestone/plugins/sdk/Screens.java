@@ -86,7 +86,7 @@ public final class Screens {
             .back(Input.click(Pictures.ARENA_CLOSE))
             .inputs(List.of(Input.click(Pictures.ARENA_REFRESH), Input.click(Pictures.ARENA_FIGHT),
                     Input.click(Pictures.ARENA_BATTLE_LOG), Input.click(Pictures.ARENA_EDIT_SQUAD),
-                    Input.click(Pictures.INFO_MAP), Input.click(Pictures.ARENA_LEADERBOARDS)));
+                    Input.click(Pictures.INFO_MAP).kind(Kind.INFO), Input.click(Pictures.ARENA_LEADERBOARDS)));
     private Screens() {
     }
 }
