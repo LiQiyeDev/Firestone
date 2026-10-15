@@ -461,5 +461,7 @@ public final class Pictures {
             "src/main/resources/images/battle_details_healing.png").at(new Rect(225, 640, 85, 85));
     public static final ImageTemplate ARENA_SPEED = new ImageTemplate("src/main/resources/images/arena_speed.png")
             .at(new Rect(1722, 968, 156, 66));
+    public static final ImageTemplate ARENA_FIGHT_CLOSE = new ImageTemplate(
+            "src/main/resources/images/arena_fight_close.png").at(new Rect(1840, 15, 62, 62));
     private Pictures() {}
 }
