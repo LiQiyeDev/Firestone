@@ -463,5 +463,7 @@ public final class Pictures {
             .at(new Rect(1722, 968, 156, 66));
     public static final ImageTemplate ARENA_FIGHT_CLOSE = new ImageTemplate(
             "src/main/resources/images/arena_fight_close.png").at(new Rect(1840, 15, 62, 62));
+    public static final ImageTemplate ARENA_ROUND = new ImageTemplate("src/main/resources/images/arena_round.png")
+            .at(new Rect(908, 10, 104, 30));
     private Pictures() {}
 }
