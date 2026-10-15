@@ -90,7 +90,7 @@ public final class Screens {
     public static final GameScreen ARENA_INFO = GameScreen.named("Arena info").marker(Pictures.ARENA_RULES_TITLE)
             .from(Way.of(Screens.ARENA, Input.click(Pictures.INFO_MAP).kind(Kind.INFO)))
             .back(Input.click(Pictures.CLOSE_ROOMS_CHAT));
-    public static final GameScreen ARENA_LEADERBOARDS = GameScreen.named("Arena leaderboards")
+    public static final GameScreen ARENA_LEADERBOARDS = GameScreen.named("Arena leaderboards").marker(Pictures.ARENA_LEADERBOARDS_HEADER)
             .from(Way.of(Screens.ARENA, Input.click(Pictures.ARENA_LEADERBOARDS)));
     private Screens() {
     }
