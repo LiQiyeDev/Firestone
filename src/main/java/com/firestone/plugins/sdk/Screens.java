@@ -91,7 +91,8 @@ public final class Screens {
             .from(Way.of(Screens.ARENA, Input.click(Pictures.INFO_MAP).kind(Kind.INFO)))
             .back(Input.click(Pictures.CLOSE_ROOMS_CHAT));
     public static final GameScreen ARENA_LEADERBOARDS = GameScreen.named("Arena leaderboards").marker(Pictures.ARENA_LEADERBOARDS_HEADER)
-            .from(Way.of(Screens.ARENA, Input.click(Pictures.ARENA_LEADERBOARDS)));
+            .from(Way.of(Screens.ARENA, Input.click(Pictures.ARENA_LEADERBOARDS)))
+            .back(Input.click(Pictures.ARENA_LEADERBOARDS_CLOSE));
     private Screens() {
     }
 }
