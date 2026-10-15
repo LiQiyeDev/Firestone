@@ -121,7 +121,8 @@ public final class Screens {
                             .variants(List.of(Variant.of(Pictures.CREW_BATTLE_ATTRIBUTES, State.SELECTED))),
                     Input.click(Pictures.CREW_ORDER_DAMAGE).did(Did.IN_PLACE),
                     Input.click(Pictures.CREW_ORDER_HEALTH).did(Did.IN_PLACE),
-                    Input.click(Pictures.CREW_ORDER_ARMOR).did(Did.IN_PLACE), Input.click(Pictures.CREW_INFO)));
+                    Input.click(Pictures.CREW_ORDER_ARMOR).did(Did.IN_PLACE),
+                    Input.click(Pictures.CREW_INFO).kind(Kind.INFO)));
     private Screens() {
     }
 }
