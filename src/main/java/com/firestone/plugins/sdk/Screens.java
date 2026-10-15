@@ -168,8 +168,9 @@ public final class Screens {
     public static final GameScreen FAVORED_WAR_MACHINES = GameScreen.named("Favored war machines").marker(Pictures.FAVORED_TITLE)
             .from(Way.of(Screens.ENGINEER, Input.click(Pictures.EDIT_SQUAD_ENGINEER)))
             .back(Input.click(Pictures.CLOSE_FAVORED))
-            .inputs(List.of(Input.click(Pictures.SAVE_CHANGES_OFF_FAVORED), Input.click(Pictures.MACHINE_CARD_FAVORED)
-                    .kind(Kind.CHOICE).never("changes which war machines the player favours")));
+            .inputs(List.of(Input.click(Pictures.SAVE_CHANGES_OFF_FAVORED).did(Did.IN_PLACE).kind(Kind.CHOICE),
+                    Input.click(Pictures.MACHINE_CARD_FAVORED).kind(Kind.CHOICE)
+                            .never("changes which war machines the player favours")));
     private Screens() {
     }
 }
