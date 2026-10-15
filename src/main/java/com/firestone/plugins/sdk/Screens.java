@@ -204,7 +204,7 @@ public final class Screens {
                     Input.scroll(Pictures.OWNED_CARD_ALL_MACHINES, -10).did(Did.IN_PLACE)));
     public static final GameScreen MAILBOX = GameScreen.named("Mailbox").marker(Pictures.MAILBOX_TITLE)
             .from(Way.of(Screens.HOME, Input.click(Pictures.MAIL_HOME))).back(Input.click(Pictures.CLOSE_MAILBOX))
-            .inputs(List.of(Input.click(Pictures.DELETE_MAILBOX),
+            .inputs(List.of(Input.click(Pictures.DELETE_MAILBOX).kind(Kind.CHOICE).never("deletes the player's mail"),
                     Input.click(Pictures.MAIL_ITEM_MAILBOX).did(Did.IN_PLACE).kind(Kind.INFO),
                     Input.click(Pictures.MAIL_CLAIM).kind(Kind.CHORE).sometimes(),
                     Input.scroll(Pictures.MAIL_ITEM_MAILBOX, -10).did(Did.IN_PLACE)));
