@@ -143,6 +143,16 @@ public final class Screens {
     public static final GameScreen CREW_INFO = GameScreen.named("Crew info").marker(Pictures.HERO_BONUSES_TITLE)
             .from(Way.of(Screens.SQUAD_HEROES, Input.click(Pictures.CREW_INFO).kind(Kind.INFO)))
             .back(Input.click(Pictures.CREW_INFO_CLOSE)).at(new Point(2032, 2044));
+    public static final GameScreen GARAGE = GameScreen.named("Garage").marker(Pictures.GARAGE_TITLE)
+            .from(Way.of(Screens.HOME, Input.click(Pictures.WAR_MACHINES_HOME))).back(Input.click(Pictures.CLOSE_TOWN))
+            .inputs(List.of(Input.click(Pictures.INFO_GARAGE).kind(Kind.INFO),
+                    Input.click(Pictures.STATS_TAB_GARAGE).did(Did.NONE).kind(Kind.INFO),
+                    Input.click(Pictures.UPGRADE_TAB_GARAGE).kind(Kind.CHORE),
+                    Input.click(Pictures.BLUEPRINT_TAB_GARAGE).kind(Kind.CHORE),
+                    Input.click(Pictures.EMBLEM_TAB_GARAGE), Input.click(Pictures.ENGINEER_GARAGE),
+                    Input.click(Pictures.NEXT_MACHINE_GARAGE), Input.click(Pictures.MACHINE_CARD_GARAGE),
+                    Input.click(Pictures.UNKNOWN_CARD_GARAGE), Input.click(Pictures.SHOW_ALL_GARAGE),
+                    Input.click(Pictures.CHEST_GARAGE)));
     public static final GameScreen ENGINEER = GameScreen.named("Engineer").marker(Pictures.ENGINEER_NAME)
             .from(Way.of(Screens.HOME, Input.click(Pictures.ENGINEER_HOME)))
             .inputs(List.of(Input.click(Pictures.INFO_ENGINEER).kind(Kind.INFO),
@@ -173,16 +183,6 @@ public final class Screens {
             .inputs(List.of(Input.click(Pictures.SAVE_CHANGES_OFF_FAVORED).did(Did.IN_PLACE).kind(Kind.CHOICE),
                     Input.click(Pictures.MACHINE_CARD_FAVORED).kind(Kind.CHOICE)
                             .never("changes which war machines the player favours")));
-    public static final GameScreen GARAGE = GameScreen.named("Garage").marker(Pictures.GARAGE_TITLE)
-            .from(Way.of(Screens.HOME, Input.click(Pictures.WAR_MACHINES_HOME))).back(Input.click(Pictures.CLOSE_TOWN))
-            .inputs(List.of(Input.click(Pictures.INFO_GARAGE).kind(Kind.INFO),
-                    Input.click(Pictures.STATS_TAB_GARAGE).did(Did.NONE).kind(Kind.INFO),
-                    Input.click(Pictures.UPGRADE_TAB_GARAGE).kind(Kind.CHORE),
-                    Input.click(Pictures.BLUEPRINT_TAB_GARAGE).kind(Kind.CHORE),
-                    Input.click(Pictures.EMBLEM_TAB_GARAGE), Input.click(Pictures.ENGINEER_GARAGE),
-                    Input.click(Pictures.NEXT_MACHINE_GARAGE), Input.click(Pictures.MACHINE_CARD_GARAGE),
-                    Input.click(Pictures.UNKNOWN_CARD_GARAGE), Input.click(Pictures.SHOW_ALL_GARAGE),
-                    Input.click(Pictures.CHEST_GARAGE)));
     public static final GameScreen GARAGE_INFO = GameScreen.named("Garage info").marker(Pictures.GARAGE_INFO_TITLE)
             .from(Way.of(Screens.GARAGE, Input.click(Pictures.INFO_GARAGE)))
             .back(Input.click(Pictures.CLOSE_GARAGE_INFO));
