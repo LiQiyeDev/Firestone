@@ -213,7 +213,7 @@ public final class Screens {
             .back(Input.click(Pictures.CLOSE_LOCKED_MACHINE));
     public static final GameScreen ALL_WAR_MACHINES = GameScreen.named("All war machines").marker(Pictures.ALL_MACHINES_FRAME)
             .from(Way.of(Screens.GARAGE, Input.click(Pictures.SHOW_ALL_GARAGE))).back(Input.click(Pictures.CLOSE_X))
-            .inputs(List.of(Input.click(Pictures.OWNED_CARD_ALL_MACHINES),
+            .inputs(List.of(Input.click(Pictures.OWNED_CARD_ALL_MACHINES).did(Did.IN_PLACE).kind(Kind.INFO),
                     Input.click(Pictures.LOCKED_CARD_ALL_MACHINES).did(Did.IN_PLACE).kind(Kind.INFO)));
     private Screens() {
     }
