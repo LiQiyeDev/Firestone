@@ -579,5 +579,7 @@ public final class Pictures {
             "src/main/resources/images/increase_rarity_off_garage.png").at(new Rect(1240, 535, 272, 100));
     public static final ImageTemplate PREV_MACHINE_GARAGE = new ImageTemplate(
             "src/main/resources/images/prev_machine_garage.png").at(new Rect(152, 598, 52, 84));
+    public static final ImageTemplate LOCKED_MACHINE_TEXT = new ImageTemplate(
+            "src/main/resources/images/locked_machine_text.png").at(new Rect(565, 740, 790, 46));
     private Pictures() {}
 }
