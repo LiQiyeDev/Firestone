@@ -202,6 +202,8 @@ public final class Screens {
             .inputs(List.of(Input.click(Pictures.OWNED_CARD_ALL_MACHINES).did(Did.IN_PLACE).kind(Kind.INFO),
                     Input.click(Pictures.LOCKED_CARD_ALL_MACHINES).did(Did.IN_PLACE).kind(Kind.INFO),
                     Input.scroll(Pictures.OWNED_CARD_ALL_MACHINES, -10).did(Did.IN_PLACE)));
+    public static final GameScreen MAILBOX = GameScreen.named("Mailbox")
+            .from(Way.of(Screens.HOME, Input.click(Pictures.MAIL_HOME)));
     private Screens() {
     }
 }
