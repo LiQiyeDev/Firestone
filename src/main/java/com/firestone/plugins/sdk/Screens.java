@@ -184,7 +184,8 @@ public final class Screens {
     public static final GameScreen GARAGE_INFO = GameScreen.named("Garage info").marker(Pictures.GARAGE_INFO_TITLE)
             .from(Way.of(Screens.GARAGE, Input.click(Pictures.INFO_GARAGE)))
             .back(Input.click(Pictures.CLOSE_GARAGE_INFO));
-    public static final GameScreen UPGRADE_TAB = GameScreen.named("Workshop").from(Way.of(Screens.GARAGE, Input.click(Pictures.UPGRADE_TAB_GARAGE)));
+    public static final GameScreen UPGRADE_TAB = GameScreen.named("Workshop").marker(Pictures.WORKSHOP_TITLE)
+            .from(Way.of(Screens.GARAGE, Input.click(Pictures.UPGRADE_TAB_GARAGE)));
     private Screens() {
     }
 }
