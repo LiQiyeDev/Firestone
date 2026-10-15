@@ -162,7 +162,7 @@ public final class Screens {
                     Input.click(Pictures.SET_ACTIVE_SQUADS).kind(Kind.CHOICE)
                             .never("switches the player's active squad")
                             .variants(List.of(Variant.of(Pictures.SET_ACTIVE_OFF_SQUADS, State.DISABLED))),
-                    Input.click(Pictures.EMPTY_SPOT_SQUADS)));
+                    Input.click(Pictures.EMPTY_SPOT_SQUADS).did(Did.IN_PLACE).kind(Kind.CHOICE)));
     private Screens() {
     }
 }
