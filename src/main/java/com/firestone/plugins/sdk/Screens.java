@@ -166,7 +166,7 @@ public final class Screens {
                     Input.click(Pictures.GARAGE_ENGINEER),
                     Input.click(Pictures.CHANGE_SQUAD_ENGINEER).kind(Kind.CHOICE),
                     Input.click(Pictures.EDIT_SQUAD_ENGINEER).kind(Kind.CHOICE),
-                    Input.click(Pictures.MACHINE_CARD_ENGINEER),
+                    Input.click(Pictures.MACHINE_CARD_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),
                     Input.click(Pictures.GEMS_PLUS_MAP).kind(Kind.CHOICE).never("buys tools with gems")))
             .at(new Point(340, 2124));
     public static final GameScreen ENGINEER_INFO = GameScreen.named("Engineer info").marker(Pictures.ENGINEER_INFO_TITLE)
