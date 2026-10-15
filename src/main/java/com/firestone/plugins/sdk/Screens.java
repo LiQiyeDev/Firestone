@@ -155,6 +155,7 @@ public final class Screens {
                     Input.click(Pictures.CHEST_GARAGE)));
     public static final GameScreen ENGINEER = GameScreen.named("Engineer").marker(Pictures.ENGINEER_NAME)
             .from(Way.of(Screens.HOME, Input.click(Pictures.ENGINEER_HOME)))
+            .alsoFrom(List.of(Way.of(Screens.GARAGE, Input.click(Pictures.ENGINEER_GARAGE))))
             .inputs(List.of(Input.click(Pictures.INFO_ENGINEER).kind(Kind.INFO),
                     Input.click(Pictures.ENGINEER_TAB_ENGINEER),
                     Input.click(Pictures.BATTLES_TAB_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),
