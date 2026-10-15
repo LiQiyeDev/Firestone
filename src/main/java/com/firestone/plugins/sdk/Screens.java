@@ -130,7 +130,10 @@ public final class Screens {
             .from(Way.of(Screens.SQUAD_HEROES, Input.click(Pictures.CREW_INFO).kind(Kind.INFO)))
             .back(Input.click(Pictures.CREW_INFO_CLOSE));
     public static final GameScreen ENGINEER = GameScreen.named("Engineer").marker(Pictures.ENGINEER_NAME)
-            .from(Way.of(Screens.HOME, Input.click(Pictures.ENGINEER_HOME)));
+            .from(Way.of(Screens.HOME, Input.click(Pictures.ENGINEER_HOME)))
+            .inputs(List.of(Input.click(Pictures.INFO_ENGINEER), Input.click(Pictures.ENGINEER_TAB_ENGINEER),
+                    Input.click(Pictures.BATTLES_TAB_ENGINEER), Input.click(Pictures.STAR_TAB_ENGINEER),
+                    Input.click(Pictures.SWIRL_TAB_ENGINEER), Input.click(Pictures.CLAIM_ENGINEER)));
     private Screens() {
     }
 }
