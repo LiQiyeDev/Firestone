@@ -501,5 +501,7 @@ public final class Pictures {
             "src/main/resources/images/star_tab_engineer.png").at(new Rect(1420, 225, 80, 70));
     public static final ImageTemplate SWIRL_TAB_ENGINEER = new ImageTemplate(
             "src/main/resources/images/swirl_tab_engineer.png").at(new Rect(1585, 225, 85, 70));
+    public static final ImageTemplate CLAIM_ENGINEER = new ImageTemplate("src/main/resources/images/claim_engineer.png")
+            .at(new Rect(1520, 690, 200, 60));
     private Pictures() {}
 }
