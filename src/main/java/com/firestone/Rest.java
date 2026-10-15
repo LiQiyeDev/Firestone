@@ -16,8 +16,8 @@ public final class Rest {
 
     private Rest() {}
 
-    public static Activities.Rest body() {
+    public static Activities.Pause body() {
         Wait.time(Parameters.restBetween);
-        return Activities.Rest.NEXT;
+        return Activities.Pause.NEXT;
     }
 }
