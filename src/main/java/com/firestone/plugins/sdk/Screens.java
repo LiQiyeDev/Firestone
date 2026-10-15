@@ -23,18 +23,20 @@ import com.botmaker.sdk.api.geometry.Point;
 public final class Screens {
     public static final GameScreen OFFLINE_PROGRESS = GameScreen.named("Offline progress").marker(Pictures.OFFLINE_PROGRESS_TITLE)
             .back(Input.click(Pictures.CLAIM_OFFLINE)).popup().at(new Point(0, 2394));
-    public static final GameScreen HOME = GameScreen.named("Home").marker(Pictures.TOWN_HOME).inputs(List.of(Input.click(Pictures.TAVERN_HOME),
-            Input.click(Pictures.ARENA_HOME), Input.click(Pictures.ENGINEER_HOME), Input.click(Pictures.CAMPAIGN_HOME),
-            Input.click(Pictures.WAR_MACHINES_HOME), Input.click(Pictures.MAIL_HOME), Input.click(Pictures.CHAT_MAP),
-            Input.click(Pictures.TOWN_HOME), Input.click(Pictures.MAP), Input.click(Pictures.GUILD),
-            Input.click(Pictures.MARKET), Input.click(Pictures.BATTLE), Input.click(Pictures.BATTLE_PASS_HOME),
-            Input.click(Pictures.EVENTS_HOME), Input.click(Pictures.UPGRADES), Input.click(Pictures.BAG),
-            Input.click(Pictures.FELLOWSHIP), Input.click(Pictures.PARTY), Input.click(Pictures.CARD_HOME).sometimes(),
-            Input.click(Pictures.PARCHMENT_HOME).sometimes(), Input.click(Pictures.POTION_HOME).sometimes(),
-            Input.click(Pictures.SCROLL_BOOT_HOME).sometimes(), Input.click(Pictures.LIBRARY_HOME).sometimes(),
-            Input.click(Pictures.GUARDIANS_HOME).sometimes(),
-            Input.click(Pictures.AUTO_ABILITIES_HOME).did(Did.IN_PLACE), Input.click(Pictures.AVATAR_HOME),
-            Input.click(Pictures.PREV_STAGE_HOME).did(Did.IN_PLACE), Input.click(Pictures.SETTINGS_HOME)))
+    public static final GameScreen HOME = GameScreen.named("Home").marker(Pictures.TOWN_HOME)
+            .inputs(List.of(Input.click(Pictures.TAVERN_HOME), Input.click(Pictures.ARENA_HOME),
+                    Input.click(Pictures.ENGINEER_HOME).sometimes(), Input.click(Pictures.CAMPAIGN_HOME),
+                    Input.click(Pictures.WAR_MACHINES_HOME), Input.click(Pictures.MAIL_HOME),
+                    Input.click(Pictures.CHAT_MAP), Input.click(Pictures.TOWN_HOME), Input.click(Pictures.MAP),
+                    Input.click(Pictures.GUILD), Input.click(Pictures.MARKET), Input.click(Pictures.BATTLE),
+                    Input.click(Pictures.BATTLE_PASS_HOME), Input.click(Pictures.EVENTS_HOME),
+                    Input.click(Pictures.UPGRADES), Input.click(Pictures.BAG), Input.click(Pictures.FELLOWSHIP),
+                    Input.click(Pictures.PARTY), Input.click(Pictures.CARD_HOME).sometimes(),
+                    Input.click(Pictures.PARCHMENT_HOME).sometimes(), Input.click(Pictures.POTION_HOME).sometimes(),
+                    Input.click(Pictures.SCROLL_BOOT_HOME).sometimes(), Input.click(Pictures.LIBRARY_HOME).sometimes(),
+                    Input.click(Pictures.GUARDIANS_HOME).sometimes(),
+                    Input.click(Pictures.AUTO_ABILITIES_HOME).did(Did.IN_PLACE), Input.click(Pictures.AVATAR_HOME),
+                    Input.click(Pictures.PREV_STAGE_HOME).did(Did.IN_PLACE), Input.click(Pictures.SETTINGS_HOME)))
             .at(new Point(0, 1326));
     public static final GameScreen TAVERN = GameScreen.named("Tavern").marker(Pictures.TAVERN_LUCK_TITLE).from(Way.of(Screens.HOME,Input.click(Pictures.TAVERN_HOME))).back(Input.click(Pictures.CLOSE_TOWN)).inputs(List.of(Input.click(Pictures.INFO_LUCK_TAVERN),Input.click(Pictures.ARTIFACTS_TAVERN),Input.click(Pictures.SACRED_CARDS_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.SPEED_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.BAG_TAVERN),Input.click(Pictures.CHAT_TAVERN),Input.click(Pictures.WHEEL_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.DECK_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.PLAY_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.MANUAL_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.MARKET_TAVERN),Input.click(Pictures.INFO_MAP),Input.click(Pictures.GEMS_PLUS_MAP).never("spends gems"),Input.click(Pictures.CARD_TAVERN).did(Did.IN_PLACE).sometimes())).notes("""
                     Town › Tavern opens a chooser: Tavern or Scarab's game (tavern_choice_town = the Tavern card).
