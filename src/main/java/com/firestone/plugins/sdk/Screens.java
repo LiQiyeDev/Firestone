@@ -211,7 +211,7 @@ public final class Screens {
     public static final GameScreen LOCKED_MACHINE = GameScreen.named("Locked machine").marker(Pictures.LOCKED_MACHINE_TEXT)
             .from(Way.of(Screens.GARAGE, Input.click(Pictures.UNKNOWN_CARD_GARAGE)))
             .back(Input.click(Pictures.CLOSE_LOCKED_MACHINE));
-    public static final GameScreen ALL_WAR_MACHINES = GameScreen.named("All war machines")
+    public static final GameScreen ALL_WAR_MACHINES = GameScreen.named("All war machines").marker(Pictures.OWN_MACHINE_TEXT)
             .from(Way.of(Screens.GARAGE, Input.click(Pictures.SHOW_ALL_GARAGE)));
     private Screens() {
     }
