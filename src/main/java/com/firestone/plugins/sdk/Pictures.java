@@ -479,5 +479,7 @@ public final class Pictures {
             "src/main/resources/images/crew_order_damage.png").at(new Rect(1512, 375, 90, 90));
     public static final ImageTemplate CREW_ORDER_HEALTH = new ImageTemplate(
             "src/main/resources/images/crew_order_health.png").at(new Rect(1637, 375, 90, 90));
+    public static final ImageTemplate CREW_ORDER_ARMOR = new ImageTemplate(
+            "src/main/resources/images/crew_order_armor.png").at(new Rect(1762, 375, 90, 90));
     private Pictures() {}
 }
