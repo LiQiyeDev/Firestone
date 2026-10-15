@@ -109,6 +109,7 @@ public final class Screens {
                     Input.click(Pictures.BATTLE_DETAILS_HEALING).did(Did.IN_PLACE)));
     public static final GameScreen ARENA_REPLAY = GameScreen.named("Arena replay").marker(Pictures.ARENA_ROUND)
             .from(Way.of(Screens.ARENA_BATTLE_LOG, Input.click(Pictures.BATTLE_LOG_REPLAY).kind(Kind.INFO)))
+            .alsoFrom(List.of(Way.of(Screens.ARENA, Input.click(Pictures.ARENA_FIGHT).kind(Kind.CHORE))))
             .back(Input.click(Pictures.ARENA_FIGHT_CLOSE))
             .inputs(List.of(Input.click(Pictures.ARENA_SPEED).did(Did.LEAVES)));
     public static final GameScreen ARENA_SQUAD = GameScreen.named("Arena squad").marker(Pictures.CHOOSE_WAR_MACHINES_TITLE)
