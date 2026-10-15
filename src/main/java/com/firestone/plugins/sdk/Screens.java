@@ -163,7 +163,7 @@ public final class Screens {
                     Input.click(Pictures.STAR_TAB_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),
                     Input.click(Pictures.SWIRL_TAB_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),
                     Input.click(Pictures.CLAIM_ENGINEER).did(Did.IN_PLACE).kind(Kind.CHORE).sometimes(),
-                    Input.click(Pictures.GARAGE_ENGINEER),
+                    Input.click(Pictures.GARAGE_ENGINEER).did(Did.LEAVES),
                     Input.click(Pictures.CHANGE_SQUAD_ENGINEER).kind(Kind.CHOICE),
                     Input.click(Pictures.EDIT_SQUAD_ENGINEER).kind(Kind.CHOICE),
                     Input.click(Pictures.MACHINE_CARD_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),
