@@ -102,7 +102,7 @@ public final class Screens {
             .back(Input.click(Pictures.CLOSE_ROOMS_CHAT))
             .inputs(List.of(Input.click(Pictures.BATTLE_DETAILS_DEALT),
                     Input.click(Pictures.BATTLE_DETAILS_TAKEN).did(Did.IN_PLACE),
-                    Input.click(Pictures.BATTLE_DETAILS_HEALING)));
+                    Input.click(Pictures.BATTLE_DETAILS_HEALING).did(Did.IN_PLACE)));
     private Screens() {
     }
 }
