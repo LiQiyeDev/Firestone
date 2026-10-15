@@ -156,6 +156,7 @@ public final class Screens {
     public static final GameScreen ENGINEER = GameScreen.named("Engineer").marker(Pictures.ENGINEER_NAME)
             .from(Way.of(Screens.HOME, Input.click(Pictures.ENGINEER_HOME)))
             .alsoFrom(List.of(Way.of(Screens.GARAGE, Input.click(Pictures.ENGINEER_GARAGE))))
+            .back(Input.click(Pictures.CLOSE_TOWN))
             .inputs(List.of(Input.click(Pictures.INFO_ENGINEER).kind(Kind.INFO),
                     Input.click(Pictures.ENGINEER_TAB_ENGINEER),
                     Input.click(Pictures.BATTLES_TAB_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),
@@ -165,7 +166,7 @@ public final class Screens {
                     Input.click(Pictures.GARAGE_ENGINEER),
                     Input.click(Pictures.CHANGE_SQUAD_ENGINEER).kind(Kind.CHOICE),
                     Input.click(Pictures.EDIT_SQUAD_ENGINEER).kind(Kind.CHOICE),
-                    Input.click(Pictures.MACHINE_CARD_ENGINEER)))
+                    Input.click(Pictures.MACHINE_CARD_ENGINEER), Input.click(Pictures.GEMS_PLUS_MAP)))
             .at(new Point(340, 2124));
     public static final GameScreen ENGINEER_INFO = GameScreen.named("Engineer info").marker(Pictures.ENGINEER_INFO_TITLE)
             .from(Way.of(Screens.ENGINEER, Input.click(Pictures.INFO_ENGINEER)))
