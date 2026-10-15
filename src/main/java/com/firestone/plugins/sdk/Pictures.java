@@ -523,5 +523,7 @@ public final class Pictures {
             .at(new Rect(1110, 312, 240, 60));
     public static final ImageTemplate SET_ACTIVE_SQUADS = new ImageTemplate(
             "src/main/resources/images/set_active_squads.png").at(new Rect(1415, 607, 230, 58));
+    public static final ImageTemplate EMPTY_SPOT_SQUADS = new ImageTemplate(
+            "src/main/resources/images/empty_spot_squads.png").at(new Rect(340, 605, 112, 115));
     private Pictures() {}
 }
