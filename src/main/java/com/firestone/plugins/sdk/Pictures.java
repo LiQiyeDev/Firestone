@@ -455,5 +455,7 @@ public final class Pictures {
             "src/main/resources/images/battle_details_vs.png").at(new Rect(912, 128, 96, 58));
     public static final ImageTemplate BATTLE_DETAILS_DEALT = new ImageTemplate(
             "src/main/resources/images/battle_details_dealt.png").at(new Rect(225, 420, 85, 85));
+    public static final ImageTemplate BATTLE_DETAILS_TAKEN = new ImageTemplate(
+            "src/main/resources/images/battle_details_taken.png").at(new Rect(225, 535, 85, 85));
     private Pictures() {}
 }
