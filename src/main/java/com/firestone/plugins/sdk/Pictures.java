@@ -549,5 +549,7 @@ public final class Pictures {
             "src/main/resources/images/engineer_garage.png").at(new Rect(100, 410, 95, 90));
     public static final ImageTemplate NEXT_MACHINE_GARAGE = new ImageTemplate(
             "src/main/resources/images/next_machine_garage.png").at(new Rect(765, 595, 55, 85));
+    public static final ImageTemplate MACHINE_CARD_GARAGE = new ImageTemplate(
+            "src/main/resources/images/machine_card_garage.png").at(new Rect(445, 965, 100, 70));
     private Pictures() {}
 }
