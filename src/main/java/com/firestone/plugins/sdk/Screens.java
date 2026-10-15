@@ -202,7 +202,8 @@ public final class Screens {
             .back(Input.click(Pictures.STATS_TAB_GARAGE))
             .inputs(List.of(Input.click(Pictures.X1_WORKSHOP).did(Did.IN_PLACE).kind(Kind.SHORTCUT),
                     Input.click(Pictures.UPGRADE_BLUEPRINTS).did(Did.IN_PLACE).kind(Kind.CHORE)));
-    public static final GameScreen EMBLEMS = GameScreen.named("Machine rarity").from(Way.of(Screens.GARAGE, Input.click(Pictures.EMBLEM_TAB_GARAGE)));
+    public static final GameScreen EMBLEMS = GameScreen.named("Machine rarity").marker(Pictures.MACHINE_RARITY_TITLE)
+            .from(Way.of(Screens.GARAGE, Input.click(Pictures.EMBLEM_TAB_GARAGE)));
     private Screens() {
     }
 }
