@@ -469,5 +469,7 @@ public final class Pictures {
             "src/main/resources/images/choose_war_machines_title.png").at(new Rect(1420, 40, 300, 75));
     public static final ImageTemplate SQUAD_SAVE_CHANGES = new ImageTemplate(
             "src/main/resources/images/squad_save_changes.png").at(new Rect(1025, 50, 255, 70));
+    public static final ImageTemplate SQUAD_EDIT_HEROES = new ImageTemplate(
+            "src/main/resources/images/squad_edit_heroes.png").at(new Rect(1218, 550, 70, 70));
     private Pictures() {}
 }
