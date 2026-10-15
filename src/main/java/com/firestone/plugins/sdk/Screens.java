@@ -144,7 +144,8 @@ public final class Screens {
     public static final GameScreen ENGINEER = GameScreen.named("Engineer").marker(Pictures.ENGINEER_NAME)
             .from(Way.of(Screens.HOME, Input.click(Pictures.ENGINEER_HOME)))
             .inputs(List.of(Input.click(Pictures.INFO_ENGINEER).kind(Kind.INFO),
-                    Input.click(Pictures.ENGINEER_TAB_ENGINEER), Input.click(Pictures.BATTLES_TAB_ENGINEER),
+                    Input.click(Pictures.ENGINEER_TAB_ENGINEER),
+                    Input.click(Pictures.BATTLES_TAB_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),
                     Input.click(Pictures.STAR_TAB_ENGINEER), Input.click(Pictures.SWIRL_TAB_ENGINEER),
                     Input.click(Pictures.CLAIM_ENGINEER).did(Did.IN_PLACE).kind(Kind.CHORE),
                     Input.click(Pictures.GARAGE_ENGINEER)))
