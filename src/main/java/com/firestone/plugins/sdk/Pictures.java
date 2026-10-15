@@ -519,5 +519,7 @@ public final class Pictures {
             .at(new Rect(893, 88, 134, 40));
     public static final ImageTemplate CLOSE_SQUADS = new ImageTemplate("src/main/resources/images/close_squads.png")
             .at(new Rect(1640, 80, 60, 60));
+    public static final ImageTemplate EDIT_SQUADS = new ImageTemplate("src/main/resources/images/edit_squads.png")
+            .at(new Rect(1110, 312, 240, 60));
     private Pictures() {}
 }
