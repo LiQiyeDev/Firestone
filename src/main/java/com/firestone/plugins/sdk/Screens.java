@@ -113,6 +113,7 @@ public final class Screens {
             .inputs(List.of(Input.click(Pictures.SQUAD_SAVE_CHANGES), Input.click(Pictures.SQUAD_EDIT_HEROES)));
     public static final GameScreen SQUAD_HEROES = GameScreen.named("Squad heroes").marker(Pictures.SELECT_CREW_TITLE)
             .from(Way.of(Screens.ARENA_SQUAD, Input.click(Pictures.SQUAD_EDIT_HEROES)))
+            .back(Input.click(Pictures.CLOSE_X))
             .inputs(List.of(Input.click(Pictures.CREW_ARENA_ATTRIBUTES), Input.click(Pictures.CREW_ORDER_DAMAGE),
                     Input.click(Pictures.CREW_ORDER_HEALTH), Input.click(Pictures.CREW_ORDER_ARMOR),
                     Input.click(Pictures.CREW_INFO)));
