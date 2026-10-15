@@ -187,7 +187,9 @@ public final class Screens {
     public static final GameScreen UPGRADE_TAB = GameScreen.named("Workshop").marker(Pictures.WORKSHOP_TITLE)
             .from(Way.of(Screens.GARAGE, Input.click(Pictures.UPGRADE_TAB_GARAGE)))
             .back(Input.click(Pictures.STATS_TAB_GARAGE))
-            .inputs(List.of(Input.click(Pictures.X1_WORKSHOP).did(Did.IN_PLACE).kind(Kind.SHORTCUT),
+            .inputs(List.of(
+                    Input.click(Pictures.X1_WORKSHOP).did(Did.IN_PLACE).kind(Kind.SHORTCUT)
+                            .variants(List.of(Variant.of(Pictures.X5_WORKSHOP, State.SELECTED))),
                     Input.click(Pictures.UPGRADE_WORKSHOP)));
     private Screens() {
     }
