@@ -173,6 +173,8 @@ public final class Screens {
             .inputs(List.of(Input.click(Pictures.SAVE_CHANGES_OFF_FAVORED).did(Did.IN_PLACE).kind(Kind.CHOICE),
                     Input.click(Pictures.MACHINE_CARD_FAVORED).kind(Kind.CHOICE)
                             .never("changes which war machines the player favours")));
+    public static final GameScreen GARAGE = GameScreen.named("Garage")
+            .from(Way.of(Screens.HOME, Input.click(Pictures.WAR_MACHINES_HOME)));
     private Screens() {
     }
 }
