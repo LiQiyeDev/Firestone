@@ -87,7 +87,7 @@ public final class Screens {
             .inputs(List.of(Input.click(Pictures.ARENA_REFRESH), Input.click(Pictures.ARENA_FIGHT),
                     Input.click(Pictures.ARENA_BATTLE_LOG), Input.click(Pictures.ARENA_EDIT_SQUAD),
                     Input.click(Pictures.INFO_MAP).kind(Kind.INFO), Input.click(Pictures.ARENA_LEADERBOARDS)));
-    public static final GameScreen ARENA_INFO = GameScreen.named("Arena info")
+    public static final GameScreen ARENA_INFO = GameScreen.named("Arena info").marker(Pictures.ARENA_RULES_TITLE)
             .from(Way.of(Screens.ARENA, Input.click(Pictures.INFO_MAP).kind(Kind.INFO)));
     private Screens() {
     }
