@@ -146,7 +146,8 @@ public final class Screens {
             .inputs(List.of(Input.click(Pictures.INFO_ENGINEER).kind(Kind.INFO),
                     Input.click(Pictures.ENGINEER_TAB_ENGINEER), Input.click(Pictures.BATTLES_TAB_ENGINEER),
                     Input.click(Pictures.STAR_TAB_ENGINEER), Input.click(Pictures.SWIRL_TAB_ENGINEER),
-                    Input.click(Pictures.CLAIM_ENGINEER), Input.click(Pictures.GARAGE_ENGINEER)))
+                    Input.click(Pictures.CLAIM_ENGINEER).did(Did.IN_PLACE).kind(Kind.CHORE),
+                    Input.click(Pictures.GARAGE_ENGINEER)))
             .at(new Point(340, 2124));
     public static final GameScreen ENGINEER_INFO = GameScreen.named("Engineer info").marker(Pictures.ENGINEER_INFO_TITLE)
             .from(Way.of(Screens.ENGINEER, Input.click(Pictures.INFO_ENGINEER)))
