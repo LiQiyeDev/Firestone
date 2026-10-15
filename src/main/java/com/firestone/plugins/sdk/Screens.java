@@ -93,6 +93,8 @@ public final class Screens {
     public static final GameScreen ARENA_LEADERBOARDS = GameScreen.named("Arena leaderboards").marker(Pictures.ARENA_LEADERBOARDS_HEADER)
             .from(Way.of(Screens.ARENA, Input.click(Pictures.ARENA_LEADERBOARDS)))
             .back(Input.click(Pictures.ARENA_LEADERBOARDS_CLOSE));
+    public static final GameScreen ARENA_BATTLE_LOG = GameScreen.named("Arena battle log")
+            .from(Way.of(Screens.ARENA, Input.click(Pictures.ARENA_BATTLE_LOG)));
     private Screens() {
     }
 }
