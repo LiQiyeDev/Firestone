@@ -515,5 +515,7 @@ public final class Pictures {
             "src/main/resources/images/edit_squad_engineer.png").at(new Rect(1660, 635, 95, 95));
     public static final ImageTemplate MACHINE_CARD_ENGINEER = new ImageTemplate(
             "src/main/resources/images/machine_card_engineer.png").at(new Rect(985, 630, 105, 75));
+    public static final ImageTemplate SQUADS_TITLE = new ImageTemplate("src/main/resources/images/squads_title.png")
+            .at(new Rect(893, 88, 134, 40));
     private Pictures() {}
 }
