@@ -115,8 +115,8 @@ public final class Screens {
             .from(Way.of(Screens.ARENA_SQUAD, Input.click(Pictures.SQUAD_EDIT_HEROES)))
             .back(Input.click(Pictures.CLOSE_X))
             .inputs(List.of(Input.click(Pictures.CREW_ARENA_ATTRIBUTES), Input.click(Pictures.CREW_ORDER_DAMAGE),
-                    Input.click(Pictures.CREW_ORDER_HEALTH).did(Did.IN_PLACE), Input.click(Pictures.CREW_ORDER_ARMOR),
-                    Input.click(Pictures.CREW_INFO)));
+                    Input.click(Pictures.CREW_ORDER_HEALTH).did(Did.IN_PLACE),
+                    Input.click(Pictures.CREW_ORDER_ARMOR).did(Did.IN_PLACE), Input.click(Pictures.CREW_INFO)));
     private Screens() {
     }
 }
