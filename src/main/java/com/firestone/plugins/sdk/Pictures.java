@@ -507,5 +507,7 @@ public final class Pictures {
             "src/main/resources/images/garage_engineer.png").at(new Rect(100, 402, 85, 85));
     public static final ImageTemplate ENGINEER_INFO_TITLE = new ImageTemplate(
             "src/main/resources/images/engineer_info_title.png").at(new Rect(792, 196, 300, 48));
+    public static final ImageTemplate CLOSE_ENGINEER_INFO = new ImageTemplate(
+            "src/main/resources/images/close_engineer_info.png").at(new Rect(1768, 168, 64, 64));
     private Pictures() {}
 }
