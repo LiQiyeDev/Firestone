@@ -509,5 +509,7 @@ public final class Pictures {
             "src/main/resources/images/engineer_info_title.png").at(new Rect(792, 196, 300, 48));
     public static final ImageTemplate CLOSE_ENGINEER_INFO = new ImageTemplate(
             "src/main/resources/images/close_engineer_info.png").at(new Rect(1768, 168, 64, 64));
+    public static final ImageTemplate CHANGE_SQUAD_ENGINEER = new ImageTemplate(
+            "src/main/resources/images/change_squad_engineer.png").at(new Rect(1240, 512, 260, 56));
     private Pictures() {}
 }
