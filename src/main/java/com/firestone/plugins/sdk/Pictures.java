@@ -555,5 +555,7 @@ public final class Pictures {
             "src/main/resources/images/unknown_card_garage.png").at(new Rect(1356, 940, 124, 120));
     public static final ImageTemplate SHOW_ALL_GARAGE = new ImageTemplate(
             "src/main/resources/images/show_all_garage.png").at(new Rect(1505, 940, 126, 120));
+    public static final ImageTemplate CHEST_GARAGE = new ImageTemplate("src/main/resources/images/chest_garage.png")
+            .at(new Rect(20, 900, 200, 160));
     private Pictures() {}
 }
