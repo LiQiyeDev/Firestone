@@ -109,7 +109,7 @@ public final class Screens {
             .back(Input.click(Pictures.ARENA_FIGHT_CLOSE))
             .inputs(List.of(Input.click(Pictures.ARENA_SPEED).did(Did.LEAVES)));
     public static final GameScreen ARENA_SQUAD = GameScreen.named("Arena squad").marker(Pictures.CHOOSE_WAR_MACHINES_TITLE)
-            .from(Way.of(Screens.ARENA, Input.click(Pictures.ARENA_EDIT_SQUAD)))
+            .from(Way.of(Screens.ARENA, Input.click(Pictures.ARENA_EDIT_SQUAD))).back(Input.click(Pictures.CLOSE_X))
             .inputs(List.of(Input.click(Pictures.SQUAD_SAVE_CHANGES), Input.click(Pictures.SQUAD_EDIT_HEROES)));
     private Screens() {
     }
