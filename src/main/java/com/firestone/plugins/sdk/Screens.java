@@ -158,7 +158,7 @@ public final class Screens {
             .alsoFrom(List.of(Way.of(Screens.GARAGE, Input.click(Pictures.ENGINEER_GARAGE))))
             .back(Input.click(Pictures.CLOSE_TOWN))
             .inputs(List.of(Input.click(Pictures.INFO_ENGINEER).kind(Kind.INFO),
-                    Input.click(Pictures.ENGINEER_TAB_ENGINEER),
+                    Input.click(Pictures.ENGINEER_TAB_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),
                     Input.click(Pictures.BATTLES_TAB_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),
                     Input.click(Pictures.STAR_TAB_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),
                     Input.click(Pictures.SWIRL_TAB_ENGINEER),
