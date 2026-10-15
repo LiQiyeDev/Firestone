@@ -124,7 +124,8 @@ public final class Screens {
                     Input.click(Pictures.CREW_ORDER_ARMOR).did(Did.IN_PLACE),
                     Input.click(Pictures.CREW_INFO).kind(Kind.INFO)));
     public static final GameScreen CREW_INFO = GameScreen.named("Crew info").marker(Pictures.HERO_BONUSES_TITLE)
-            .from(Way.of(Screens.SQUAD_HEROES, Input.click(Pictures.CREW_INFO).kind(Kind.INFO)));
+            .from(Way.of(Screens.SQUAD_HEROES, Input.click(Pictures.CREW_INFO).kind(Kind.INFO)))
+            .back(Input.click(Pictures.CREW_INFO_CLOSE));
     private Screens() {
     }
 }
