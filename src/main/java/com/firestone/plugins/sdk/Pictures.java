@@ -597,5 +597,7 @@ public final class Pictures {
             "src/main/resources/images/mail_item_mailbox.png").at(new Rect(275, 140, 85, 85));
     public static final ImageTemplate REWARD_GODDESS_TITLE = new ImageTemplate(
             "src/main/resources/images/reward_goddess_title.png").at(new Rect(925, 342, 240, 38));
+    public static final ImageTemplate OK_REWARD = new ImageTemplate("src/main/resources/images/ok_reward.png")
+            .at(new Rect(1052, 682, 266, 70));
     private Pictures() {}
 }
