@@ -495,5 +495,7 @@ public final class Pictures {
             .at(new Rect(465, 20, 60, 55));
     public static final ImageTemplate ENGINEER_TAB_ENGINEER = new ImageTemplate(
             "src/main/resources/images/engineer_tab_engineer.png").at(new Rect(1085, 245, 80, 50));
+    public static final ImageTemplate BATTLES_TAB_ENGINEER = new ImageTemplate(
+            "src/main/resources/images/battles_tab_engineer.png").at(new Rect(1250, 225, 85, 70));
     private Pictures() {}
 }
