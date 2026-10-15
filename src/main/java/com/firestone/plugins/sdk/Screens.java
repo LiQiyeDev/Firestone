@@ -99,8 +99,8 @@ public final class Screens {
                     Input.click(Pictures.BATTLE_LOG_INSPECT).kind(Kind.INFO), Input.click(Pictures.BATTLE_LOG_REPLAY)));
     public static final GameScreen BATTLE_DETAILS = GameScreen.named("Battle details").marker(Pictures.BATTLE_DETAILS_VS)
             .from(Way.of(Screens.ARENA_BATTLE_LOG, Input.click(Pictures.BATTLE_LOG_INSPECT).kind(Kind.INFO)))
-            .inputs(List.of(Input.click(Pictures.BATTLE_DETAILS_DEALT), Input.click(Pictures.BATTLE_DETAILS_TAKEN),
-                    Input.click(Pictures.BATTLE_DETAILS_HEALING)));
+            .back(Input.click(Pictures.CLOSE_ROOMS_CHAT)).inputs(List.of(Input.click(Pictures.BATTLE_DETAILS_DEALT),
+                    Input.click(Pictures.BATTLE_DETAILS_TAKEN), Input.click(Pictures.BATTLE_DETAILS_HEALING)));
     private Screens() {
     }
 }
