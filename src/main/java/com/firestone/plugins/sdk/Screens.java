@@ -165,6 +165,8 @@ public final class Screens {
                             .never("switches the player's active squad")
                             .variants(List.of(Variant.of(Pictures.SET_ACTIVE_OFF_SQUADS, State.DISABLED))),
                     Input.click(Pictures.EMPTY_SPOT_SQUADS).did(Did.IN_PLACE).kind(Kind.CHOICE)));
+    public static final GameScreen FAVORED_WAR_MACHINES = GameScreen.named("Favored war machines")
+            .from(Way.of(Screens.ENGINEER, Input.click(Pictures.EDIT_SQUAD_ENGINEER)));
     private Screens() {
     }
 }
