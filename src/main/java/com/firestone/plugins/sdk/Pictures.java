@@ -449,5 +449,7 @@ public final class Pictures {
             "src/main/resources/images/battle_log_close.png").at(new Rect(1505, 18, 64, 64));
     public static final ImageTemplate BATTLE_LOG_INSPECT = new ImageTemplate(
             "src/main/resources/images/battle_log_inspect.png").at(new Rect(1325, 145, 85, 85));
+    public static final ImageTemplate BATTLE_LOG_REPLAY = new ImageTemplate(
+            "src/main/resources/images/battle_log_replay.png").at(new Rect(1445, 145, 85, 85));
     private Pictures() {}
 }
