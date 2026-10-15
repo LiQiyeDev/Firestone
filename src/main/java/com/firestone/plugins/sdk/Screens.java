@@ -182,7 +182,8 @@ public final class Screens {
                     Input.click(Pictures.UNKNOWN_CARD_GARAGE), Input.click(Pictures.SHOW_ALL_GARAGE),
                     Input.click(Pictures.CHEST_GARAGE)));
     public static final GameScreen GARAGE_INFO = GameScreen.named("Garage info").marker(Pictures.GARAGE_INFO_TITLE)
-            .from(Way.of(Screens.GARAGE, Input.click(Pictures.INFO_GARAGE)));
+            .from(Way.of(Screens.GARAGE, Input.click(Pictures.INFO_GARAGE)))
+            .back(Input.click(Pictures.CLOSE_GARAGE_INFO));
     private Screens() {
     }
 }
