@@ -589,5 +589,7 @@ public final class Pictures {
             "src/main/resources/images/locked_card_all_machines.png").at(new Rect(1212, 915, 130, 130));
     public static final ImageTemplate ALL_MACHINES_FRAME = new ImageTemplate(
             "src/main/resources/images/all_machines_frame.png").at(new Rect(70, 15, 130, 60));
+    public static final ImageTemplate CLOSE_MAILBOX = new ImageTemplate("src/main/resources/images/close_mailbox.png")
+            .at(new Rect(1622, 15, 62, 62));
     private Pictures() {}
 }
