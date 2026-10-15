@@ -559,5 +559,7 @@ public final class Pictures {
             .at(new Rect(20, 900, 200, 160));
     public static final ImageTemplate GARAGE_INFO_TITLE = new ImageTemplate(
             "src/main/resources/images/garage_info_title.png").at(new Rect(572, 248, 530, 40));
+    public static final ImageTemplate CLOSE_GARAGE_INFO = new ImageTemplate(
+            "src/main/resources/images/close_garage_info.png").at(new Rect(1335, 200, 62, 62));
     private Pictures() {}
 }
