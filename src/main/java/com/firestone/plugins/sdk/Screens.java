@@ -166,7 +166,9 @@ public final class Screens {
                             .variants(List.of(Variant.of(Pictures.SET_ACTIVE_OFF_SQUADS, State.DISABLED))),
                     Input.click(Pictures.EMPTY_SPOT_SQUADS).did(Did.IN_PLACE).kind(Kind.CHOICE)));
     public static final GameScreen FAVORED_WAR_MACHINES = GameScreen.named("Favored war machines").marker(Pictures.FAVORED_TITLE)
-            .from(Way.of(Screens.ENGINEER, Input.click(Pictures.EDIT_SQUAD_ENGINEER)));
+            .from(Way.of(Screens.ENGINEER, Input.click(Pictures.EDIT_SQUAD_ENGINEER)))
+            .back(Input.click(Pictures.CLOSE_FAVORED))
+            .inputs(List.of(Input.click(Pictures.SAVE_CHANGES_OFF_FAVORED), Input.click(Pictures.MACHINE_CARD_FAVORED)));
     private Screens() {
     }
 }
