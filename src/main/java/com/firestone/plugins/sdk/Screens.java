@@ -155,8 +155,7 @@ public final class Screens {
     public static final GameScreen ENGINEER_INFO = GameScreen.named("Engineer info").marker(Pictures.ENGINEER_INFO_TITLE)
             .from(Way.of(Screens.ENGINEER, Input.click(Pictures.INFO_ENGINEER)))
             .back(Input.click(Pictures.CLOSE_ENGINEER_INFO)).at(new Point(1352, 2286));
-    public static final GameScreen CHANGE_SQUAD = GameScreen.named("Change squad")
-            .from(Way.of(Screens.ENGINEER, Input.click(Pictures.CHANGE_SQUAD_ENGINEER)));
+    public static final GameScreen CHANGE_SQUAD = GameScreen.named("Squads").from(Way.of(Screens.ENGINEER, Input.click(Pictures.CHANGE_SQUAD_ENGINEER)));
     private Screens() {
     }
 }
