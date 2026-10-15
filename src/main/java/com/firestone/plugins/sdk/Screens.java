@@ -100,7 +100,7 @@ public final class Screens {
     public static final GameScreen BATTLE_DETAILS = GameScreen.named("Battle details").marker(Pictures.BATTLE_DETAILS_VS)
             .from(Way.of(Screens.ARENA_BATTLE_LOG, Input.click(Pictures.BATTLE_LOG_INSPECT).kind(Kind.INFO)))
             .back(Input.click(Pictures.CLOSE_ROOMS_CHAT))
-            .inputs(List.of(Input.click(Pictures.BATTLE_DETAILS_DEALT),
+            .inputs(List.of(Input.click(Pictures.BATTLE_DETAILS_DEALT).did(Did.IN_PLACE),
                     Input.click(Pictures.BATTLE_DETAILS_TAKEN).did(Did.IN_PLACE),
                     Input.click(Pictures.BATTLE_DETAILS_HEALING).did(Did.IN_PLACE)));
     private Screens() {
