@@ -149,7 +149,7 @@ public final class Screens {
                     Input.click(Pictures.STATS_TAB_GARAGE).did(Did.NONE).kind(Kind.INFO),
                     Input.click(Pictures.UPGRADE_TAB_GARAGE).kind(Kind.CHORE),
                     Input.click(Pictures.BLUEPRINT_TAB_GARAGE).kind(Kind.CHORE),
-                    Input.click(Pictures.EMBLEM_TAB_GARAGE), Input.click(Pictures.ENGINEER_GARAGE),
+                    Input.click(Pictures.EMBLEM_TAB_GARAGE).kind(Kind.CHORE), Input.click(Pictures.ENGINEER_GARAGE),
                     Input.click(Pictures.NEXT_MACHINE_GARAGE).did(Did.IN_PLACE).kind(Kind.INFO),
                     Input.click(Pictures.MACHINE_CARD_GARAGE).did(Did.IN_PLACE).kind(Kind.INFO),
                     Input.click(Pictures.UNKNOWN_CARD_GARAGE), Input.click(Pictures.SHOW_ALL_GARAGE),
