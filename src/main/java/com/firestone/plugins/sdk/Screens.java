@@ -152,7 +152,7 @@ public final class Screens {
                     Input.click(Pictures.EMBLEM_TAB_GARAGE).kind(Kind.CHORE), Input.click(Pictures.ENGINEER_GARAGE),
                     Input.click(Pictures.NEXT_MACHINE_GARAGE).did(Did.IN_PLACE).kind(Kind.INFO),
                     Input.click(Pictures.MACHINE_CARD_GARAGE).did(Did.IN_PLACE).kind(Kind.INFO),
-                    Input.click(Pictures.UNKNOWN_CARD_GARAGE), Input.click(Pictures.SHOW_ALL_GARAGE),
+                    Input.click(Pictures.UNKNOWN_CARD_GARAGE).kind(Kind.INFO), Input.click(Pictures.SHOW_ALL_GARAGE),
                     Input.click(Pictures.CHEST_GARAGE),
                     Input.click(Pictures.PREV_MACHINE_GARAGE).did(Did.NONE).kind(Kind.INFO).sometimes()));
     public static final GameScreen ENGINEER = GameScreen.named("Engineer").marker(Pictures.ENGINEER_NAME)
