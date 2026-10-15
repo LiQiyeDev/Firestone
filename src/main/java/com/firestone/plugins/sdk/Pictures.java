@@ -561,5 +561,7 @@ public final class Pictures {
             "src/main/resources/images/garage_info_title.png").at(new Rect(572, 248, 530, 40));
     public static final ImageTemplate CLOSE_GARAGE_INFO = new ImageTemplate(
             "src/main/resources/images/close_garage_info.png").at(new Rect(1335, 200, 62, 62));
+    public static final ImageTemplate WORKSHOP_TITLE = new ImageTemplate("src/main/resources/images/workshop_title.png")
+            .at(new Rect(850, 10, 220, 42));
     private Pictures() {}
 }
