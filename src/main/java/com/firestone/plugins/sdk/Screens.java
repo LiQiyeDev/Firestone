@@ -129,7 +129,7 @@ public final class Screens {
     public static final GameScreen CREW_INFO = GameScreen.named("Crew info").marker(Pictures.HERO_BONUSES_TITLE)
             .from(Way.of(Screens.SQUAD_HEROES, Input.click(Pictures.CREW_INFO).kind(Kind.INFO)))
             .back(Input.click(Pictures.CREW_INFO_CLOSE));
-    public static final GameScreen ENGINEER = GameScreen.named("Engineer")
+    public static final GameScreen ENGINEER = GameScreen.named("Engineer").marker(Pictures.ENGINEER_NAME)
             .from(Way.of(Screens.HOME, Input.click(Pictures.ENGINEER_HOME)));
     private Screens() {
     }
