@@ -587,5 +587,7 @@ public final class Pictures {
             "src/main/resources/images/own_machine_text.png").at(new Rect(190, 822, 460, 50));
     public static final ImageTemplate OWNED_CARD_ALL_MACHINES = new ImageTemplate(
             "src/main/resources/images/owned_card_all_machines.png").at(new Rect(152, 915, 130, 130));
+    public static final ImageTemplate LOCKED_CARD_ALL_MACHINES = new ImageTemplate(
+            "src/main/resources/images/locked_card_all_machines.png").at(new Rect(1212, 915, 130, 130));
     private Pictures() {}
 }
