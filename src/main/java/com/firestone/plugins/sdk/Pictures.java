@@ -581,5 +581,7 @@ public final class Pictures {
             "src/main/resources/images/prev_machine_garage.png").at(new Rect(152, 598, 52, 84));
     public static final ImageTemplate LOCKED_MACHINE_TEXT = new ImageTemplate(
             "src/main/resources/images/locked_machine_text.png").at(new Rect(565, 740, 790, 46));
+    public static final ImageTemplate CLOSE_LOCKED_MACHINE = new ImageTemplate(
+            "src/main/resources/images/close_locked_machine.png").at(new Rect(1545, 122, 62, 62));
     private Pictures() {}
 }
