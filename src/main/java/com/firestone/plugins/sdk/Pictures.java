@@ -535,5 +535,7 @@ public final class Pictures {
             "src/main/resources/images/save_changes_off_favored.png").at(new Rect(1232, 266, 206, 62));
     public static final ImageTemplate MACHINE_CARD_FAVORED = new ImageTemplate(
             "src/main/resources/images/machine_card_favored.png").at(new Rect(668, 545, 125, 118));
+    public static final ImageTemplate INFO_GARAGE = new ImageTemplate("src/main/resources/images/info_garage.png")
+            .at(new Rect(22, 22, 56, 56));
     private Pictures() {}
 }
