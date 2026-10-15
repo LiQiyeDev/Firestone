@@ -567,5 +567,7 @@ public final class Pictures {
             .at(new Rect(1772, 205, 105, 52));
     public static final ImageTemplate UPGRADE_WORKSHOP = new ImageTemplate(
             "src/main/resources/images/upgrade_workshop.png").at(new Rect(1240, 545, 270, 100));
+    public static final ImageTemplate X5_WORKSHOP = new ImageTemplate("src/main/resources/images/x5_workshop.png")
+            .at(new Rect(1772, 205, 105, 52));
     private Pictures() {}
 }
