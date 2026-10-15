@@ -10,6 +10,8 @@ import com.botmaker.sdk.api.screens.Did;
 import com.botmaker.sdk.api.screens.Way;
 import com.botmaker.sdk.api.screens.Kind;
 import com.botmaker.sdk.api.screens.Reached;
+import com.botmaker.sdk.api.screens.Variant;
+import com.botmaker.sdk.api.screens.State;
 
 /**
  * Values com.botmaker.sdk keeps in step with its own windows.
@@ -114,7 +116,9 @@ public final class Screens {
     public static final GameScreen SQUAD_HEROES = GameScreen.named("Squad heroes").marker(Pictures.SELECT_CREW_TITLE)
             .from(Way.of(Screens.ARENA_SQUAD, Input.click(Pictures.SQUAD_EDIT_HEROES)))
             .back(Input.click(Pictures.CLOSE_X))
-            .inputs(List.of(Input.click(Pictures.CREW_ARENA_ATTRIBUTES).did(Did.IN_PLACE),
+            .inputs(List.of(
+                    Input.click(Pictures.CREW_ARENA_ATTRIBUTES).did(Did.IN_PLACE)
+                            .variants(List.of(Variant.of(Pictures.CREW_BATTLE_ATTRIBUTES, State.SELECTED))),
                     Input.click(Pictures.CREW_ORDER_DAMAGE).did(Did.IN_PLACE),
                     Input.click(Pictures.CREW_ORDER_HEALTH).did(Did.IN_PLACE),
                     Input.click(Pictures.CREW_ORDER_ARMOR).did(Did.IN_PLACE), Input.click(Pictures.CREW_INFO)));
