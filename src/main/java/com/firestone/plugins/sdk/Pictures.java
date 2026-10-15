@@ -529,5 +529,7 @@ public final class Pictures {
             "src/main/resources/images/set_active_off_squads.png").at(new Rect(1415, 835, 230, 58));
     public static final ImageTemplate FAVORED_TITLE = new ImageTemplate("src/main/resources/images/favored_title.png")
             .at(new Rect(660, 78, 600, 40));
+    public static final ImageTemplate CLOSE_FAVORED = new ImageTemplate("src/main/resources/images/close_favored.png")
+            .at(new Rect(1510, 62, 64, 64));
     private Pictures() {}
 }
