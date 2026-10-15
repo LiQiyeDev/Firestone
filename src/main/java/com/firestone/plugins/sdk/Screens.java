@@ -111,6 +111,8 @@ public final class Screens {
     public static final GameScreen ARENA_SQUAD = GameScreen.named("Arena squad").marker(Pictures.CHOOSE_WAR_MACHINES_TITLE)
             .from(Way.of(Screens.ARENA, Input.click(Pictures.ARENA_EDIT_SQUAD))).back(Input.click(Pictures.CLOSE_X))
             .inputs(List.of(Input.click(Pictures.SQUAD_SAVE_CHANGES), Input.click(Pictures.SQUAD_EDIT_HEROES)));
+    public static final GameScreen SQUAD_HEROES = GameScreen.named("Squad heroes")
+            .from(Way.of(Screens.ARENA_SQUAD, Input.click(Pictures.SQUAD_EDIT_HEROES)));
     private Screens() {
     }
 }
