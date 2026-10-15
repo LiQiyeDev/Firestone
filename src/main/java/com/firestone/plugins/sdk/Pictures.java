@@ -593,5 +593,7 @@ public final class Pictures {
             .at(new Rect(1622, 15, 62, 62));
     public static final ImageTemplate DELETE_MAILBOX = new ImageTemplate("src/main/resources/images/delete_mailbox.png")
             .at(new Rect(1572, 940, 76, 76));
+    public static final ImageTemplate MAIL_ITEM_MAILBOX = new ImageTemplate(
+            "src/main/resources/images/mail_item_mailbox.png").at(new Rect(275, 140, 85, 85));
     private Pictures() {}
 }
