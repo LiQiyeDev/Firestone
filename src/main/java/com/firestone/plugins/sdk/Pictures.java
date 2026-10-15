@@ -437,5 +437,7 @@ public final class Pictures {
             "src/main/resources/images/arena_leaderboards.png").at(new Rect(108, 892, 345, 75));
     public static final ImageTemplate ARENA_CLOSE = new ImageTemplate("src/main/resources/images/arena_close.png")
             .at(new Rect(1825, 88, 70, 70));
+    public static final ImageTemplate ARENA_RULES_TITLE = new ImageTemplate(
+            "src/main/resources/images/arena_rules_title.png").at(new Rect(880, 170, 160, 50));
     private Pictures() {}
 }
