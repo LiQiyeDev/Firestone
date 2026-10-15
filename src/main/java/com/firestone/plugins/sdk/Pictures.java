@@ -491,5 +491,7 @@ public final class Pictures {
             "src/main/resources/images/crew_info_close.png").at(new Rect(1435, 263, 72, 72));
     public static final ImageTemplate ENGINEER_NAME = new ImageTemplate("src/main/resources/images/engineer_name.png")
             .at(new Rect(95, 32, 140, 38));
+    public static final ImageTemplate INFO_ENGINEER = new ImageTemplate("src/main/resources/images/info_engineer.png")
+            .at(new Rect(465, 20, 60, 55));
     private Pictures() {}
 }
