@@ -533,5 +533,7 @@ public final class Pictures {
             .at(new Rect(1510, 62, 64, 64));
     public static final ImageTemplate SAVE_CHANGES_OFF_FAVORED = new ImageTemplate(
             "src/main/resources/images/save_changes_off_favored.png").at(new Rect(1232, 266, 206, 62));
+    public static final ImageTemplate MACHINE_CARD_FAVORED = new ImageTemplate(
+            "src/main/resources/images/machine_card_favored.png").at(new Rect(668, 545, 125, 118));
     private Pictures() {}
 }
