@@ -97,7 +97,7 @@ public final class Screens {
             .from(Way.of(Screens.ARENA, Input.click(Pictures.ARENA_BATTLE_LOG)))
             .back(Input.click(Pictures.BATTLE_LOG_CLOSE)).inputs(List.of(
                     Input.click(Pictures.BATTLE_LOG_INSPECT).kind(Kind.INFO), Input.click(Pictures.BATTLE_LOG_REPLAY)));
-    public static final GameScreen BATTLE_DETAILS = GameScreen.named("Battle details")
+    public static final GameScreen BATTLE_DETAILS = GameScreen.named("Battle details").marker(Pictures.BATTLE_DETAILS_VS)
             .from(Way.of(Screens.ARENA_BATTLE_LOG, Input.click(Pictures.BATTLE_LOG_INSPECT).kind(Kind.INFO)));
     private Screens() {
     }
