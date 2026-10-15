@@ -135,6 +135,8 @@ public final class Screens {
                     Input.click(Pictures.ENGINEER_TAB_ENGINEER), Input.click(Pictures.BATTLES_TAB_ENGINEER),
                     Input.click(Pictures.STAR_TAB_ENGINEER), Input.click(Pictures.SWIRL_TAB_ENGINEER),
                     Input.click(Pictures.CLAIM_ENGINEER), Input.click(Pictures.GARAGE_ENGINEER)));
+    public static final GameScreen ENGINEER_INFO = GameScreen.named("Engineer info")
+            .from(Way.of(Screens.ENGINEER, Input.click(Pictures.INFO_ENGINEER)));
     private Screens() {
     }
 }
