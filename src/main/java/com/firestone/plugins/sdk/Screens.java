@@ -202,12 +202,12 @@ public final class Screens {
             .inputs(List.of(Input.click(Pictures.OWNED_CARD_ALL_MACHINES).did(Did.IN_PLACE).kind(Kind.INFO),
                     Input.click(Pictures.LOCKED_CARD_ALL_MACHINES).did(Did.IN_PLACE).kind(Kind.INFO),
                     Input.scroll(Pictures.OWNED_CARD_ALL_MACHINES, -10).did(Did.IN_PLACE)));
-    public static final GameScreen MAILBOX = GameScreen.named("Mailbox").marker(Pictures.MAILBOX_TITLE)
-            .from(Way.of(Screens.HOME, Input.click(Pictures.MAIL_HOME))).back(Input.click(Pictures.CLOSE_MAILBOX))
-            .inputs(List.of(Input.click(Pictures.DELETE_MAILBOX).kind(Kind.CHOICE).never("deletes the player's mail"),
-                    Input.click(Pictures.MAIL_ITEM_MAILBOX).did(Did.IN_PLACE).kind(Kind.INFO),
-                    Input.click(Pictures.MAIL_CLAIM).kind(Kind.CHORE).sometimes(),
-                    Input.scroll(Pictures.MAIL_ITEM_MAILBOX, -10).did(Did.IN_PLACE)));
+    public static final GameScreen MAILBOX = GameScreen.named("Mailbox").marker(Pictures.MAILBOX_TITLE).from(Way.of(Screens.HOME,Input.click(Pictures.MAIL_HOME))).back(Input.click(Pictures.CLOSE_MAILBOX)).inputs(List.of(Input.click(Pictures.DELETE_MAILBOX).kind(Kind.CHOICE).never("deletes the player's mail"),Input.click(Pictures.MAIL_ITEM_MAILBOX).did(Did.IN_PLACE).kind(Kind.INFO),Input.click(Pictures.MAIL_CLAIM).kind(Kind.CHORE).sometimes(),Input.scroll(Pictures.MAIL_ITEM_MAILBOX,-10).did(Did.IN_PLACE))).notes("""
+                    Mailbox (Home's envelope, red count badge = unread mail): a list of mails on the left (rewards from daily quests, Arena of Kings ranking, events, battle pass, arcane crystals), the open mail on the right.
+                    Claim (mail_claim) shows while the open mail holds rewards; claiming opens the Reward popup (Goddess Aurelia, OK closes it).
+                    The list scrolls (10 notches showed mails back to mid-September).
+                    The trash deletes read mail: never.\
+                    """).reached(Reached.SURVEYED);
     public static final GameScreen MAIL_CLAIM = GameScreen.named("Reward").marker(Pictures.REWARD_GODDESS_TITLE)
             .from(Way.of(Screens.MAILBOX, Input.click(Pictures.MAIL_CLAIM))).back(Input.click(Pictures.OK_REWARD))
             .popup();
