@@ -467,5 +467,7 @@ public final class Pictures {
             .at(new Rect(908, 10, 104, 30));
     public static final ImageTemplate CHOOSE_WAR_MACHINES_TITLE = new ImageTemplate(
             "src/main/resources/images/choose_war_machines_title.png").at(new Rect(1420, 40, 300, 75));
+    public static final ImageTemplate SQUAD_SAVE_CHANGES = new ImageTemplate(
+            "src/main/resources/images/squad_save_changes.png").at(new Rect(1025, 50, 255, 70));
     private Pictures() {}
 }
