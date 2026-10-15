@@ -86,8 +86,7 @@ public final class Screens {
             .back(Input.click(Pictures.ARENA_CLOSE))
             .inputs(List.of(Input.click(Pictures.ARENA_REFRESH).did(Did.IN_PLACE), Input.click(Pictures.ARENA_FIGHT),
                     Input.click(Pictures.ARENA_BATTLE_LOG), Input.click(Pictures.ARENA_EDIT_SQUAD),
-                    Input.click(Pictures.INFO_MAP).kind(Kind.INFO), Input.click(Pictures.ARENA_LEADERBOARDS)))
-            .popup();
+                    Input.click(Pictures.INFO_MAP).kind(Kind.INFO), Input.click(Pictures.ARENA_LEADERBOARDS)));
     public static final GameScreen ARENA_INFO = GameScreen.named("Arena info").marker(Pictures.ARENA_RULES_TITLE)
             .from(Way.of(Screens.ARENA, Input.click(Pictures.INFO_MAP).kind(Kind.INFO)))
             .back(Input.click(Pictures.CLOSE_ROOMS_CHAT));
