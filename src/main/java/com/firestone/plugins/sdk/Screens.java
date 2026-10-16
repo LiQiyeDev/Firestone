@@ -230,6 +230,8 @@ public final class Screens {
             .popup();
     public static final GameScreen LIBRARY = GameScreen.named("Library").markers(List.of(Pictures.METEORITE_TAB_LIBRARY))
             .from(Way.of(Screens.HOME, Input.click(Pictures.LIBRARY_HOME)));
+    public static final GameScreen CAMPAIGN = GameScreen.named("Campaign")
+            .from(Way.of(Screens.HOME, Input.click(Pictures.CAMPAIGN_HOME)));
     private Screens() {
     }
 }
