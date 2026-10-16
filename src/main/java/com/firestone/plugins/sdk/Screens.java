@@ -27,9 +27,10 @@ public final class Screens {
     public static final GameScreen HOME = GameScreen.named("Home").markers(List.of(Pictures.TOWN_HOME))
             .inputs(List.of(Input.click(Pictures.TAVERN_HOME).sometimes(), Input.click(Pictures.ARENA_HOME).sometimes(),
                     Input.click(Pictures.ENGINEER_HOME).sometimes(), Input.click(Pictures.CAMPAIGN_HOME).sometimes(),
-                    Input.click(Pictures.WAR_MACHINES_HOME), Input.click(Pictures.MAIL_HOME).kind(Kind.CHORE),
-                    Input.click(Pictures.TOWN_HOME), Input.click(Pictures.MAP), Input.click(Pictures.GUILD),
-                    Input.click(Pictures.MARKET), Input.click(Pictures.BATTLE), Input.click(Pictures.BATTLE_PASS_HOME),
+                    Input.click(Pictures.WAR_MACHINES_HOME).sometimes(),
+                    Input.click(Pictures.MAIL_HOME).kind(Kind.CHORE), Input.click(Pictures.TOWN_HOME),
+                    Input.click(Pictures.MAP), Input.click(Pictures.GUILD), Input.click(Pictures.MARKET),
+                    Input.click(Pictures.BATTLE), Input.click(Pictures.BATTLE_PASS_HOME),
                     Input.click(Pictures.EVENTS_HOME), Input.click(Pictures.UPGRADES), Input.click(Pictures.BAG),
                     Input.click(Pictures.FELLOWSHIP), Input.click(Pictures.PARTY),
                     Input.click(Pictures.CARD_HOME).sometimes(), Input.click(Pictures.PARCHMENT_HOME).sometimes(),
