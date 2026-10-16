@@ -160,8 +160,15 @@ public final class Screens {
     public static final GameScreen ENGINEER_INFO = GameScreen.named("Engineer info").marker(Pictures.ENGINEER_INFO_TITLE)
             .from(Way.of(Screens.ENGINEER, Input.click(Pictures.INFO_ENGINEER)))
             .back(Input.click(Pictures.CLOSE_ENGINEER_INFO)).at(new Point(1352, 2286));
+    public static final GameScreen ACTIVE_SQUAD = GameScreen.named("Active squad").marker(Pictures.ACTIVE_SQUAD_TITLE)
+            .from(Way.of(Screens.ENGINEER, Input.click(Pictures.BATTLES_TAB_ENGINEER)))
+            .back(Input.click(Pictures.ENGINEER_TAB_ENGINEER))
+            .inputs(List.of(Input.click(Pictures.CHANGE_SQUAD_ENGINEER).kind(Kind.CHOICE),
+                    Input.click(Pictures.EDIT_SQUAD_ENGINEER),
+                    Input.click(Pictures.MACHINE_CARD_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO)));
     public static final GameScreen CHANGE_SQUAD = GameScreen.named("Squads").marker(Pictures.SQUADS_TITLE)
             .from(Way.of(Screens.ENGINEER, Input.click(Pictures.CHANGE_SQUAD_ENGINEER)))
+            .alsoFrom(List.of(Way.of(Screens.ACTIVE_SQUAD, Input.click(Pictures.CHANGE_SQUAD_ENGINEER))))
             .back(Input.click(Pictures.CLOSE_SQUADS))
             .inputs(List.of(Input.click(Pictures.EDIT_SQUADS).did(Did.LEAVES).kind(Kind.CHOICE),
                     Input.click(Pictures.SET_ACTIVE_SQUADS).kind(Kind.CHOICE)
@@ -211,11 +218,6 @@ public final class Screens {
     public static final GameScreen MAIL_CLAIM = GameScreen.named("Reward").marker(Pictures.REWARD_GODDESS_TITLE)
             .from(Way.of(Screens.MAILBOX, Input.click(Pictures.MAIL_CLAIM))).back(Input.click(Pictures.OK_REWARD))
             .popup();
-    public static final GameScreen ACTIVE_SQUAD = GameScreen.named("Active squad").marker(Pictures.ACTIVE_SQUAD_TITLE)
-            .from(Way.of(Screens.ENGINEER, Input.click(Pictures.BATTLES_TAB_ENGINEER)))
-            .back(Input.click(Pictures.ENGINEER_TAB_ENGINEER))
-            .inputs(List.of(Input.click(Pictures.CHANGE_SQUAD_ENGINEER), Input.click(Pictures.EDIT_SQUAD_ENGINEER),
-                    Input.click(Pictures.MACHINE_CARD_ENGINEER)));
     private Screens() {
     }
 }
