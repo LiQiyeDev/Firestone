@@ -621,5 +621,7 @@ public final class Pictures {
             "src/main/resources/images/mission_rewards_title.png").at(new Rect(755, 330, 410, 48));
     public static final ImageTemplate SPEED_X10_TAVERN = new ImageTemplate(
             "src/main/resources/images/speed_x10_tavern.png").at(new Rect(1728, 920, 80, 44));
+    public static final ImageTemplate SPEED_X50_TAVERN = new ImageTemplate(
+            "src/main/resources/images/speed_x50_tavern.png").at(new Rect(1728, 920, 80, 44));
     private Pictures() {}
 }

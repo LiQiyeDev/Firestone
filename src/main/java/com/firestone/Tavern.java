@@ -20,6 +20,12 @@ public class Tavern {
                     ImageClicker.clickLast();
                 });
         Navigate.to(Screens.TAVERN);
+        ImageFinder.untilFind(Pictures.SPEED_X50_TAVERN, () -> {
+            ImageFinder.ifFindAny(
+                    ImageTemplateGroup.of(Pictures.SPEED_TAVERN, Pictures.SPEED_X10_TAVERN), it -> {
+                        ImageClicker.clickLast();
+                    });
+        });
         ImageFinder.whileFindCompare(
                 ImageTemplateGroup.of(Pictures.PLAY_TAVERN),
                 ImageTemplateGroup.of(Pictures.PLAY_OFF_TAVERN), it -> {
