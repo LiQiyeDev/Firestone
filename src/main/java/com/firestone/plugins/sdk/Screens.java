@@ -266,8 +266,8 @@ public final class Screens {
                     Input.click(Pictures.GOLD_PLUS_MAP).never("spends gems"), Input.click(Pictures.AVATAR_MAP),
                     Input.click(Pictures.CHAT_MAP), Input.click(Pictures.CLAIM_MAP).kind(Kind.CHORE).sometimes(),
                     Input.click(Pictures.SCROLL_PIN_MAP).sometimes()));
-    public static final GameScreen CLAIM = GameScreen.named("Claim")
-            .from(Way.of(Screens.MAP, Input.click(Pictures.CLAIM_MAP)));
+    public static final GameScreen CLAIM = GameScreen.named("Claim").markers(List.of(Pictures.MISSION_REWARDS_TITLE))
+            .from(Way.of(Screens.MAP, Input.click(Pictures.CLAIM_MAP))).back(Input.click(Pictures.OKAY_MAP));
     private Screens() {
     }
 }
