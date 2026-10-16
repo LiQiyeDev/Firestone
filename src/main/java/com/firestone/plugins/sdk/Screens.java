@@ -36,7 +36,8 @@ public final class Screens {
                     Input.click(Pictures.LIBRARY_HOME).sometimes(), Input.click(Pictures.GUARDIANS_HOME).sometimes(),
                     Input.click(Pictures.AUTO_ABILITIES_ON_OLD).did(Did.IN_PLACE), Input.click(Pictures.AVATAR_HOME),
                     Input.click(Pictures.PREV_STAGE_HOME).did(Did.IN_PLACE), Input.click(Pictures.SETTINGS_HOME),
-                    Input.click(Pictures.CHAT_MAP_HOME), Input.click(Pictures.AUTO_ABILITIES_HOME)))
+                    Input.click(Pictures.CHAT_MAP_HOME),
+                    Input.click(Pictures.AUTO_ABILITIES_HOME).did(Did.IN_PLACE).kind(Kind.SHORTCUT)))
             .at(new Point(0, 1326));
     public static final GameScreen TAVERN = GameScreen.named("Tavern").marker(Pictures.TAVERN_LUCK_TITLE).from(Way.of(Screens.HOME,Input.click(Pictures.TAVERN_HOME))).back(Input.click(Pictures.CLOSE_TOWN)).inputs(List.of(Input.click(Pictures.INFO_LUCK_TAVERN),Input.click(Pictures.ARTIFACTS_TAVERN),Input.click(Pictures.SACRED_CARDS_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.SPEED_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.BAG_TAVERN),Input.click(Pictures.CHAT_TAVERN),Input.click(Pictures.WHEEL_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.DECK_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.PLAY_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.MANUAL_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.MARKET_TAVERN),Input.click(Pictures.INFO_MAP),Input.click(Pictures.GEMS_PLUS_MAP).never("spends gems"),Input.click(Pictures.CARD_TAVERN).did(Did.IN_PLACE).sometimes())).notes("""
                     Town › Tavern opens a chooser: Tavern or Scarab's game (tavern_choice_town = the Tavern card).
