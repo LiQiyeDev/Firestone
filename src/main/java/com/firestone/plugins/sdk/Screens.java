@@ -43,7 +43,19 @@ public final class Screens {
                     Pictures.CAMPAIGN_HOME, Pictures.WAR_MACHINES_HOME, Pictures.CARD_HOME, Pictures.PARCHMENT_HOME,
                     Pictures.POTION_HOME, Pictures.SCROLL_BOOT_HOME, Pictures.LIBRARY_HOME, Pictures.GUARDIANS_HOME))))
             .at(new Point(0, 1326));
-    public static final GameScreen TAVERN = GameScreen.named("Tavern").markers(List.of(Pictures.TAVERN_LUCK_TITLE)).from(Way.of(Screens.HOME,Input.click(Pictures.TAVERN_HOME))).back(Input.click(Pictures.CLOSE_TOWN)).inputs(List.of(Input.click(Pictures.INFO_LUCK_TAVERN),Input.click(Pictures.ARTIFACTS_TAVERN),Input.click(Pictures.SACRED_CARDS_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.SPEED_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.BAG_TAVERN),Input.click(Pictures.CHAT_TAVERN),Input.click(Pictures.WHEEL_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.DECK_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.PLAY_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.MANUAL_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.MARKET_TAVERN),Input.click(Pictures.INFO_MAP),Input.click(Pictures.GEMS_PLUS_MAP).never("spends gems"),Input.click(Pictures.CARD_TAVERN).did(Did.IN_PLACE).sometimes())).notes("""
+    public static final GameScreen TOWN = GameScreen.named("Town").markers(List.of(Pictures.TITLE_TOWN))
+            .from(Way.of(Screens.HOME, Input.click(Pictures.TOWN_HOME))).back(Input.click(Pictures.CLOSE_TOWN))
+            .inputs(List.of(Input.click(Pictures.TAVERN_TOWN), Input.click(Pictures.LIBRARY_TOWN),
+                    Input.click(Pictures.BATTLES_TOWN), Input.click(Pictures.ALCHEMIST_TOWN),
+                    Input.click(Pictures.TEMPLE_TOWN), Input.click(Pictures.MAGIC_QUARTER_TOWN),
+                    Input.click(Pictures.ENGINEER_TOWN), Input.click(Pictures.MARKET_TOWN),
+                    Input.click(Pictures.HALL_OF_HEROES_TOWN), Input.click(Pictures.GUILD_TOWN),
+                    Input.click(Pictures.LEADERBOARDS_TOWN), Input.click(Pictures.PIRATE_SHIP_TOWN),
+                    Input.click(Pictures.EXOTIC_MERCHANT_TOWN), Input.click(Pictures.BACK_TOWN)));
+    public static final GameScreen TAVERN_CHOICE = GameScreen.named("Tavern choice").markers(List.of(Pictures.SCARAB_CHOICE_TOWN))
+            .from(Way.of(Screens.TOWN, Input.click(Pictures.TAVERN_TOWN))).back(Input.click(Pictures.CLOSE_GARAGE_INFO))
+            .inputs(List.of(Input.click(Pictures.TAVERN_CHOICE_TOWN)));
+    public static final GameScreen TAVERN = GameScreen.named("Tavern").markers(List.of(Pictures.TAVERN_LUCK_TITLE)).from(Way.of(Screens.HOME,Input.click(Pictures.TAVERN_HOME))).alsoFrom(List.of(Way.of(Screens.TAVERN_CHOICE,Input.click(Pictures.TAVERN_CHOICE_TOWN)))).back(Input.click(Pictures.CLOSE_TOWN)).inputs(List.of(Input.click(Pictures.INFO_LUCK_TAVERN),Input.click(Pictures.ARTIFACTS_TAVERN),Input.click(Pictures.SACRED_CARDS_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.SPEED_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.BAG_TAVERN),Input.click(Pictures.CHAT_TAVERN),Input.click(Pictures.WHEEL_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.DECK_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.PLAY_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.MANUAL_TAVERN).did(Did.IN_PLACE),Input.click(Pictures.MARKET_TAVERN),Input.click(Pictures.INFO_MAP),Input.click(Pictures.GEMS_PLUS_MAP).never("spends gems"),Input.click(Pictures.CARD_TAVERN).did(Did.IN_PLACE).sometimes())).notes("""
                     Town › Tavern opens a chooser: Tavern or Scarab's game (tavern_choice_town = the Tavern card).
                     Town's buildings carry a red bell badge (badge_town) when something is ready; badges nest (Tavern → Market).
                     Beer comes from a dragon that visits during battle (click it to collect at once); it keeps coming while offline.
@@ -228,15 +240,6 @@ public final class Screens {
     public static final GameScreen MAIL_CLAIM = GameScreen.named("Reward").markers(List.of(Pictures.REWARD_GODDESS_TITLE))
             .from(Way.of(Screens.MAILBOX, Input.click(Pictures.MAIL_CLAIM))).back(Input.click(Pictures.OK_REWARD))
             .popup();
-    public static final GameScreen TOWN = GameScreen.named("Town").markers(List.of(Pictures.TITLE_TOWN))
-            .from(Way.of(Screens.HOME, Input.click(Pictures.TOWN_HOME))).back(Input.click(Pictures.CLOSE_TOWN))
-            .inputs(List.of(Input.click(Pictures.TAVERN_TOWN), Input.click(Pictures.LIBRARY_TOWN),
-                    Input.click(Pictures.BATTLES_TOWN), Input.click(Pictures.ALCHEMIST_TOWN),
-                    Input.click(Pictures.TEMPLE_TOWN), Input.click(Pictures.MAGIC_QUARTER_TOWN),
-                    Input.click(Pictures.ENGINEER_TOWN), Input.click(Pictures.MARKET_TOWN),
-                    Input.click(Pictures.HALL_OF_HEROES_TOWN), Input.click(Pictures.GUILD_TOWN),
-                    Input.click(Pictures.LEADERBOARDS_TOWN), Input.click(Pictures.PIRATE_SHIP_TOWN),
-                    Input.click(Pictures.EXOTIC_MERCHANT_TOWN), Input.click(Pictures.BACK_TOWN)));
     public static final GameScreen LIBRARY = GameScreen.named("Library").markers(List.of(Pictures.METEORITE_TAB_LIBRARY))
             .from(Way.of(Screens.HOME, Input.click(Pictures.LIBRARY_HOME)))
             .alsoFrom(List.of(Way.of(Screens.TOWN, Input.click(Pictures.LIBRARY_TOWN))))
@@ -256,9 +259,6 @@ public final class Screens {
             .back(Input.click(Pictures.CLOSE_RESEARCH_NODE))
             .inputs(List.of(Input.click(Pictures.RESEARCH_START_LIBRARY).did(Did.LEAVES).kind(Kind.CHORE),
                     Input.click(Pictures.COMPLETE_INSTANTLY_RESEARCH_NODE).never("spends gems")));
-    public static final GameScreen TAVERN_CHOICE = GameScreen.named("Tavern choice").markers(List.of(Pictures.SCARAB_CHOICE_TOWN))
-            .from(Way.of(Screens.TOWN, Input.click(Pictures.TAVERN_TOWN))).back(Input.click(Pictures.CLOSE_GARAGE_INFO))
-            .inputs(List.of(Input.click(Pictures.TAVERN_CHOICE_TOWN)));
     private Screens() {
     }
 }
