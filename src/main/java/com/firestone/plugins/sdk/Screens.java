@@ -211,8 +211,11 @@ public final class Screens {
     public static final GameScreen MAIL_CLAIM = GameScreen.named("Reward").marker(Pictures.REWARD_GODDESS_TITLE)
             .from(Way.of(Screens.MAILBOX, Input.click(Pictures.MAIL_CLAIM))).back(Input.click(Pictures.OK_REWARD))
             .popup();
-    public static final GameScreen ACTIVE_SQUAD = GameScreen.named("Active squad")
-            .from(Way.of(Screens.ENGINEER, Input.click(Pictures.BATTLES_TAB_ENGINEER)));
+    public static final GameScreen ACTIVE_SQUAD = GameScreen.named("Active squad").marker(Pictures.ACTIVE_SQUAD_TITLE)
+            .from(Way.of(Screens.ENGINEER, Input.click(Pictures.BATTLES_TAB_ENGINEER)))
+            .back(Input.click(Pictures.ENGINEER_TAB_ENGINEER))
+            .inputs(List.of(Input.click(Pictures.CHANGE_SQUAD_ENGINEER), Input.click(Pictures.EDIT_SQUAD_ENGINEER),
+                    Input.click(Pictures.MACHINE_CARD_ENGINEER)));
     private Screens() {
     }
 }

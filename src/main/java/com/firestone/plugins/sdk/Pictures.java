@@ -601,5 +601,7 @@ public final class Pictures {
             .at(new Rect(1052, 682, 266, 70));
     public static final ImageTemplate RARITY_WORD_TITLE = new ImageTemplate(
             "src/main/resources/images/rarity_word_title.png").at(new Rect(1045, 158, 130, 50));
+    public static final ImageTemplate ACTIVE_SQUAD_TITLE = new ImageTemplate(
+            "src/main/resources/images/active_squad_title.png").at(new Rect(1250, 318, 248, 52));
     private Pictures() {}
 }
