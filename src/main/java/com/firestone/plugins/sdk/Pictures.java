@@ -351,7 +351,6 @@ public final class Pictures {
             "src/main/resources/images/alchemist_cauldron_tab.png").at(new Rect(1340, 90, 120, 70));
     public static final ImageTemplate OFFLINE_PROGRESS_TITLE = new ImageTemplate(
             "src/main/resources/images/offline_progress_title.png").at(new Rect(770, 60, 380, 100));
-    public static final ImageTemplate AUTO_ABILITIES_ON_OLD = new ImageTemplate("src/main/resources/images/auto_abilities_on_old.png").at(new Rect(768, 982, 70, 70));
     public static final ImageTemplate AVATAR_HOME = new ImageTemplate("src/main/resources/images/avatar_home.png")
             .at(new Rect(25, 18, 115, 90));
     public static final ImageTemplate PREV_STAGE_HOME = new ImageTemplate(
