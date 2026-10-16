@@ -5,37 +5,24 @@ import com.botmaker.sdk.api.vision.ImageFinder;
 import com.botmaker.sdk.api.vision.ImageTemplateGroup;
 import com.firestone.plugins.sdk.Pictures;
 import com.botmaker.sdk.api.vision.ImageClicker;
-import com.botmaker.sdk.api.input.Keyboard;
-import com.botmaker.sdk.api.input.Key;
 import com.botmaker.sdk.api.vision.ImageWaiter;
 import java.time.Duration;
+import com.botmaker.sdk.api.screens.Navigate;
+import com.firestone.plugins.sdk.Screens;
 
 public class Tavern {
 
     public static Activities.Tavern body() {
-        ImageFinder.untilFind(Pictures.TAVERN_TOWN, () -> {
-            ImageClicker.click(Pictures.TOWN_HOME);
-        });
-        ImageFinder.untilFind(Pictures.TAVERN_CHOICE_TOWN, () -> {
-            ImageClicker.click(Pictures.TAVERN_TOWN);
-        });
-        ImageFinder.untilFind(Pictures.MARKET_TAVERN, () -> {
-            ImageClicker.click(Pictures.TAVERN_CHOICE_TOWN);
-        });
-        ImageFinder.untilFind(Pictures.MARKET_TITLE_TAVERN, () -> {
-            ImageClicker.click(Pictures.MARKET_TAVERN);
-        });
+        Navigate.to(Screens.MARKET);
         ImageFinder.whileFindCompare(
                 ImageTemplateGroup.of(Pictures.BEER_BUY_TAVERN),
                 ImageTemplateGroup.of(Pictures.BEER_BUY_OFF_TAVERN), it -> {
                     ImageClicker.clickLast();
                 });
-        ImageFinder.whileFind(Pictures.MARKET_TITLE_TAVERN, it -> {
-            Keyboard.tap(Key.ESCAPE);
-        });
+        Navigate.to(Screens.TAVERN);
         ImageFinder.whileFindCompare(
                 ImageTemplateGroup.of(Pictures.PLAY_TAVERN),
-                ImageTemplateGroup.of(Pictures.MARKET_TITLE_TAVERN), it -> {
+                ImageTemplateGroup.of(Pictures.PLAY_OFF_TAVERN), it -> {
                     ImageClicker.clickLast();
                     ImageWaiter.waitFor(Pictures.CARD_TAVERN,
                             Duration.ofMillis(3000L));

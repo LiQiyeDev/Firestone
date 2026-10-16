@@ -5,19 +5,16 @@ import com.botmaker.sdk.api.vision.ImageFinder;
 import com.botmaker.sdk.api.vision.ImageTemplateGroup;
 import com.firestone.plugins.sdk.Pictures;
 import com.botmaker.sdk.api.vision.ImageClicker;
-import com.botmaker.sdk.api.input.Keyboard;
-import com.botmaker.sdk.api.input.Key;
 import com.botmaker.sdk.api.vision.ImageWaiter;
 import java.time.Duration;
+import com.botmaker.sdk.api.screens.Navigate;
+import com.firestone.plugins.sdk.Screens;
 
 public class Missions {
 
     public static Activities.Missions body() {
-        ImageFinder.untilFind(
-                Pictures.RANK_LIST_MAP, () -> {
-                    Keyboard.tap(Key.M);
-                });
-        ImageFinder.whileFindAny(ImageTemplateGroup.of(Pictures.OKAY_MAP, Pictures.CLAIM_MAP),
+        Navigate.to(Screens.MAP);
+        ImageFinder.whileFindAny(ImageTemplateGroup.of(Pictures.CLAIM_MAP),
                 it -> {
                     ImageClicker.clickLast();
                 });

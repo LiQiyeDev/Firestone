@@ -7,22 +7,13 @@ import com.firestone.plugins.sdk.Pictures;
 import com.botmaker.sdk.api.vision.ImageClicker;
 import com.botmaker.sdk.api.vision.ImageWaiter;
 import java.time.Duration;
+import com.botmaker.sdk.api.screens.Navigate;
+import com.firestone.plugins.sdk.Screens;
 
 public class Research {
 
     public static Activities.Research body() {
-        ImageFinder.untilFind(
-                Pictures.LIBRARY_TOWN, () -> {
-                    ImageClicker.click(Pictures.TOWN_HOME);
-                });
-        ImageFinder.untilFind(
-                Pictures.METEORITE_TAB_LIBRARY, () -> {
-                    ImageClicker.click(Pictures.LIBRARY_TOWN);
-                });
-        ImageFinder.untilFind(
-                Pictures.GEMS_LIBRARY, () -> {
-                    ImageClicker.click(Pictures.FIRESTONE_TAB_LIBRARY);
-                });
+        Navigate.to(Screens.LIBRARY);
         ImageFinder.whileFindAny(ImageTemplateGroup.of(Pictures.RESEARCH_CLAIM),
                 claim -> {
                     ImageClicker.clickLast();

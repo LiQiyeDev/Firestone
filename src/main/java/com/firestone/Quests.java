@@ -5,16 +5,13 @@ import com.botmaker.sdk.api.vision.ImageFinder;
 import com.firestone.plugins.sdk.Pictures;
 import com.botmaker.sdk.api.vision.ImageClicker;
 import com.botmaker.sdk.api.vision.ImageTemplateGroup;
-import com.botmaker.sdk.api.input.Keyboard;
-import com.botmaker.sdk.api.input.Key;
+import com.botmaker.sdk.api.screens.Navigate;
+import com.firestone.plugins.sdk.Screens;
 
 public class Quests {
 
     public static Activities.Quests body() {
-        ImageFinder.untilFind(
-                Pictures.QUESTS_TAB, () -> {
-                    Keyboard.tap(Key.Q);
-                });
+        Navigate.to(Screens.QUESTS);
         ImageFinder.whileFindCompare(
                 ImageTemplateGroup.of(Pictures.DAILY_TAB_OFF),
                 ImageTemplateGroup.of(Pictures.DAILY_TAB_ON),

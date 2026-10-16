@@ -4,11 +4,11 @@ import com.firestone.params.Parameters;
 import com.firestone.plugins.sdk.Pictures;
 import com.botmaker.sdk.api.vision.ImageFinder;
 import com.botmaker.sdk.api.vision.ImageTemplateGroup;
-import com.botmaker.sdk.api.input.Keyboard;
-import com.botmaker.sdk.api.input.Key;
 import com.botmaker.sdk.api.vision.ImageClicker;
 import com.botmaker.sdk.api.bot.Bot;
 import com.firestone.plugins.sdk.Sdk;
+import com.botmaker.sdk.api.screens.Navigate;
+import com.firestone.plugins.sdk.Screens;
 
 /**
  * A game bot to start from: it finds a picture on the screen, clicks it, waits, and does it again —
@@ -72,14 +72,7 @@ public final class Gamebot {
      * is no close button left is the usual shape, and it is what this does.
      */
     public static void goHome() {
-        ImageFinder.untilFind(
-                Pictures.UPGRADES, () -> {
-                    Keyboard.tap(Key.ESCAPE);
-                });
-        ImageFinder.whileFindAny(ImageTemplateGroup.of(Pictures.CLAIM_OFFLINE, Pictures.CLOSE_X, Pictures.CLOSE_TOWN),
-                it -> {
-                    ImageClicker.clickLast();
-                });
+        Navigate.to(Screens.HOME);
     }
 
     /**

@@ -7,6 +7,8 @@ import com.botmaker.sdk.api.vision.ImageFinder;
 import com.botmaker.sdk.api.time.Wait;
 import com.botmaker.sdk.api.vision.ImageWaiter;
 import java.time.Duration;
+import com.botmaker.sdk.api.screens.Navigate;
+import com.firestone.plugins.sdk.Screens;
 
 /**
  * Starts a fight and waits for it to end, reporting which way it went.
@@ -26,6 +28,7 @@ public final class Battle {
     }
 
     public static Activities.Battle body() {
+        Navigate.to(Screens.HOME);
         if (!ImageClicker.click(Pictures.BATTLE)) {
             // No fight available. Treated as a loss so the flow rests and comes back, rather than
             // needing a third outcome for "could not even start".

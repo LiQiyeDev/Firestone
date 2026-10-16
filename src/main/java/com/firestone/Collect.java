@@ -2,10 +2,9 @@ package com.firestone;
 
 import com.firestone.plugins.sdk.Activities;
 import com.firestone.plugins.sdk.Pictures;
-import com.botmaker.sdk.api.time.Wait;
 import com.botmaker.sdk.api.vision.ImageClicker;
-
-import java.time.Duration;
+import com.botmaker.sdk.api.screens.Navigate;
+import com.firestone.plugins.sdk.Screens;
 
 /**
  * Clicks the collect button while there is one, and says so when there is not.
@@ -25,16 +24,15 @@ import java.time.Duration;
  */
 public final class Collect {
 
-    private Collect() {}
+    private Collect() {
+    }
 
     public static Activities.Collect body() {
-        if (!ImageClicker.click(Pictures.CLAIM_BUTTON)) {
+        Navigate.to(Screens.CAMPAIGN);
+        if (!ImageClicker.click(Pictures.CAMPAIGN_CLAIM)) {
             // Nothing to collect. Not a failure — the flow sends this on to Battle.
             return Activities.Collect.NOTHING_LEFT;
         }
-        // Randomized rather than fixed: a bot that clicks on exactly the same beat is a bot that reads
-        // as one. Wait.between is here for that.
-        Wait.between(Duration.ofMillis(600), Duration.ofMillis(1200));
         return Activities.Collect.NEXT;
     }
 }
