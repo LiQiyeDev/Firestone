@@ -228,14 +228,6 @@ public final class Screens {
     public static final GameScreen MAIL_CLAIM = GameScreen.named("Reward").markers(List.of(Pictures.REWARD_GODDESS_TITLE))
             .from(Way.of(Screens.MAILBOX, Input.click(Pictures.MAIL_CLAIM))).back(Input.click(Pictures.OK_REWARD))
             .popup();
-    public static final GameScreen LIBRARY = GameScreen.named("Library").markers(List.of(Pictures.METEORITE_TAB_LIBRARY))
-            .from(Way.of(Screens.HOME, Input.click(Pictures.LIBRARY_HOME)));
-    public static final GameScreen CAMPAIGN = GameScreen.named("Campaign").markers(List.of(Pictures.CAMPAIGN_TITLE))
-            .from(Way.of(Screens.HOME, Input.click(Pictures.CAMPAIGN_HOME))).back(Input.click(Pictures.CLOSE_TOWN))
-            .inputs(List.of(Input.click(Pictures.CAMPAIGN_LEADERBOARDS), Input.click(Pictures.CAMPAIGN_DAILY_MISSIONS),
-                    Input.click(Pictures.WAR_MACHINE_MAP), Input.click(Pictures.CAMPAIGN_MAP),
-                    Input.click(Pictures.CHAT_MAP),
-                    Input.click(Pictures.CAMPAIGN_CLAIM).did(Did.IN_PLACE).kind(Kind.CHORE).sometimes()));
     public static final GameScreen TOWN = GameScreen.named("Town").markers(List.of(Pictures.TITLE_TOWN))
             .from(Way.of(Screens.HOME, Input.click(Pictures.TOWN_HOME))).back(Input.click(Pictures.CLOSE_TOWN))
             .inputs(List.of(Input.click(Pictures.TAVERN_TOWN), Input.click(Pictures.LIBRARY_TOWN),
@@ -245,6 +237,15 @@ public final class Screens {
                     Input.click(Pictures.HALL_OF_HEROES_TOWN), Input.click(Pictures.GUILD_TOWN),
                     Input.click(Pictures.LEADERBOARDS_TOWN), Input.click(Pictures.PIRATE_SHIP_TOWN),
                     Input.click(Pictures.EXOTIC_MERCHANT_TOWN), Input.click(Pictures.BACK_TOWN)));
+    public static final GameScreen LIBRARY = GameScreen.named("Library").markers(List.of(Pictures.METEORITE_TAB_LIBRARY))
+            .from(Way.of(Screens.HOME, Input.click(Pictures.LIBRARY_HOME)))
+            .alsoFrom(List.of(Way.of(Screens.TOWN, Input.click(Pictures.LIBRARY_TOWN))));
+    public static final GameScreen CAMPAIGN = GameScreen.named("Campaign").markers(List.of(Pictures.CAMPAIGN_TITLE))
+            .from(Way.of(Screens.HOME, Input.click(Pictures.CAMPAIGN_HOME))).back(Input.click(Pictures.CLOSE_TOWN))
+            .inputs(List.of(Input.click(Pictures.CAMPAIGN_LEADERBOARDS), Input.click(Pictures.CAMPAIGN_DAILY_MISSIONS),
+                    Input.click(Pictures.WAR_MACHINE_MAP), Input.click(Pictures.CAMPAIGN_MAP),
+                    Input.click(Pictures.CHAT_MAP),
+                    Input.click(Pictures.CAMPAIGN_CLAIM).did(Did.IN_PLACE).kind(Kind.CHORE).sometimes()));
     private Screens() {
     }
 }
