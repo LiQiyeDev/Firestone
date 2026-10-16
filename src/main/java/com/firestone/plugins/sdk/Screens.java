@@ -264,7 +264,8 @@ public final class Screens {
             .inputs(List.of(Input.click(Pictures.CAMPAIGN_MAP), Input.click(Pictures.WAR_MACHINE_MAP),
                     Input.click(Pictures.INFO_MAP), Input.click(Pictures.GEMS_PLUS_MAP).never("spends gems"),
                     Input.click(Pictures.GOLD_PLUS_MAP).never("spends gems"), Input.click(Pictures.AVATAR_MAP),
-                    Input.click(Pictures.CHAT_MAP), Input.click(Pictures.CLAIM_MAP).kind(Kind.CHORE).sometimes(),
+                    Input.click(Pictures.CHAT_MAP),
+                    Input.click(Pictures.CLAIM_MAP).did(Did.IN_PLACE).kind(Kind.CHORE).sometimes(),
                     Input.click(Pictures.SCROLL_PIN_MAP).sometimes()));
     public static final GameScreen CLAIM = GameScreen.named("Mission rewards").markers(List.of(Pictures.MISSION_REWARDS_TITLE))
             .from(Way.of(Screens.MAP, Input.click(Pictures.CLAIM_MAP))).back(Input.click(Pictures.OKAY_MAP)).popup();
