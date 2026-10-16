@@ -234,7 +234,8 @@ public final class Screens {
             .from(Way.of(Screens.HOME, Input.click(Pictures.CAMPAIGN_HOME))).back(Input.click(Pictures.CLOSE_TOWN))
             .inputs(List.of(Input.click(Pictures.CAMPAIGN_LEADERBOARDS), Input.click(Pictures.CAMPAIGN_DAILY_MISSIONS),
                     Input.click(Pictures.WAR_MACHINE_MAP), Input.click(Pictures.CAMPAIGN_MAP),
-                    Input.click(Pictures.CHAT_MAP), Input.click(Pictures.CAMPAIGN_CLAIM).sometimes()));
+                    Input.click(Pictures.CHAT_MAP),
+                    Input.click(Pictures.CAMPAIGN_CLAIM).did(Did.IN_PLACE).kind(Kind.CHORE).sometimes()));
     private Screens() {
     }
 }
