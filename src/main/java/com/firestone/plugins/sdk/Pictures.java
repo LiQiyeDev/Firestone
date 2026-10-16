@@ -608,5 +608,7 @@ public final class Pictures {
             .at(new Rect(1632, 498, 116, 114));
     public static final ImageTemplate CHAT_MAP_HOME = new ImageTemplate("src/main/resources/images/chat_map_home.png")
             .at(new Rect(6, 864, 64, 64));
+    public static final ImageTemplate AUTO_ABILITIES_HOME = new ImageTemplate(
+            "src/main/resources/images/auto_abilities_home.png").at(new Rect(772, 988, 52, 52));
     private Pictures() {}
 }
