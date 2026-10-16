@@ -124,8 +124,30 @@ public final class Screens {
             .alsoFrom(List.of(Way.of(Screens.ARENA, Input.click(Pictures.ARENA_FIGHT).kind(Kind.CHORE))))
             .back(Input.click(Pictures.ARENA_FIGHT_CLOSE))
             .inputs(List.of(Input.click(Pictures.ARENA_SPEED).did(Did.LEAVES))).at(new Point(1020, 1640));
+    public static final GameScreen GARAGE = GameScreen.named("Garage").marker(Pictures.GARAGE_TITLE).from(Way.of(Screens.HOME,Input.click(Pictures.WAR_MACHINES_HOME))).back(Input.click(Pictures.CLOSE_TOWN)).inputs(List.of(Input.click(Pictures.INFO_GARAGE).kind(Kind.INFO),Input.click(Pictures.STATS_TAB_GARAGE).did(Did.NONE).kind(Kind.INFO),Input.click(Pictures.UPGRADE_TAB_GARAGE).kind(Kind.CHORE),Input.click(Pictures.BLUEPRINT_TAB_GARAGE).kind(Kind.CHORE),Input.click(Pictures.EMBLEM_TAB_GARAGE).kind(Kind.CHORE),Input.click(Pictures.ENGINEER_GARAGE),Input.click(Pictures.NEXT_MACHINE_GARAGE).did(Did.IN_PLACE).kind(Kind.INFO),Input.click(Pictures.MACHINE_CARD_GARAGE).did(Did.IN_PLACE).kind(Kind.INFO),Input.click(Pictures.UNKNOWN_CARD_GARAGE).kind(Kind.INFO),Input.click(Pictures.SHOW_ALL_GARAGE).kind(Kind.INFO),Input.click(Pictures.CHEST_GARAGE).did(Did.IN_PLACE).kind(Kind.CHORE),Input.click(Pictures.PREV_MACHINE_GARAGE).did(Did.NONE).kind(Kind.INFO).sometimes())).notes("""
+                    Garage (Home's wrench, war_machines_home) shows one war machine at a time; arrows or the bottom cards pick another.
+                    Each tab has its own title, mapped as its own screen with the book tab as its way back: Workshop (components, Upgrade needs screws, cogs and metal), Blueprints (titled Upgrades: damage/health/armor levels, Upgrade spends blueprints; x1/x5 multiplier), Machine rarity (titled Rarity: Increase rarity spends 10 000 tools, needs machine level 10).
+                    Machine cards carry a red bell badge when an upgrade is affordable.
+                    The ? card opens Locked machine: unlock new machines with arcane conduits from jewel chests. Show all lists every machine, owned or locked.
+                    Components come from jewel chests.\
+                    """).reached(Reached.SURVEYED);
+    public static final GameScreen ENGINEER = GameScreen.named("Engineer").marker(Pictures.ENGINEER_NAME).from(Way.of(Screens.HOME,Input.click(Pictures.ENGINEER_HOME))).alsoFrom(List.of(Way.of(Screens.GARAGE,Input.click(Pictures.ENGINEER_GARAGE)))).back(Input.click(Pictures.CLOSE_TOWN)).inputs(List.of(Input.click(Pictures.INFO_ENGINEER).kind(Kind.INFO),Input.click(Pictures.ENGINEER_TAB_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),Input.click(Pictures.BATTLES_TAB_ENGINEER).kind(Kind.INFO),Input.click(Pictures.STAR_TAB_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),Input.click(Pictures.SWIRL_TAB_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),Input.click(Pictures.CLAIM_ENGINEER).did(Did.IN_PLACE).kind(Kind.CHORE).sometimes(),Input.click(Pictures.GARAGE_ENGINEER).did(Did.LEAVES),Input.click(Pictures.CHANGE_SQUAD_ENGINEER).kind(Kind.CHOICE),Input.click(Pictures.EDIT_SQUAD_ENGINEER).kind(Kind.CHOICE),Input.click(Pictures.MACHINE_CARD_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),Input.click(Pictures.GEMS_PLUS_MAP).kind(Kind.CHOICE).never("buys tools with gems"))).notes("""
+                    Engineer produces tools every 6 hours; Claim (claim_engineer) collects them, then disappears until the next batch.
+                    Home shows engineer_home (blue helmet, left column) only while tools wait to be claimed; Garage's Engineer button reaches it always.
+                    Engineer level comes from war machine levels (100 XP per machine level); it raises all war machines' attributes and tool production.
+                    Tabs: Engineer (bonus + Claim), Active squad (Change squad, Edit), Favored war machines (80% of jewel-chest components go to the 5 favored), Arcane conduits (collect Chaos turbine / Energy core / Mana reactor from jewel chests to unlock a new war machine).
+                    Tools (top right, 7 166) buy war machine rarity in Garage; the + buys tools with gems: never.\
+                    """).reached(Reached.SURVEYED).at(new Point(340,2124));
+    public static final GameScreen ACTIVE_SQUAD = GameScreen.named("Active squad").marker(Pictures.ACTIVE_SQUAD_TITLE)
+            .from(Way.of(Screens.ENGINEER, Input.click(Pictures.BATTLES_TAB_ENGINEER)))
+            .back(Input.click(Pictures.ENGINEER_TAB_ENGINEER))
+            .inputs(List.of(Input.click(Pictures.CHANGE_SQUAD_ENGINEER).kind(Kind.CHOICE),
+                    Input.click(Pictures.EDIT_SQUAD_ENGINEER).kind(Kind.CHOICE),
+                    Input.click(Pictures.MACHINE_CARD_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO)));
     public static final GameScreen ARENA_SQUAD = GameScreen.named("Arena squad").marker(Pictures.CHOOSE_WAR_MACHINES_TITLE)
-            .from(Way.of(Screens.ARENA, Input.click(Pictures.ARENA_EDIT_SQUAD))).back(Input.click(Pictures.CLOSE_X))
+            .from(Way.of(Screens.ARENA, Input.click(Pictures.ARENA_EDIT_SQUAD)))
+            .alsoFrom(List.of(Way.of(Screens.ACTIVE_SQUAD, Input.click(Pictures.EDIT_SQUAD_ENGINEER))))
+            .back(Input.click(Pictures.CLOSE_X))
             .inputs(List.of(Input.click(Pictures.SQUAD_SAVE_CHANGES).did(Did.IN_PLACE),
                     Input.click(Pictures.SQUAD_EDIT_HEROES)))
             .at(new Point(1352, 2044));
@@ -143,29 +165,9 @@ public final class Screens {
     public static final GameScreen CREW_INFO = GameScreen.named("Crew info").marker(Pictures.HERO_BONUSES_TITLE)
             .from(Way.of(Screens.SQUAD_HEROES, Input.click(Pictures.CREW_INFO).kind(Kind.INFO)))
             .back(Input.click(Pictures.CREW_INFO_CLOSE)).at(new Point(2032, 2044));
-    public static final GameScreen GARAGE = GameScreen.named("Garage").marker(Pictures.GARAGE_TITLE).from(Way.of(Screens.HOME,Input.click(Pictures.WAR_MACHINES_HOME))).back(Input.click(Pictures.CLOSE_TOWN)).inputs(List.of(Input.click(Pictures.INFO_GARAGE).kind(Kind.INFO),Input.click(Pictures.STATS_TAB_GARAGE).did(Did.NONE).kind(Kind.INFO),Input.click(Pictures.UPGRADE_TAB_GARAGE).kind(Kind.CHORE),Input.click(Pictures.BLUEPRINT_TAB_GARAGE).kind(Kind.CHORE),Input.click(Pictures.EMBLEM_TAB_GARAGE).kind(Kind.CHORE),Input.click(Pictures.ENGINEER_GARAGE),Input.click(Pictures.NEXT_MACHINE_GARAGE).did(Did.IN_PLACE).kind(Kind.INFO),Input.click(Pictures.MACHINE_CARD_GARAGE).did(Did.IN_PLACE).kind(Kind.INFO),Input.click(Pictures.UNKNOWN_CARD_GARAGE).kind(Kind.INFO),Input.click(Pictures.SHOW_ALL_GARAGE).kind(Kind.INFO),Input.click(Pictures.CHEST_GARAGE).did(Did.IN_PLACE).kind(Kind.CHORE),Input.click(Pictures.PREV_MACHINE_GARAGE).did(Did.NONE).kind(Kind.INFO).sometimes())).notes("""
-                    Garage (Home's wrench, war_machines_home) shows one war machine at a time; arrows or the bottom cards pick another.
-                    Each tab has its own title, mapped as its own screen with the book tab as its way back: Workshop (components, Upgrade needs screws, cogs and metal), Blueprints (titled Upgrades: damage/health/armor levels, Upgrade spends blueprints; x1/x5 multiplier), Machine rarity (titled Rarity: Increase rarity spends 10 000 tools, needs machine level 10).
-                    Machine cards carry a red bell badge when an upgrade is affordable.
-                    The ? card opens Locked machine: unlock new machines with arcane conduits from jewel chests. Show all lists every machine, owned or locked.
-                    Components come from jewel chests.\
-                    """).reached(Reached.SURVEYED);
-    public static final GameScreen ENGINEER = GameScreen.named("Engineer").marker(Pictures.ENGINEER_NAME).from(Way.of(Screens.HOME,Input.click(Pictures.ENGINEER_HOME))).alsoFrom(List.of(Way.of(Screens.GARAGE,Input.click(Pictures.ENGINEER_GARAGE)))).back(Input.click(Pictures.CLOSE_TOWN)).inputs(List.of(Input.click(Pictures.INFO_ENGINEER).kind(Kind.INFO),Input.click(Pictures.ENGINEER_TAB_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),Input.click(Pictures.BATTLES_TAB_ENGINEER).kind(Kind.INFO),Input.click(Pictures.STAR_TAB_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),Input.click(Pictures.SWIRL_TAB_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),Input.click(Pictures.CLAIM_ENGINEER).did(Did.IN_PLACE).kind(Kind.CHORE).sometimes(),Input.click(Pictures.GARAGE_ENGINEER).did(Did.LEAVES),Input.click(Pictures.CHANGE_SQUAD_ENGINEER).kind(Kind.CHOICE),Input.click(Pictures.EDIT_SQUAD_ENGINEER).kind(Kind.CHOICE),Input.click(Pictures.MACHINE_CARD_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO),Input.click(Pictures.GEMS_PLUS_MAP).kind(Kind.CHOICE).never("buys tools with gems"))).notes("""
-                    Engineer produces tools every 6 hours; Claim (claim_engineer) collects them, then disappears until the next batch.
-                    Home shows engineer_home (blue helmet, left column) only while tools wait to be claimed; Garage's Engineer button reaches it always.
-                    Engineer level comes from war machine levels (100 XP per machine level); it raises all war machines' attributes and tool production.
-                    Tabs: Engineer (bonus + Claim), Active squad (Change squad, Edit), Favored war machines (80% of jewel-chest components go to the 5 favored), Arcane conduits (collect Chaos turbine / Energy core / Mana reactor from jewel chests to unlock a new war machine).
-                    Tools (top right, 7 166) buy war machine rarity in Garage; the + buys tools with gems: never.\
-                    """).reached(Reached.SURVEYED).at(new Point(340,2124));
     public static final GameScreen ENGINEER_INFO = GameScreen.named("Engineer info").marker(Pictures.ENGINEER_INFO_TITLE)
             .from(Way.of(Screens.ENGINEER, Input.click(Pictures.INFO_ENGINEER)))
             .back(Input.click(Pictures.CLOSE_ENGINEER_INFO)).at(new Point(1352, 2286));
-    public static final GameScreen ACTIVE_SQUAD = GameScreen.named("Active squad").marker(Pictures.ACTIVE_SQUAD_TITLE)
-            .from(Way.of(Screens.ENGINEER, Input.click(Pictures.BATTLES_TAB_ENGINEER)))
-            .back(Input.click(Pictures.ENGINEER_TAB_ENGINEER))
-            .inputs(List.of(Input.click(Pictures.CHANGE_SQUAD_ENGINEER).kind(Kind.CHOICE),
-                    Input.click(Pictures.EDIT_SQUAD_ENGINEER),
-                    Input.click(Pictures.MACHINE_CARD_ENGINEER).did(Did.IN_PLACE).kind(Kind.INFO)));
     public static final GameScreen CHANGE_SQUAD = GameScreen.named("Squads").marker(Pictures.SQUADS_TITLE)
             .from(Way.of(Screens.ENGINEER, Input.click(Pictures.CHANGE_SQUAD_ENGINEER)))
             .alsoFrom(List.of(Way.of(Screens.ACTIVE_SQUAD, Input.click(Pictures.CHANGE_SQUAD_ENGINEER))))
