@@ -241,9 +241,10 @@ public final class Screens {
             .from(Way.of(Screens.HOME, Input.click(Pictures.LIBRARY_HOME)))
             .alsoFrom(List.of(Way.of(Screens.TOWN, Input.click(Pictures.LIBRARY_TOWN))))
             .back(Input.click(Pictures.CLOSE_TOWN))
-            .inputs(List.of(Input.click(Pictures.FIRESTONE_TAB_LIBRARY), Input.click(Pictures.GUARDIAN_NODE_LIBRARY),
-                    Input.click(Pictures.ARMOR_NODE_LIBRARY), Input.click(Pictures.GEMS_PLUS_MAP),
-                    Input.click(Pictures.RESEARCH_CLAIM).sometimes()));
+            .inputs(List.of(Input.click(Pictures.FIRESTONE_TAB_LIBRARY).did(Did.IN_PLACE),
+                    Input.click(Pictures.GUARDIAN_NODE_LIBRARY), Input.click(Pictures.ARMOR_NODE_LIBRARY),
+                    Input.click(Pictures.GEMS_PLUS_MAP).never("spends gems"),
+                    Input.click(Pictures.RESEARCH_CLAIM).did(Did.IN_PLACE).kind(Kind.CHORE).sometimes()));
     public static final GameScreen CAMPAIGN = GameScreen.named("Campaign").markers(List.of(Pictures.CAMPAIGN_TITLE))
             .from(Way.of(Screens.HOME, Input.click(Pictures.CAMPAIGN_HOME))).back(Input.click(Pictures.CLOSE_TOWN))
             .inputs(List.of(Input.click(Pictures.CAMPAIGN_LEADERBOARDS), Input.click(Pictures.CAMPAIGN_DAILY_MISSIONS),
