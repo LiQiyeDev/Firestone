@@ -5,6 +5,7 @@ import com.botmaker.sdk.api.vision.ImageTemplate;
 import com.botmaker.plugin.api.meta.Migrate;
 import com.botmaker.plugin.api.meta.Refactor;
 import com.botmaker.sdk.api.flow.Run;
+import java.util.List;
 
 /**
  * How this bot moves off the API its plugins changed (Review ▸ Migrate…).
@@ -16,10 +17,9 @@ public final class Migrations {
     private Migrations() {
     }
 
-    @Refactor("write the replacement")
     @Migrate(GameScreen.class)
     static GameScreen marker(@Migrate.Self GameScreen self, ImageTemplate imageTemplate) {
-        return self;
+    return self.markers(List.of(imageTemplate));
     }
 
     @Refactor("write the replacement")
