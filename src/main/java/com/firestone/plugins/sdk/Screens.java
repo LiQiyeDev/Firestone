@@ -181,8 +181,7 @@ public final class Screens {
             .back(Input.click(Pictures.ENGINEER_TAB_ENGINEER))
             .inputs(List.of(Input.click(Pictures.EDIT_FAVORED).kind(Kind.CHOICE)));
     public static final GameScreen FAVORED_WAR_MACHINES = GameScreen.named("Select the favored war machines").marker(Pictures.FAVORED_TITLE)
-            .from(Way.of(Screens.ENGINEER, Input.click(Pictures.EDIT_SQUAD_ENGINEER)))
-            .alsoFrom(List.of(Way.of(Screens.FAVORED_WAR_MACHINES_2, Input.click(Pictures.EDIT_FAVORED))))
+            .from(Way.of(Screens.FAVORED_WAR_MACHINES_2, Input.click(Pictures.EDIT_FAVORED)))
             .back(Input.click(Pictures.CLOSE_FAVORED))
             .inputs(List.of(Input.click(Pictures.SAVE_CHANGES_OFF_FAVORED).did(Did.IN_PLACE).kind(Kind.CHOICE),
                     Input.click(Pictures.MACHINE_CARD_FAVORED).kind(Kind.CHOICE)
