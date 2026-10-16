@@ -34,7 +34,7 @@ public final class Screens {
                     Input.click(Pictures.CARD_HOME).sometimes(), Input.click(Pictures.PARCHMENT_HOME).sometimes(),
                     Input.click(Pictures.POTION_HOME).sometimes(), Input.click(Pictures.SCROLL_BOOT_HOME).sometimes(),
                     Input.click(Pictures.LIBRARY_HOME).sometimes(), Input.click(Pictures.GUARDIANS_HOME).sometimes(),
-                    Input.click(Pictures.AUTO_ABILITIES_HOME).did(Did.IN_PLACE), Input.click(Pictures.AVATAR_HOME),
+                    Input.click(Pictures.AUTO_ABILITIES_ON_OLD).did(Did.IN_PLACE), Input.click(Pictures.AVATAR_HOME),
                     Input.click(Pictures.PREV_STAGE_HOME).did(Did.IN_PLACE), Input.click(Pictures.SETTINGS_HOME),
                     Input.click(Pictures.CHAT_MAP_HOME)))
             .at(new Point(0, 1326));
