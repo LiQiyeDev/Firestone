@@ -4,6 +4,7 @@ import com.botmaker.sdk.api.screens.GameScreen;
 import com.botmaker.sdk.api.vision.ImageTemplate;
 import com.botmaker.plugin.api.meta.Migrate;
 import com.botmaker.plugin.api.meta.Refactor;
+import com.botmaker.sdk.api.flow.Run;
 
 /**
  * How this bot moves off the API its plugins changed (Review ▸ Migrate…).
@@ -18,6 +19,12 @@ public final class Migrations {
     @Refactor("write the replacement")
     @Migrate(GameScreen.class)
     static GameScreen marker(@Migrate.Self GameScreen self, ImageTemplate imageTemplate) {
+        return self;
+    }
+
+    @Refactor("write the replacement")
+    @Migrate(Run.class)
+    static Run popups(@Migrate.Self Run self, Runnable runnable) {
         return self;
     }
 }
