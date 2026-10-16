@@ -14,6 +14,7 @@ import com.botmaker.sdk.api.screens.Variant;
 import com.botmaker.sdk.api.screens.State;
 import com.botmaker.sdk.api.geometry.Point;
 import com.botmaker.sdk.api.screens.ScreenList;
+import com.botmaker.sdk.api.input.Key;
 
 /**
  * Values com.botmaker.sdk keeps in step with its own windows.
@@ -38,7 +39,7 @@ public final class Screens {
                     Input.click(Pictures.LIBRARY_HOME).sometimes(), Input.click(Pictures.GUARDIANS_HOME).sometimes(),
                     Input.click(Pictures.AVATAR_HOME), Input.click(Pictures.PREV_STAGE_HOME).did(Did.IN_PLACE),
                     Input.click(Pictures.SETTINGS_HOME), Input.click(Pictures.CHAT_MAP_HOME),
-                    Input.click(Pictures.AUTO_ABILITIES_HOME).did(Did.IN_PLACE).kind(Kind.SHORTCUT)))
+                    Input.click(Pictures.AUTO_ABILITIES_HOME).did(Did.IN_PLACE).kind(Kind.SHORTCUT), Input.key(Key.Q)))
             .lists(List.of(ScreenList.of(-5, List.of(Pictures.TAVERN_HOME, Pictures.ARENA_HOME, Pictures.ENGINEER_HOME,
                     Pictures.CAMPAIGN_HOME, Pictures.WAR_MACHINES_HOME, Pictures.CARD_HOME, Pictures.PARCHMENT_HOME,
                     Pictures.POTION_HOME, Pictures.SCROLL_BOOT_HOME, Pictures.LIBRARY_HOME, Pictures.GUARDIANS_HOME))))
@@ -269,6 +270,7 @@ public final class Screens {
                     Input.click(Pictures.SCROLL_PIN_MAP).sometimes()));
     public static final GameScreen CLAIM = GameScreen.named("Mission rewards").markers(List.of(Pictures.MISSION_REWARDS_TITLE))
             .from(Way.of(Screens.MAP, Input.click(Pictures.CLAIM_MAP))).back(Input.click(Pictures.OKAY_MAP)).popup();
+    public static final GameScreen QUESTS = GameScreen.named("Quests").from(Way.of(Screens.HOME, Input.key(Key.Q)));
     private Screens() {
     }
 }
