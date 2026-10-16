@@ -227,6 +227,8 @@ public final class Screens {
     public static final GameScreen MAIL_CLAIM = GameScreen.named("Reward").markers(List.of(Pictures.REWARD_GODDESS_TITLE))
             .from(Way.of(Screens.MAILBOX, Input.click(Pictures.MAIL_CLAIM))).back(Input.click(Pictures.OK_REWARD))
             .popup();
+    public static final GameScreen LIBRARY = GameScreen.named("Library")
+            .from(Way.of(Screens.HOME, Input.click(Pictures.LIBRARY_HOME)));
     private Screens() {
     }
 }
