@@ -259,6 +259,7 @@ public final class Screens {
             .back(Input.click(Pictures.CLOSE_RESEARCH_NODE))
             .inputs(List.of(Input.click(Pictures.RESEARCH_START_LIBRARY).did(Did.LEAVES).kind(Kind.CHORE),
                     Input.click(Pictures.COMPLETE_INSTANTLY_RESEARCH_NODE).never("spends gems")));
+    public static final GameScreen MAP = GameScreen.named("Map").from(Way.of(Screens.HOME, Input.click(Pictures.MAP)));
     private Screens() {
     }
 }
