@@ -236,8 +236,15 @@ public final class Screens {
                     Input.click(Pictures.WAR_MACHINE_MAP), Input.click(Pictures.CAMPAIGN_MAP),
                     Input.click(Pictures.CHAT_MAP),
                     Input.click(Pictures.CAMPAIGN_CLAIM).did(Did.IN_PLACE).kind(Kind.CHORE).sometimes()));
-    public static final GameScreen TOWN = GameScreen.named("Town")
-            .from(Way.of(Screens.HOME, Input.click(Pictures.TOWN_HOME)));
+    public static final GameScreen TOWN = GameScreen.named("Town").markers(List.of(Pictures.TITLE_TOWN))
+            .from(Way.of(Screens.HOME, Input.click(Pictures.TOWN_HOME))).back(Input.click(Pictures.CLOSE_TOWN))
+            .inputs(List.of(Input.click(Pictures.TAVERN_TOWN), Input.click(Pictures.LIBRARY_TOWN),
+                    Input.click(Pictures.BATTLES_TOWN), Input.click(Pictures.ALCHEMIST_TOWN),
+                    Input.click(Pictures.TEMPLE_TOWN), Input.click(Pictures.MAGIC_QUARTER_TOWN),
+                    Input.click(Pictures.ENGINEER_TOWN), Input.click(Pictures.MARKET_TOWN),
+                    Input.click(Pictures.HALL_OF_HEROES_TOWN), Input.click(Pictures.GUILD_TOWN),
+                    Input.click(Pictures.LEADERBOARDS_TOWN), Input.click(Pictures.PIRATE_SHIP_TOWN),
+                    Input.click(Pictures.EXOTIC_MERCHANT_TOWN), Input.click(Pictures.BACK_TOWN)));
     private Screens() {
     }
 }
