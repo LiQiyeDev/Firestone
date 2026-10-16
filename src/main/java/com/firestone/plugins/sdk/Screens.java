@@ -231,7 +231,10 @@ public final class Screens {
     public static final GameScreen LIBRARY = GameScreen.named("Library").markers(List.of(Pictures.METEORITE_TAB_LIBRARY))
             .from(Way.of(Screens.HOME, Input.click(Pictures.LIBRARY_HOME)));
     public static final GameScreen CAMPAIGN = GameScreen.named("Campaign").markers(List.of(Pictures.CAMPAIGN_TITLE))
-            .from(Way.of(Screens.HOME, Input.click(Pictures.CAMPAIGN_HOME)));
+            .from(Way.of(Screens.HOME, Input.click(Pictures.CAMPAIGN_HOME))).back(Input.click(Pictures.CLOSE_TOWN))
+            .inputs(List.of(Input.click(Pictures.CAMPAIGN_LEADERBOARDS), Input.click(Pictures.CAMPAIGN_DAILY_MISSIONS),
+                    Input.click(Pictures.WAR_MACHINE_MAP), Input.click(Pictures.CAMPAIGN_MAP),
+                    Input.click(Pictures.CHAT_MAP), Input.click(Pictures.CAMPAIGN_CLAIM).sometimes()));
     private Screens() {
     }
 }
