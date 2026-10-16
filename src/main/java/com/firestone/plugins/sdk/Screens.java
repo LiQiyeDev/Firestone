@@ -24,7 +24,9 @@ public final class Screens {
     public static final GameScreen OFFLINE_PROGRESS = GameScreen.named("Offline progress").markers(List.of(Pictures.OFFLINE_PROGRESS_TITLE))
             .back(Input.click(Pictures.CLAIM_OFFLINE)).popup().at(new Point(0, 2394));
     public static final GameScreen HOME = GameScreen.named("Home").markers(List.of(Pictures.TOWN_HOME))
-            .inputs(List.of(Input.click(Pictures.TAVERN_HOME).within(new Rect(10, 240, 120, 480)),
+            .inputs(List.of(
+                    Input.click(Pictures.TAVERN_HOME).within(new Rect(10, 240, 120, 480)).scrollTo(
+                            Input.scrollIn(new Rect(10, 240, 120, 480), -5)),
                     Input.click(Pictures.ARENA_HOME), Input.click(Pictures.ENGINEER_HOME).sometimes(),
                     Input.click(Pictures.CAMPAIGN_HOME), Input.click(Pictures.WAR_MACHINES_HOME),
                     Input.click(Pictures.MAIL_HOME).kind(Kind.CHORE), Input.click(Pictures.TOWN_HOME),
