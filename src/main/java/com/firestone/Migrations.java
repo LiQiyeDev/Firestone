@@ -22,9 +22,8 @@ public final class Migrations {
     return self.markers(List.of(imageTemplate));
     }
 
-    @Refactor("write the replacement")
     @Migrate(Run.class)
     static Run popups(@Migrate.Self Run self, Runnable runnable) {
-        return self;
+    return self;
     }
 }
