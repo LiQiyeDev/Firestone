@@ -270,7 +270,9 @@ public final class Screens {
                     Input.click(Pictures.SCROLL_PIN_MAP).sometimes()));
     public static final GameScreen CLAIM = GameScreen.named("Mission rewards").markers(List.of(Pictures.MISSION_REWARDS_TITLE))
             .from(Way.of(Screens.MAP, Input.click(Pictures.CLAIM_MAP))).back(Input.click(Pictures.OKAY_MAP)).popup();
-    public static final GameScreen QUESTS = GameScreen.named("Quests").from(Way.of(Screens.HOME, Input.key(Key.Q)));
+    public static final GameScreen QUESTS = GameScreen.named("Quests").markers(List.of(Pictures.QUESTS_TAB)).from(Way.of(Screens.HOME, Input.key(Key.Q)))
+            .back(Input.click(Pictures.ARENA_CLOSE)).inputs(List.of(Input.click(Pictures.WEEKLY_TAB_OFF),
+                    Input.click(Pictures.DAILY_TAB_OFF), Input.click(Pictures.QUEST_CLAIM).sometimes()));
     private Screens() {
     }
 }
