@@ -615,5 +615,7 @@ public final class Pictures {
             "src/main/resources/images/close_research_node.png").at(new Rect(1224, 169, 68, 68));
     public static final ImageTemplate COMPLETE_INSTANTLY_RESEARCH_NODE = new ImageTemplate(
             "src/main/resources/images/complete_instantly_research_node.png").at(new Rect(975, 668, 315, 118));
+    public static final ImageTemplate SCARAB_CHOICE_TOWN = new ImageTemplate(
+            "src/main/resources/images/scarab_choice_town.png").at(new Rect(995, 420, 330, 300));
     private Pictures() {}
 }

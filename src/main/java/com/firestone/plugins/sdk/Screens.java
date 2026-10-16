@@ -256,8 +256,9 @@ public final class Screens {
             .back(Input.click(Pictures.CLOSE_RESEARCH_NODE))
             .inputs(List.of(Input.click(Pictures.RESEARCH_START_LIBRARY).did(Did.LEAVES).kind(Kind.CHORE),
                     Input.click(Pictures.COMPLETE_INSTANTLY_RESEARCH_NODE).never("spends gems")));
-    public static final GameScreen TAVERN_CHOICE = GameScreen.named("Tavern choice")
-            .from(Way.of(Screens.TOWN, Input.click(Pictures.TAVERN_TOWN)));
+    public static final GameScreen TAVERN_CHOICE = GameScreen.named("Tavern choice").markers(List.of(Pictures.SCARAB_CHOICE_TOWN))
+            .from(Way.of(Screens.TOWN, Input.click(Pictures.TAVERN_TOWN))).back(Input.click(Pictures.CLOSE_GARAGE_INFO))
+            .inputs(List.of(Input.click(Pictures.TAVERN_CHOICE_TOWN)));
     private Screens() {
     }
 }
