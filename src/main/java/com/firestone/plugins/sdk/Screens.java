@@ -24,11 +24,12 @@ public final class Screens {
     public static final GameScreen OFFLINE_PROGRESS = GameScreen.named("Offline progress").markers(List.of(Pictures.OFFLINE_PROGRESS_TITLE))
             .back(Input.click(Pictures.CLAIM_OFFLINE)).popup().at(new Point(0, 2394));
     public static final GameScreen HOME = GameScreen.named("Home").markers(List.of(Pictures.TOWN_HOME))
-            .inputs(List.of(Input.click(Pictures.TAVERN_HOME), Input.click(Pictures.ARENA_HOME),
-                    Input.click(Pictures.ENGINEER_HOME).sometimes(), Input.click(Pictures.CAMPAIGN_HOME),
-                    Input.click(Pictures.WAR_MACHINES_HOME), Input.click(Pictures.MAIL_HOME).kind(Kind.CHORE),
-                    Input.click(Pictures.TOWN_HOME), Input.click(Pictures.MAP), Input.click(Pictures.GUILD),
-                    Input.click(Pictures.MARKET), Input.click(Pictures.BATTLE), Input.click(Pictures.BATTLE_PASS_HOME),
+            .inputs(List.of(Input.click(Pictures.TAVERN_HOME).within(new Rect(10, 240, 120, 480)),
+                    Input.click(Pictures.ARENA_HOME), Input.click(Pictures.ENGINEER_HOME).sometimes(),
+                    Input.click(Pictures.CAMPAIGN_HOME), Input.click(Pictures.WAR_MACHINES_HOME),
+                    Input.click(Pictures.MAIL_HOME).kind(Kind.CHORE), Input.click(Pictures.TOWN_HOME),
+                    Input.click(Pictures.MAP), Input.click(Pictures.GUILD), Input.click(Pictures.MARKET),
+                    Input.click(Pictures.BATTLE), Input.click(Pictures.BATTLE_PASS_HOME),
                     Input.click(Pictures.EVENTS_HOME), Input.click(Pictures.UPGRADES), Input.click(Pictures.BAG),
                     Input.click(Pictures.FELLOWSHIP), Input.click(Pictures.PARTY),
                     Input.click(Pictures.CARD_HOME).sometimes(), Input.click(Pictures.PARCHMENT_HOME).sometimes(),
