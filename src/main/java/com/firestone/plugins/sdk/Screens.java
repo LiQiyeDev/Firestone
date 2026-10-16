@@ -251,6 +251,8 @@ public final class Screens {
                     Input.click(Pictures.WAR_MACHINE_MAP), Input.click(Pictures.CAMPAIGN_MAP),
                     Input.click(Pictures.CHAT_MAP),
                     Input.click(Pictures.CAMPAIGN_CLAIM).did(Did.IN_PLACE).kind(Kind.CHORE).sometimes()));
+    public static final GameScreen RESEARCH_NODE = GameScreen.named("Research node")
+            .from(Way.of(Screens.LIBRARY, Input.click(Pictures.GUARDIAN_NODE_LIBRARY)));
     private Screens() {
     }
 }
