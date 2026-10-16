@@ -220,8 +220,9 @@ public final class Screens {
     public static final GameScreen MAIL_CLAIM = GameScreen.named("Reward").marker(Pictures.REWARD_GODDESS_TITLE)
             .from(Way.of(Screens.MAILBOX, Input.click(Pictures.MAIL_CLAIM))).back(Input.click(Pictures.OK_REWARD))
             .popup();
-    public static final GameScreen FAVORED_WAR_MACHINES_2 = GameScreen.named("Favored war machines")
-            .from(Way.of(Screens.ENGINEER, Input.click(Pictures.STAR_TAB_ENGINEER)));
+    public static final GameScreen FAVORED_WAR_MACHINES_2 = GameScreen.named("Favored war machines").marker(Pictures.FAVORED_TAB_TITLE)
+            .from(Way.of(Screens.ENGINEER, Input.click(Pictures.STAR_TAB_ENGINEER)))
+            .back(Input.click(Pictures.ENGINEER_TAB_ENGINEER)).inputs(List.of(Input.click(Pictures.EDIT_FAVORED)));
     private Screens() {
     }
 }

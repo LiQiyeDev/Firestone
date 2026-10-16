@@ -603,5 +603,9 @@ public final class Pictures {
             "src/main/resources/images/rarity_word_title.png").at(new Rect(1045, 158, 130, 50));
     public static final ImageTemplate ACTIVE_SQUAD_TITLE = new ImageTemplate(
             "src/main/resources/images/active_squad_title.png").at(new Rect(1250, 318, 248, 52));
+    public static final ImageTemplate FAVORED_TAB_TITLE = new ImageTemplate(
+            "src/main/resources/images/favored_tab_title.png").at(new Rect(1168, 320, 412, 50));
+    public static final ImageTemplate EDIT_FAVORED = new ImageTemplate("src/main/resources/images/edit_favored.png")
+            .at(new Rect(1632, 498, 116, 114));
     private Pictures() {}
 }
