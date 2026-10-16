@@ -236,6 +236,8 @@ public final class Screens {
                     Input.click(Pictures.WAR_MACHINE_MAP), Input.click(Pictures.CAMPAIGN_MAP),
                     Input.click(Pictures.CHAT_MAP),
                     Input.click(Pictures.CAMPAIGN_CLAIM).did(Did.IN_PLACE).kind(Kind.CHORE).sometimes()));
+    public static final GameScreen TOWN = GameScreen.named("Town")
+            .from(Way.of(Screens.HOME, Input.click(Pictures.TOWN_HOME)));
     private Screens() {
     }
 }
