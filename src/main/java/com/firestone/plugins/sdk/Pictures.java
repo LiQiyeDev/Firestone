@@ -609,5 +609,11 @@ public final class Pictures {
             .at(new Rect(6, 864, 64, 64));
     public static final ImageTemplate AUTO_ABILITIES_HOME = new ImageTemplate(
             "src/main/resources/images/auto_abilities_home.png").at(new Rect(772, 988, 52, 52));
+    public static final ImageTemplate ORIGINAL_TIME_RESEARCH_NODE = new ImageTemplate(
+            "src/main/resources/images/original_time_research_node.png").at(new Rect(712, 567, 196, 36));
+    public static final ImageTemplate CLOSE_RESEARCH_NODE = new ImageTemplate(
+            "src/main/resources/images/close_research_node.png").at(new Rect(1224, 169, 68, 68));
+    public static final ImageTemplate COMPLETE_INSTANTLY_RESEARCH_NODE = new ImageTemplate(
+            "src/main/resources/images/complete_instantly_research_node.png").at(new Rect(975, 668, 315, 118));
     private Pictures() {}
 }
