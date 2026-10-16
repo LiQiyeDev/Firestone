@@ -607,5 +607,7 @@ public final class Pictures {
             "src/main/resources/images/favored_tab_title.png").at(new Rect(1168, 320, 412, 50));
     public static final ImageTemplate EDIT_FAVORED = new ImageTemplate("src/main/resources/images/edit_favored.png")
             .at(new Rect(1632, 498, 116, 114));
+    public static final ImageTemplate CHAT_MAP_HOME = new ImageTemplate("src/main/resources/images/chat_map_home.png")
+            .at(new Rect(6, 864, 64, 64));
     private Pictures() {}
 }
