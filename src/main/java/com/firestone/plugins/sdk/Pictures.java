@@ -619,5 +619,7 @@ public final class Pictures {
             "src/main/resources/images/scarab_choice_town.png").at(new Rect(995, 420, 330, 300));
     public static final ImageTemplate MISSION_REWARDS_TITLE = new ImageTemplate(
             "src/main/resources/images/mission_rewards_title.png").at(new Rect(755, 330, 410, 48));
+    public static final ImageTemplate SPEED_X10_TAVERN = new ImageTemplate(
+            "src/main/resources/images/speed_x10_tavern.png").at(new Rect(1728, 920, 80, 44));
     private Pictures() {}
 }
