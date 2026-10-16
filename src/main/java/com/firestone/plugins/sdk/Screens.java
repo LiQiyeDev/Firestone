@@ -262,10 +262,12 @@ public final class Screens {
     public static final GameScreen MAP = GameScreen.named("Map").markers(List.of(Pictures.RANK_LIST_MAP))
             .from(Way.of(Screens.HOME, Input.click(Pictures.MAP))).back(Input.click(Pictures.CLOSE_TOWN))
             .inputs(List.of(Input.click(Pictures.CAMPAIGN_MAP), Input.click(Pictures.WAR_MACHINE_MAP),
-                    Input.click(Pictures.INFO_MAP), Input.click(Pictures.GEMS_PLUS_MAP),
-                    Input.click(Pictures.GOLD_PLUS_MAP), Input.click(Pictures.AVATAR_MAP),
-                    Input.click(Pictures.CHAT_MAP), Input.click(Pictures.CLAIM_MAP).sometimes(),
+                    Input.click(Pictures.INFO_MAP), Input.click(Pictures.GEMS_PLUS_MAP).never("spends gems"),
+                    Input.click(Pictures.GOLD_PLUS_MAP).never("spends gems"), Input.click(Pictures.AVATAR_MAP),
+                    Input.click(Pictures.CHAT_MAP), Input.click(Pictures.CLAIM_MAP).kind(Kind.CHORE).sometimes(),
                     Input.click(Pictures.SCROLL_PIN_MAP).sometimes()));
+    public static final GameScreen CLAIM = GameScreen.named("Claim")
+            .from(Way.of(Screens.MAP, Input.click(Pictures.CLAIM_MAP)));
     private Screens() {
     }
 }
