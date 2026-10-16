@@ -254,8 +254,8 @@ public final class Screens {
     public static final GameScreen RESEARCH_NODE = GameScreen.named("Research node").markers(List.of(Pictures.ORIGINAL_TIME_RESEARCH_NODE))
             .from(Way.of(Screens.LIBRARY, Input.click(Pictures.GUARDIAN_NODE_LIBRARY)))
             .back(Input.click(Pictures.CLOSE_RESEARCH_NODE))
-            .inputs(List.of(Input.click(Pictures.RESEARCH_START_LIBRARY),
-                    Input.click(Pictures.COMPLETE_INSTANTLY_RESEARCH_NODE)));
+            .inputs(List.of(Input.click(Pictures.RESEARCH_START_LIBRARY).did(Did.LEAVES).kind(Kind.CHORE),
+                    Input.click(Pictures.COMPLETE_INSTANTLY_RESEARCH_NODE).never("spends gems")));
     private Screens() {
     }
 }
