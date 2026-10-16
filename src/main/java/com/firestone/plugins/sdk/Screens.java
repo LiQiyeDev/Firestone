@@ -29,12 +29,13 @@ public final class Screens {
                             .scrollTo(Input.scrollIn(new Rect(10, 240, 120, 480), -5)),
                     Input.click(Pictures.ARENA_HOME).within(new Rect(10, 240, 120, 480))
                             .scrollTo(Input.scrollIn(new Rect(10, 240, 120, 480), -5)),
-                    Input.click(Pictures.ENGINEER_HOME).sometimes().within(new Rect(10, 240, 120, 480)).scrollTo(
-                            Input.scrollIn(new Rect(10, 240, 120, 480), -5)),
-                    Input.click(Pictures.CAMPAIGN_HOME), Input.click(Pictures.WAR_MACHINES_HOME),
-                    Input.click(Pictures.MAIL_HOME).kind(Kind.CHORE), Input.click(Pictures.TOWN_HOME),
-                    Input.click(Pictures.MAP), Input.click(Pictures.GUILD), Input.click(Pictures.MARKET),
-                    Input.click(Pictures.BATTLE), Input.click(Pictures.BATTLE_PASS_HOME),
+                    Input.click(Pictures.ENGINEER_HOME).sometimes().within(new Rect(10, 240, 120, 480))
+                            .scrollTo(Input.scrollIn(new Rect(10, 240, 120, 480), -5)),
+                    Input.click(Pictures.CAMPAIGN_HOME).within(new Rect(10, 240, 120, 480))
+                            .scrollTo(Input.scrollIn(new Rect(10, 240, 120, 480), -5)),
+                    Input.click(Pictures.WAR_MACHINES_HOME), Input.click(Pictures.MAIL_HOME).kind(Kind.CHORE),
+                    Input.click(Pictures.TOWN_HOME), Input.click(Pictures.MAP), Input.click(Pictures.GUILD),
+                    Input.click(Pictures.MARKET), Input.click(Pictures.BATTLE), Input.click(Pictures.BATTLE_PASS_HOME),
                     Input.click(Pictures.EVENTS_HOME), Input.click(Pictures.UPGRADES), Input.click(Pictures.BAG),
                     Input.click(Pictures.FELLOWSHIP), Input.click(Pictures.PARTY),
                     Input.click(Pictures.CARD_HOME).sometimes(), Input.click(Pictures.PARCHMENT_HOME).sometimes(),
