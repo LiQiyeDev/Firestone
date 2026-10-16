@@ -46,7 +46,9 @@ public final class Screens {
                             .scrollTo(Input.scrollIn(new Rect(10, 240, 120, 480), -5)),
                     Input.click(Pictures.POTION_HOME).sometimes().within(new Rect(10, 240, 120, 480))
                             .scrollTo(Input.scrollIn(new Rect(10, 240, 120, 480), -5)),
-                    Input.click(Pictures.SCROLL_BOOT_HOME).sometimes(), Input.click(Pictures.LIBRARY_HOME).sometimes(),
+                    Input.click(Pictures.SCROLL_BOOT_HOME).sometimes().within(new Rect(10, 240, 120, 480))
+                            .scrollTo(Input.scrollIn(new Rect(10, 240, 120, 480), -5)),
+                    Input.click(Pictures.LIBRARY_HOME).sometimes(),
                     Input.click(Pictures.GUARDIANS_HOME).sometimes().within(new Rect(10, 240, 120, 480))
                             .scrollTo(Input.scrollIn(new Rect(10, 240, 120, 480), -5)),
                     Input.click(Pictures.AVATAR_HOME), Input.click(Pictures.PREV_STAGE_HOME).did(Did.IN_PLACE),
