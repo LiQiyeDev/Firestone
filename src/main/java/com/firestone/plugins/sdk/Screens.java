@@ -177,8 +177,13 @@ public final class Screens {
                             .never("switches the player's active squad")
                             .variants(List.of(Variant.of(Pictures.SET_ACTIVE_OFF_SQUADS, State.DISABLED))),
                     Input.click(Pictures.EMPTY_SPOT_SQUADS).did(Did.IN_PLACE).kind(Kind.CHOICE)));
+    public static final GameScreen FAVORED_WAR_MACHINES_2 = GameScreen.named("Favored war machines").marker(Pictures.FAVORED_TAB_TITLE)
+            .from(Way.of(Screens.ENGINEER, Input.click(Pictures.STAR_TAB_ENGINEER)))
+            .back(Input.click(Pictures.ENGINEER_TAB_ENGINEER))
+            .inputs(List.of(Input.click(Pictures.EDIT_FAVORED).kind(Kind.CHOICE)));
     public static final GameScreen FAVORED_WAR_MACHINES = GameScreen.named("Select the favored war machines").marker(Pictures.FAVORED_TITLE)
             .from(Way.of(Screens.ENGINEER, Input.click(Pictures.EDIT_SQUAD_ENGINEER)))
+            .alsoFrom(List.of(Way.of(Screens.FAVORED_WAR_MACHINES_2, Input.click(Pictures.EDIT_FAVORED))))
             .back(Input.click(Pictures.CLOSE_FAVORED))
             .inputs(List.of(Input.click(Pictures.SAVE_CHANGES_OFF_FAVORED).did(Did.IN_PLACE).kind(Kind.CHOICE),
                     Input.click(Pictures.MACHINE_CARD_FAVORED).kind(Kind.CHOICE)
@@ -220,9 +225,6 @@ public final class Screens {
     public static final GameScreen MAIL_CLAIM = GameScreen.named("Reward").marker(Pictures.REWARD_GODDESS_TITLE)
             .from(Way.of(Screens.MAILBOX, Input.click(Pictures.MAIL_CLAIM))).back(Input.click(Pictures.OK_REWARD))
             .popup();
-    public static final GameScreen FAVORED_WAR_MACHINES_2 = GameScreen.named("Favored war machines").marker(Pictures.FAVORED_TAB_TITLE)
-            .from(Way.of(Screens.ENGINEER, Input.click(Pictures.STAR_TAB_ENGINEER)))
-            .back(Input.click(Pictures.ENGINEER_TAB_ENGINEER)).inputs(List.of(Input.click(Pictures.EDIT_FAVORED)));
     private Screens() {
     }
 }
