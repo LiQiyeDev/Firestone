@@ -716,7 +716,9 @@ public final class Screens {
                         .after(List.of(Pictures.WEAKLINGS_NODE_LIBRARY, Pictures.EXPOSE_NODE_LIBRARY)),
                 Node.of(Pictures.TRAINER_NODE_LIBRARY)
                         .after(List.of(Pictures.MEDAL_NODE_LIBRARY, Pictures.FINDER_NODE_LIBRARY)),
-                Node.of(Pictures.SKIP_WAVE_NODE_LIBRARY), Node.of(Pictures.EXPEDITIONER_NODE_LIBRARY))).wheel(-5);
+                Node.of(Pictures.SKIP_WAVE_NODE_LIBRARY)
+                        .after(List.of(Pictures.MEDAL_NODE_LIBRARY, Pictures.FINDER_NODE_LIBRARY)),
+                Node.of(Pictures.EXPEDITIONER_NODE_LIBRARY))).wheel(-5);
 
         @Override
         public Setup setup() {
