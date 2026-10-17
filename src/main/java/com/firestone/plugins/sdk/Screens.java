@@ -830,9 +830,20 @@ public final class Screens {
     public static final Guild GUILD = new Guild();
 
     public static final class Shop extends Screen {
+        public final Button closeX = Button.of(Pictures.CLOSE_X);
+        public final Button bundlesTabMarket = Button.of(Pictures.BUNDLES_TAB_MARKET);
+        public final Button gemsTabMarket = Button.of(Pictures.GEMS_TAB_MARKET);
+        public final Button chestsTabMarket = Button.of(Pictures.CHESTS_TAB_MARKET);
+        public final Button bagTabMarket = Button.of(Pictures.BAG_TAB_MARKET);
+        public final Button heartTabMarket = Button.of(Pictures.HEART_TAB_MARKET);
+        public final Button calendarTabMarket = Button.of(Pictures.CALENDAR_TAB_MARKET);
+        public final Button freeMarket = Button.of(Pictures.FREE_MARKET);
+        public final Button priceMarket = Button.of(Pictures.PRICE_MARKET);
+
         @Override
         public Setup setup() {
-            return Setup.named("Shop").from(Screens.HOME.market);
+            return Setup.named("Shop").markers(List.of(Pictures.HERO_TAB_MARKET)).from(Screens.HOME.market)
+                    .back(Screens.SHOP.closeX);
         }
     }
 
