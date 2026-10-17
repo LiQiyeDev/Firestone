@@ -808,9 +808,22 @@ public final class Screens {
     public static final MissionInProgress MISSION_IN_PROGRESS = new MissionInProgress();
 
     public static final class Guild extends Screen {
+        public final Button closeX = Button.of(Pictures.CLOSE_X);
+        public final Button expeditionsGuild = Button.of(Pictures.EXPEDITIONS_GUILD);
+        public final Button marketGuild = Button.of(Pictures.MARKET_GUILD);
+        public final Button hallGuild = Button.of(Pictures.HALL_GUILD);
+        public final Button treeOfLifeGuild = Button.of(Pictures.TREE_OF_LIFE_GUILD);
+        public final Button chaosRiftGuild = Button.of(Pictures.CHAOS_RIFT_GUILD);
+        public final Button bankGuild = Button.of(Pictures.BANK_GUILD);
+        public final Button forbiddenKnowledgeGuild = Button.of(Pictures.FORBIDDEN_KNOWLEDGE_GUILD);
+        public final Button awakeningGuild = Button.of(Pictures.AWAKENING_GUILD);
+        public final Button level50Guild = Button.of(Pictures.LEVEL_50_GUILD);
+        public final Button findGuild = Button.of(Pictures.FIND_GUILD);
+
         @Override
         public Setup setup() {
-            return Setup.named("Guild").from(Screens.HOME.guild);
+            return Setup.named("Guild").markers(List.of(Pictures.TITLE_GUILD)).from(Screens.HOME.guild)
+                    .back(Screens.GUILD.closeX);
         }
     }
 
