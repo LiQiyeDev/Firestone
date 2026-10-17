@@ -73,8 +73,6 @@ public final class Screens {
                 Pictures.ENGINEER_HOME, Pictures.CAMPAIGN_HOME, Pictures.WAR_MACHINES_HOME, Pictures.CARD_HOME,
                 Pictures.PARCHMENT_HOME, Pictures.POTION_HOME, Pictures.SCROLL_BOOT_HOME, Pictures.LIBRARY_HOME,
                 Pictures.GUARDIANS_HOME));
-        public final Strip arenaHome2 = Strip.of(Scroll.wheel(-5), List.of(Pictures.ARENA_HOME)).did(Did.IN_PLACE);
-
         @Override
         public Setup setup() {
             return Setup.named("Home").markers(List.of(Pictures.TOWN_HOME)).at(new Point(0, 1326));
