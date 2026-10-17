@@ -650,5 +650,21 @@ public final class Pictures {
     public static final ImageTemplate ARMOR_NODE_BUSY_LIBRARY = new ImageTemplate(
             "src/main/resources/images/armor_node_busy_library.png").at(new Rect(672, 605, 90, 90));
     public static final ImageTemplate DAMAGE_NODE_DONE_LIBRARY = new ImageTemplate("src/main/resources/images/damage_node_done_library.png").at(new Rect(335, 515, 180, 50));
+    public static final ImageTemplate TRAINER_NODE_LIBRARY = new ImageTemplate(
+            "src/main/resources/images/trainer_node_library.png").at(new Rect(965, 212, 84, 84));
+    public static final ImageTemplate SKIP_WAVE_NODE_LIBRARY = new ImageTemplate(
+            "src/main/resources/images/skip_wave_node_library.png").at(new Rect(968, 480, 84, 84));
+    public static final ImageTemplate EXPEDITIONER_NODE_LIBRARY = new ImageTemplate(
+            "src/main/resources/images/expeditioner_node_library.png").at(new Rect(965, 744, 84, 84));
+    public static final ImageTemplate MEDAL_NODE_LIBRARY = new ImageTemplate(
+            "src/main/resources/images/medal_node_library.png").at(new Rect(475, 350, 84, 84));
+    public static final ImageTemplate FINDER_NODE_LIBRARY = new ImageTemplate(
+            "src/main/resources/images/finder_node_library.png").at(new Rect(472, 610, 84, 84));
+    public static final ImageTemplate MEDAL_NODE_DONE_LIBRARY = new ImageTemplate(
+            "src/main/resources/images/medal_node_done_library.png").at(new Rect(630, 393, 180, 50));
+    public static final ImageTemplate FINDER_NODE_DONE_LIBRARY = new ImageTemplate(
+            "src/main/resources/images/finder_node_done_library.png").at(new Rect(630, 650, 180, 50));
+    public static final ImageTemplate SKIP_WAVE_NODE_DONE_LIBRARY = new ImageTemplate(
+            "src/main/resources/images/skip_wave_node_done_library.png").at(new Rect(1120, 520, 180, 50));
     private Pictures() {}
 }
