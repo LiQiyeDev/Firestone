@@ -660,8 +660,7 @@ public final class Pictures {
             "src/main/resources/images/medal_node_library.png").at(new Rect(475, 350, 84, 84));
     public static final ImageTemplate FINDER_NODE_LIBRARY = new ImageTemplate(
             "src/main/resources/images/finder_node_library.png").at(new Rect(472, 610, 84, 84));
-    public static final ImageTemplate MEDAL_NODE_DONE_LIBRARY = new ImageTemplate(
-            "src/main/resources/images/medal_node_done_library.png").at(new Rect(630, 393, 180, 50));
+    public static final ImageTemplate MEDAL_NODE_DONE_LIBRARY = new ImageTemplate("src/main/resources/images/medal_node_done_library.png").at(new Rect(475, 352, 335, 88));
     public static final ImageTemplate FINDER_NODE_DONE_LIBRARY = new ImageTemplate("src/main/resources/images/finder_node_done_library.png").at(new Rect(472, 610, 338, 88));
     public static final ImageTemplate SKIP_WAVE_NODE_DONE_LIBRARY = new ImageTemplate("src/main/resources/images/skip_wave_node_done_library.png").at(new Rect(968, 480, 332, 88));
     private Pictures() {}
