@@ -793,7 +793,8 @@ public final class Screens {
                     .from(Screens.LIBRARY.guardianNodeLibrary)
                     .alsoFrom(List.of(Way.of(Screens.LIBRARY.armorNodeLibrary),
                             Way.of(Screens.LIBRARY.healthNodeLibrary), Way.of(Screens.LIBRARY.projectilesNodeLibrary),
-                            Way.of(Screens.LIBRARY.trainerNodeLibrary), Way.of(Screens.LIBRARY.critBonusNodeLibrary)))
+                            Way.of(Screens.LIBRARY.trainerNodeLibrary), Way.of(Screens.LIBRARY.critBonusNodeLibrary),
+                            Way.of(Screens.LIBRARY.critChanceNodeLibrary)))
                     .back(Screens.RESEARCH_NODE.closeResearchNode);
         }
     }
