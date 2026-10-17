@@ -795,7 +795,8 @@ public final class Screens {
                             Way.of(Screens.LIBRARY.healthNodeLibrary), Way.of(Screens.LIBRARY.projectilesNodeLibrary),
                             Way.of(Screens.LIBRARY.trainerNodeLibrary), Way.of(Screens.LIBRARY.critBonusNodeLibrary),
                             Way.of(Screens.LIBRARY.critChanceNodeLibrary),
-                            Way.of(Screens.LIBRARY.expeditionerNodeLibrary), Way.of(Screens.LIBRARY.fistNodeLibrary)))
+                            Way.of(Screens.LIBRARY.expeditionerNodeLibrary), Way.of(Screens.LIBRARY.fistNodeLibrary),
+                            Way.of(Screens.LIBRARY.rainingGoldNodeLibrary)))
                     .back(Screens.RESEARCH_NODE.closeResearchNode);
         }
     }

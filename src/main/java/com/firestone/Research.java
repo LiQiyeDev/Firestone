@@ -22,10 +22,19 @@ public class Research {
         return Activities.Research.NEXT;
     }
 
-    /** Opens the first research node the Library shows; false when none opened. */
+    /**
+     * Opens the first node of Tree I, read column by column and top to bottom, that is not locked, maxed or being
+     * researched: the press walks the tree's view to it and skips those looks. False when none opened.
+     */
     private static boolean openNode() {
-        List<Button> nodes = List.of(Screens.LIBRARY.healthNodeLibrary, Screens.LIBRARY.armorNodeLibrary,
-                Screens.LIBRARY.guardianNodeLibrary, Screens.LIBRARY.projectilesNodeLibrary);
+        List<Button> nodes = List.of(Screens.LIBRARY.damageNodeLibrary, Screens.LIBRARY.healthNodeLibrary,
+                Screens.LIBRARY.armorNodeLibrary, Screens.LIBRARY.fistNodeLibrary,
+                Screens.LIBRARY.guardianNodeLibrary, Screens.LIBRARY.projectilesNodeLibrary,
+                Screens.LIBRARY.rainingGoldNodeLibrary, Screens.LIBRARY.critBonusNodeLibrary,
+                Screens.LIBRARY.critChanceNodeLibrary, Screens.LIBRARY.weaklingsNodeLibrary,
+                Screens.LIBRARY.exposeNodeLibrary, Screens.LIBRARY.medalNodeLibrary,
+                Screens.LIBRARY.finderNodeLibrary, Screens.LIBRARY.trainerNodeLibrary,
+                Screens.LIBRARY.skipWaveNodeLibrary, Screens.LIBRARY.expeditionerNodeLibrary);
         for (Button node : nodes) {
             if (Navigate.press(node).landed() == Screens.RESEARCH_NODE) return true;
         }
