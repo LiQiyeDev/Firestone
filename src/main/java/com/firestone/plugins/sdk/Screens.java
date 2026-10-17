@@ -829,6 +829,15 @@ public final class Screens {
 
     public static final Guild GUILD = new Guild();
 
+    public static final class Shop extends Screen {
+        @Override
+        public Setup setup() {
+            return Setup.named("Shop").from(Screens.HOME.market);
+        }
+    }
+
+    public static final Shop SHOP = new Shop();
+
     private Screens() {
     }
 }
