@@ -782,7 +782,7 @@ public final class Screens {
         public final Button completeInstantlyMission = Button.of(Pictures.COMPLETE_INSTANTLY_MISSION).never("spends gems");
         public final Button startMissionMap = Button.of(Pictures.START_MISSION_MAP).leaves();
         public final Button cancelMission = Button.of(Pictures.CANCEL_MISSION).never("cancels a running mission");
-        public final Button speedUpMission = Button.of(Pictures.SPEED_UP_MISSION);
+        public final Button speedUpMission = Button.of(Pictures.SPEED_UP_MISSION).never("spends gems");
 
         @Override
         public Setup setup() {
