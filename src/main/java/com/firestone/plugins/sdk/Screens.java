@@ -765,8 +765,8 @@ public final class Screens {
                 .looks(List.of(Look.of(Pictures.WEEKLY_TAB_ON, State.SELECTED)));
         public final Button dailyTabOff = Button.of(Pictures.DAILY_TAB_OFF).tried()
                 .looks(List.of(Look.of(Pictures.DAILY_TAB_ON, State.SELECTED)));
-        public final Button questClaim = Button.of(Pictures.QUEST_CLAIM).sometimes()
-                .looks(List.of(Look.of(Pictures.QUEST_CLAIM_OFF, State.DISABLED)));
+        public final Button questClaim = Button.of(Pictures.QUEST_CLAIM).sometimes().looks(List.of(Look.of(Pictures.QUEST_CLAIM_OFF, State.DISABLED)))
+                .repeated();
         public final Button arenaClose = Button.of(Pictures.ARENA_CLOSE);
 
         @Override
