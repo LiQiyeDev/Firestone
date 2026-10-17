@@ -779,9 +779,14 @@ public final class Screens {
     public static final Quests QUESTS = new Quests();
 
     public static final class SwordPin extends Screen {
+        public final Button closeMission = Button.of(Pictures.CLOSE_MISSION);
+        public final Button completeInstantlyMission = Button.of(Pictures.COMPLETE_INSTANTLY_MISSION);
+        public final Button startMissionMap = Button.of(Pictures.START_MISSION_MAP);
+
         @Override
         public Setup setup() {
-            return Setup.named("Mission").from(Screens.MAP.swordPinMap);
+            return Setup.named("Mission").markers(List.of(Pictures.REQUIRED_SQUADS_MISSION)).from(Screens.MAP.swordPinMap)
+                    .back(Screens.SWORD_PIN.closeMission);
         }
     }
 

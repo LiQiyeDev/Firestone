@@ -627,5 +627,11 @@ public final class Pictures {
             "src/main/resources/images/campaign_claim_off.png").at(new Rect(98, 985, 110, 45));
     public static final ImageTemplate MAP_LABEL_HOME = new ImageTemplate("src/main/resources/images/map_label_home.png")
             .at(new Rect(1826, 358, 62, 30));
+    public static final ImageTemplate REQUIRED_SQUADS_MISSION = new ImageTemplate(
+            "src/main/resources/images/required_squads_mission.png").at(new Rect(495, 875, 240, 45));
+    public static final ImageTemplate CLOSE_MISSION = new ImageTemplate("src/main/resources/images/close_mission.png")
+            .at(new Rect(1495, 197, 70, 66));
+    public static final ImageTemplate COMPLETE_INSTANTLY_MISSION = new ImageTemplate(
+            "src/main/resources/images/complete_instantly_mission.png").at(new Rect(1260, 857, 265, 90));
     private Pictures() {}
 }
