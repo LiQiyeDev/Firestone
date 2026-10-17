@@ -1,8 +1,6 @@
 package com.firestone;
 
 import com.firestone.plugins.sdk.Activities;
-import com.firestone.plugins.sdk.Pictures;
-import com.botmaker.sdk.api.vision.ImageClicker;
 import com.botmaker.sdk.api.screens.Navigate;
 import com.firestone.plugins.sdk.Screens;
 
@@ -28,8 +26,7 @@ public final class Collect {
     }
 
     public static Activities.Collect body() {
-        Navigate.to(Screens.CAMPAIGN);
-        if (!ImageClicker.click(Pictures.CAMPAIGN_CLAIM)) {
+        if (!Navigate.press(Screens.CAMPAIGN.campaignClaim).done()) {
             // Nothing to collect. Not a failure — the flow sends this on to Battle.
             return Activities.Collect.NOTHING_LEFT;
         }

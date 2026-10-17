@@ -2,7 +2,6 @@ package com.firestone;
 
 import com.firestone.plugins.sdk.Activities;
 import com.firestone.plugins.sdk.Pictures;
-import com.botmaker.sdk.api.vision.ImageClicker;
 import com.botmaker.sdk.api.vision.ImageFinder;
 import com.botmaker.sdk.api.time.Wait;
 import com.botmaker.sdk.api.vision.ImageWaiter;
@@ -28,8 +27,7 @@ public final class Battle {
     }
 
     public static Activities.Battle body() {
-        Navigate.to(Screens.HOME);
-        if (!ImageClicker.click(Pictures.BATTLE)) {
+        if (!Navigate.press(Screens.HOME.battle).done()) {
             // No fight available. Treated as a loss so the flow rests and comes back, rather than
             // needing a third outcome for "could not even start".
             return Activities.Battle.LOST;

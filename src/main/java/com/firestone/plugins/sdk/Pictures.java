@@ -623,5 +623,7 @@ public final class Pictures {
             "src/main/resources/images/speed_x10_tavern.png").at(new Rect(1728, 920, 80, 44));
     public static final ImageTemplate SPEED_X50_TAVERN = new ImageTemplate(
             "src/main/resources/images/speed_x50_tavern.png").at(new Rect(1728, 920, 80, 44));
+    public static final ImageTemplate CAMPAIGN_CLAIM_OFF = new ImageTemplate(
+            "src/main/resources/images/campaign_claim_off.png").at(new Rect(98, 985, 110, 45));
     private Pictures() {}
 }

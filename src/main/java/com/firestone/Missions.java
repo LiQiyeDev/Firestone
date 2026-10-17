@@ -8,16 +8,13 @@ import com.botmaker.sdk.api.vision.ImageClicker;
 import com.botmaker.sdk.api.vision.ImageWaiter;
 import java.time.Duration;
 import com.botmaker.sdk.api.screens.Navigate;
+import com.botmaker.sdk.api.screens.Pick;
 import com.firestone.plugins.sdk.Screens;
 
 public class Missions {
 
     public static Activities.Missions body() {
-        Navigate.to(Screens.MAP);
-        ImageFinder.whileFindAny(ImageTemplateGroup.of(Pictures.CLAIM_MAP),
-                it -> {
-                    ImageClicker.clickLast();
-                });
+        Navigate.press(Screens.MAP.claimMap, Pick.untilNone());
         ImageFinder.whileFindAny(
                 ImageTemplateGroup.of(Pictures.SWORD_PIN_MAP, Pictures.TELESCOPE_PIN_MAP, Pictures.DRAGON_PIN_MAP,
                         Pictures.SCROLL_PIN_MAP),
