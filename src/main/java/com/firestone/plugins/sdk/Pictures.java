@@ -633,5 +633,11 @@ public final class Pictures {
             .at(new Rect(1495, 197, 70, 66));
     public static final ImageTemplate COMPLETE_INSTANTLY_MISSION = new ImageTemplate(
             "src/main/resources/images/complete_instantly_mission.png").at(new Rect(1260, 857, 265, 90));
+    public static final ImageTemplate IN_PROGRESS_MISSION = new ImageTemplate(
+            "src/main/resources/images/in_progress_mission.png").at(new Rect(862, 618, 196, 42));
+    public static final ImageTemplate CANCEL_MISSION = new ImageTemplate("src/main/resources/images/cancel_mission.png")
+            .at(new Rect(958, 748, 268, 84));
+    public static final ImageTemplate SPEED_UP_MISSION = new ImageTemplate(
+            "src/main/resources/images/speed_up_mission.png").at(new Rect(1258, 748, 268, 84));
     private Pictures() {}
 }
