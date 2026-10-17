@@ -799,10 +799,9 @@ public final class Screens {
 
         @Override
         public Setup setup() {
-            return Setup.named("Mission in progress").markers(List.of(Pictures.IN_PROGRESS_MISSION))
-                    .from(Screens.MAP.swordPinMap)
-                    .alsoFrom(List.of(Way.of(Screens.MAP.telescopePinMap), Way.of(Screens.MAP.dragonPinMap),
-                            Way.of(Screens.MAP.scrollPinMap)))
+            return Setup.named("Mission in progress").markers(List.of(Pictures.IN_PROGRESS_MISSION, Pictures.CANCEL_MISSION))
+                    .from(Screens.MAP.swordPinMap).alsoFrom(List.of(Way.of(Screens.MAP.telescopePinMap),
+                            Way.of(Screens.MAP.dragonPinMap), Way.of(Screens.MAP.scrollPinMap)))
                     .back(Screens.MISSION_IN_PROGRESS.closeMission);
         }
     }
