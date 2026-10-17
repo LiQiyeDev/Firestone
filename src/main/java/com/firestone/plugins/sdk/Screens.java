@@ -799,6 +799,15 @@ public final class Screens {
 
     public static final SwordPin SWORD_PIN = new SwordPin();
 
+    public static final class MissionInProgress extends Screen {
+        @Override
+        public Setup setup() {
+            return Setup.named("Mission in progress").from(Screens.MAP.swordPinMap);
+        }
+    }
+
+    public static final MissionInProgress MISSION_IN_PROGRESS = new MissionInProgress();
+
     private Screens() {
     }
 }
