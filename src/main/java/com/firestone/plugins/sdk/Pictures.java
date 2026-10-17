@@ -663,5 +663,7 @@ public final class Pictures {
     public static final ImageTemplate MEDAL_NODE_DONE_LIBRARY = new ImageTemplate("src/main/resources/images/medal_node_done_library.png").at(new Rect(475, 352, 335, 88));
     public static final ImageTemplate FINDER_NODE_DONE_LIBRARY = new ImageTemplate("src/main/resources/images/finder_node_done_library.png").at(new Rect(472, 610, 338, 88));
     public static final ImageTemplate SKIP_WAVE_NODE_DONE_LIBRARY = new ImageTemplate("src/main/resources/images/skip_wave_node_done_library.png").at(new Rect(968, 480, 332, 88));
+    public static final ImageTemplate CRIT_BONUS_NODE_LIBRARY = new ImageTemplate(
+            "src/main/resources/images/crit_bonus_node_library.png").at(new Rect(90, 350, 84, 84));
     private Pictures() {}
 }
