@@ -741,7 +741,9 @@ public final class Screens {
                         .beside(List.of(Beside.of(Pictures.MEDAL_NODE_LIBRARY, 5.85, -1.65),
                                 Beside.of(Pictures.FINDER_NODE_LIBRARY, 5.85, -4.75))),
                 Node.of(Pictures.SKIP_WAVE_NODE_LIBRARY)
-                        .after(List.of(Pictures.MEDAL_NODE_LIBRARY, Pictures.FINDER_NODE_LIBRARY)),
+                        .after(List.of(Pictures.MEDAL_NODE_LIBRARY, Pictures.FINDER_NODE_LIBRARY))
+                        .beside(List.of(Beside.of(Pictures.MEDAL_NODE_LIBRARY, 5.85, 1.55),
+                                Beside.of(Pictures.FINDER_NODE_LIBRARY, 5.9, -1.55))),
                 Node.of(Pictures.EXPEDITIONER_NODE_LIBRARY)
                         .after(List.of(Pictures.MEDAL_NODE_LIBRARY, Pictures.FINDER_NODE_LIBRARY))
                         .beside(List.of(Beside.of(Pictures.MEDAL_NODE_LIBRARY, 5.85, 4.7),
