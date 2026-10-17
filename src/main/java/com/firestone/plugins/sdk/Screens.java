@@ -787,7 +787,8 @@ public final class Screens {
         @Override
         public Setup setup() {
             return Setup.named("Mission")
-                    .markers(List.of(Pictures.REQUIRED_SQUADS_MISSION, Pictures.CLOSE_MISSION, Pictures.RANK_LIST_MAP))
+                    .markers(List.of(Pictures.REQUIRED_SQUADS_MISSION, Pictures.CLOSE_MISSION, Pictures.RANK_LIST_MAP,
+                            Pictures.MISSION_PANEL_CORNER))
                     .absent(List.of(Pictures.TITLE_TOWN)).from(Screens.MAP.swordPinMap)
                     .alsoFrom(List.of(Way.of(Screens.MAP.telescopePinMap), Way.of(Screens.MAP.dragonPinMap),
                             Way.of(Screens.MAP.scrollPinMap)))

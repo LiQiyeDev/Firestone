@@ -639,5 +639,7 @@ public final class Pictures {
             .at(new Rect(958, 748, 268, 84));
     public static final ImageTemplate SPEED_UP_MISSION = new ImageTemplate(
             "src/main/resources/images/speed_up_mission.png").at(new Rect(1258, 748, 268, 84));
+    public static final ImageTemplate MISSION_PANEL_CORNER = new ImageTemplate(
+            "src/main/resources/images/mission_panel_corner.png").at(new Rect(372, 197, 120, 110));
     private Pictures() {}
 }
