@@ -807,6 +807,15 @@ public final class Screens {
 
     public static final MissionInProgress MISSION_IN_PROGRESS = new MissionInProgress();
 
+    public static final class Guild extends Screen {
+        @Override
+        public Setup setup() {
+            return Setup.named("Guild").from(Screens.HOME.guild);
+        }
+    }
+
+    public static final Guild GUILD = new Guild();
+
     private Screens() {
     }
 }
