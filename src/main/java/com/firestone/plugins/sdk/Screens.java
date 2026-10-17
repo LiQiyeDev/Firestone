@@ -778,6 +778,15 @@ public final class Screens {
 
     public static final Quests QUESTS = new Quests();
 
+    public static final class SwordPin extends Screen {
+        @Override
+        public Setup setup() {
+            return Setup.named("Sword pin").from(Screens.MAP.swordPinMap);
+        }
+    }
+
+    public static final SwordPin SWORD_PIN = new SwordPin();
+
     private Screens() {
     }
 }
