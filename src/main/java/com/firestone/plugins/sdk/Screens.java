@@ -849,15 +849,6 @@ public final class Screens {
 
     public static final Shop SHOP = new Shop();
 
-    public static final class Battle extends Screen {
-        @Override
-        public Setup setup() {
-            return Setup.named("Battle").from(Screens.HOME.battle);
-        }
-    }
-
-    public static final Battle BATTLE = new Battle();
-
     private Screens() {
     }
 }
