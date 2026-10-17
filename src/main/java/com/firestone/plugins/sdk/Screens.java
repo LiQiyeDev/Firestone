@@ -695,17 +695,17 @@ public final class Screens {
         public final Button rainingGoldNodeLibrary = Button.of(Pictures.RAINING_GOLD_NODE_LIBRARY);
         public final Tree damageNodeLibraryTree = Tree.of(List.of(Node.of(Pictures.DAMAGE_NODE_LIBRARY),
                 Node.of(Pictures.HEALTH_NODE_LIBRARY).after(List.of(Pictures.DAMAGE_NODE_LIBRARY))
-                        .beside(List.of(Beside.of(Pictures.DAMAGE_NODE_LIBRARY, 1.6, -2.9))),
+                        .beside(List.of(Beside.of(Pictures.DAMAGE_NODE_LIBRARY, 5.9, -1.55))),
                 Node.of(Pictures.ARMOR_NODE_LIBRARY).after(List.of(Pictures.DAMAGE_NODE_LIBRARY))
-                        .beside(List.of(Beside.of(Pictures.DAMAGE_NODE_LIBRARY, 1.6, 2.2))),
+                        .beside(List.of(Beside.of(Pictures.DAMAGE_NODE_LIBRARY, 5.9, 1.5))),
                 Node.of(Pictures.FIST_NODE_LIBRARY)
                         .after(List.of(Pictures.HEALTH_NODE_LIBRARY, Pictures.ARMOR_NODE_LIBRARY))
                         .beside(List.of(Beside.of(Pictures.HEALTH_NODE_LIBRARY, 5.45, -1.55),
-                                Beside.of(Pictures.ARMOR_NODE_LIBRARY, 5.45, -4.4))),
+                                Beside.of(Pictures.ARMOR_NODE_LIBRARY, 5.45, -4.45))),
                 Node.of(Pictures.GUARDIAN_NODE_LIBRARY)
                         .after(List.of(Pictures.HEALTH_NODE_LIBRARY, Pictures.ARMOR_NODE_LIBRARY))
                         .beside(List.of(Beside.of(Pictures.HEALTH_NODE_LIBRARY, 5.35, 1.4),
-                                Beside.of(Pictures.ARMOR_NODE_LIBRARY, 5.35, -1.45))),
+                                Beside.of(Pictures.ARMOR_NODE_LIBRARY, 5.35, -1.5))),
                 Node.of(Pictures.PROJECTILES_NODE_LIBRARY)
                         .after(List.of(Pictures.HEALTH_NODE_LIBRARY, Pictures.ARMOR_NODE_LIBRARY))
                         .beside(List.of(Beside.of(Pictures.HEALTH_NODE_LIBRARY, 5.45, 4.35),
