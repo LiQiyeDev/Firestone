@@ -649,7 +649,7 @@ public final class Pictures {
             "src/main/resources/images/health_node_busy_library.png").at(new Rect(671, 350, 90, 90));
     public static final ImageTemplate ARMOR_NODE_BUSY_LIBRARY = new ImageTemplate(
             "src/main/resources/images/armor_node_busy_library.png").at(new Rect(672, 605, 90, 90));
-    public static final ImageTemplate DAMAGE_NODE_DONE_LIBRARY = new ImageTemplate("src/main/resources/images/damage_node_done_library.png").at(new Rect(335, 515, 180, 50));
+    public static final ImageTemplate DAMAGE_NODE_DONE_LIBRARY = new ImageTemplate("src/main/resources/images/damage_node_done_library.png").at(new Rect(180, 487, 335, 88));
     public static final ImageTemplate TRAINER_NODE_LIBRARY = new ImageTemplate(
             "src/main/resources/images/trainer_node_library.png").at(new Rect(965, 212, 84, 84));
     public static final ImageTemplate SKIP_WAVE_NODE_LIBRARY = new ImageTemplate(
