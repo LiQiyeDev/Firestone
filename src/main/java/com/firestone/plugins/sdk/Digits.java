@@ -1,6 +1,7 @@
 package com.firestone.plugins.sdk;
 
 import com.botmaker.sdk.api.bot.SdkValue;
+import com.botmaker.sdk.api.text.DigitSet;
 
 /**
  * Values com.botmaker.sdk keeps in step with its own windows.
@@ -9,6 +10,8 @@ import com.botmaker.sdk.api.bot.SdkValue;
  */
 @SdkValue(SdkValue.Id.DIGITS)
 public final class Digits {
+    public static final DigitSet STAGE = new DigitSet("src/main/resources/digits/stage");
+
     private Digits() {
     }
 }

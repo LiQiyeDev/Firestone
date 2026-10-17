@@ -11,6 +11,7 @@ import java.util.List;
 public class Research {
 
     public static Activities.Research body() {
+        Navigate.press(Screens.LIBRARY.firestoneTabLibrary);
         Navigate.press(Screens.LIBRARY.researchClaim, Pick.untilNone());
         // A free slot takes one research: open a node, start it, and look again.
         for (int slot = 0; slot < 4 && Navigate.to(Screens.LIBRARY)

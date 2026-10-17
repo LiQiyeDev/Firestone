@@ -2,8 +2,6 @@ package com.firestone;
 
 import com.firestone.plugins.sdk.Activities;
 import com.firestone.plugins.sdk.Pictures;
-import com.botmaker.sdk.api.vision.ImageFinder;
-import com.botmaker.sdk.api.time.Wait;
 import com.botmaker.sdk.api.vision.ImageWaiter;
 import java.time.Duration;
 import com.botmaker.sdk.api.screens.Navigate;
@@ -34,14 +32,9 @@ public final class Battle {
         }
         ImageWaiter.waitUntilGone(Pictures.BATTLE, Duration.ofMillis(15000L));
 
-        for (int attempt = 0; Gamebot.keepTrying(attempt); attempt++) {
-            Wait.seconds(3);
-            if (ImageFinder.find(Pictures.BATTLE)) {
-                return Activities.Battle.LOST;
-            }
-        }
         // Neither picture ever appeared. Something is on screen that this bot does not know about, so
         // report the outcome that leads somewhere safe and let goHome sort it out.
-        return Activities.Battle.LOST;
+        return ImageWaiter.waitFor(Pictures.BATTLE,
+                Duration.ofMillis(90000L)) ? Activities.Battle.LOST : Activities.Battle.WON;
     }
 }
