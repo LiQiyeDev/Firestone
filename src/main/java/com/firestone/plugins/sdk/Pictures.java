@@ -675,5 +675,7 @@ public final class Pictures {
             "src/main/resources/images/weaklings_node_done_library.png").at(new Rect(578, 352, 335, 88));
     public static final ImageTemplate EXPOSE_NODE_DONE_LIBRARY = new ImageTemplate(
             "src/main/resources/images/expose_node_done_library.png").at(new Rect(578, 610, 335, 88));
+    public static final ImageTemplate RAINING_GOLD_NODE_LIBRARY = new ImageTemplate(
+            "src/main/resources/images/raining_gold_node_library.png").at(new Rect(196, 478, 84, 84));
     private Pictures() {}
 }
