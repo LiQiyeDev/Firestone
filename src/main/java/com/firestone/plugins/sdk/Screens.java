@@ -800,9 +800,14 @@ public final class Screens {
     public static final SwordPin SWORD_PIN = new SwordPin();
 
     public static final class MissionInProgress extends Screen {
+        public final Button closeMission = Button.of(Pictures.CLOSE_MISSION);
+        public final Button cancelMission = Button.of(Pictures.CANCEL_MISSION);
+        public final Button speedUpMission = Button.of(Pictures.SPEED_UP_MISSION);
+
         @Override
         public Setup setup() {
-            return Setup.named("Mission in progress").from(Screens.MAP.swordPinMap);
+            return Setup.named("Mission in progress").from(Screens.MAP.swordPinMap)
+                    .back(Screens.MISSION_IN_PROGRESS.closeMission);
         }
     }
 
