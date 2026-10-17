@@ -693,7 +693,8 @@ public final class Screens {
         public final Button critChanceNodeLibrary = Button.of(Pictures.CRIT_CHANCE_NODE_LIBRARY);
         public final Button weaklingsNodeLibrary = Button.of(Pictures.WEAKLINGS_NODE_LIBRARY).tried()
                 .looks(List.of(Look.of(Pictures.WEAKLINGS_NODE_DONE_LIBRARY, State.DONE)));
-        public final Button exposeNodeLibrary = Button.of(Pictures.EXPOSE_NODE_LIBRARY).looks(List.of(Look.of(Pictures.EXPOSE_NODE_DONE_LIBRARY, State.DONE)));
+        public final Button exposeNodeLibrary = Button.of(Pictures.EXPOSE_NODE_LIBRARY).tried()
+                .looks(List.of(Look.of(Pictures.EXPOSE_NODE_DONE_LIBRARY, State.DONE)));
         public final Button rainingGoldNodeLibrary = Button.of(Pictures.RAINING_GOLD_NODE_LIBRARY);
         public final Tree damageNodeLibraryTree = Tree.of(List.of(Node.of(Pictures.DAMAGE_NODE_LIBRARY),
                 Node.of(Pictures.HEALTH_NODE_LIBRARY).after(List.of(Pictures.DAMAGE_NODE_LIBRARY))
