@@ -713,13 +713,13 @@ public final class Screens {
                 Node.of(Pictures.RAINING_GOLD_NODE_LIBRARY)
                         .after(List.of(Pictures.FIST_NODE_LIBRARY, Pictures.GUARDIAN_NODE_LIBRARY,
                                 Pictures.PROJECTILES_NODE_LIBRARY))
-                        .beside(List.of(Beside.of(Pictures.FIST_NODE_LIBRARY, 5.75, 3.15),
-                                Beside.of(Pictures.GUARDIAN_NODE_LIBRARY, 5.75, 0.0),
-                                Beside.of(Pictures.PROJECTILES_NODE_LIBRARY, 5.75, -3.15))),
+                        .beside(List.of(Beside.of(Pictures.FIST_NODE_LIBRARY, 5.85, 3.15),
+                                Beside.of(Pictures.GUARDIAN_NODE_LIBRARY, 5.85, 0.0),
+                                Beside.of(Pictures.PROJECTILES_NODE_LIBRARY, 5.85, -3.15))),
                 Node.of(Pictures.CRIT_BONUS_NODE_LIBRARY).after(List.of(Pictures.RAINING_GOLD_NODE_LIBRARY))
-                        .beside(List.of(Beside.of(Pictures.RAINING_GOLD_NODE_LIBRARY, 6.0, -1.5))),
+                        .beside(List.of(Beside.of(Pictures.RAINING_GOLD_NODE_LIBRARY, 5.9, -1.5))),
                 Node.of(Pictures.CRIT_CHANCE_NODE_LIBRARY).after(List.of(Pictures.RAINING_GOLD_NODE_LIBRARY))
-                        .beside(List.of(Beside.of(Pictures.RAINING_GOLD_NODE_LIBRARY, 6.0, 1.55))),
+                        .beside(List.of(Beside.of(Pictures.RAINING_GOLD_NODE_LIBRARY, 5.9, 1.55))),
                 Node.of(Pictures.WEAKLINGS_NODE_LIBRARY)
                         .after(List.of(Pictures.CRIT_BONUS_NODE_LIBRARY, Pictures.CRIT_CHANCE_NODE_LIBRARY))
                         .beside(List.of(Beside.of(Pictures.CRIT_BONUS_NODE_LIBRARY, 5.8, 0.0),
