@@ -682,7 +682,7 @@ public final class Screens {
         public final Button damageNodeLibrary = Button.of(Pictures.DAMAGE_NODE_LIBRARY).looks(List.of(Look.of(Pictures.DAMAGE_NODE_DONE_LIBRARY, State.DONE)));
         public final Button fistNodeLibrary = Button.of(Pictures.FIST_NODE_LIBRARY);
         public final Button trainerNodeLibrary = Button.of(Pictures.TRAINER_NODE_LIBRARY);
-        public final Button skipWaveNodeLibrary = Button.of(Pictures.SKIP_WAVE_NODE_LIBRARY)
+        public final Button skipWaveNodeLibrary = Button.of(Pictures.SKIP_WAVE_NODE_LIBRARY).tried()
                 .looks(List.of(Look.of(Pictures.SKIP_WAVE_NODE_DONE_LIBRARY, State.DONE)));
         public final Button expeditionerNodeLibrary = Button.of(Pictures.EXPEDITIONER_NODE_LIBRARY);
         public final Button medalNodeLibrary = Button.of(Pictures.MEDAL_NODE_LIBRARY).tried()
