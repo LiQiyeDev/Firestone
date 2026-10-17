@@ -45,7 +45,7 @@ public final class Screens {
         public final Button warMachinesHome = Button.of(Pictures.WAR_MACHINES_HOME).sometimes();
         public final Button mailHome = Button.of(Pictures.MAIL_HOME);
         public final Button townHome = Button.of(Pictures.TOWN_HOME);
-        public final Button map = Button.of(Pictures.MAP);
+        public final Button map = Button.of(Pictures.MAP).looks(List.of(Look.of(Pictures.MAP_LABEL_HOME, State.BADGE)));
         public final Button guild = Button.of(Pictures.GUILD);
         public final Button market = Button.of(Pictures.MARKET);
         public final Button battle = Button.of(Pictures.BATTLE);
