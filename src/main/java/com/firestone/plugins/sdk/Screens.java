@@ -18,6 +18,7 @@ import java.util.List;
 import java.time.Duration;
 import com.botmaker.sdk.api.screens.Tree;
 import com.botmaker.sdk.api.screens.Node;
+import com.botmaker.sdk.api.screens.Beside;
 
 /**
  * Values com.botmaker.sdk keeps in step with its own windows.
@@ -704,12 +705,18 @@ public final class Screens {
                 Node.of(Pictures.RAINING_GOLD_NODE_LIBRARY)
                         .after(List.of(Pictures.FIST_NODE_LIBRARY, Pictures.GUARDIAN_NODE_LIBRARY,
                                 Pictures.PROJECTILES_NODE_LIBRARY)),
-                Node.of(Pictures.CRIT_BONUS_NODE_LIBRARY).after(List.of(Pictures.RAINING_GOLD_NODE_LIBRARY)),
-                Node.of(Pictures.CRIT_CHANCE_NODE_LIBRARY).after(List.of(Pictures.RAINING_GOLD_NODE_LIBRARY)),
+                Node.of(Pictures.CRIT_BONUS_NODE_LIBRARY).after(List.of(Pictures.RAINING_GOLD_NODE_LIBRARY))
+                        .beside(List.of(Beside.of(Pictures.RAINING_GOLD_NODE_LIBRARY, 5.9, -1.5))),
+                Node.of(Pictures.CRIT_CHANCE_NODE_LIBRARY).after(List.of(Pictures.RAINING_GOLD_NODE_LIBRARY))
+                        .beside(List.of(Beside.of(Pictures.RAINING_GOLD_NODE_LIBRARY, 5.9, 1.55))),
                 Node.of(Pictures.WEAKLINGS_NODE_LIBRARY)
-                        .after(List.of(Pictures.CRIT_BONUS_NODE_LIBRARY, Pictures.CRIT_CHANCE_NODE_LIBRARY)),
+                        .after(List.of(Pictures.CRIT_BONUS_NODE_LIBRARY, Pictures.CRIT_CHANCE_NODE_LIBRARY))
+                        .beside(List.of(Beside.of(Pictures.CRIT_BONUS_NODE_LIBRARY, 5.8, 0.0),
+                                Beside.of(Pictures.CRIT_CHANCE_NODE_LIBRARY, 5.8, -3.1))),
                 Node.of(Pictures.EXPOSE_NODE_LIBRARY)
-                        .after(List.of(Pictures.CRIT_BONUS_NODE_LIBRARY, Pictures.CRIT_CHANCE_NODE_LIBRARY)),
+                        .after(List.of(Pictures.CRIT_BONUS_NODE_LIBRARY, Pictures.CRIT_CHANCE_NODE_LIBRARY))
+                        .beside(List.of(Beside.of(Pictures.CRIT_BONUS_NODE_LIBRARY, 5.8, 3.1),
+                                Beside.of(Pictures.CRIT_CHANCE_NODE_LIBRARY, 5.8, 0.0))),
                 Node.of(Pictures.MEDAL_NODE_LIBRARY)
                         .after(List.of(Pictures.WEAKLINGS_NODE_LIBRARY, Pictures.EXPOSE_NODE_LIBRARY)),
                 Node.of(Pictures.FINDER_NODE_LIBRARY)
@@ -720,7 +727,7 @@ public final class Screens {
                         .after(List.of(Pictures.MEDAL_NODE_LIBRARY, Pictures.FINDER_NODE_LIBRARY)),
                 Node.of(Pictures.EXPEDITIONER_NODE_LIBRARY)
                         .after(List.of(Pictures.MEDAL_NODE_LIBRARY, Pictures.FINDER_NODE_LIBRARY))))
-                .wheel(-5);
+                .wheel(-5).tried();
 
         @Override
         public Setup setup() {
