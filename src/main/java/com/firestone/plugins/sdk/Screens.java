@@ -188,8 +188,7 @@ public final class Screens {
         public final Button upgradeArtifacts = Button.of(Pictures.UPGRADE_ARTIFACTS);
         public final Button rarityArtifacts = Button.of(Pictures.RARITY_ARTIFACTS);
         public final Button artifactCell = Button.of(Pictures.ARTIFACT_CELL).tried();
-        public final Strip artifactsGridStrip = Strip.of(Scroll.wheel(-10), List.of(Pictures.ARTIFACTS_GRID))
-                .tried();
+        public final Strip artifactsGridStrip = Strip.of(Scroll.wheel(-10), List.of(Pictures.ARTIFACTS_GRID)).tried();
         public final Button closeTown = Button.of(Pictures.CLOSE_TOWN);
 
         @Override

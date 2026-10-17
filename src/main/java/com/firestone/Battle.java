@@ -10,9 +10,9 @@ import com.firestone.plugins.sdk.Screens;
 /**
  * Starts a fight and waits for it to end, reporting which way it went.
  *
- * <p>The shape to copy for anything that takes time: press the button, then poll for the two pictures that
- * mean it is over, with a bounded number of attempts so a game that shows neither ends the activity instead
- * of hanging it.
+ * <p>The shape to copy for anything that takes time: press the button on the map, wait a bounded time for it to
+ * go, then a bounded time for it to come back, so a game that never answers ends the activity instead of hanging
+ * it.
  *
  * <p>The two outcomes this reports — {@code Activities.Battle.WON} and {@code Activities.Battle.LOST} — are the
  * constants of this activity's enum, and each has an arrow leaving its card. The method returns that enum, so
@@ -31,9 +31,7 @@ public final class Battle {
             return Activities.Battle.LOST;
         }
         ImageWaiter.waitUntilGone(Pictures.BATTLE, Duration.ofMillis(15000L));
-
-        // Neither picture ever appeared. Something is on screen that this bot does not know about, so
-        // report the outcome that leads somewhere safe and let goHome sort it out.
+        // Battle back within the fight's time: the fight ended in a loss; still gone: a win.
         return ImageWaiter.waitFor(Pictures.BATTLE,
                 Duration.ofMillis(90000L)) ? Activities.Battle.LOST : Activities.Battle.WON;
     }
