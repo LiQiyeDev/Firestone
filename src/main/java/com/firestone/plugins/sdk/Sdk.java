@@ -51,7 +51,7 @@ public final class Sdk {
 
     @SdkValue(SdkValue.Id.CAPTURE)
     @Param(category = "Game", visibility = Param.PUBLIC, description = "The game's window: where the bot reads pixels from")
-    public static CaptureSource capture = CaptureSource.window("gamescope", "");
+    public static CaptureSource capture = CaptureSource.desktop();
 
     @SdkValue(SdkValue.Id.LAUNCH_TARGETS)
     @Param(category = "Game", visibility = Param.PUBLIC, description = "The launchers this bot can start its game from, preferred first")
