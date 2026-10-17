@@ -780,8 +780,8 @@ public final class Screens {
 
     public static final class SwordPin extends Screen {
         public final Button closeMission = Button.of(Pictures.CLOSE_MISSION);
-        public final Button completeInstantlyMission = Button.of(Pictures.COMPLETE_INSTANTLY_MISSION);
-        public final Button startMissionMap = Button.of(Pictures.START_MISSION_MAP);
+        public final Button completeInstantlyMission = Button.of(Pictures.COMPLETE_INSTANTLY_MISSION).never("spends gems");
+        public final Button startMissionMap = Button.of(Pictures.START_MISSION_MAP).leaves();
 
         @Override
         public Setup setup() {
