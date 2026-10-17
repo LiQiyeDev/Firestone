@@ -31,7 +31,7 @@ public final class Screens {
         @Override
         public Setup setup() {
             return Setup.named("Offline progress").markers(List.of(Pictures.OFFLINE_PROGRESS_TITLE))
-                    .back(OFFLINE_PROGRESS.claimOffline).popup().at(new Point(0, 2394));
+                    .back(Screens.OFFLINE_PROGRESS.claimOffline).popup();
         }
     }
 
@@ -74,7 +74,7 @@ public final class Screens {
                 .tried();
         @Override
         public Setup setup() {
-            return Setup.named("Home").markers(List.of(Pictures.TOWN_HOME)).at(new Point(0, 1326));
+            return Setup.named("Home").markers(List.of(Pictures.TOWN_HOME));
         }
     }
 
@@ -140,8 +140,7 @@ public final class Screens {
 
         @Override
         public Setup setup() {
-            return Setup.named("Tavern").markers(List.of(Pictures.TAVERN_LUCK_TITLE)).from(HOME.tavernHome)
-                    .alsoFrom(List.of(Way.of(TAVERN_CHOICE.tavernChoiceTown))).back(TAVERN.closeTown).notes("""
+            return Setup.named("Tavern").markers(List.of(Pictures.TAVERN_LUCK_TITLE)).from(Screens.HOME.tavernHome).alsoFrom(List.of(Way.of(Screens.TAVERN_CHOICE.tavernChoiceTown))).back(Screens.TAVERN.closeTown).notes("""
                             Town › Tavern opens a chooser: Tavern or Scarab's game (tavern_choice_town = the Tavern card).
                             Town's buildings carry a red bell badge (badge_town) when something is ready; badges nest (Tavern → Market).
                             Beer comes from a dragon that visits during battle (click it to collect at once); it keeps coming while offline.
@@ -153,7 +152,7 @@ public final class Screens {
                             Bag: reward table per luck level. i buttons: help. Luck bar: luck level from plays.
                             Escape from the Tavern goes straight back to Town.
                             Gamer daily quest = 10 tavern plays.\
-                            """).reached(Reached.SURVEYED).at(new Point(340, 389));
+                            """).reached(Reached.SURVEYED);
         }
     }
 
@@ -165,7 +164,7 @@ public final class Screens {
         @Override
         public Setup setup() {
             return Setup.named("Info luck").markers(List.of(Pictures.TOTAL_BONUSES_INFO_LUCK))
-                    .from(TAVERN.infoLuckTavern).back(INFO_LUCK.closeInfoLuck).at(new Point(680, 0));
+                    .from(Screens.TAVERN.infoLuckTavern).back(Screens.INFO_LUCK.closeInfoLuck);
         }
     }
 
@@ -178,8 +177,8 @@ public final class Screens {
 
         @Override
         public Setup setup() {
-            return Setup.named("Info map").markers(List.of(Pictures.HOW_TO_PLAY_TAVERN)).from(TAVERN.infoMap)
-                    .back(INFO_MAP.closeHelpTavern).at(new Point(680, 103));
+            return Setup.named("Info map").markers(List.of(Pictures.HOW_TO_PLAY_TAVERN)).from(Screens.TAVERN.infoMap)
+                    .back(Screens.INFO_MAP.closeHelpTavern);
         }
     }
 
@@ -195,8 +194,8 @@ public final class Screens {
 
         @Override
         public Setup setup() {
-            return Setup.named("Artifacts").markers(List.of(Pictures.ARTIFACTS_TITLE)).from(TAVERN.artifactsTavern)
-                    .back(ARTIFACTS.closeTown).at(new Point(680, 206));
+            return Setup.named("Artifacts").markers(List.of(Pictures.ARTIFACTS_TITLE)).from(Screens.TAVERN.artifactsTavern)
+                    .back(Screens.ARTIFACTS.closeTown);
         }
     }
 
@@ -209,7 +208,7 @@ public final class Screens {
         @Override
         public Setup setup() {
             return Setup.named("Upgrade").markers(List.of(Pictures.ARTIFACT_UPGRADE_TITLE))
-                    .from(ARTIFACTS.upgradeArtifacts).back(UPGRADE.closeArtifactUpgrade).at(new Point(1020, 155));
+                    .from(Screens.ARTIFACTS.upgradeArtifacts).back(Screens.UPGRADE.closeArtifactUpgrade);
         }
     }
 
@@ -221,8 +220,8 @@ public final class Screens {
 
         @Override
         public Setup setup() {
-            return Setup.named("Rarity").markers(List.of(Pictures.RARITY_WORD_TITLE)).from(ARTIFACTS.rarityArtifacts)
-                    .back(RARITY.closeArtifactUpgrade).at(new Point(1020, 258));
+            return Setup.named("Rarity").markers(List.of(Pictures.RARITY_WORD_TITLE)).from(Screens.ARTIFACTS.rarityArtifacts)
+                    .back(Screens.RARITY.closeArtifactUpgrade);
         }
     }
 
@@ -236,8 +235,8 @@ public final class Screens {
 
         @Override
         public Setup setup() {
-            return Setup.named("Market").markers(List.of(Pictures.MARKET_TITLE_TAVERN)).from(TAVERN.marketTavern)
-                    .back(MARKET.closeMarket).at(new Point(680, 309));
+            return Setup.named("Market").markers(List.of(Pictures.MARKET_TITLE_TAVERN)).from(Screens.TAVERN.marketTavern)
+                    .back(Screens.MARKET.closeMarket);
         }
     }
 
@@ -248,8 +247,8 @@ public final class Screens {
 
         @Override
         public Setup setup() {
-            return Setup.named("Bag").markers(List.of(Pictures.REWARDS_TITLE_TAVERN)).from(TAVERN.bagTavern)
-                    .back(BAG.closeRewardsTavern).at(new Point(680, 551));
+            return Setup.named("Bag").markers(List.of(Pictures.REWARDS_TITLE_TAVERN)).from(Screens.TAVERN.bagTavern)
+                    .back(Screens.BAG.closeRewardsTavern);
         }
     }
 
@@ -263,8 +262,8 @@ public final class Screens {
 
         @Override
         public Setup setup() {
-            return Setup.named("Chat").markers(List.of(Pictures.TYPE_MESSAGE_CHAT)).from(TAVERN.chatTavern)
-                    .back(CHAT.closeChat).at(new Point(680, 793));
+            return Setup.named("Chat").markers(List.of(Pictures.TYPE_MESSAGE_CHAT)).from(Screens.TAVERN.chatTavern)
+                    .back(Screens.CHAT.closeChat);
         }
     }
 
@@ -277,8 +276,8 @@ public final class Screens {
 
         @Override
         public Setup setup() {
-            return Setup.named("Rooms").markers(List.of(Pictures.SELECT_ROOM_TITLE_CHAT)).from(CHAT.roomsChat)
-                    .back(ROOMS.closeRoomsChat).at(new Point(1020, 793));
+            return Setup.named("Rooms").markers(List.of(Pictures.SELECT_ROOM_TITLE_CHAT)).from(Screens.CHAT.roomsChat)
+                    .back(Screens.ROOMS.closeRoomsChat);
         }
     }
 
@@ -295,8 +294,8 @@ public final class Screens {
 
         @Override
         public Setup setup() {
-            return Setup.named("Arena").markers(List.of(Pictures.ARENA_TITLE)).from(HOME.arenaHome)
-                    .back(ARENA.arenaClose).at(new Point(340, 1459));
+            return Setup.named("Arena").markers(List.of(Pictures.ARENA_TITLE)).from(Screens.HOME.arenaHome)
+                    .back(Screens.ARENA.arenaClose);
         }
     }
 
@@ -307,8 +306,8 @@ public final class Screens {
 
         @Override
         public Setup setup() {
-            return Setup.named("Arena info").markers(List.of(Pictures.ARENA_RULES_TITLE)).from(ARENA.infoMap)
-                    .back(ARENA_INFO.closeRoomsChat).at(new Point(680, 1035));
+            return Setup.named("Arena info").markers(List.of(Pictures.ARENA_RULES_TITLE)).from(Screens.ARENA.infoMap)
+                    .back(Screens.ARENA_INFO.closeRoomsChat);
         }
     }
 
@@ -320,8 +319,7 @@ public final class Screens {
         @Override
         public Setup setup() {
             return Setup.named("Arena leaderboards").markers(List.of(Pictures.ARENA_LEADERBOARDS_HEADER))
-                    .from(ARENA.arenaLeaderboards).back(ARENA_LEADERBOARDS.arenaLeaderboardsClose)
-                    .at(new Point(680, 1277));
+                    .from(Screens.ARENA.arenaLeaderboards).back(Screens.ARENA_LEADERBOARDS.arenaLeaderboardsClose);
         }
     }
 
@@ -335,7 +333,7 @@ public final class Screens {
         @Override
         public Setup setup() {
             return Setup.named("Arena battle log").markers(List.of(Pictures.BATTLE_LOG_TITLE))
-                    .from(ARENA.arenaBattleLog).back(ARENA_BATTLE_LOG.battleLogClose).at(new Point(680, 1519));
+                    .from(Screens.ARENA.arenaBattleLog).back(Screens.ARENA_BATTLE_LOG.battleLogClose);
         }
     }
 
