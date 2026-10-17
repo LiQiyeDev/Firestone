@@ -641,5 +641,15 @@ public final class Pictures {
             "src/main/resources/images/speed_up_mission.png").at(new Rect(1258, 748, 268, 84));
     public static final ImageTemplate MISSION_PANEL_CORNER = new ImageTemplate(
             "src/main/resources/images/mission_panel_corner.png").at(new Rect(372, 197, 120, 110));
+    public static final ImageTemplate DAMAGE_NODE_LIBRARY = new ImageTemplate(
+            "src/main/resources/images/damage_node_library.png").at(new Rect(180, 485, 84, 84));
+    public static final ImageTemplate FIST_NODE_LIBRARY = new ImageTemplate(
+            "src/main/resources/images/fist_node_library.png").at(new Rect(1164, 212, 84, 84));
+    public static final ImageTemplate HEALTH_NODE_BUSY_LIBRARY = new ImageTemplate(
+            "src/main/resources/images/health_node_busy_library.png").at(new Rect(671, 350, 90, 90));
+    public static final ImageTemplate ARMOR_NODE_BUSY_LIBRARY = new ImageTemplate(
+            "src/main/resources/images/armor_node_busy_library.png").at(new Rect(672, 605, 90, 90));
+    public static final ImageTemplate DAMAGE_NODE_DONE_LIBRARY = new ImageTemplate(
+            "src/main/resources/images/damage_node_done_library.png").at(new Rect(290, 515, 200, 50));
     private Pictures() {}
 }

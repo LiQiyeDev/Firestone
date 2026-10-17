@@ -668,14 +668,16 @@ public final class Screens {
     public static final class Library extends Screen {
         public final Button firestoneTabLibrary = Button.of(Pictures.FIRESTONE_TAB_LIBRARY).tried();
         public final Button guardianNodeLibrary = Button.of(Pictures.GUARDIAN_NODE_LIBRARY);
-        public final Button armorNodeLibrary = Button.of(Pictures.ARMOR_NODE_LIBRARY);
-        public final Button healthNodeLibrary = Button.of(Pictures.HEALTH_NODE_LIBRARY);
+        public final Button armorNodeLibrary = Button.of(Pictures.ARMOR_NODE_LIBRARY).looks(List.of(Look.of(Pictures.ARMOR_NODE_BUSY_LIBRARY, State.BUSY)));
+        public final Button healthNodeLibrary = Button.of(Pictures.HEALTH_NODE_LIBRARY).looks(List.of(Look.of(Pictures.HEALTH_NODE_BUSY_LIBRARY, State.BUSY)));
         public final Button projectilesNodeLibrary = Button.of(Pictures.PROJECTILES_NODE_LIBRARY);
         public final Button freeSlotLibrary = Button.of(Pictures.FREE_SLOT_LIBRARY).tried().info()
                 .sometimes();
         public final Button gemsPlusMap = Button.of(Pictures.GEMS_PLUS_MAP).never("spends gems");
         public final Button researchClaim = Button.of(Pictures.RESEARCH_CLAIM).tried()                .sometimes();
         public final Button closeTown = Button.of(Pictures.CLOSE_TOWN);
+        public final Button damageNodeLibrary = Button.of(Pictures.DAMAGE_NODE_LIBRARY).looks(List.of(Look.of(Pictures.DAMAGE_NODE_DONE_LIBRARY, State.DONE)));
+        public final Button fistNodeLibrary = Button.of(Pictures.FIST_NODE_LIBRARY);
 
         @Override
         public Setup setup() {
