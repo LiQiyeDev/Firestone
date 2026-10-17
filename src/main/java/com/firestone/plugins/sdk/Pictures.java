@@ -665,5 +665,11 @@ public final class Pictures {
     public static final ImageTemplate SKIP_WAVE_NODE_DONE_LIBRARY = new ImageTemplate("src/main/resources/images/skip_wave_node_done_library.png").at(new Rect(968, 480, 332, 88));
     public static final ImageTemplate CRIT_BONUS_NODE_LIBRARY = new ImageTemplate(
             "src/main/resources/images/crit_bonus_node_library.png").at(new Rect(90, 350, 84, 84));
+    public static final ImageTemplate CRIT_CHANCE_NODE_LIBRARY = new ImageTemplate(
+            "src/main/resources/images/crit_chance_node_library.png").at(new Rect(90, 610, 84, 84));
+    public static final ImageTemplate WEAKLINGS_NODE_LIBRARY = new ImageTemplate(
+            "src/main/resources/images/weaklings_node_library.png").at(new Rect(578, 350, 84, 84));
+    public static final ImageTemplate EXPOSE_NODE_LIBRARY = new ImageTemplate(
+            "src/main/resources/images/expose_node_library.png").at(new Rect(578, 610, 84, 84));
     private Pictures() {}
 }
