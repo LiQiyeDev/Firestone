@@ -4,10 +4,8 @@ import com.botmaker.sdk.api.bot.SdkValue;
 import com.botmaker.sdk.api.geometry.Point;
 import com.botmaker.sdk.api.input.Key;
 import com.botmaker.sdk.api.screens.Button;
-import com.botmaker.sdk.api.screens.Did;
 import com.botmaker.sdk.api.screens.Hotkey;
 import com.botmaker.sdk.api.screens.Look;
-import com.botmaker.sdk.api.screens.Purpose;
 import com.botmaker.sdk.api.screens.Reached;
 import com.botmaker.sdk.api.screens.Screen;
 import com.botmaker.sdk.api.screens.Scroll;
@@ -17,6 +15,7 @@ import com.botmaker.sdk.api.screens.Strip;
 import com.botmaker.sdk.api.screens.Way;
 
 import java.util.List;
+import java.time.Duration;
 
 /**
  * Values com.botmaker.sdk keeps in step with its own windows.
@@ -44,7 +43,7 @@ public final class Screens {
         public final Button engineerHome = Button.of(Pictures.ENGINEER_HOME).sometimes();
         public final Button campaignHome = Button.of(Pictures.CAMPAIGN_HOME).sometimes();
         public final Button warMachinesHome = Button.of(Pictures.WAR_MACHINES_HOME).sometimes();
-        public final Button mailHome = Button.of(Pictures.MAIL_HOME).purpose(Purpose.TASK);
+        public final Button mailHome = Button.of(Pictures.MAIL_HOME);
         public final Button townHome = Button.of(Pictures.TOWN_HOME);
         public final Button map = Button.of(Pictures.MAP);
         public final Button guild = Button.of(Pictures.GUILD);
@@ -63,16 +62,16 @@ public final class Screens {
         public final Button libraryHome = Button.of(Pictures.LIBRARY_HOME).sometimes();
         public final Button guardiansHome = Button.of(Pictures.GUARDIANS_HOME).sometimes();
         public final Button avatarHome = Button.of(Pictures.AVATAR_HOME);
-        public final Button prevStageHome = Button.of(Pictures.PREV_STAGE_HOME).did(Did.IN_PLACE);
+        public final Button prevStageHome = Button.of(Pictures.PREV_STAGE_HOME).tried();
         public final Button settingsHome = Button.of(Pictures.SETTINGS_HOME);
         public final Button chatMapHome = Button.of(Pictures.CHAT_MAP_HOME);
-        public final Button autoAbilitiesHome = Button.of(Pictures.AUTO_ABILITIES_HOME).did(Did.IN_PLACE)
-                .purpose(Purpose.SHORTCUT);
+        public final Button autoAbilitiesHome = Button.of(Pictures.AUTO_ABILITIES_HOME).tried();
         public final Hotkey keyQ = Hotkey.of(Key.Q);
-        public final Strip column = Strip.of(Scroll.wheel(-5), List.of(Pictures.TAVERN_HOME, Pictures.ARENA_HOME,
-                Pictures.ENGINEER_HOME, Pictures.CAMPAIGN_HOME, Pictures.WAR_MACHINES_HOME, Pictures.CARD_HOME,
-                Pictures.PARCHMENT_HOME, Pictures.POTION_HOME, Pictures.SCROLL_BOOT_HOME, Pictures.LIBRARY_HOME,
-                Pictures.GUARDIANS_HOME));
+        public final Strip column = Strip.of(Scroll.wheel(-5).step(125).settle(Duration.ofMillis(1600L)),
+                List.of(Pictures.TAVERN_HOME, Pictures.ARENA_HOME, Pictures.ENGINEER_HOME, Pictures.CAMPAIGN_HOME,
+                        Pictures.WAR_MACHINES_HOME, Pictures.CARD_HOME, Pictures.PARCHMENT_HOME, Pictures.POTION_HOME,
+                        Pictures.SCROLL_BOOT_HOME, Pictures.LIBRARY_HOME, Pictures.GUARDIANS_HOME))
+                .tried();
         @Override
         public Setup setup() {
             return Setup.named("Home").markers(List.of(Pictures.TOWN_HOME)).at(new Point(0, 1326));
@@ -123,22 +122,20 @@ public final class Screens {
     public static final class Tavern extends Screen {
         public final Button infoLuckTavern = Button.of(Pictures.INFO_LUCK_TAVERN);
         public final Button artifactsTavern = Button.of(Pictures.ARTIFACTS_TAVERN);
-        public final Button sacredCardsTavern = Button.of(Pictures.SACRED_CARDS_TAVERN).did(Did.IN_PLACE);
-        public final Button speedTavern = Button.of(Pictures.SPEED_TAVERN).did(Did.IN_PLACE)
-                .looks(List.of(Look.of(Pictures.SPEED_X10_TAVERN, State.SELECTED)));
-        public final Button speedX50Tavern = Button.of(Pictures.SPEED_X50_TAVERN).did(Did.IN_PLACE)
-                .purpose(Purpose.SHORTCUT);
+        public final Button sacredCardsTavern = Button.of(Pictures.SACRED_CARDS_TAVERN).tried();
+        public final Button speedTavern = Button.cycling(List.of(Pictures.SPEED_TAVERN, Pictures.SPEED_X10_TAVERN,
+                Pictures.SPEED_X50_TAVERN)).tried();
         public final Button bagTavern = Button.of(Pictures.BAG_TAVERN);
         public final Button chatTavern = Button.of(Pictures.CHAT_TAVERN);
-        public final Button wheelTavern = Button.of(Pictures.WHEEL_TAVERN).did(Did.IN_PLACE);
-        public final Button deckTavern = Button.of(Pictures.DECK_TAVERN).did(Did.IN_PLACE);
-        public final Button playTavern = Button.of(Pictures.PLAY_TAVERN).did(Did.IN_PLACE)
+        public final Button wheelTavern = Button.of(Pictures.WHEEL_TAVERN).tried();
+        public final Button deckTavern = Button.of(Pictures.DECK_TAVERN).tried();
+        public final Button playTavern = Button.of(Pictures.PLAY_TAVERN).tried()
                 .looks(List.of(Look.of(Pictures.PLAY_OFF_TAVERN, State.DISABLED)));
-        public final Button manualTavern = Button.of(Pictures.MANUAL_TAVERN).did(Did.IN_PLACE);
+        public final Button manualTavern = Button.of(Pictures.MANUAL_TAVERN).tried();
         public final Button marketTavern = Button.of(Pictures.MARKET_TAVERN);
         public final Button infoMap = Button.of(Pictures.INFO_MAP);
         public final Button gemsPlusMap = Button.of(Pictures.GEMS_PLUS_MAP).never("spends gems");
-        public final Button cardTavern = Button.of(Pictures.CARD_TAVERN).did(Did.IN_PLACE).sometimes().repeated();
+        public final Button cardTavern = Button.of(Pictures.CARD_TAVERN).tried().sometimes().repeated();
         public final Button closeTown = Button.of(Pictures.CLOSE_TOWN);
 
         @Override
@@ -176,7 +173,7 @@ public final class Screens {
 
     public static final class InfoMap extends Screen {
         public final Strip helpTextTavernStrip = Strip.of(Scroll.wheel(-10), List.of(Pictures.HELP_TEXT_TAVERN))
-                .did(Did.IN_PLACE).purpose(Purpose.INFO);
+                .tried().info();
         public final Button closeHelpTavern = Button.of(Pictures.CLOSE_HELP_TAVERN);
 
         @Override
@@ -191,9 +188,9 @@ public final class Screens {
     public static final class Artifacts extends Screen {
         public final Button upgradeArtifacts = Button.of(Pictures.UPGRADE_ARTIFACTS);
         public final Button rarityArtifacts = Button.of(Pictures.RARITY_ARTIFACTS);
-        public final Button artifactCell = Button.of(Pictures.ARTIFACT_CELL).did(Did.IN_PLACE);
+        public final Button artifactCell = Button.of(Pictures.ARTIFACT_CELL).tried();
         public final Strip artifactsGridStrip = Strip.of(Scroll.wheel(-10), List.of(Pictures.ARTIFACTS_GRID))
-                .did(Did.IN_PLACE);
+                .tried();
         public final Button closeTown = Button.of(Pictures.CLOSE_TOWN);
 
         @Override
@@ -206,8 +203,7 @@ public final class Screens {
     public static final Artifacts ARTIFACTS = new Artifacts();
 
     public static final class Upgrade extends Screen {
-        public final Button upgradeArtifactConfirm = Button.of(Pictures.UPGRADE_ARTIFACT_CONFIRM).did(Did.IN_PLACE)
-                .purpose(Purpose.TASK);
+        public final Button upgradeArtifactConfirm = Button.of(Pictures.UPGRADE_ARTIFACT_CONFIRM).tried();
         public final Button closeArtifactUpgrade = Button.of(Pictures.CLOSE_ARTIFACT_UPGRADE);
 
         @Override
@@ -220,8 +216,7 @@ public final class Screens {
     public static final Upgrade UPGRADE = new Upgrade();
 
     public static final class Rarity extends Screen {
-        public final Button rarityArtifactConfirm = Button.of(Pictures.RARITY_ARTIFACT_CONFIRM).did(Did.IN_PLACE)
-                .purpose(Purpose.TASK);
+        public final Button rarityArtifactConfirm = Button.of(Pictures.RARITY_ARTIFACT_CONFIRM).tried();
         public final Button closeArtifactUpgrade = Button.of(Pictures.CLOSE_ARTIFACT_UPGRADE);
 
         @Override
@@ -234,8 +229,7 @@ public final class Screens {
     public static final Rarity RARITY = new Rarity();
 
     public static final class Market extends Screen {
-        public final Button beerBuyTavern = Button.of(Pictures.BEER_BUY_TAVERN).did(Did.IN_PLACE).purpose(Purpose.TASK)
-                .looks(List.of(Look.of(Pictures.BEER_BUY_OFF_TAVERN, State.DISABLED)));
+        public final Button beerBuyTavern = Button.of(Pictures.BEER_BUY_TAVERN).tried()                .looks(List.of(Look.of(Pictures.BEER_BUY_OFF_TAVERN, State.DISABLED)));
         public final Button gems1000Market = Button.of(Pictures.GEMS_1000_MARKET).never("spends gems");
         public final Button gems300Market = Button.of(Pictures.GEMS_300_MARKET).never("spends gems");
         public final Button closeMarket = Button.of(Pictures.CLOSE_MARKET);
@@ -263,7 +257,7 @@ public final class Screens {
 
     public static final class Chat extends Screen {
         public final Button roomsChat = Button.of(Pictures.ROOMS_CHAT);
-        public final Button worldChat = Button.of(Pictures.WORLD_CHAT).did(Did.IN_PLACE);
+        public final Button worldChat = Button.of(Pictures.WORLD_CHAT).tried();
         public final Button sendChat = Button.of(Pictures.SEND_CHAT).never("posts to other players");
         public final Button closeChat = Button.of(Pictures.CLOSE_CHAT);
 
@@ -277,10 +271,8 @@ public final class Screens {
     public static final Chat CHAT = new Chat();
 
     public static final class Rooms extends Screen {
-        public final Button englishRoomChat = Button.of(Pictures.ENGLISH_ROOM_CHAT).did(Did.IN_PLACE)
-                .purpose(Purpose.SPEND);
-        public final Button confirmRoomChat = Button.of(Pictures.CONFIRM_ROOM_CHAT).did(Did.LEAVES)
-                .purpose(Purpose.SPEND);
+        public final Button englishRoomChat = Button.of(Pictures.ENGLISH_ROOM_CHAT).tried();
+        public final Button confirmRoomChat = Button.of(Pictures.CONFIRM_ROOM_CHAT).leaves();
         public final Button closeRoomsChat = Button.of(Pictures.CLOSE_ROOMS_CHAT);
 
         @Override
@@ -293,11 +285,11 @@ public final class Screens {
     public static final Rooms ROOMS = new Rooms();
 
     public static final class Arena extends Screen {
-        public final Button arenaRefresh = Button.of(Pictures.ARENA_REFRESH).did(Did.IN_PLACE);
-        public final Button arenaFight = Button.of(Pictures.ARENA_FIGHT).purpose(Purpose.TASK);
+        public final Button arenaRefresh = Button.of(Pictures.ARENA_REFRESH).tried();
+        public final Button arenaFight = Button.of(Pictures.ARENA_FIGHT);
         public final Button arenaBattleLog = Button.of(Pictures.ARENA_BATTLE_LOG);
         public final Button arenaEditSquad = Button.of(Pictures.ARENA_EDIT_SQUAD);
-        public final Button infoMap = Button.of(Pictures.INFO_MAP).purpose(Purpose.INFO);
+        public final Button infoMap = Button.of(Pictures.INFO_MAP).info();
         public final Button arenaLeaderboards = Button.of(Pictures.ARENA_LEADERBOARDS);
         public final Button arenaClose = Button.of(Pictures.ARENA_CLOSE);
 
@@ -336,8 +328,8 @@ public final class Screens {
     public static final ArenaLeaderboards ARENA_LEADERBOARDS = new ArenaLeaderboards();
 
     public static final class ArenaBattleLog extends Screen {
-        public final Button battleLogInspect = Button.of(Pictures.BATTLE_LOG_INSPECT).purpose(Purpose.INFO);
-        public final Button battleLogReplay = Button.of(Pictures.BATTLE_LOG_REPLAY).purpose(Purpose.INFO);
+        public final Button battleLogInspect = Button.of(Pictures.BATTLE_LOG_INSPECT).info();
+        public final Button battleLogReplay = Button.of(Pictures.BATTLE_LOG_REPLAY).info();
         public final Button battleLogClose = Button.of(Pictures.BATTLE_LOG_CLOSE);
 
         @Override
@@ -350,9 +342,9 @@ public final class Screens {
     public static final ArenaBattleLog ARENA_BATTLE_LOG = new ArenaBattleLog();
 
     public static final class BattleDetails extends Screen {
-        public final Button battleDetailsDealt = Button.of(Pictures.BATTLE_DETAILS_DEALT).did(Did.IN_PLACE);
-        public final Button battleDetailsTaken = Button.of(Pictures.BATTLE_DETAILS_TAKEN).did(Did.IN_PLACE);
-        public final Button battleDetailsHealing = Button.of(Pictures.BATTLE_DETAILS_HEALING).did(Did.IN_PLACE);
+        public final Button battleDetailsDealt = Button.of(Pictures.BATTLE_DETAILS_DEALT).tried();
+        public final Button battleDetailsTaken = Button.of(Pictures.BATTLE_DETAILS_TAKEN).tried();
+        public final Button battleDetailsHealing = Button.of(Pictures.BATTLE_DETAILS_HEALING).tried();
         public final Button closeRoomsChat = Button.of(Pictures.CLOSE_ROOMS_CHAT);
 
         @Override
@@ -366,7 +358,7 @@ public final class Screens {
     public static final BattleDetails BATTLE_DETAILS = new BattleDetails();
 
     public static final class ArenaReplay extends Screen {
-        public final Button arenaSpeed = Button.of(Pictures.ARENA_SPEED).did(Did.LEAVES);
+        public final Button arenaSpeed = Button.of(Pictures.ARENA_SPEED).leaves();
         public final Button arenaFightClose = Button.of(Pictures.ARENA_FIGHT_CLOSE);
 
         @Override
@@ -380,21 +372,21 @@ public final class Screens {
     public static final ArenaReplay ARENA_REPLAY = new ArenaReplay();
 
     public static final class Garage extends Screen {
-        public final Button infoGarage = Button.of(Pictures.INFO_GARAGE).purpose(Purpose.INFO);
-        public final Button statsTabGarage = Button.of(Pictures.STATS_TAB_GARAGE).did(Did.NONE).purpose(Purpose.INFO);
-        public final Button upgradeTabGarage = Button.of(Pictures.UPGRADE_TAB_GARAGE).purpose(Purpose.TASK);
-        public final Button blueprintTabGarage = Button.of(Pictures.BLUEPRINT_TAB_GARAGE).purpose(Purpose.TASK);
-        public final Button emblemTabGarage = Button.of(Pictures.EMBLEM_TAB_GARAGE).purpose(Purpose.TASK);
+        public final Button infoGarage = Button.of(Pictures.INFO_GARAGE).info();
+        public final Button statsTabGarage = Button.of(Pictures.STATS_TAB_GARAGE).tried().info();
+        public final Button upgradeTabGarage = Button.of(Pictures.UPGRADE_TAB_GARAGE);
+        public final Button blueprintTabGarage = Button.of(Pictures.BLUEPRINT_TAB_GARAGE);
+        public final Button emblemTabGarage = Button.of(Pictures.EMBLEM_TAB_GARAGE);
         public final Button engineerGarage = Button.of(Pictures.ENGINEER_GARAGE);
-        public final Button nextMachineGarage = Button.of(Pictures.NEXT_MACHINE_GARAGE).did(Did.IN_PLACE)
-                .purpose(Purpose.INFO);
-        public final Button machineCardGarage = Button.of(Pictures.MACHINE_CARD_GARAGE).did(Did.IN_PLACE)
-                .purpose(Purpose.INFO);
-        public final Button unknownCardGarage = Button.of(Pictures.UNKNOWN_CARD_GARAGE).purpose(Purpose.INFO);
-        public final Button showAllGarage = Button.of(Pictures.SHOW_ALL_GARAGE).purpose(Purpose.INFO);
-        public final Button chestGarage = Button.of(Pictures.CHEST_GARAGE).did(Did.IN_PLACE).purpose(Purpose.TASK);
-        public final Button prevMachineGarage = Button.of(Pictures.PREV_MACHINE_GARAGE).did(Did.NONE)
-                .purpose(Purpose.INFO).sometimes();
+        public final Button nextMachineGarage = Button.of(Pictures.NEXT_MACHINE_GARAGE).tried()
+                .info();
+        public final Button machineCardGarage = Button.of(Pictures.MACHINE_CARD_GARAGE).tried()
+                .info();
+        public final Button unknownCardGarage = Button.of(Pictures.UNKNOWN_CARD_GARAGE).info();
+        public final Button showAllGarage = Button.of(Pictures.SHOW_ALL_GARAGE).info();
+        public final Button chestGarage = Button.of(Pictures.CHEST_GARAGE).tried();
+        public final Button prevMachineGarage = Button.of(Pictures.PREV_MACHINE_GARAGE).tried()
+                .info().sometimes();
         public final Button closeTown = Button.of(Pictures.CLOSE_TOWN);
 
         @Override
@@ -413,18 +405,16 @@ public final class Screens {
     public static final Garage GARAGE = new Garage();
 
     public static final class Engineer extends Screen {
-        public final Button infoEngineer = Button.of(Pictures.INFO_ENGINEER).purpose(Purpose.INFO);
-        public final Button engineerTabEngineer = Button.of(Pictures.ENGINEER_TAB_ENGINEER).did(Did.IN_PLACE)
-                .purpose(Purpose.INFO);
-        public final Button battlesTabEngineer = Button.of(Pictures.BATTLES_TAB_ENGINEER).purpose(Purpose.INFO);
-        public final Button starTabEngineer = Button.of(Pictures.STAR_TAB_ENGINEER).purpose(Purpose.INFO);
-        public final Button swirlTabEngineer = Button.of(Pictures.SWIRL_TAB_ENGINEER).did(Did.IN_PLACE)
-                .purpose(Purpose.INFO);
-        public final Button claimEngineer = Button.of(Pictures.CLAIM_ENGINEER).did(Did.IN_PLACE).purpose(Purpose.TASK)
-                .sometimes();
-        public final Button garageEngineer = Button.of(Pictures.GARAGE_ENGINEER).did(Did.LEAVES);
-        public final Button gemsPlusMap = Button.of(Pictures.GEMS_PLUS_MAP).purpose(Purpose.SPEND)
-                .never("buys tools with gems");
+        public final Button infoEngineer = Button.of(Pictures.INFO_ENGINEER).info();
+        public final Button engineerTabEngineer = Button.of(Pictures.ENGINEER_TAB_ENGINEER).tried()
+                .info();
+        public final Button battlesTabEngineer = Button.of(Pictures.BATTLES_TAB_ENGINEER).info();
+        public final Button starTabEngineer = Button.of(Pictures.STAR_TAB_ENGINEER).info();
+        public final Button swirlTabEngineer = Button.of(Pictures.SWIRL_TAB_ENGINEER).tried()
+                .info();
+        public final Button claimEngineer = Button.of(Pictures.CLAIM_ENGINEER).tried()                .sometimes();
+        public final Button garageEngineer = Button.of(Pictures.GARAGE_ENGINEER).leaves();
+        public final Button gemsPlusMap = Button.of(Pictures.GEMS_PLUS_MAP)                .never("buys tools with gems");
         public final Button closeTown = Button.of(Pictures.CLOSE_TOWN);
 
         @Override
@@ -443,10 +433,10 @@ public final class Screens {
     public static final Engineer ENGINEER = new Engineer();
 
     public static final class ActiveSquad extends Screen {
-        public final Button changeSquadEngineer = Button.of(Pictures.CHANGE_SQUAD_ENGINEER).purpose(Purpose.SPEND);
-        public final Button editSquadEngineer = Button.of(Pictures.EDIT_SQUAD_ENGINEER).purpose(Purpose.SPEND);
-        public final Button machineCardEngineer = Button.of(Pictures.MACHINE_CARD_ENGINEER).did(Did.IN_PLACE)
-                .purpose(Purpose.INFO);
+        public final Button changeSquadEngineer = Button.of(Pictures.CHANGE_SQUAD_ENGINEER);
+        public final Button editSquadEngineer = Button.of(Pictures.EDIT_SQUAD_ENGINEER);
+        public final Button machineCardEngineer = Button.of(Pictures.MACHINE_CARD_ENGINEER).tried()
+                .info();
         public final Button engineerTabEngineer = Button.of(Pictures.ENGINEER_TAB_ENGINEER);
 
         @Override
@@ -459,7 +449,7 @@ public final class Screens {
     public static final ActiveSquad ACTIVE_SQUAD = new ActiveSquad();
 
     public static final class ArenaSquad extends Screen {
-        public final Button squadSaveChanges = Button.of(Pictures.SQUAD_SAVE_CHANGES).did(Did.IN_PLACE);
+        public final Button squadSaveChanges = Button.of(Pictures.SQUAD_SAVE_CHANGES).tried();
         public final Button squadEditHeroes = Button.of(Pictures.SQUAD_EDIT_HEROES);
         public final Button closeX = Button.of(Pictures.CLOSE_X);
 
@@ -474,12 +464,12 @@ public final class Screens {
     public static final ArenaSquad ARENA_SQUAD = new ArenaSquad();
 
     public static final class SquadHeroes extends Screen {
-        public final Button crewArenaAttributes = Button.of(Pictures.CREW_ARENA_ATTRIBUTES).did(Did.IN_PLACE)
+        public final Button crewArenaAttributes = Button.of(Pictures.CREW_ARENA_ATTRIBUTES).tried()
                 .looks(List.of(Look.of(Pictures.CREW_BATTLE_ATTRIBUTES, State.SELECTED)));
-        public final Button crewOrderDamage = Button.of(Pictures.CREW_ORDER_DAMAGE).did(Did.IN_PLACE);
-        public final Button crewOrderHealth = Button.of(Pictures.CREW_ORDER_HEALTH).did(Did.IN_PLACE);
-        public final Button crewOrderArmor = Button.of(Pictures.CREW_ORDER_ARMOR).did(Did.IN_PLACE);
-        public final Button crewInfo = Button.of(Pictures.CREW_INFO).purpose(Purpose.INFO);
+        public final Button crewOrderDamage = Button.of(Pictures.CREW_ORDER_DAMAGE).tried();
+        public final Button crewOrderHealth = Button.of(Pictures.CREW_ORDER_HEALTH).tried();
+        public final Button crewOrderArmor = Button.of(Pictures.CREW_ORDER_ARMOR).tried();
+        public final Button crewInfo = Button.of(Pictures.CREW_INFO).info();
         public final Button closeX = Button.of(Pictures.CLOSE_X);
 
         @Override
@@ -516,12 +506,10 @@ public final class Screens {
     public static final EngineerInfo ENGINEER_INFO = new EngineerInfo();
 
     public static final class ChangeSquad extends Screen {
-        public final Button editSquads = Button.of(Pictures.EDIT_SQUADS).did(Did.LEAVES).purpose(Purpose.SPEND);
-        public final Button setActiveSquads = Button.of(Pictures.SET_ACTIVE_SQUADS).purpose(Purpose.SPEND)
-                .never("switches the player's active squad")
+        public final Button editSquads = Button.of(Pictures.EDIT_SQUADS).leaves();
+        public final Button setActiveSquads = Button.of(Pictures.SET_ACTIVE_SQUADS)                .never("switches the player's active squad")
                 .looks(List.of(Look.of(Pictures.SET_ACTIVE_OFF_SQUADS, State.DISABLED)));
-        public final Button emptySpotSquads = Button.of(Pictures.EMPTY_SPOT_SQUADS).did(Did.IN_PLACE)
-                .purpose(Purpose.SPEND);
+        public final Button emptySpotSquads = Button.of(Pictures.EMPTY_SPOT_SQUADS).tried();
         public final Button closeSquads = Button.of(Pictures.CLOSE_SQUADS);
 
         @Override
@@ -534,7 +522,7 @@ public final class Screens {
     public static final ChangeSquad CHANGE_SQUAD = new ChangeSquad();
 
     public static final class FavoredWarMachines2 extends Screen {
-        public final Button editFavored = Button.of(Pictures.EDIT_FAVORED).purpose(Purpose.SPEND);
+        public final Button editFavored = Button.of(Pictures.EDIT_FAVORED);
         public final Button engineerTabEngineer = Button.of(Pictures.ENGINEER_TAB_ENGINEER);
 
         @Override
@@ -547,10 +535,8 @@ public final class Screens {
     public static final FavoredWarMachines2 FAVORED_WAR_MACHINES_2 = new FavoredWarMachines2();
 
     public static final class FavoredWarMachines extends Screen {
-        public final Button saveChangesOffFavored = Button.of(Pictures.SAVE_CHANGES_OFF_FAVORED).did(Did.IN_PLACE)
-                .purpose(Purpose.SPEND);
-        public final Button machineCardFavored = Button.of(Pictures.MACHINE_CARD_FAVORED).purpose(Purpose.SPEND)
-                .never("changes which war machines the player favours");
+        public final Button saveChangesOffFavored = Button.of(Pictures.SAVE_CHANGES_OFF_FAVORED).tried();
+        public final Button machineCardFavored = Button.of(Pictures.MACHINE_CARD_FAVORED)                .never("changes which war machines the player favours");
         public final Button closeFavored = Button.of(Pictures.CLOSE_FAVORED);
 
         @Override
@@ -575,10 +561,8 @@ public final class Screens {
     public static final GarageInfo GARAGE_INFO = new GarageInfo();
 
     public static final class UpgradeTab extends Screen {
-        public final Button x1Workshop = Button.of(Pictures.X1_WORKSHOP).did(Did.IN_PLACE).purpose(Purpose.SHORTCUT)
-                .looks(List.of(Look.of(Pictures.X5_WORKSHOP, State.SELECTED)));
-        public final Button upgradeWorkshop = Button.of(Pictures.UPGRADE_WORKSHOP).did(Did.IN_PLACE)
-                .purpose(Purpose.TASK);
+        public final Button x1Workshop = Button.of(Pictures.X1_WORKSHOP).tried()                .looks(List.of(Look.of(Pictures.X5_WORKSHOP, State.SELECTED)));
+        public final Button upgradeWorkshop = Button.of(Pictures.UPGRADE_WORKSHOP).tried();
         public final Button statsTabGarage = Button.of(Pictures.STATS_TAB_GARAGE);
 
         @Override
@@ -591,9 +575,8 @@ public final class Screens {
     public static final UpgradeTab UPGRADE_TAB = new UpgradeTab();
 
     public static final class Blueprints extends Screen {
-        public final Button x1Workshop = Button.of(Pictures.X1_WORKSHOP).did(Did.IN_PLACE).purpose(Purpose.SHORTCUT);
-        public final Button upgradeBlueprints = Button.of(Pictures.UPGRADE_BLUEPRINTS).did(Did.IN_PLACE)
-                .purpose(Purpose.TASK);
+        public final Button x1Workshop = Button.of(Pictures.X1_WORKSHOP).tried();
+        public final Button upgradeBlueprints = Button.of(Pictures.UPGRADE_BLUEPRINTS).tried();
         public final Button statsTabGarage = Button.of(Pictures.STATS_TAB_GARAGE);
 
         @Override
@@ -606,10 +589,9 @@ public final class Screens {
     public static final Blueprints BLUEPRINTS = new Blueprints();
 
     public static final class Emblems extends Screen {
-        public final Button gemsPlusMap = Button.of(Pictures.GEMS_PLUS_MAP).purpose(Purpose.SPEND)
-                .never("buys tools with gems");
+        public final Button gemsPlusMap = Button.of(Pictures.GEMS_PLUS_MAP)                .never("buys tools with gems");
         public final Button increaseRarityOffGarage = Button.of(Pictures.INCREASE_RARITY_OFF_GARAGE)
-                .did(Did.IN_PLACE).purpose(Purpose.TASK);
+                .tried();
         public final Button statsTabGarage = Button.of(Pictures.STATS_TAB_GARAGE);
 
         @Override
@@ -634,12 +616,12 @@ public final class Screens {
     public static final LockedMachine LOCKED_MACHINE = new LockedMachine();
 
     public static final class AllWarMachines extends Screen {
-        public final Button ownedCardAllMachines = Button.of(Pictures.OWNED_CARD_ALL_MACHINES).did(Did.IN_PLACE)
-                .purpose(Purpose.INFO);
-        public final Button lockedCardAllMachines = Button.of(Pictures.LOCKED_CARD_ALL_MACHINES).did(Did.IN_PLACE)
-                .purpose(Purpose.INFO);
+        public final Button ownedCardAllMachines = Button.of(Pictures.OWNED_CARD_ALL_MACHINES).tried()
+                .info();
+        public final Button lockedCardAllMachines = Button.of(Pictures.LOCKED_CARD_ALL_MACHINES).tried()
+                .info();
         public final Strip ownedCardAllMachinesStrip = Strip.of(Scroll.wheel(-10),
-                List.of(Pictures.OWNED_CARD_ALL_MACHINES)).did(Did.IN_PLACE);
+                List.of(Pictures.OWNED_CARD_ALL_MACHINES)).tried();
         public final Button closeX = Button.of(Pictures.CLOSE_X);
 
         @Override
@@ -652,13 +634,12 @@ public final class Screens {
     public static final AllWarMachines ALL_WAR_MACHINES = new AllWarMachines();
 
     public static final class Mailbox extends Screen {
-        public final Button deleteMailbox = Button.of(Pictures.DELETE_MAILBOX).purpose(Purpose.SPEND)
-                .never("deletes the player's mail");
-        public final Button mailItemMailbox = Button.of(Pictures.MAIL_ITEM_MAILBOX).did(Did.IN_PLACE)
-                .purpose(Purpose.INFO);
-        public final Button mailClaim = Button.of(Pictures.MAIL_CLAIM).purpose(Purpose.TASK).sometimes();
+        public final Button deleteMailbox = Button.of(Pictures.DELETE_MAILBOX)                .never("deletes the player's mail");
+        public final Button mailItemMailbox = Button.of(Pictures.MAIL_ITEM_MAILBOX).tried()
+                .info();
+        public final Button mailClaim = Button.of(Pictures.MAIL_CLAIM).sometimes();
         public final Strip mailItemMailboxStrip = Strip.of(Scroll.wheel(-10), List.of(Pictures.MAIL_ITEM_MAILBOX))
-                .did(Did.IN_PLACE);
+                .tried();
         public final Button closeMailbox = Button.of(Pictures.CLOSE_MAILBOX);
 
         @Override
@@ -688,16 +669,15 @@ public final class Screens {
     public static final MailClaim MAIL_CLAIM = new MailClaim();
 
     public static final class Library extends Screen {
-        public final Button firestoneTabLibrary = Button.of(Pictures.FIRESTONE_TAB_LIBRARY).did(Did.IN_PLACE);
+        public final Button firestoneTabLibrary = Button.of(Pictures.FIRESTONE_TAB_LIBRARY).tried();
         public final Button guardianNodeLibrary = Button.of(Pictures.GUARDIAN_NODE_LIBRARY);
         public final Button armorNodeLibrary = Button.of(Pictures.ARMOR_NODE_LIBRARY);
         public final Button healthNodeLibrary = Button.of(Pictures.HEALTH_NODE_LIBRARY);
         public final Button projectilesNodeLibrary = Button.of(Pictures.PROJECTILES_NODE_LIBRARY);
-        public final Button freeSlotLibrary = Button.of(Pictures.FREE_SLOT_LIBRARY).did(Did.NONE).purpose(Purpose.INFO)
+        public final Button freeSlotLibrary = Button.of(Pictures.FREE_SLOT_LIBRARY).tried().info()
                 .sometimes();
         public final Button gemsPlusMap = Button.of(Pictures.GEMS_PLUS_MAP).never("spends gems");
-        public final Button researchClaim = Button.of(Pictures.RESEARCH_CLAIM).did(Did.IN_PLACE).purpose(Purpose.TASK)
-                .sometimes();
+        public final Button researchClaim = Button.of(Pictures.RESEARCH_CLAIM).tried()                .sometimes();
         public final Button closeTown = Button.of(Pictures.CLOSE_TOWN);
 
         @Override
@@ -715,8 +695,7 @@ public final class Screens {
         public final Button warMachineMap = Button.of(Pictures.WAR_MACHINE_MAP);
         public final Button campaignMap = Button.of(Pictures.CAMPAIGN_MAP);
         public final Button chatMap = Button.of(Pictures.CHAT_MAP);
-        public final Button campaignClaim = Button.of(Pictures.CAMPAIGN_CLAIM).did(Did.IN_PLACE).purpose(Purpose.TASK)
-                .sometimes().looks(List.of(Look.of(Pictures.CAMPAIGN_CLAIM_OFF, State.DISABLED)));
+        public final Button campaignClaim = Button.of(Pictures.CAMPAIGN_CLAIM).tried()                .sometimes().looks(List.of(Look.of(Pictures.CAMPAIGN_CLAIM_OFF, State.DISABLED)));
         public final Button closeTown = Button.of(Pictures.CLOSE_TOWN);
 
         @Override
@@ -729,8 +708,7 @@ public final class Screens {
     public static final Campaign CAMPAIGN = new Campaign();
 
     public static final class ResearchNode extends Screen {
-        public final Button researchStartLibrary = Button.of(Pictures.RESEARCH_START_LIBRARY).did(Did.LEAVES)
-                .purpose(Purpose.TASK);
+        public final Button researchStartLibrary = Button.of(Pictures.RESEARCH_START_LIBRARY).leaves();
         public final Button completeInstantlyResearchNode = Button.of(Pictures.COMPLETE_INSTANTLY_RESEARCH_NODE)
                 .never("spends gems");
         public final Button closeResearchNode = Button.of(Pictures.CLOSE_RESEARCH_NODE);
@@ -755,8 +733,7 @@ public final class Screens {
         public final Button goldPlusMap = Button.of(Pictures.GOLD_PLUS_MAP).never("spends gems");
         public final Button avatarMap = Button.of(Pictures.AVATAR_MAP);
         public final Button chatMap = Button.of(Pictures.CHAT_MAP);
-        public final Button claimMap = Button.of(Pictures.CLAIM_MAP).did(Did.IN_PLACE).purpose(Purpose.TASK)
-                .sometimes();
+        public final Button claimMap = Button.of(Pictures.CLAIM_MAP).tried()                .sometimes();
         public final Button scrollPinMap = Button.of(Pictures.SCROLL_PIN_MAP).sometimes().repeated();
         public final Button swordPinMap = Button.of(Pictures.SWORD_PIN_MAP).sometimes().repeated();
         public final Button telescopePinMap = Button.of(Pictures.TELESCOPE_PIN_MAP).sometimes().repeated();
@@ -784,11 +761,11 @@ public final class Screens {
     public static final Claim CLAIM = new Claim();
 
     public static final class Quests extends Screen {
-        public final Button weeklyTabOff = Button.of(Pictures.WEEKLY_TAB_OFF).did(Did.IN_PLACE)
-                .purpose(Purpose.SHORTCUT).looks(List.of(Look.of(Pictures.WEEKLY_TAB_ON, State.SELECTED)));
-        public final Button dailyTabOff = Button.of(Pictures.DAILY_TAB_OFF).did(Did.IN_PLACE)
-                .purpose(Purpose.SHORTCUT).looks(List.of(Look.of(Pictures.DAILY_TAB_ON, State.SELECTED)));
-        public final Button questClaim = Button.of(Pictures.QUEST_CLAIM).purpose(Purpose.TASK).sometimes()
+        public final Button weeklyTabOff = Button.of(Pictures.WEEKLY_TAB_OFF).tried()
+                .looks(List.of(Look.of(Pictures.WEEKLY_TAB_ON, State.SELECTED)));
+        public final Button dailyTabOff = Button.of(Pictures.DAILY_TAB_OFF).tried()
+                .looks(List.of(Look.of(Pictures.DAILY_TAB_ON, State.SELECTED)));
+        public final Button questClaim = Button.of(Pictures.QUEST_CLAIM).sometimes()
                 .looks(List.of(Look.of(Pictures.QUEST_CLAIM_OFF, State.DISABLED)));
         public final Button arenaClose = Button.of(Pictures.ARENA_CLOSE);
 
