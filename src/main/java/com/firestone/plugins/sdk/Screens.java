@@ -729,9 +729,13 @@ public final class Screens {
                         .beside(List.of(Beside.of(Pictures.CRIT_BONUS_NODE_LIBRARY, 5.8, 3.1),
                                 Beside.of(Pictures.CRIT_CHANCE_NODE_LIBRARY, 5.8, 0.0))),
                 Node.of(Pictures.MEDAL_NODE_LIBRARY)
-                        .after(List.of(Pictures.WEAKLINGS_NODE_LIBRARY, Pictures.EXPOSE_NODE_LIBRARY)),
+                        .after(List.of(Pictures.WEAKLINGS_NODE_LIBRARY, Pictures.EXPOSE_NODE_LIBRARY))
+                        .beside(List.of(Beside.of(Pictures.WEAKLINGS_NODE_LIBRARY, 5.9, 0.0),
+                                Beside.of(Pictures.EXPOSE_NODE_LIBRARY, 5.9, -3.1))),
                 Node.of(Pictures.FINDER_NODE_LIBRARY)
-                        .after(List.of(Pictures.WEAKLINGS_NODE_LIBRARY, Pictures.EXPOSE_NODE_LIBRARY)),
+                        .after(List.of(Pictures.WEAKLINGS_NODE_LIBRARY, Pictures.EXPOSE_NODE_LIBRARY))
+                        .beside(List.of(Beside.of(Pictures.WEAKLINGS_NODE_LIBRARY, 5.9, 3.1),
+                                Beside.of(Pictures.EXPOSE_NODE_LIBRARY, 5.9, 0.0))),
                 Node.of(Pictures.TRAINER_NODE_LIBRARY)
                         .after(List.of(Pictures.MEDAL_NODE_LIBRARY, Pictures.FINDER_NODE_LIBRARY)),
                 Node.of(Pictures.SKIP_WAVE_NODE_LIBRARY)
