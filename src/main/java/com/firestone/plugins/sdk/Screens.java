@@ -786,10 +786,11 @@ public final class Screens {
         @Override
         public Setup setup() {
             return Setup.named("Research node").markers(List.of(Pictures.ORIGINAL_TIME_RESEARCH_NODE))
-                    .from(LIBRARY.guardianNodeLibrary)
-                    .alsoFrom(List.of(Way.of(LIBRARY.armorNodeLibrary), Way.of(LIBRARY.healthNodeLibrary),
-                            Way.of(LIBRARY.projectilesNodeLibrary)))
-                    .back(RESEARCH_NODE.closeResearchNode);
+                    .from(Screens.LIBRARY.guardianNodeLibrary)
+                    .alsoFrom(List.of(Way.of(Screens.LIBRARY.armorNodeLibrary),
+                            Way.of(Screens.LIBRARY.healthNodeLibrary), Way.of(Screens.LIBRARY.projectilesNodeLibrary),
+                            Way.of(Screens.LIBRARY.trainerNodeLibrary)))
+                    .back(Screens.RESEARCH_NODE.closeResearchNode);
         }
     }
 
