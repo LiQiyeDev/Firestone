@@ -781,7 +781,7 @@ public final class Screens {
     public static final class SwordPin extends Screen {
         @Override
         public Setup setup() {
-            return Setup.named("Sword pin").from(Screens.MAP.swordPinMap);
+            return Setup.named("Mission").from(Screens.MAP.swordPinMap);
         }
     }
 
