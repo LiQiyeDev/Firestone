@@ -737,11 +737,15 @@ public final class Screens {
                         .beside(List.of(Beside.of(Pictures.WEAKLINGS_NODE_LIBRARY, 5.9, 3.1),
                                 Beside.of(Pictures.EXPOSE_NODE_LIBRARY, 5.9, 0.0))),
                 Node.of(Pictures.TRAINER_NODE_LIBRARY)
-                        .after(List.of(Pictures.MEDAL_NODE_LIBRARY, Pictures.FINDER_NODE_LIBRARY)),
+                        .after(List.of(Pictures.MEDAL_NODE_LIBRARY, Pictures.FINDER_NODE_LIBRARY))
+                        .beside(List.of(Beside.of(Pictures.MEDAL_NODE_LIBRARY, 5.85, -1.65),
+                                Beside.of(Pictures.FINDER_NODE_LIBRARY, 5.85, -4.75))),
                 Node.of(Pictures.SKIP_WAVE_NODE_LIBRARY)
                         .after(List.of(Pictures.MEDAL_NODE_LIBRARY, Pictures.FINDER_NODE_LIBRARY)),
                 Node.of(Pictures.EXPEDITIONER_NODE_LIBRARY)
-                        .after(List.of(Pictures.MEDAL_NODE_LIBRARY, Pictures.FINDER_NODE_LIBRARY))))
+                        .after(List.of(Pictures.MEDAL_NODE_LIBRARY, Pictures.FINDER_NODE_LIBRARY))
+                        .beside(List.of(Beside.of(Pictures.MEDAL_NODE_LIBRARY, 5.85, 4.7),
+                                Beside.of(Pictures.FINDER_NODE_LIBRARY, 5.85, 1.6)))))
                 .wheel(-5).tried();
 
         @Override
