@@ -16,7 +16,6 @@ import com.botmaker.sdk.api.screens.Way;
 
 import java.util.List;
 import java.time.Duration;
-import com.botmaker.sdk.api.screens.ScreenVariant;
 
 /**
  * Values com.botmaker.sdk keeps in step with its own windows.
@@ -781,18 +780,13 @@ public final class Screens {
         public final Button closeMission = Button.of(Pictures.CLOSE_MISSION);
         public final Button completeInstantlyMission = Button.of(Pictures.COMPLETE_INSTANTLY_MISSION).never("spends gems");
         public final Button startMissionMap = Button.of(Pictures.START_MISSION_MAP).leaves();
-        public final Button cancelMission = Button.of(Pictures.CANCEL_MISSION).never("cancels a running mission");
-        public final Button speedUpMission = Button.of(Pictures.SPEED_UP_MISSION).never("spends gems");
 
         @Override
         public Setup setup() {
-            return Setup.named("Mission").markers(List.of(Pictures.REQUIRED_SQUADS_MISSION))
-                    .absent(List.of(Pictures.TITLE_TOWN)).from(Screens.MAP.swordPinMap)
+            return Setup.named("Mission").markers(List.of(Pictures.REQUIRED_SQUADS_MISSION)).from(Screens.MAP.swordPinMap)
                     .alsoFrom(List.of(Way.of(Screens.MAP.telescopePinMap), Way.of(Screens.MAP.dragonPinMap),
                             Way.of(Screens.MAP.scrollPinMap)))
-                    .back(Screens.SWORD_PIN.closeMission)
-                    .variants(List.of(ScreenVariant.named("In progress").markers(List.of(Pictures.IN_PROGRESS_MISSION))
-                            .inputs(List.of(Screens.SWORD_PIN.cancelMission, Screens.SWORD_PIN.speedUpMission))));
+                    .back(Screens.SWORD_PIN.closeMission);
         }
     }
 
@@ -800,12 +794,15 @@ public final class Screens {
 
     public static final class MissionInProgress extends Screen {
         public final Button closeMission = Button.of(Pictures.CLOSE_MISSION);
-        public final Button cancelMission = Button.of(Pictures.CANCEL_MISSION);
-        public final Button speedUpMission = Button.of(Pictures.SPEED_UP_MISSION);
+        public final Button cancelMission = Button.of(Pictures.CANCEL_MISSION).never("cancels a running mission");
+        public final Button speedUpMission = Button.of(Pictures.SPEED_UP_MISSION).never("spends gems");
 
         @Override
         public Setup setup() {
-            return Setup.named("Mission in progress").from(Screens.MAP.swordPinMap)
+            return Setup.named("Mission in progress").markers(List.of(Pictures.IN_PROGRESS_MISSION))
+                    .from(Screens.MAP.swordPinMap)
+                    .alsoFrom(List.of(Way.of(Screens.MAP.telescopePinMap), Way.of(Screens.MAP.dragonPinMap),
+                            Way.of(Screens.MAP.scrollPinMap)))
                     .back(Screens.MISSION_IN_PROGRESS.closeMission);
         }
     }
