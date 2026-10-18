@@ -933,7 +933,7 @@ public final class Screens {
     public static final class StartScreen extends Screen {
         @Override
         public Setup setup() {
-            return Setup.named("StartScreen").start();
+            return Setup.named("StartScreen").markers(List.of(Pictures.FIRESTONESTART)).start();
         }
     }
 
