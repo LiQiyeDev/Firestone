@@ -350,8 +350,7 @@ public final class Screens {
         @Override
         public Setup setup() {
             return Setup.named("Battle details").markers(List.of(Pictures.BATTLE_DETAILS_VS))
-                    .from(ARENA_BATTLE_LOG.battleLogInspect).back(BATTLE_DETAILS.closeRoomsChat)
-                    .at(new Point(1020, 1398));
+                    .from(Screens.ARENA_BATTLE_LOG.battleLogInspect).back(Screens.BATTLE_DETAILS.closeRoomsChat);
         }
     }
 
@@ -364,8 +363,8 @@ public final class Screens {
         @Override
         public Setup setup() {
             return Setup.named("Arena replay").markers(List.of(Pictures.ARENA_ROUND))
-                    .from(ARENA_BATTLE_LOG.battleLogReplay).alsoFrom(List.of(Way.of(ARENA.arenaFight)))
-                    .back(ARENA_REPLAY.arenaFightClose).at(new Point(1020, 1640));
+                    .from(Screens.ARENA_BATTLE_LOG.battleLogReplay).alsoFrom(List.of(Way.of(Screens.ARENA.arenaFight)))
+                    .back(Screens.ARENA_REPLAY.arenaFightClose);
         }
     }
 
@@ -419,14 +418,13 @@ public final class Screens {
 
         @Override
         public Setup setup() {
-            return Setup.named("Engineer").markers(List.of(Pictures.ENGINEER_NAME)).from(HOME.engineerHome)
-                    .alsoFrom(List.of(Way.of(GARAGE.engineerGarage))).back(ENGINEER.closeTown).notes("""
+            return Setup.named("Engineer").markers(List.of(Pictures.ENGINEER_NAME)).from(Screens.HOME.engineerHome).alsoFrom(List.of(Way.of(Screens.GARAGE.engineerGarage))).back(Screens.ENGINEER.closeTown).notes("""
                             Engineer produces tools every 6 hours; Claim (claim_engineer) collects them, then disappears until the next batch.
                             Home shows engineer_home (blue helmet, left column) only while tools wait to be claimed; Garage's Engineer button reaches it always.
                             Engineer level comes from war machine levels (100 XP per machine level); it raises all war machines' attributes and tool production.
                             Tabs: Engineer (bonus + Claim), Active squad (Change squad, Edit), Favored war machines (80% of jewel-chest components go to the 5 favored), Arcane conduits (collect Chaos turbine / Energy core / Mana reactor from jewel chests to unlock a new war machine).
                             Tools (top right, 7 166) buy war machine rarity in Garage; the + buys tools with gems: never.\
-                            """).reached(Reached.SURVEYED).at(new Point(340, 2124));
+                            """).reached(Reached.SURVEYED);
         }
     }
 
@@ -456,8 +454,8 @@ public final class Screens {
         @Override
         public Setup setup() {
             return Setup.named("Arena squad").markers(List.of(Pictures.CHOOSE_WAR_MACHINES_TITLE))
-                    .from(ARENA.arenaEditSquad).alsoFrom(List.of(Way.of(ACTIVE_SQUAD.editSquadEngineer)))
-                    .back(ARENA_SQUAD.closeX).at(new Point(1352, 2044));
+                    .from(Screens.ARENA.arenaEditSquad)
+                    .alsoFrom(List.of(Way.of(Screens.ACTIVE_SQUAD.editSquadEngineer))).back(Screens.ARENA_SQUAD.closeX);
         }
     }
 
@@ -475,7 +473,7 @@ public final class Screens {
         @Override
         public Setup setup() {
             return Setup.named("Squad heroes").markers(List.of(Pictures.SELECT_CREW_TITLE))
-                    .from(ARENA_SQUAD.squadEditHeroes).back(SQUAD_HEROES.closeX).at(new Point(1692, 2044));
+                    .from(Screens.ARENA_SQUAD.squadEditHeroes).back(Screens.SQUAD_HEROES.closeX);
         }
     }
 
@@ -486,8 +484,8 @@ public final class Screens {
 
         @Override
         public Setup setup() {
-            return Setup.named("Crew info").markers(List.of(Pictures.HERO_BONUSES_TITLE)).from(SQUAD_HEROES.crewInfo)
-                    .back(CREW_INFO.crewInfoClose).at(new Point(2032, 2044));
+            return Setup.named("Crew info").markers(List.of(Pictures.HERO_BONUSES_TITLE)).from(Screens.SQUAD_HEROES.crewInfo)
+                    .back(Screens.CREW_INFO.crewInfoClose);
         }
     }
 
@@ -499,7 +497,7 @@ public final class Screens {
         @Override
         public Setup setup() {
             return Setup.named("Engineer info").markers(List.of(Pictures.ENGINEER_INFO_TITLE))
-                    .from(ENGINEER.infoEngineer).back(ENGINEER_INFO.closeEngineerInfo).at(new Point(1352, 2286));
+                    .from(Screens.ENGINEER.infoEngineer).back(Screens.ENGINEER_INFO.closeEngineerInfo);
         }
     }
 
