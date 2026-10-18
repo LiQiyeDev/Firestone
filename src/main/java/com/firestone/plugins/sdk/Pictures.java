@@ -679,5 +679,7 @@ public final class Pictures {
             "src/main/resources/images/raining_gold_node_library.png").at(new Rect(196, 478, 84, 84));
     public static final ImageTemplate FIRESTONESTART = new ImageTemplate("src/main/resources/images/firestonestart.png")
             .at(new Rect(576, 608, 816, 319));
+    public static final ImageTemplate FZEF = new ImageTemplate("src/main/resources/images/fzef.png")
+            .at(new Rect(629, 638, 703, 320));
     private Pictures() {}
 }
