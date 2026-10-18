@@ -677,5 +677,7 @@ public final class Pictures {
             "src/main/resources/images/expose_node_done_library.png").at(new Rect(578, 610, 335, 88));
     public static final ImageTemplate RAINING_GOLD_NODE_LIBRARY = new ImageTemplate(
             "src/main/resources/images/raining_gold_node_library.png").at(new Rect(196, 478, 84, 84));
+    public static final ImageTemplate FIRESTONESTART = new ImageTemplate("src/main/resources/images/firestonestart.png")
+            .at(new Rect(576, 608, 816, 319));
     private Pictures() {}
 }
