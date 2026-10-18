@@ -131,7 +131,7 @@ public final class Screens {
         public final Button bagTavern = Button.of(Pictures.BAG_TAVERN);
         public final Button chatTavern = Button.of(Pictures.CHAT_TAVERN);
         public final Button wheelTavern = Button.of(Pictures.WHEEL_TAVERN).tried();
-        public final Button deckTavern = Button.of(Pictures.DECK_TAVERN).tried();
+        public final Button deckTavern = Button.of(Pictures.DECK_TAVERN).tried().repeated();
         public final Button playTavern = Button.of(Pictures.PLAY_TAVERN).tried()
                 .looks(List.of(Look.of(Pictures.PLAY_OFF_TAVERN, State.DISABLED)));
         public final Button manualTavern = Button.of(Pictures.MANUAL_TAVERN).tried();
