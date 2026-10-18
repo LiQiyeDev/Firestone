@@ -930,6 +930,15 @@ public final class Screens {
 
     public static final Shop SHOP = new Shop();
 
+    public static final class StartScreen extends Screen {
+        @Override
+        public Setup setup() {
+            return Setup.named("StartScreen").start();
+        }
+    }
+
+    public static final StartScreen START_SCREEN = new StartScreen();
+
     private Screens() {
     }
 }
