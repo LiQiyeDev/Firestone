@@ -930,6 +930,15 @@ public final class Screens {
 
     public static final Shop SHOP = new Shop();
 
+    public static final class Erfre extends Screen {
+        @Override
+        public Setup setup() {
+            return Setup.named("erfre").from(Screens.HOME.arenaHome);
+        }
+    }
+
+    public static final Erfre ERFRE = new Erfre();
+
     private Screens() {
     }
 }
