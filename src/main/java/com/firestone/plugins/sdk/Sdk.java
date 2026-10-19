@@ -15,6 +15,7 @@ import java.util.Set;
 import java.util.List;
 import com.botmaker.sdk.api.bot.Launcher;
 import com.botmaker.sdk.api.geometry.Size;
+import com.botmaker.sdk.api.bot.LaunchChoice;
 
 /**
  * The BotMaker SDK's values for this bot.
@@ -54,13 +55,18 @@ public final class Sdk {
     public static CaptureSource capture = CaptureSource.desktop();
 
     @SdkValue(SdkValue.Id.LAUNCH_TARGETS)
-    @Param(category = "Game", visibility = Param.PUBLIC, description = "The launchers this bot can start its game from, preferred first")
-    public static List<Launcher> launchTargets = List.of(Launcher.of("steam:1013320"), Launcher.of("steam:2183900"), Launcher.of("desktop:com.microsoft.VSCode"),
+    @Param(category = "Game", description = "The games this bot supports, preferred first")
+    public static List<Launcher> launchTargets = List.of(Launcher.of("steam:1013320"), Launcher.of("steam:2183900"),
+            Launcher.of("desktop:com.microsoft.VSCode"),
             Launcher.of("desktop:com.visualstudio.code"), Launcher.of("desktop:net.lutris.Lutris"),
             Launcher.of("emu-app:com.zjcs.android.us@Waydroid"), Launcher.of("heroic:43d4ef20fcb94eb39a864d13164fe3ca"),
             Launcher.of("steam:548430"), Launcher.of("desktop:steam"),
             Launcher.of("desktop:com.heroicgameslauncher.hgl"), Launcher.of("faugus:battlenet"),
             Launcher.of("faugus:lotm"), Launcher.of("emu-app:com.google.android.apps.messaging@Waydroid"));
+
+    @SdkValue(SdkValue.Id.LAUNCH_TARGET)
+    @Param(category = "Game", visibility = Param.PUBLIC, description = "Which of the bot's games this computer launches")
+    public static LaunchChoice launchTarget = LaunchChoice.of("");
 
     /**
      * The game's home and setup, which no flow owns.
