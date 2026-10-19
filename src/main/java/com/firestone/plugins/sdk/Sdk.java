@@ -56,7 +56,7 @@ public final class Sdk {
 
     @SdkValue(SdkValue.Id.LAUNCH_TARGETS)
     @Param(category = "Game", description = "The games this bot supports, preferred first")
-    public static List<Launcher> launchTargets = List.of(Launcher.of("desktop:net.lutris.Lutris"), Launcher.of("steam:548430"), Launcher.of("faugus:battlenet"),
+    public static List<Launcher> launchTargets = List.of(Launcher.of("desktop:net.lutris.Lutris"), Launcher.of("steam:548430"),
             Launcher.of("emu-app:com.google.android.apps.messaging@Waydroid"));
 
     @SdkValue(SdkValue.Id.LAUNCH_TARGET)
