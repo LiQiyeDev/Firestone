@@ -56,7 +56,7 @@ public final class Sdk {
 
     @SdkValue(SdkValue.Id.LAUNCH_TARGETS)
     @Param(category = "Game", description = "The games this bot supports, preferred first")
-    public static List<Launcher> launchTargets = List.of(Launcher.of("desktop:com.microsoft.VSCode"), Launcher.of("desktop:com.visualstudio.code"),
+    public static List<Launcher> launchTargets = List.of(Launcher.of("desktop:com.visualstudio.code"), Launcher.of("desktop:com.microsoft.VSCode"),
             Launcher.of("desktop:net.lutris.Lutris"), Launcher.of("emu-app:com.zjcs.android.us@Waydroid"),
             Launcher.of("heroic:43d4ef20fcb94eb39a864d13164fe3ca"), Launcher.of("steam:548430"),
             Launcher.of("desktop:steam"), Launcher.of("desktop:com.heroicgameslauncher.hgl"),
