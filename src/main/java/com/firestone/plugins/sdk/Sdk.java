@@ -56,12 +56,12 @@ public final class Sdk {
 
     @SdkValue(SdkValue.Id.LAUNCH_TARGETS)
     @Param(category = "Game", description = "The games this bot supports, preferred first")
-    public static List<Launcher> launchTargets = List.of(Launcher.of("emu-app:fr.cnaf.mobile.moncompte@5C040DLCR001BU"),
-            Launcher.of("emu-app:com.ubercab.eats@5C040DLCR001BU"));
+    public static List<Launcher> launchTargets = List.of(Launcher.of("emu-app:com.ubercab.eats@5C040DLCR001BU"),
+            Launcher.of("emu-app:fr.cnaf.mobile.moncompte@5C040DLCR001BU"));
 
     @SdkValue(SdkValue.Id.LAUNCH_TARGET)
     @Param(category = "Game", visibility = Param.PUBLIC, description = "Which of the bot's games this computer launches")
-    public static LaunchChoice launchTarget = LaunchChoice.of("");
+    public static LaunchChoice launchTarget = LaunchChoice.of("emu-app:com.ubercab.eats@5C040DLCR001BU");
 
     /**
      * The game's home and setup, which no flow owns.
