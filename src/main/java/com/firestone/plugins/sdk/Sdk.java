@@ -55,10 +55,10 @@ public final class Sdk {
 
     @SdkValue(SdkValue.Id.LAUNCH_TARGETS)
     @Param(category = "Game", visibility = Param.PUBLIC, description = "The launchers this bot can start its game from, preferred first")
-    public static List<Launcher> launchTargets = List.of(Launcher.of("desktop:steam"), Launcher.of("desktop:com.heroicgameslauncher.hgl"),
-            Launcher.of("emu-app:com.zjcs.android.us@Waydroid"), Launcher.of("faugus:battlenet"),
-            Launcher.of("faugus:lotm"), Launcher.of("emu-app:com.google.android.apps.messaging@Waydroid"),
-            Launcher.of("heroic:43d4ef20fcb94eb39a864d13164fe3ca"));
+    public static List<Launcher> launchTargets = List.of(Launcher.of("heroic:43d4ef20fcb94eb39a864d13164fe3ca"), Launcher.of("desktop:steam"),
+            Launcher.of("desktop:com.heroicgameslauncher.hgl"), Launcher.of("emu-app:com.zjcs.android.us@Waydroid"),
+            Launcher.of("faugus:battlenet"), Launcher.of("faugus:lotm"),
+            Launcher.of("emu-app:com.google.android.apps.messaging@Waydroid"));
 
     /**
      * The game's home and setup, which no flow owns.
