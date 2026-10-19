@@ -56,7 +56,7 @@ public final class Sdk {
 
     @SdkValue(SdkValue.Id.LAUNCH_TARGETS)
     @Param(category = "Game", description = "The games this bot supports, preferred first")
-    public static List<Launcher> launchTargets = List.of();
+    public static List<Launcher> launchTargets = List.of(Launcher.of("emu-app:com.orange.mail.fr@5C040DLCR001BU"));
 
     @SdkValue(SdkValue.Id.LAUNCH_TARGET)
     @Param(category = "Game", visibility = Param.PUBLIC, description = "Which of the bot's games this computer launches")
