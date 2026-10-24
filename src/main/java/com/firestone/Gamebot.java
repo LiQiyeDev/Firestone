@@ -62,7 +62,6 @@ public final class Gamebot {
 
     public static void main(String[] args) {
         Bot.runFlow(Sdk.class);
-        System.out.println("edzddedddddd");
     }
 
     /**
