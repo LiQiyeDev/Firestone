@@ -217,7 +217,7 @@ public final class Screens {
     public static final Upgrade UPGRADE = new Upgrade();
 
     public static final class Rarity extends Screen {
-        public final Button rarityArtifactConfirm = Button.of(Pictures.RARITY_ARTIFACT_CONFIRM).tried().typed();
+        public final Button rarityArtifactConfirm = Button.of(Pictures.RARITY_ARTIFACT_CONFIRM).tried();
         public final Button closeArtifactUpgrade = Button.of(Pictures.CLOSE_ARTIFACT_UPGRADE);
 
         @Override
