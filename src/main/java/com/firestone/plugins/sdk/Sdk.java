@@ -60,7 +60,7 @@ public final class Sdk {
 
     @SdkValue(SdkValue.Id.LAUNCH_TARGET)
     @Param(category = "Game", visibility = Param.PUBLIC, description = "Which of the bot's games this computer launches")
-    public static LaunchChoice launchTarget = LaunchChoice.of("heroic:43d4ef20fcb94eb39a864d13164fe3ca");
+    public static LaunchChoice launchTarget = LaunchChoice.of("");
 
     /**
      * The game's home and setup, which no flow owns.
