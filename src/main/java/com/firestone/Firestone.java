@@ -55,9 +55,9 @@ import com.firestone.plugins.sdk.Screens;
  * box. Point it somewhere narrower — a window, a monitor, an emulator instance — with <b>🎯 Capture
  * Source</b> on the toolbar, and the same code follows without a line here changing.
  */
-public final class Gamebot {
+public final class Firestone {
 
-    private Gamebot() {
+    private Firestone() {
     }
 
     public static void main(String[] args) {

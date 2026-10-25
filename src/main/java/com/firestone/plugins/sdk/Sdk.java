@@ -1,6 +1,6 @@
 package com.firestone.plugins.sdk;
 
-import com.firestone.Gamebot;
+import com.firestone.Firestone;
 import com.botmaker.plugin.api.params.Param;
 import com.botmaker.sdk.api.bot.BotSettings;
 import com.botmaker.sdk.api.bot.Outcome;
@@ -71,7 +71,7 @@ public final class Sdk {
      */
     @SdkValue(SdkValue.Id.RUN)
     public static Run run() {
-        return Run.of().home(Gamebot::goHome).setup(Gamebot::setup);
+        return Run.of().home(Firestone::goHome).setup(Firestone::setup);
     }
 
     /**
